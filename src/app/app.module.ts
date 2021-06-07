@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { 
   NbThemeModule, 
-  NbLayoutModule 
+  NbLayoutModule,
+  NbSidebarModule, 
+  NbButtonModule,
+  NbSidebarService
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
@@ -20,9 +23,11 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
+    NbSidebarModule,
+    NbButtonModule,
     NbEvaIconsModule
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
