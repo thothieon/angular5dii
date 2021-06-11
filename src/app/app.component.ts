@@ -15,6 +15,7 @@ export class AppComponent {
     { description: 'sleep', done: false },
     { description: 'play', done: false },
     { description: 'laugh', done: false },
+    { description: 'laugh01', done: false }
   ];
 
   get items() {
@@ -29,5 +30,9 @@ export class AppComponent {
       description,
       done: false
     });
+  }
+
+  remove(item) {
+    this.allItems.splice(this.allItems.indexOf(item), 1);
   }
 }
