@@ -12,29 +12,34 @@
 </style>
 
 
-<div class="container-fluid"> <!-- intro-header --> <!-- container --> <!-- container-fluid -->
+<div class="container-fluid">
+  <!-- intro-header -->
+  <!-- container -->
+  <!-- container-fluid -->
   <div class="row">
-    <div class="col w-100" >
+    <div class="col w-100">
       <!--Navbar-->
       <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-info scrolling-navbar">
         <mdb-navbar-brand>
-          <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a>
+          <!-- <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a> -->
+          <a class="navbar-brand" mdbWavesEffect href="#">
+            <img height="50" src="../assets/Image/Logo.jpg" alt="iDiving"> 全方位潛水中心
+          </a>
         </mdb-navbar-brand>
         <links>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item active waves-light" mdbWavesEffect>
-              <a class="nav-link" href="#">學潛水</a>
+            <!-- active -->
+            <li class="nav-item btn-group waves-light" mdbDropdown>
+              <a mdbDropdownToggle type="button" class="nav-link" href="#" mdbWavesEffect>學潛水</a>
             </li>
 
             <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a class="nav-link" href="#">玩潛水</a>
+              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" href="#" mdbWavesEffect>玩潛水</a>
             </li>
 
             <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a mdbDropdownToggle type="button" mdbBtn class="nav-link dropdown-toggle" href="#" mdbWavesEffect>
-                玩潛水
-              </a>
+              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" href="#" mdbWavesEffect>愛潛水</a>
 
               <div class="dropdown-menu ">
                 <a class="dropdown-item" href="#">Action</a>
@@ -44,11 +49,10 @@
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
+
             <!--color="primary"-->
-            <li class="nav-item btn-group" mdbDropdown>
-              <button mdbDropdownToggle type="button" mdbBtn  class="dropdown-toggle waves-light" mdbWavesEffect>
-                Basic 玩潛水
-              </button>
+            <li class="nav-item btn-group waves-light" mdbDropdown>
+              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" mdbWavesEffect>Basic 愛潛水</a>
 
               <div class="dropdown-menu dropdown-primary">
                 <a class="dropdown-item" href="#">Action</a>
@@ -58,6 +62,7 @@
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
+
           </ul>
           <!--<form class="form-inline waves-light" mdbWavesEffect>
           <div class="md-form mt-0">
@@ -67,6 +72,19 @@
         </links>
       </mdb-navbar>
     </div>
+  </div>
+
+  <div class="row">
+    <table width="95%" style="table-layout: fixed;">
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
   </div>
 
   <div class="row">
@@ -139,6 +157,9 @@
       <table mdbTable>
         <thead>
           <tr>
+            <th scope="col"> 課程期別 </th>
+          </tr>
+          <tr>
             <th *ngFor="let head of headElements" scope="col">{{head}} </th>
           </tr>
         </thead>
@@ -155,6 +176,9 @@
     <div class="col">
       <table mdbTable>
         <thead>
+          <tr>
+            <th scope="col"> 出團期別 </th>
+          </tr>
           <tr>
             <th *ngFor="let head of headElements" scope="col">{{head}} </th>
           </tr>
