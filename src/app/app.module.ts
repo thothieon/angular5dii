@@ -9,6 +9,7 @@ import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, Waves
 
 import { HeadComponent } from './components/Part/head/head.component';
 import { CarouselComponent } from './components/Part/carousel/carousel.component';
+import { YoutubeComponent } from './components/Part/youtube/youtube.component';
 import { FootComponent } from './components/Part/foot/foot.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FootComponent } from './components/Part/foot/foot.component';
     AppComponent,
     HeadComponent,
     CarouselComponent,
+    YoutubeComponent,
     FootComponent
   ],
   imports: [
