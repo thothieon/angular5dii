@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, TableModule  } from 'angular-bootstrap-md';
 
 import { HeadComponent } from './components/Part/head/head.component';
+import { CarouselComponent } from './components/Part/carousel/carousel.component';
 import { FootComponent } from './components/Part/foot/foot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
+    CarouselComponent,
     FootComponent
   ],
   imports: [
