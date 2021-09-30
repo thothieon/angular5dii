@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular5dii-test';
+  title = 'iDiving';
   
   elements: any = [
     {id: 1, first: 'Mark', last: 'Otto', handle: '@mdo'},
