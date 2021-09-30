@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 // For MDB Angular Free
 import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, TableModule  } from 'angular-bootstrap-md';
 
+import { HeadComponent } from './components/Part/head/head.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,
