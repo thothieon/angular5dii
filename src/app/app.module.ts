@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // For MDB Angular Free
-import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, TableModule  } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { HeadComponent } from './components/Part/head/head.component';
+import { HeadmenuComponent } from './components/Part/headmenu/headmenu.component';
 import { CarouselComponent } from './components/Part/carousel/carousel.component';
 import { YoutubeComponent } from './components/Part/youtube/youtube.component';
 import { FootComponent } from './components/Part/foot/foot.component';
@@ -16,6 +17,7 @@ import { FootComponent } from './components/Part/foot/foot.component';
   declarations: [
     AppComponent,
     HeadComponent,
+    HeadmenuComponent,
     CarouselComponent,
     YoutubeComponent,
     FootComponent
@@ -28,7 +30,8 @@ import { FootComponent } from './components/Part/foot/foot.component';
     CollapseModule,
     NavbarModule,
     WavesModule,
-    TableModule 
+    DropdownModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
