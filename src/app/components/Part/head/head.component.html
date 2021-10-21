@@ -1,61 +1,108 @@
-
-  <!-- intro-header -->
-  <!-- container -->
-  <!-- container-fluid -->
-  <div class="row">
-    <div class="col w-100">
-      <!--Navbar-->
-      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-info scrolling-navbar">
-        <mdb-navbar-brand>
-          <!-- <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a> -->
-          <a class="navbar-brand" mdbWavesEffect href="#">
-            <img height="50" src="../assets/Image/Logo.jpg" alt="iDiving"> 全方位潛水中心
-          </a>
-        </mdb-navbar-brand>
-        <links>
+<!-- intro-header -->
+<!-- container -->
+<!-- container-fluid -->
+<div class="row">
+  <div class="col w-100">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">iDiving</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ml-auto">
 
-            <!-- active -->
-            <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a mdbDropdownToggle type="button" class="nav-link" href="#" mdbWavesEffect>學潛水</a>
-            </li>
-
-            <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" href="#" mdbWavesEffect>玩潛水</a>
-            </li>
-
-            <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" href="#" mdbWavesEffect>愛潛水</a>
-
-              <div class="dropdown-menu ">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="divider dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">學潛水</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">自由潛水</h6>
+                    <li><a class="dropdown-item" href="#"> 自由潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> 自由潛水專長 </a></li>
+                    <li><a class="dropdown-item" href="#"> 美人魚課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> 自由潛水教練 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">水肺潛水</h6>
+                    <li><a class="dropdown-item" href="#"> OWD潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">技術潛水</h6>
+                    <li><a class="dropdown-item" href="#"> 技術潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">潛水教練</h6>
+                    <li><a class="dropdown-item" href="#"> 技術潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">課程相關</h6>
+                    <li><a class="dropdown-item" href="#"> 開課計畫 </a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                  </div>
+                </div>
               </div>
             </li>
 
-            <!--color="primary"-->
-            <li class="nav-item btn-group waves-light" mdbDropdown>
-              <a mdbDropdownToggle type="button" class="nav-link dropdown-toggle" mdbWavesEffect>Basic 愛潛水</a>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">玩潛水</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">台灣潛點</h6>
+                    <li><a class="dropdown-item" href="#"> 自由潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> 自由潛水專長 </a></li>
+                    <li><a class="dropdown-item" href="#"> 美人魚課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> 自由潛水教練 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">國外潛點</h6>
+                    <li><a class="dropdown-item" href="#"> 自由潛水課程 </a></li>
+                    <li><a class="dropdown-item" href="#"> 自由潛水專長 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">活動相關</h6>
+                    <li><a class="dropdown-item" href="#"> 1 </a></li>
+                    <li><a class="dropdown-item" href="#"> 2 </a></li>
+                  </div>
+                </div>
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
 
-              <div class="dropdown-menu dropdown-primary">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="divider dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">愛潛水</a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">裝備</h6>
+                    <li><a class="dropdown-item" href="#"> 輕裝 </a></li>
+                    <li><a class="dropdown-item" href="#"> 重裝 </a></li>
+                    <li><a class="dropdown-item" href="#"> 套裝 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">冬季活動</h6>
+                    <li><a class="dropdown-item" href="#"> 滑雪 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">環保</h6>
+                    <li><a class="dropdown-item" href="#"> 環保里程碑 </a></li>
+                  </div>
+                  <div class="col">
+                    <h6 class="sub-title text-uppercase font-weight-bold">關於iDiving</h6>
+                    <li><a class="dropdown-item" href="#"> 介紹 </a></li>
+                  </div>
+                </div>
+              </div> <!-- dropdown-mega-menu.// -->
             </li>
 
           </ul>
-          <!--<form class="form-inline waves-light" mdbWavesEffect>
-          <div class="md-form mt-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          </div>
-        </form>-->
-        </links>
-      </mdb-navbar>
-    </div>
+        </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+    </nav>
+
   </div>
+</div>
