@@ -7,18 +7,20 @@ import { AppComponent } from './app.component';
 // For MDB Angular Free
 import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
-import { PartModule } from './components/Part/part.module';
-import { BeginComponent } from './pages/begin/begin.component';
-import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
-import { C120Component } from './pages/c120/c120.component';
-
+import { HeadComponent } from './components/Part/head/head.component';
+import { HeadmenuComponent } from './components/Part/headmenu/headmenu.component';
+import { CarouselComponent } from './components/Part/carousel/carousel.component';
+import { YoutubeComponent } from './components/Part/youtube/youtube.component';
+import { FootComponent } from './components/Part/foot/foot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeginComponent,
-    LinkidivingComponent,
-    C120Component
+    HeadComponent,
+    HeadmenuComponent,
+    CarouselComponent,
+    YoutubeComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +31,7 @@ import { C120Component } from './pages/c120/c120.component';
     NavbarModule,
     WavesModule,
     DropdownModule,
-    TableModule,
-    PartModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
