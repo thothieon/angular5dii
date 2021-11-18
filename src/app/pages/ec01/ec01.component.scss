@@ -1,0 +1,61 @@
+//body {
+//  color: #333;
+//}
+
+img{
+  vertical-align: middle;
+}
+
+::selection{
+  background: #189BD5;
+}
+
+.History-bottom {
+  //left: 0px;
+  //width: 100%;
+  height: 950px;
+  overflow: inherit !important;
+  //border: 1px solid rgb(233, 22, 22);
+  background-image: url("../../../assets/Image/EC/timeline-bottom.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/*.place_img {
+  position:absolute;
+  z-index:1;
+  left: 10px;
+  top:95%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(233, 22, 22);
+  background-image: url("../../../assets/Image/EC/timeline-01.png"),
+                    url("../../../assets/Image/EC/timeline-02.png")  ;
+  background-repeat: no-repeat;
+  //background-attachment: scroll;
+  background-position: bottom, bottom;
+}*/
+
+.red.lighten-4 {
+  background-color: rgb(23, 37, 25) !important;
+}
+
+.timeline ul {
+  padding: 50px 0;
+  background-size: 42px auto;
+  background-position: top center;
+  background-position-x: center;
+  background-position-y: top;
+  min-height: 1927px;
+  position: relative;
+}
+
+.my-custom-scrollbar {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  overflow: auto;
+  background-color:#67AACA;
+  background-repeat: no-repeat;
+}
