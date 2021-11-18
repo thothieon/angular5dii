@@ -8,6 +8,9 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
+// Import the timeline library
+import { VerticalTimelineModule } from 'angular-vertical-timeline';
+
 // For MDB Angular Free
 import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
@@ -20,6 +23,7 @@ import { C120Component } from './pages/c120/c120.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
+import { Ec01Component } from './pages/ec01/ec01.component';
 
 
 @NgModule({
@@ -30,7 +34,8 @@ import { Dz01Component } from './pages/dz01/dz01.component';
     C120Component,
     Cfd110Component,
     Bz01Component,
-    Dz01Component
+    Dz01Component,
+    Ec01Component
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import { Dz01Component } from './pages/dz01/dz01.component';
     DropdownModule,
     TableModule,
     PartModule,
-    NgbModule
+    NgbModule,
+    VerticalTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
