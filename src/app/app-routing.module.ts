@@ -8,6 +8,7 @@ import { Bz01Component } from './pages/bz01/bz01.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C210Component } from './pages/c210/c210.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
+import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'c120', component: C120Component },
   { path: 'c210', component: C210Component },
+  { path: 'cfd120', component: Cfd120Component },
   { path: 'cfd110', component: Cfd110Component },
   { path: 'bz01', component: Bz01Component },
   { path: 'dz01', component: Dz01Component },

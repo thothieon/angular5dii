@@ -22,6 +22,7 @@ import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component'
 import { C120Component } from './pages/c120/c120.component';
 import { C210Component } from './pages/c210/c210.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
+import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
@@ -35,6 +36,7 @@ import { Ec01Component } from './pages/ec01/ec01.component';
     C120Component,
     C210Component,
     Cfd110Component,
+    Cfd120Component,
     Bz01Component,
     Dz01Component,
     Ec01Component
