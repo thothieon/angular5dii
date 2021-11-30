@@ -29,14 +29,15 @@
                     </tr>
                 </thead>-->
                 <tbody>
-                    <tr mdbTableCol *ngFor="let el of elements">
-                        <th scope="row">{{el.id}}</th>
-                        <td>{{el.first}}</td>
-                        <td>{{el.last}}</td>
-                        <td>{{el.handle}}</td>
+                    <tr mdbTableCol *ngFor="let course of courses | async ">
+                        <th scope="row">{{course.id}}</th>
+                        <td class="font-weight-normal">{{course.name}}</td>
+                        <td class="font-weight-normal">{{course.date}}</td>
+                        <td class="font-weight-normal">{{course.state}}</td>
                     </tr>
                 </tbody>
             </table>
+            <button type="button" mdbBtn color="primary"  onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
             <!--
             <Item name="2021 自由潛水（冬季班）Lv1 第二期" date="10/05、10/06、10/09、10/10 + 10/16 ~ 17 墾丁結訓" text="已結束" type="Black" href="CFD110" />
             <Item name="2021 自由潛水（冬季班）Lv1 第三期" date="10/19、10/20、10/23、10/24 + 11/06 ~ 07 墾丁結訓" text="已開課" type="Red" href="CFD110" />

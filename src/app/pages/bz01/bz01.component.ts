@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+export interface Course { 
+  id: string;
+  name: string; 
+  date: string; 
+  state: string; 
+}
+
 @Component({
   selector: 'app-bz01',
   templateUrl: './bz01.component.html',
@@ -15,7 +25,15 @@ export class Bz01Component implements OnInit {
 
   headElements = ['ID', 'First', 'Last', 'Handle'];
 
-  constructor() { }
+  private coursesCollection: AngularFirestoreCollection<Course>;
+  courses: Observable<Course[]>;
+  constructor(private afs: AngularFirestore) {
+    this.coursesCollection = afs.collection<Course>('iDiving/course/totalcourse');
+    this.courses = this.coursesCollection.valueChanges();
+  }
+  addItem(course: Course) {
+    this.coursesCollection.add(course);
+  }
 
   ngOnInit(): void {
   }
