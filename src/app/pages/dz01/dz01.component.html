@@ -29,14 +29,15 @@
                     </tr>
                 </thead>-->
                 <tbody>
-                    <tr mdbTableCol *ngFor="let el of elements">
-                        <th scope="row">{{el.id}}</th>
-                        <td>{{el.first}}</td>
-                        <td>{{el.last}}</td>
-                        <td>{{el.handle}}</td>
+                    <tr mdbTableCol *ngFor="let activity of activitys | async">
+                        <th scope="row">{{activity.id}}</th>
+                        <td>{{activity.location}}</td>
+                        <td>{{activity.date}}</td>
+                        <td>{{activity.state}}</td>
                     </tr>
                 </tbody>
             </table>
+            <button type="button" mdbBtn color="primary"  onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
         </div>
     </div>
 

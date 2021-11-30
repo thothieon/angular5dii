@@ -1,22 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+export interface Activity { 
+  id: string;
+  location: string; 
+  date: string; 
+  state: string; 
+}
+
 @Component({
   selector: 'app-dz01',
   templateUrl: './dz01.component.html',
   styleUrls: ['./dz01.component.scss']
 })
 export class Dz01Component implements OnInit {
-
-  elements: any = [
-    {id: 1, first: '墾丁 潛水之旅 ( 雙十連假 )', last: '2021 / 10 / 9 ~ 11', handle: '已結束'},
-    {id: 2, first: 'Jacob', last: 'Thornton', handle: '@fat'},
-    {id: 3, first: 'Larry', last: 'the Bird', handle: '@twitter'},
-  ];
-
-  headElements = ['ID', 'First', 'Last', 'Handle'];
-
-
-  constructor() { }
+  
+  private activitysCollection: AngularFirestoreCollection<Activity>;
+  activitys: Observable<Activity[]>;
+  constructor(private afs: AngularFirestore) {
+    this.activitysCollection = afs.collection<Activity>('iDiving/activity/totalactivity');
+    this.activitys = this.activitysCollection.valueChanges();
+  }
+  addItem(activitys: Activity) {
+    this.activitysCollection.add(activitys);
+  }
 
   ngOnInit(): void {
   }
