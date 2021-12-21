@@ -26,6 +26,7 @@ import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { Cz01Component } from './pages/cz01/cz01.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { Ec01Component } from './pages/ec01/ec01.component';
     Cfd120Component,
     Bz01Component,
     Dz01Component,
-    Ec01Component
+    Ec01Component,
+    Cz01Component
   ],
   imports: [
     BrowserModule,
