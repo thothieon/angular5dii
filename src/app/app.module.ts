@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +17,10 @@ import { VerticalTimelineModule } from 'angular-vertical-timeline';
 import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PartModule } from './components/Part/part.module';
 import { BeginComponent } from './pages/begin/begin.component';
@@ -57,6 +63,10 @@ import { Cz01Component } from './pages/cz01/cz01.component';
     TableModule,
     PartModule,
     VerticalTimelineModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    CommonModule,
+    SharedMaterialModule,
     NgbModule
   ],
   providers: [],
