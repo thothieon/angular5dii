@@ -1,217 +1,23 @@
+<!-- 參考網頁 -->
+<!-- https://mdbootstrap.com/docs/angular/advanced/carousel/ -->
 
 <h4 style="font-weight:bold;">活動照片</h4>
-<div class="row">
-  <div class="col w-100">
-    <!-- Section: Blog v.2 -->
-    <section class="text-center my-5">
+<div class="row container text-center my-5 mt-5">
 
-      <!-- Grid row -->
-      <div class="row">
-        <!--Carousel Wrapper-->
-        <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation testimonial-carousel" [type]="'carousel-multi-item'" [animation]="'slide'">
+    <mdb-carousel [interval]="'0'" [allowSwipe]="true" [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+          <mdb-card class="my-1">
+            <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+            <mdb-card-body>
+              <!--<mdb-card-title>
+                <h4>{{card.title}}</h4>
+              </mdb-card-title>-->
+              <p>{{card.title}}</p>
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
 
-          <!--First slide-->
-          <mdb-slide>
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="../../../../assets/Image/FUNDIVE/L0919.png" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="pink-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon far icon="map" class="pr-2"></mdb-icon> -->
-                  Adventure
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 15/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-                quo minus id quod maxime placeat facere possimus voluptas.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="pink" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="../../../../assets/Image/FUNDIVE/L0918.png" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="deep-orange-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon fas icon="graduation-cap" class="pr-2"></mdb-icon> -->
-                  Education
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 13/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                voluptatum deleniti atque corrupti quos dolores.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="deep-orange" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 mb-0">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="../../../../assets/Image/FUNDIVE/L0828.png" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="blue-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon fas icon="fire" class="pr-2"></mdb-icon> -->
-                  Culture
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 11/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos qui ratione.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="info" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-          </mdb-slide>
-
-          
-          <!--First slide-->
-          <mdb-slide>
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="pink-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon far icon="map" class="pr-2"></mdb-icon> -->
-                  Adventure
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 15/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-                quo minus id quod maxime placeat facere possimus voluptas.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="pink" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="deep-orange-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon fas icon="graduation-cap" class="pr-2"></mdb-icon> -->
-                  Education
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 13/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                voluptatum deleniti atque corrupti quos dolores.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="deep-orange" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 mb-0">
-
-              <!-- Featured image -->
-              <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" alt="Sample image">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Category -->
-              <a href="#!" class="blue-text">
-                <h6 class="font-weight-bold mb-3">
-                  <!-- <mdb-icon fas icon="fire" class="pr-2"></mdb-icon> -->
-                  Culture
-                </h6>
-              </a>
-              <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-              <!-- Post data -->
-              <p>by <a class="font-weight-bold">Billy Forester</a>, 11/07/2018</p>
-              <!-- Excerpt -->
-              <p class="dark-grey-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos qui ratione.</p>
-              <!-- Read more button -->
-              <!-- <a mdbBtn color="info" rounded="true" mdbWavesEffect>Read more</a> -->
-
-            </div>
-            <!-- Grid column -->
-          </mdb-slide>
-
-        </mdb-carousel>
-
-      </div>
-      <!-- Grid row -->
-
-    </section>
-    <!-- Section: Blog v.2 -->
-
-  </div>
 </div>
