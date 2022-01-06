@@ -35,6 +35,7 @@ import { Bz01Component } from './pages/bz01/bz01.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
+import { B310Component } from './pages/b310/b310.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { Cz01Component } from './pages/cz01/cz01.component';
     Dz01Component,
     Ec01Component,
     Cz01Component,
-    Cfd210Component
+    Cfd210Component,
+    B310Component
   ],
   imports: [
     BrowserModule,
