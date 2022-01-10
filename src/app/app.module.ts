@@ -14,7 +14,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 // For MDB Angular Free
-import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, CheckboxModule, CollapseModule, IconsModule } from 'angular-bootstrap-md';
+// For MDB Angular Free
+import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -60,13 +62,18 @@ import { B310Component } from './pages/b310/b310.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot(),
-    CarouselModule,
-    CollapseModule,
+    ButtonsModule, 
+    CardsModule,
+    CarouselModule.forRoot(),
+    CheckboxModule, 
+    CollapseModule.forRoot(),
+    DropdownModule.forRoot(),
+    IconsModule,
+    InputsModule.forRoot(), 
     NavbarModule,
-    WavesModule,
-    DropdownModule,
     TableModule,
+    WavesModule,
+    MDBBootstrapModule.forRoot(),
     PartModule,
     VerticalTimelineModule,
     BrowserAnimationsModule,
