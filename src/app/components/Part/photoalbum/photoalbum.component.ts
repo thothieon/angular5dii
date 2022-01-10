@@ -45,14 +45,14 @@ export class PhotoalbumComponent implements OnInit {
     this.slides = this.chunk(this.cards, 3);
   }
   
-  ngAfterViewInit() {
-    const buttons = document.querySelectorAll('.btn-floating');
-    buttons.forEach((el: any) => {
-      this.renderer.removeClass(el, 'btn-floating');
-      this.renderer.addClass(el, 'px-3');
-      this.renderer.addClass(el.firstElementChild, 'fa-3x');
-    });
-  }
+  //ngAfterViewInit() {
+    //const buttons = document.querySelectorAll('.btn-floating');
+    //buttons.forEach((el: any) => {
+    //  this.renderer.removeClass(el, 'btn-floating');
+    //  this.renderer.addClass(el, 'px-3');
+    //  this.renderer.addClass(el.firstElementChild, 'fa-3x');
+    //});
+  //}
 
   //constructor() { }
 

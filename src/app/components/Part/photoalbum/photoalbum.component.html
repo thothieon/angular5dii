@@ -1,12 +1,19 @@
 <!-- 參考網頁 -->
+<!-- 
+<!-- https://getbootstrap.com/docs/4.3/components/card/ -->
 <!-- https://mdbootstrap.com/docs/angular/advanced/carousel/ -->
 
 <h4 style="font-weight:bold;">活動照片</h4>
-<div class="row container text-center my-5 mt-5">
 
-    <mdb-carousel [interval]="'0'" [allowSwipe]="true" [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+<!-- Section: Testimonials v.4 -->
+<section class="container text-center my-5 mt-5">
+  <div class="row">
+
+    <mdb-carousel [interval]="'0'" [allowSwipe]="true" [isControls]="true" class="carousel-multi-item multi-animation"
+      [type]="'carousel-multi-item'" [animation]="'slide'">
       <mdb-carousel-item *ngFor="let item of slides; let i = index">
-        <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+        <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
+          *ngFor="let card of item; let cardIndex = index">
           <mdb-card class="my-1">
             <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
             <mdb-card-body>
@@ -20,4 +27,5 @@
       </mdb-carousel-item>
     </mdb-carousel>
 
-</div>
+  </div>
+</section>
