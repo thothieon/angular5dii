@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeadComponent } from './components/Part/head/head.component';
 import { B310Component } from './pages/b310/b310.component';
+import { B320Component } from './pages/b320/b320.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C120Component } from './pages/c120/c120.component';
@@ -13,6 +14,7 @@ import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
 import { Cfd210Component } from './pages/cfd210/cfd210.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
+import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
   { path: 'dz01', component: Dz01Component },
+  { path: 'd110', component: D110Component },
   { path: 'c120', component: C120Component },
   { path: 'c210', component: C210Component },
   { path: 'cz01', component: Cz01Component },
@@ -29,8 +32,9 @@ const routes: Routes = [
   { path: 'cfd130', component: Cfd130Component },
   { path: 'cfd120', component: Cfd120Component },
   { path: 'cfd110', component: Cfd110Component },
-  { path: 'bz01', component: Bz01Component },
   { path: 'b310', component: B310Component },
+  { path: 'b320', component: B320Component },
+  { path: 'bz01', component: Bz01Component },
   { path: '', component: BeginComponent }
 ];
 

@@ -14,7 +14,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 // For MDB Angular Free
-import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, CheckboxModule, CollapseModule, IconsModule } from 'angular-bootstrap-md';
+// For MDB Angular Free
+import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -36,6 +38,8 @@ import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { B310Component } from './pages/b310/b310.component';
+import { B320Component } from './pages/b320/b320.component';
+import { D110Component } from './pages/d110/d110.component';
 
 
 @NgModule({
@@ -53,20 +57,27 @@ import { B310Component } from './pages/b310/b310.component';
     Ec01Component,
     Cz01Component,
     Cfd210Component,
-    B310Component
+    B310Component,
+    B320Component,
+    D110Component
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot(),
-    CarouselModule,
-    CollapseModule,
+    ButtonsModule, 
+    CardsModule,
+    CarouselModule.forRoot(),
+    CheckboxModule, 
+    CollapseModule.forRoot(),
+    DropdownModule.forRoot(),
+    IconsModule,
+    InputsModule.forRoot(), 
     NavbarModule,
-    WavesModule,
-    DropdownModule,
     TableModule,
+    WavesModule,
+    MDBBootstrapModule.forRoot(),
     PartModule,
     VerticalTimelineModule,
     BrowserAnimationsModule,
