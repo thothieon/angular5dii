@@ -40,6 +40,7 @@ import { Cz01Component } from './pages/cz01/cz01.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B320Component } from './pages/b320/b320.component';
 import { D110Component } from './pages/d110/d110.component';
+import { C130Component } from './pages/c130/c130.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { D110Component } from './pages/d110/d110.component';
     Cfd210Component,
     B310Component,
     B320Component,
-    D110Component
+    D110Component,
+    C130Component
   ],
   imports: [
     BrowserModule,

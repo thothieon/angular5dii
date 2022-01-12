@@ -8,6 +8,7 @@ import { B320Component } from './pages/b320/b320.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C120Component } from './pages/c120/c120.component';
+import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'ec01', component: Ec01Component },
   { path: 'dz01', component: Dz01Component },
   { path: 'd110', component: D110Component },
+  { path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
   { path: 'c210', component: C210Component },
   { path: 'cz01', component: Cz01Component },
