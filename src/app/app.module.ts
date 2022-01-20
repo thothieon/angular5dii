@@ -27,8 +27,11 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PartModule } from './components/Part/part.module';
 import { BeginComponent } from './pages/begin/begin.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+import { C100Component } from './pages/c100/c100.component';
 import { C120Component } from './pages/c120/c120.component';
+import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
+import { C310Component } from './pages/c310/c310.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd210Component } from './pages/cfd210/cfd210.component';
@@ -40,8 +43,6 @@ import { Cz01Component } from './pages/cz01/cz01.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B320Component } from './pages/b320/b320.component';
 import { D110Component } from './pages/d110/d110.component';
-import { C130Component } from './pages/c130/c130.component';
-import { C100Component } from './pages/c100/c100.component';
 import { B230Component } from './pages/b230/b230.component';
 
 
@@ -65,7 +66,8 @@ import { B230Component } from './pages/b230/b230.component';
     D110Component,
     C130Component,
     C100Component,
-    B230Component
+    B230Component,
+    C310Component
   ],
   imports: [
     BrowserModule,
