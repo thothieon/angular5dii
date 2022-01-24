@@ -1,3 +1,4 @@
+import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -37,10 +38,11 @@ const routes: Routes = [
   { path: 'c310', component: C310Component },
   { path: 'cz01', component: Cz01Component },
   { path: 'cfdc210', component: Cfdc210Component },
-  { path: 'cfd210', component: Cfd210Component },
   { path: 'cfd130', component: Cfd130Component },
   { path: 'cfd120', component: Cfd120Component },
   { path: 'cfd110', component: Cfd110Component },
+  { path: 'cfd210', component: Cfd210Component },
+  { path: 'cfd310', component: Cfd310Component },
   { path: 'b310', component: B310Component },
   { path: 'b320', component: B320Component },
   { path: 'b230', component: B230Component },

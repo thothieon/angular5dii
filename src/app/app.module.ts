@@ -34,8 +34,9 @@ import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
-import { Cfd210Component } from './pages/cfd210/cfd210.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
+import { Cfd210Component } from './pages/cfd210/cfd210.component';
+import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
@@ -57,6 +58,7 @@ import { B230Component } from './pages/b230/b230.component';
     Cfd110Component,
     Cfd120Component,
     Cfd130Component,
+    Cfd310Component,
     Cfdc210Component,
     Bz01Component,
     Dz01Component,
