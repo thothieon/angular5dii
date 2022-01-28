@@ -16,11 +16,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-cfd210',
-  templateUrl: './cfd210.component.html',
-  styleUrls: ['./cfd210.component.scss']
+  selector: 'app-cfd310',
+  templateUrl: './cfd310.component.html',
+  styleUrls: ['./cfd310.component.scss']
 })
-export class Cfd210Component implements OnInit {
+export class Cfd310Component implements OnInit {
 
   active = 1;
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'symbol1', 'symbol2'];

@@ -1,3 +1,4 @@
+import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -18,6 +19,7 @@ import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
 import { Cfd210Component } from './pages/cfd210/cfd210.component';
+import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
@@ -36,12 +38,18 @@ const routes: Routes = [
   { path: 'c100', component: C100Component },
   { path: 'c310', component: C310Component },
   { path: 'cz01', component: Cz01Component },
+<<<<<<< HEAD
   { path: 'ccs001', component: Ccs001Component },
   { path: 'ccs001/:id', component: Ccs001Component },
   { path: 'cfd210', component: Cfd210Component },
+=======
+  { path: 'cfdc210', component: Cfdc210Component },
+>>>>>>> test_MDB_iDiving_course
   { path: 'cfd130', component: Cfd130Component },
   { path: 'cfd120', component: Cfd120Component },
   { path: 'cfd110', component: Cfd110Component },
+  { path: 'cfd210', component: Cfd210Component },
+  { path: 'cfd310', component: Cfd310Component },
   { path: 'b310', component: B310Component },
   { path: 'b320', component: B320Component },
   { path: 'b230', component: B230Component },

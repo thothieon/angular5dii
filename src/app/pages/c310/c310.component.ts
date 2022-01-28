@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class C310Component implements OnInit {
 
   active = 1;
+  active_01 = 1;
 
   constructor() { }
 
