@@ -38,13 +38,10 @@ const routes: Routes = [
   { path: 'c100', component: C100Component },
   { path: 'c310', component: C310Component },
   { path: 'cz01', component: Cz01Component },
-<<<<<<< HEAD
   { path: 'ccs001', component: Ccs001Component },
   { path: 'ccs001/:id', component: Ccs001Component },
   { path: 'cfd210', component: Cfd210Component },
-=======
   { path: 'cfdc210', component: Cfdc210Component },
->>>>>>> test_MDB_iDiving_course
   { path: 'cfd130', component: Cfd130Component },
   { path: 'cfd120', component: Cfd120Component },
   { path: 'cfd110', component: Cfd110Component },
