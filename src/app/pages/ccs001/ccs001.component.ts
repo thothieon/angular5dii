@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ccs001',
@@ -9,22 +9,19 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 })
 export class Ccs001Component implements OnInit {
 
-  id: number;
+  srcid: string;
   private sub: any;
 
   constructor(private route: ActivatedRoute,
               private router: Router) {
-    this.route.params.subscribe( params => this.onSearch(params['id']) );
+    this.srcid = route.snapshot.params['id'];
   }
 
   ngOnInit(): void {
     this.sub = this.route.params.subscribe(params => {
-      this.id = +params['id']; // (+) converts string 'id' to a number
+      this.srcid = params['id'];
       // In a real app: dispatch action to load the details here.
     });
   }
 
-  onSearch(id:string) {
-    this.router.navigate(['/ccs001', id])
-  }
 }
