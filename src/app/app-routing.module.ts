@@ -19,13 +19,14 @@ import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
 import { Cfd210Component } from './pages/cfd210/cfd210.component';
+import { Cfd220Component } from './pages/cfd220/cfd220.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
+import { D111Component } from './pages/d111/d111.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
-import { Cfd220Component } from './pages/cfd220/cfd220.component';
 
 const routes: Routes = [
   { path: 'head', component: HeadComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'ec01', component: Ec01Component },
   { path: 'dz01', component: Dz01Component },
   { path: 'd110', component: D110Component },
+  { path: 'd111', component: D111Component },
   { path: 'c210', component: C210Component },
   { path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
