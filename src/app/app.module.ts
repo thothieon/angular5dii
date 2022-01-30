@@ -47,6 +47,7 @@ import { B320Component } from './pages/b320/b320.component';
 import { D110Component } from './pages/d110/d110.component';
 import { B230Component } from './pages/b230/b230.component';
 import { Ccs001Component } from './pages/ccs001/ccs001.component';
+import { Cfd220Component } from './pages/cfd220/cfd220.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { Ccs001Component } from './pages/ccs001/ccs001.component';
     C100Component,
     B230Component,
     C310Component,
-    Ccs001Component
+    Ccs001Component,
+    Cfd220Component
   ],
   imports: [
     BrowserModule,
