@@ -49,6 +49,7 @@ import { B230Component } from './pages/b230/b230.component';
 import { Ccs001Component } from './pages/ccs001/ccs001.component';
 import { Cfd220Component } from './pages/cfd220/cfd220.component';
 import { D111Component } from './pages/d111/d111.component';
+import { D112Component } from './pages/d112/d112.component';
 
 
 @NgModule({
@@ -77,7 +78,8 @@ import { D111Component } from './pages/d111/d111.component';
     C310Component,
     Ccs001Component,
     Cfd220Component,
-    D111Component
+    D111Component,
+    D112Component
   ],
   imports: [
     BrowserModule,
