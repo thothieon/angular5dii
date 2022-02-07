@@ -29,6 +29,7 @@ import { D120Component } from './pages/d120/d120.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
 import { D150Component } from './pages/d150/d150.component';
+import { D160Component } from './pages/d160/d160.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
   { path: 'dz01', component: Dz01Component },
+  { path: 'd160', component: D160Component },
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },
   { path: 'd130', component: D130Component },
