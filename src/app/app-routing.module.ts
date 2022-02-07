@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeadComponent } from './components/Part/head/head.component';
 import { B230Component } from './pages/b230/b230.component';
+import { B210Component } from './pages/b210/b210.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B320Component } from './pages/b320/b320.component';
 import { BeginComponent } from './pages/begin/begin.component';
@@ -64,6 +65,7 @@ const routes: Routes = [
   { path: 'cfd310', component: Cfd310Component },
   { path: 'b310', component: B310Component },
   { path: 'b320', component: B320Component },
+  { path: 'b210', component: B210Component },
   { path: 'b230', component: B230Component },
   { path: 'bz01', component: Bz01Component },
   { path: '', component: BeginComponent }

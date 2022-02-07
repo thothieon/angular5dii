@@ -55,6 +55,7 @@ import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
+import { B210Component } from './pages/b210/b210.component';
 
 
 @NgModule({
@@ -89,7 +90,8 @@ import { D160Component } from './pages/d160/d160.component';
     D130Component,
     D140Component,
     D150Component,
-    D160Component
+    D160Component,
+    B210Component
   ],
   imports: [
     BrowserModule,
