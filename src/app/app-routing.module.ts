@@ -15,6 +15,7 @@ import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
+import { C510Component } from './pages/c510/c510.component';
 import { Ccs001Component } from './pages/ccs001/ccs001.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
@@ -48,11 +49,12 @@ const routes: Routes = [
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
   { path: 'd112', component: D112Component },
+  { path: 'c510', component: C510Component },
+  { path: 'c310', component: C310Component },
   { path: 'c210', component: C210Component },
   { path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
   { path: 'c100', component: C100Component },
-  { path: 'c310', component: C310Component },
   { path: 'cz01', component: Cz01Component },
   { path: 'ccs001', component: Ccs001Component },
   { path: 'ccs001/:id', component: Ccs001Component },
