@@ -7,6 +7,22 @@
 
 @import "~angular-vertical-timeline/dist/vertical-timeline.css";
 
+
+mdb-carousel .carousel-multi-item .controls-top .btn-floating {
+  background: red;
+}
+
+.controls-top {
+  display: none;
+}
+
+.carousel-indicators {
+  margin-bottom:-2rem;
+  li {
+    background-color: #47626F !important;
+  }
+}
+
 .idiving-color {
   background-color: #67AACA !important;
 }
