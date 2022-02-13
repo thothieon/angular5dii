@@ -5,9 +5,9 @@
 
 .image-banner__picture {
     display: block;
-    width: 100%;
+    width: 125%;
     height: auto;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .jsOFdm {
@@ -19,7 +19,7 @@
     box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px;
     border-radius: 6px;
     padding: 0px 9px 12px;
-    background-color: rgb(91, 112, 141);
+    background-color: #ffffff;
 }
 
 .irzZAU:first-child {
@@ -36,10 +36,11 @@
 
 .kURSRH {
     width: calc(25%);
-    max-width: 62px;
-    margin: 12px calc((25% - 62px) / 2) 0px;
+    max-width: 70px;
+    margin: 12px calc((25% - 70px) / 2) 0px;
 }
 
+/*
 .eRUnxR {
     display: flex;
     -webkit-box-pack: justify;
@@ -62,4 +63,4 @@
     -webkit-box-orient: vertical;
     cursor: pointer;
     word-break: break-word;
-}
+}*/
