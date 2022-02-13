@@ -5,9 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeadComponent } from './components/Part/head/head.component';
 import { B230Component } from './pages/b230/b230.component';
+import { B240Component } from './pages/b240/b240.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B320Component } from './pages/b320/b320.component';
+import { B400Component } from './pages/b400/b400.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C100Component } from './pages/c100/c100.component';
@@ -35,7 +37,6 @@ import { D160Component } from './pages/d160/d160.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
-import { B240Component } from './pages/b240/b240.component';
 
 const routes: Routes = [
   { path: 'head', component: HeadComponent },
@@ -66,6 +67,7 @@ const routes: Routes = [
   { path: 'cfd210', component: Cfd210Component },
   { path: 'cfd220', component: Cfd220Component },
   { path: 'cfd310', component: Cfd310Component },
+  { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },
   { path: 'b320', component: B320Component },
   { path: 'b240', component: B240Component },
