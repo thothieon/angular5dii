@@ -35,6 +35,7 @@ import { D160Component } from './pages/d160/d160.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+import { B240Component } from './pages/b240/b240.component';
 
 const routes: Routes = [
   { path: 'head', component: HeadComponent },
@@ -67,8 +68,9 @@ const routes: Routes = [
   { path: 'cfd310', component: Cfd310Component },
   { path: 'b310', component: B310Component },
   { path: 'b320', component: B320Component },
-  { path: 'b210', component: B210Component },
+  { path: 'b240', component: B240Component },
   { path: 'b230', component: B230Component },
+  { path: 'b210', component: B210Component },
   { path: 'bz01', component: Bz01Component },
   { path: '', component: BeginComponent }
 ];
