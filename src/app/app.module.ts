@@ -59,6 +59,7 @@ import { B210Component } from './pages/b210/b210.component';
 import { C510Component } from './pages/c510/c510.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B400Component } from './pages/b400/b400.component';
+import { C410Component } from './pages/c410/c410.component';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import { B400Component } from './pages/b400/b400.component';
     B210Component,
     C510Component,
     B240Component,
-    B400Component
+    B400Component,
+    C410Component
   ],
   imports: [
     BrowserModule,
