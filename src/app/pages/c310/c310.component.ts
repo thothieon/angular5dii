@@ -9,6 +9,8 @@ export class C310Component implements OnInit {
 
   active = 1;
   active_01 = 1;
+  active_02 = 1;
+  active_03 = 1;
 
   constructor() { }
 
