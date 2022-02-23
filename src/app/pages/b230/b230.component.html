@@ -1,0 +1,89 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- <img src="../../../../assets/Image/Data/OWD_Marketing_Area_01.png" width="99%" style="display:block; margin:auto;"
+      alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" /> -->
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">愛潛水</a>
+                    <a class="breadcrumb-item">教練團</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- https://mdbootstrap.com/docs/angular/content/images/ -->
+    <!-- https://coreui.io/docs/4.1/components/card/ -->
+    <!-- photoalbum -->
+    <div class="row justify-content-around">
+        <div class="card mb-4" *ngFor="let stand of stands" style="max-width: 400px;">
+            <div class="row g-1">
+                <div class="col-md-4">
+                    <div class="bg-image hover-overlay">
+                        <a href={{stand.hrf}}>
+                            <img src={{stand.img}} class="card-img-top" alt="...">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{stand.name}}</h5>
+                        <p class="card-text" style="white-space: pre">{{stand.title}}</p>
+                        <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

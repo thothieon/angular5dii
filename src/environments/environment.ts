@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBHB7pLLcOKgGzxSXSW8yUDoXWM356D2zc",
+    authDomain: "idiving-littlehelper.firebaseapp.com",
+    databaseURL: "https://idiving-littlehelper-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "idiving-littlehelper",
+    storageBucket: "idiving-littlehelper.appspot.com",
+    messagingSenderId: "605010773203",
+    appId: "1:605010773203:web:60757225158fc77c12c026",
+    measurementId: "G-FHBSDFQV62"
+  }
 };
 
 /*

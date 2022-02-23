@@ -1,0 +1,145 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">學潛水</a>
+                    <a class="breadcrumb-item">高階專業教練之路</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
+
+            <table style="table-layout: fixed;">
+                <tr>
+                    <td><img src="../../../../assets/Image/Data/DCS_intro.jpg" style="float: left; margin: 15px"></td>
+                    <td class="fs-5">
+                        教練培訓官就是你能夠在SSI 系統裡所達到的最高階級。教練培訓官具有進行教練培訓課程(ITC)以及進行學員們教練評估(IE)的資格。這對於教練們來說，無疑是最具榮譽的挑戰！
+                        <br/>
+                        <br/>
+                        教練訓練官研討會(ITS)是一個國際性的盛會。在這個研討會裡，你可以遇到來自世界各地的潛水員。你將會體驗到各種精細的訓練與評估法，同時還能夠藉由跟世界各地的潛水員交換
+                        心得來建立你的人脈。你將擁有許多看不見的收穫！
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <a ngbNavLink>潛水主管教練(DCSI)</a>
+                    <ng-template ngbNavContent class="custom-class">
+                        <!-- 潛水主管教練(DCSI) 課程內容 -->
+                        <div>
+                            <table style="table-layout: fixed;">
+                                <tr>
+                                    <td><img src="../../../../assets/Image/Data/DCSI.jpg"></td>
+                                    <td class="fs-5">
+                                        只要你核發了30張以上額外要求的開放水域潛水認證後，你就能夠躍升為潛水主管教練了。潛水主管教練可以教導並且核發所有進階開放水域潛水教練能夠教的課程，
+                                        此外潛水主管還能夠在教練培訓課程中，以沒有直接監督的情況下，協助教練培訓官進行教學。
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a ngbNavLink>教練長(MI)</a>
+                    <ng-template ngbNavContent>
+                        <!-- 教練長(MI) 課程內容 -->
+                        <div>
+                            <table style="table-layout: fixed;">
+                                <tr>
+                                    <td><img src=".../../../../assets/Image/Data/MI.jpg"></td>
+                                    <td class="fs-5">
+                                        在這個層級，只要你核發了150張認證後，你就會自動晉升成為教練長等級了。只要你具有教練長的認證，你就可以參加SSI 產品評估委員會以及
+                                        參加教練訓練官的培訓課程了。
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="3">
+                    <a ngbNavLink>教練訓練官(IT)</a>
+                    <ng-template ngbNavContent>
+                        <!-- 教練訓練官(IT) 課程內容 -->
+                        <div>
+                            <table style="table-layout: fixed;">
+                                <tr>
+                                    <td><img src="../../../assets/Image/Data/IT.jpg"></td>
+                                    <td class="fs-5">
+                                        只要你成功的通過了教練培訓官研討會之後，你就可以教導並核發所有潛水主管教練加上專長教練、進階開放水域潛水教練可以教導的課程，
+                                        同時還能夠進行潛水領導躍升課程並且協助教練簽證官進行開放水域教練評估的程序。
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </ng-template>
+                </li>
+            </ul>
+
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+            <!-- <pre>Active: {{ active }}</pre> -->
+
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

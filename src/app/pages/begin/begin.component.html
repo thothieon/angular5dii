@@ -1,0 +1,171 @@
+<div class="container-fluid">
+
+  <app-head></app-head>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td style="height: 12vh;">
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <app-carousel></app-carousel>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <app-link></app-link>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <!-- 課程期別 -->
+    <div class="col">
+      <table mdbTable>
+        <thead>
+          <th colspan="2">
+            <h4 style="font-weight:bold;">最新課程期別資訊</h4>
+            <!-- <th class="fs-4" scope="col"> 課程期別 </th> -->
+          </th>
+          <tr>
+            <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let course of courses | async">
+            <th width="2%" scope="row">
+              <li>
+                <!-- {{el.id}} -->
+              </li>
+            </th>
+            <td class="fs-5 font-weight-normal">{{course.first}}</td>
+            <td class="fs-5 font-weight-normal">{{course.last}}</td>
+            <td class="fs-5 font-weight-normal">{{course.handle}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" mdbBtn color="primary" block="true" mdbWavesEffect><a class="fs-5">課程年度計畫</a></button>
+    </div>
+
+    <!-- 出團期別 -->
+    <div class="col">
+      <table mdbTable>
+        <thead>
+          <th colspan="5">
+            <h4 style="font-weight:bold;">最新出團期別資訊</h4>
+            <!-- <th class="fs-4" scope="col"> 出團期別 </th> -->
+          </th>
+          <tr>
+            <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let activity of activitys | async">
+            <th width="2%" scope="row">
+              <li>
+                <!-- {{el.id}} -->
+              </li>
+            </th>
+            <td class="fs-5 font-weight-normal">{{activity.first}}</td>
+            <td class="fs-5 font-weight-normal">{{activity.last}}</td>
+            <td class="fs-5 font-weight-normal">{{activity.handle}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" mdbBtn color="primary" block="true" mdbWavesEffect><a class="fs-5">出團年度計畫</a></button>
+    </div>
+  </div>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <app-youtube></app-youtube>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <app-photoalbum></app-photoalbum>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <app-team></app-team>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <app-foot></app-foot>
+
+</div>

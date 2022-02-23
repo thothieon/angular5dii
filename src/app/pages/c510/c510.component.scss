@@ -1,0 +1,6 @@
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-flexbox;
+  color: #6c757d;
+  content: ">";
+}

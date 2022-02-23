@@ -1,0 +1,119 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <table mdbTable>
+                <thead>
+                    <th class="fs-4" colspan="2">
+                        <h4>課程年度計畫 </h4>
+                    <!-- <th class="fs-4" scope="col"> 出團期別 </th> -->
+                </th>
+                <!-- <thead>
+                    <tr>
+                        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                    </tr>
+                </thead>-->
+                <tbody>
+                    <tr mdbTableCol *ngFor="let course of courses | async ">
+                        <th scope="row">{{course.id}}</th>
+                        <td class="font-weight-normal">{{course.name}}</td>
+                        <td class="font-weight-normal">{{course.date}}</td>
+                        <td class="font-weight-normal">{{course.state}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" mdbBtn color="primary"  onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+            <!--
+            <Item name="2021 自由潛水（冬季班）Lv1 第二期" date="10/05、10/06、10/09、10/10 + 10/16 ~ 17 墾丁結訓" text="已結束" type="Black" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第三期" date="10/19、10/20、10/23、10/24 + 11/06 ~ 07 墾丁結訓" text="已開課" type="Red" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第四期" date="10/26、10/27、10/30、10/31 + 11/06 ~ 07 墾丁結訓" text="已開課" type="Red" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第五期" date="11/16、11/17、11/20、11/21 + 12/04 ~ 05 墾丁結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第六期" date="11/23、11/24、11/27、11/28 + 12/04 ~ 05 墾丁結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第七期" date="3/02、3/03、3/05、3/06 + 4/2 潛立方結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第八期" date="3/08、3/10、3/12、3/13 + 4/2 潛立方結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第九期" date="3/15、3/16、3/19、3/20 + 4/2 潛立方結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第十期" date="3/23、3/24、3/26、3/27 + 4/2 潛立方結訓" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第十一期" date="4/6、4/7、4/9、4/10 + 4/23、4/24 ( 東北角兩天或潛立方一天 ）" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 自由潛水（冬季班）Lv1 第十二期" date="4/12、4/14、4/16、4/17 + 4/23、4/24 ( 東北角兩天或潛立方一天 ）" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季假日班 ) Lv1 第一期" date="5/03、5/04、5/07、5/08、5/14" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季假日班 ) Lv1 第二期" date="5/10、5/12、5/14、5/15、5/21" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季假日班 ) Lv1 第三期" date="5/25、5/26、5/28、5/29、6/04" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季平日班 ) Lv1 第一期" date="5/10、5/11、5/12、5/13" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季平日班 ) Lv1 第二期" date="5/17、5/18、5/19、5/20" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2022 自由潛水 ( 夏季平日班 ) Lv1 第三期" date="5/31、6/01、6/02、6/03" text="可報名" type="Blue" href="CFD110" />
+            <Item name="2021 開放水域潛水員（冬季班）第二期" date="10/13、10/14、10/16 + 10/23 ~ 24 墾丁結訓" text="已結束" type="Black" href="C120" />
+            <Item name="2021 開放水域潛水員（冬季班）第三期" date="10/27、10/28、10/30 + 11/27 ~ 28 墾丁結訓" text="已開課" type="Red" href="C120" />
+            <Item name="2021 開放水域潛水員（冬季班）第四期" date="11/03、11/04、11/20 + 11/27 ~ 28 墾丁結訓" text="已開課" type="Blue" href="C120" />
+            <Item name="2021 開放水域潛水員（冬季班）第五期" date="11/17、11/18、11/20 + 11/27 ~ 28 墾丁結訓" text="可報名" type="Blue" href="C120" />
+            <Item name="2021 開放水域潛水員（冬季班）第六期" date="11/30、12/01、12/04 + 12/11 ~ 12 墾丁結訓" text="可報名" type="Blue" href="C120" />
+            <Item name="2021 開放水域潛水員（冬季班）第七期" date="12/04、12/05、12/08 + 12/11 ~ 12 墾丁結訓" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第一期" date="4/16、4/17、4/23、4/24" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第二期" date="4/23、4/24、4/30、5/01" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第三期" date="4/30、5/01、5/07、5/08" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第四期" date="5/07、5/08、5/14、5/15" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第五期" date="5/14、5/15、5/21、5/22" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第六期" date="5/21、5/22、5/28、5/29" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季假日班）第七期" date="5/28、5/29、6/04、6/05" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第一期" date="4/12、4/13、4/14、4/15" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第二期" date="4/19、4/20、4/21、4/22" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第三期" date="4/26、4/27、4/28、4/29" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第四期" date="5/03、5/04、5/05、5/06" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第五期" date="5/10、5/11、5/12、5/13" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第六期" date="5/17、5/18、5/19、5/20" text="可報名" type="Blue" href="C120" />
+            <Item name="2022 開放水域潛水員（夏季平日班）第七期" date="5/31、6/01、6/02、6/03" text="可報名" type="Blue" href="C120" />
+            <Item name="2021 進階探險潛水員 AA（夏季假日班）第一期" date="4/26、5/07、5/08" text="可報名" type="Black" href="C210" />
+            <Item name="2021 進階探險潛水員 AA（夏季平日班）第一期" date="5/05、5/05、5/06" text="可報名" type="Black" href="C210" />
+            <Item name="2021 氮氧混合氣專長課程 EAN 第十六期" date="10/26" text="已結束" type="Black" href="C310" />
+            <Item name="2021 氮氧混合氣專長課程 EAN 第十七期" date="11/12" text="可報名" type="Blue" href="C310" />
+            <Item name="2021 氮氧混合氣專長課程 EAN 第十八期" date="11/24" text="可報名" type="Blue" href="C310" />
+            <Item name="2021 氮氧混合氣專長課程 EAN 第十九期" date="12/07" text="可報名" type="Blue" href="C310" />
+            <Item name="2021 氮氧混合氣專長課程 EAN 第二十期" date="12/23" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 深潛專長課程 DD（夏季假日班）第一期" date="4/27、5/07" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 深潛專長課程 DD（夏季平日班）第一期" date="5/27" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 夜潛專長課程 NL（夏季假日班）第一期" date="4/19、4/30" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 夜潛專長課程 NL（夏季平日班）第一期" date="5/25" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 船潛專長課程 BD（夏季班）第一期" date="5/19、5/29" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 導航專長課程 NV 第一期" date="4/29、5/08" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 完美浮力專長課程 PB 第一期" date="5/18、5/29" text="可報名" type="Blue" href="C310" />
+            <Item name="2021 水中攝影課程 PV 第二期" date="8/07 " text="已結束" type="Black" href="C310" />
+            <Item name="2022 正確反應員專長課程 RR 第一期" date="3/27" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 壓力與救援專長課程 SR 第一期" date="5/05、5/14" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 乾式防寒衣專長課程 DRY 第一期" date="4/08、4/09、4/10" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 休閒側掛專長課程 RSM 第一期" date="4/21、4/22、4/23、4/24" text="可報名" type="Blue" href="C310" />
+            <Item name="2022 延伸領域高氧潛水員課程 XRN 第一期" date="5/04、5/06、5/08、5/14、5/15" text="可報名" type="Blue" href="C510" />
+            <Item name="2022 生態潛水員課程 ECO 第一期" date="5/10、5/12、5/20、5/21、5/22" text="可報名" type="Blue" href="C310" />
+            -->
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

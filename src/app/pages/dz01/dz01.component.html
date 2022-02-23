@@ -1,0 +1,59 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <table mdbTable>
+                <thead>
+                    <th class="fs-4" colspan="2">
+                        <h4>旅遊年度計畫 </h4>
+                    <!-- <th class="fs-4" scope="col"> 出團期別 </th> -->
+                </th>
+                <!-- <thead>
+                    <tr>
+                        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                    </tr>
+                </thead>-->
+                <tbody>
+                    <tr mdbTableCol *ngFor="let activity of activitys | async">
+                        <th scope="row">{{activity.id}}</th>
+                        <td>{{activity.location}}</td>
+                        <td>{{activity.date}}</td>
+                        <td>{{activity.state}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" mdbBtn color="primary"  onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

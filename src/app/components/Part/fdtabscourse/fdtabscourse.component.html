@@ -1,0 +1,99 @@
+<div class="row">
+    <div class="col w-100">
+
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1">
+                <a ngbNavLink>1級自潛員</a>
+                <ng-template ngbNavContent class="custom-class">
+
+                    <div class="row">
+                        <div class="col w-100">
+                    
+                            <ul ngbNav #nav="ngbNav" [(activeId)]="active1" class="nav-tabs">
+                                <li [ngbNavItem]="1">
+                                    <a ngbNavLink>LV1冬季班</a>
+                                    <ng-template ngbNavContent class="custom-class">
+                                        <!-- 冬季班 課程介紹 -->
+                                        <a>sadasdas</a>
+                                    </ng-template>
+                                </li>
+                                <li [ngbNavItem]="2">
+                                    <a ngbNavLink>LV1夏季假日班</a>
+                                    <ng-template ngbNavContent>
+                                        <!-- 假日班 課程介紹 -->
+                                        <a>sadasda</a>
+                                    </ng-template>
+                                </li>
+                                <li [ngbNavItem]="3">
+                                    <a ngbNavLink>LV1夏季平日班</a>
+                                    <ng-template ngbNavContent>
+                                        <!-- 平日班 課程介紹 -->
+                                        <a>asdasdas</a>
+                                    </ng-template>
+                                </li>
+                            </ul>
+                    
+                            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+                    
+                            <!-- <pre>Active: {{ active }}</pre> -->
+                    
+                        </div>
+                    </div>
+
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+                <a ngbNavLink>2級自潛員</a>
+                <ng-template ngbNavContent>
+                    <!-- 假日班 課程介紹 -->
+                    <a>sadasda</a>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="3">
+                <a ngbNavLink>3級自潛員</a>
+                <ng-template ngbNavContent>
+                    <!-- 平日班 課程介紹 -->
+                    <a>asdasdas</a>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="4">
+                <a ngbNavLink>不會游泳看這邊</a>
+                <ng-template ngbNavContent>
+                    
+                    <div class="row">
+                        <div class="col w-100">
+                    
+                            <ul ngbNav #nav="ngbNav" [(activeId)]="active4" class="nav-tabs">
+                                <li [ngbNavItem]="1">
+                                    <a ngbNavLink>初級自潛員(BASIC)</a>
+                                    <ng-template ngbNavContent class="custom-class">
+                                        <!-- 冬季班 課程介紹 -->
+                                        <a>sadasdas</a>
+                                    </ng-template>
+                                </li>
+                                <li [ngbNavItem]="2">
+                                    <a ngbNavLink>平靜水域自潛員(POOL)</a>
+                                    <ng-template ngbNavContent>
+                                        <!-- 假日班 課程介紹 -->
+                                        <a>sadasda</a>
+                                    </ng-template>
+                                </li>
+                            </ul>
+                    
+                            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+                    
+                            <!-- <pre>Active: {{ active }}</pre> -->
+                    
+                        </div>
+                    </div>
+
+                </ng-template>
+            </li>
+        </ul>
+
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+        <!-- <pre>Active: {{ active }}</pre> -->
+
+    </div>
+</div>

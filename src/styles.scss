@@ -6,3 +6,47 @@
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "~angular-vertical-timeline/dist/vertical-timeline.css";
+
+
+mdb-carousel .carousel-multi-item .controls-top .btn-floating {
+  background: red;
+}
+
+.controls-top {
+  display: none;
+}
+
+.carousel-indicators {
+  margin-bottom:-2rem;
+  li {
+    background-color: #47626F !important;
+  }
+}
+
+.idiving-color {
+  background-color: #67AACA !important;
+}
+
+.idiving-header-color {
+  background-color: #ffffff !important;
+}
+
+.idiving-footer-color {
+  background-color: #47626F !important;
+}
+
+.idiving-color-light {
+  color: #f4f3f3;
+}
+
+.idiving-content-font{
+  font-size:1.2rem;
+  font-weight:400;
+}
