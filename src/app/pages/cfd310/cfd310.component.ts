@@ -10,7 +10,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 'LV1', name: 'NT 5,000', weight: 'NT 7,000', symbol: 'NT 9,000', symbol1: 'NT 11,000', symbol2: '無退費'},
+  {position: 'LV3', name: 'NT 5,000', weight: 'NT 7,000', symbol: 'NT 9,000', symbol1: 'NT 11,000', symbol2: '無退費'},
 ];
 
 @Component({
