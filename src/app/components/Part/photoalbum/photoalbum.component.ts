@@ -10,9 +10,9 @@ export class PhotoalbumComponent implements OnInit {
   cards = [
     {img: '../../../assets/Image/FUNDIVE/L1120.png',
     title: '墾丁 2021 / 11 / 20 ~ 21 團'},
-    {img: 'https://drive.google.com/uc?export=view&id=1lwjTwdLF4SyZ5J3kzXSMegS98vvZnqZf',
+    {img: '../../../assets/Image/FUNDIVE/L1105.png',
     title: 'XXXX-XX-XX XXX團'},
-    {img: 'https://drive.google.com/uc?export=view&id=1lwjTwdLF4SyZ5J3kzXSMegS98vvZnqZf',
+    {img: '../../../assets/Image/FUNDIVE/L1102.png',
     title: 'XXXX-XX-XX XXX團'},
     {img: 'https://drive.google.com/uc?export=view&id=1lwjTwdLF4SyZ5J3kzXSMegS98vvZnqZf',
     title: 'XXXX-XX-XX XXX團'},
