@@ -44,17 +44,65 @@
     <!-- https://coreui.io/docs/4.1/components/card/ -->
     <!-- https://www.codegrepper.com/code-examples/csharp/mdb+bootstrap+cards -->
     <!-- photoalbum -->
-    <div class="row justify-content-around">
-        <div class="col-6 col-sm-4 card mb-4" *ngFor="let stand of stands" style="width:350px">
-            <br>
-            <img class="card-img-top" src={{stand.img}} alt="Card image" style="width:100%;"> <!-- " left:200px;top:200px;"> -->
-            <div class="card-body">
-                <h5 class="card-title">{{stand.name}}</h5>
-                <p class="card-text" style="white-space: pre">NT. {{stand.price}}</p>
-                <p class="card-text" style="white-space: pre">{{stand.title}}</p>
-                <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-            </div>
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <a ngbNavLink>BC相關</a>
+                    <ng-template ngbNavContent class="custom-class">
+                        <br>
+                        <div class="row justify-content-around">
+                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentbc of equipmentbcs | async" style="width:350px">
+                                <div class="card">
+                                    <br>
+                                    <img class="card-img-top" src='{{equipmentbc.img}}' alt="Card image" style="width:100%;">
+                                    <!-- " left:200px;top:200px;"> -->
+                                    <div class="card-body">
+                                        <p class="fs-5 card-text">{{equipmentbc.label}}</p>
+                                        <h5 class="card-title">{{equipmentbc.name}}</h5>
+                                        <p class="card-text" style="white-space: pre">{{equipmentbc.price}}</p>
+                                        <p class="card-text">{{equipmentbc.title}}</p>
+                                        <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a ngbNavLink>電腦錶/相材</a>
+                    <ng-template ngbNavContent>
+                        <br>
+                        <div class="row justify-content-around">
+                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentrm of equipmentrms | async" style="width:350px">
+                                <div class="card">
+                                    <br>
+                                    <img class="card-img-top" src='{{equipmentrm.img}}' alt="Card image" style="width:100%;">
+                                    <!-- " left:200px;top:200px;"> -->
+                                    <div class="card-body">
+                                        <p class="fs-5 card-text">{{equipmentrm.label}}</p>
+                                        <h5 class="card-title">{{equipmentrm.name}}</h5>
+                                        <p class="card-text" style="white-space: pre">{{equipmentrm.price}}</p>
+                                        <p class="card-text">{{equipmentrm.title}}</p>
+                                        <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+            </ul>
+
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+            <!-- <pre>Active: {{ active }}</pre> -->
+
+        </div>
+        <div class="col-xl">
         </div>
     </div>
 

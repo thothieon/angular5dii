@@ -1,11 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+export interface Equipmentbcs { 
+  id: string;
+  img: string; 
+  label: string; 
+  name: string; 
+  price: string; 
+  title: string; 
+}
+
+export interface Equipmentrms { 
+  id: string;
+  img: string; 
+  label: string; 
+  name: string; 
+  price: string; 
+  title: string; 
+}
+
+
 @Component({
   selector: 'app-b320',
   templateUrl: './b320.component.html',
   styleUrls: ['./b320.component.scss']
 })
 export class B320Component implements OnInit {
+
+  active = 1;
 
   // 新增屬性及內容
   stands = [
@@ -71,7 +95,21 @@ export class B320Component implements OnInit {
     },
   ]
 
-  constructor() { }
+  private equipmentbcsCollection: AngularFirestoreCollection<Equipmentbcs>;
+  equipmentbcs: Observable<Equipmentbcs[]>;
+  private equipmentrmsCollection: AngularFirestoreCollection<Equipmentrms>;
+  equipmentrms: Observable<Equipmentrms[]>;
+
+  constructor(private afs: AngularFirestore) {
+    this.equipmentbcsCollection = afs.collection<Equipmentbcs>('iDiving/equipment/totalequipmentbc');
+    this.equipmentbcs = this.equipmentbcsCollection.valueChanges();
+    this.equipmentrmsCollection = afs.collection<Equipmentrms>('iDiving/equipment/totalequipmentrm');
+    this.equipmentrms = this.equipmentrmsCollection.valueChanges();
+  }
+  addItem(equipmentbcs: Equipmentbcs, equipmentrms: Equipmentrms) {
+    this.equipmentbcsCollection.add(equipmentbcs);
+    this.equipmentrmsCollection.add(equipmentrms);
+  }
 
   ngOnInit(): void {
   }
