@@ -33,6 +33,7 @@ import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B320Component } from './pages/b320/b320.component';
 import { B330Component } from './pages/b330/b330.component';
+import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
 import { C100Component } from './pages/c100/c100.component';
 import { C120Component } from './pages/c120/c120.component';
@@ -105,7 +106,8 @@ import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component'
     C410Component,
     C420Component,
     C430Component,
-    B330Component
+    B330Component,
+    B340Component
   ],
   imports: [
     BrowserModule,
