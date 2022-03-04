@@ -17,27 +17,40 @@
 
     <div class="row">
         <div class="col w-100">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">玩潛水</a>
+                    <a class="breadcrumb-item">旅遊年度計畫</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
             <table mdbTable>
                 <thead>
-                    <th class="fs-4" colspan="2">
+                    <th colspan="2">
                         <h4>旅遊年度計畫 </h4>
-                    <!-- <th class="fs-4" scope="col"> 出團期別 </th> -->
-                </th>
-                <!-- <thead>
-                    <tr>
-                        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
-                    </tr>
-                </thead>-->
+                    </th>
+                </thead>
                 <tbody>
                     <tr mdbTableCol *ngFor="let activity of activitys | async">
                         <th scope="row">{{activity.id}}</th>
-                        <td>{{activity.location}}</td>
-                        <td>{{activity.date}}</td>
-                        <td>{{activity.state}}</td>
+                        <td class="fs-5">{{activity.location}}</td>
+                        <td class="fs-5">{{activity.date}}</td>
+                        <td class="fs-5">{{activity.state}}</td>
                     </tr>
                 </tbody>
             </table>
-            <button type="button" mdbBtn color="primary"  onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+            <button type="button" mdbBtn class="fs-5" color="primary" block="true" onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+        </div>
+        <div class="col-xl">
         </div>
     </div>
 
