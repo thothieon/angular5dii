@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
-export interface Equipmentbcs { 
+export interface Equipmentcps { 
   id: string;
   img: string; 
   label: string; 
@@ -12,7 +12,16 @@ export interface Equipmentbcs {
   title: string; 
 }
 
-export interface Equipmentrms { 
+export interface Equipmentaes { 
+  id: string;
+  img: string; 
+  label: string; 
+  name: string; 
+  price: string; 
+  title: string; 
+}
+
+export interface Equipmentles { 
   id: string;
   img: string; 
   label: string; 
@@ -95,20 +104,25 @@ export class B340Component implements OnInit {
     },
   ]
 
-  private equipmentbcsCollection: AngularFirestoreCollection<Equipmentbcs>;
-  equipmentbcs: Observable<Equipmentbcs[]>;
-  private equipmentrmsCollection: AngularFirestoreCollection<Equipmentrms>;
-  equipmentrms: Observable<Equipmentrms[]>;
+  private equipmentcpsCollection: AngularFirestoreCollection<Equipmentcps>;
+  equipmentcps: Observable<Equipmentcps[]>;
+  private equipmentaeCollection: AngularFirestoreCollection<Equipmentaes>;
+  equipmentaes: Observable<Equipmentaes[]>;
+  private equipmentleCollection: AngularFirestoreCollection<Equipmentles>;
+  equipmentles: Observable<Equipmentles[]>;
 
   constructor(private afs: AngularFirestore) {
-    this.equipmentbcsCollection = afs.collection<Equipmentbcs>('iDiving/equipment/totalequipmentbc');
-    this.equipmentbcs = this.equipmentbcsCollection.valueChanges();
-    this.equipmentrmsCollection = afs.collection<Equipmentrms>('iDiving/equipment/totalequipmentrm');
-    this.equipmentrms = this.equipmentrmsCollection.valueChanges();
+    this.equipmentcpsCollection = afs.collection<Equipmentcps>('iDiving/equipment/totalequipmentcp');
+    this.equipmentcps = this.equipmentcpsCollection.valueChanges();
+    this.equipmentaeCollection = afs.collection<Equipmentaes>('iDiving/equipment/totalequipmentae');
+    this.equipmentaes = this.equipmentaeCollection.valueChanges();
+    this.equipmentleCollection = afs.collection<Equipmentles>('iDiving/equipment/totalequipmentle');
+    this.equipmentles = this.equipmentleCollection.valueChanges();
   }
-  addItem(equipmentbcs: Equipmentbcs, equipmentrms: Equipmentrms) {
-    this.equipmentbcsCollection.add(equipmentbcs);
-    this.equipmentrmsCollection.add(equipmentrms);
+  addItem(equipmentcps: Equipmentcps, equipmentaes: Equipmentaes, equipmentles: Equipmentles) {
+    this.equipmentcpsCollection.add(equipmentcps);
+    this.equipmentaeCollection.add(equipmentaes);
+    this.equipmentleCollection.add(equipmentles);
   }
 
   ngOnInit(): void {

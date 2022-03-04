@@ -21,7 +21,6 @@ export interface Equipmentrms {
   title: string; 
 }
 
-
 @Component({
   selector: 'app-b320',
   templateUrl: './b320.component.html',
