@@ -24,6 +24,8 @@ import { FdtabscourseComponent } from './fdtabscourse/fdtabscourse.component';
 import { Fdlv1introduceComponent } from './fdlv1introduce/fdlv1introduce.component';
 import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
 import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
+import { HearsayComponent } from './hearsay/hearsay.component';
+import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 
 
 
@@ -41,7 +43,9 @@ import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinfo
     FdtabscourseComponent,
     Fdlv1introduceComponent,
     PaymentmethodComponent,
-    FdschoolinformationComponent
+    FdschoolinformationComponent,
+    HearsayComponent,
+    SmallactivityComponent
   ],
   imports: [
     CommonModule,
@@ -74,7 +78,9 @@ import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinfo
     FdtabscourseComponent,
     Fdlv1introduceComponent,
     PaymentmethodComponent,
-    FdschoolinformationComponent
+    FdschoolinformationComponent,
+    HearsayComponent,
+    SmallactivityComponent
   ]
 })
 export class PartModule { }

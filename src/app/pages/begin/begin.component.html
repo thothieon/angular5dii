@@ -26,11 +26,12 @@
       <tr>
         <td>
           <br>
+          <br>
         </td>
       </tr>
     </table>
   </div>
-  
+
   <app-link></app-link>
 
   <div class="row">
@@ -41,66 +42,50 @@
       </tr>
       <tr>
         <td>
+          <br>
         </td>
       </tr>
     </table>
   </div>
 
-  <div class="row">
-    <!-- 課程期別 -->
-    <div class="col">
-      <table mdbTable>
-        <thead>
-          <th colspan="2">
-            <h4 style="font-weight:bold;">最新課程期別資訊</h4>
-            <!-- <th class="fs-4" scope="col"> 課程期別 </th> -->
-          </th>
-          <tr>
-            <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
-          </tr>
-        </thead>
-        <tbody>
-          <tr mdbTableCol *ngFor="let course of courses | async">
-            <th width="2%" scope="row">
-              <li>
-                <!-- {{el.id}} -->
-              </li>
-            </th>
-            <td class="fs-5 font-weight-normal">{{course.first}}</td>
-            <td class="fs-5 font-weight-normal">{{course.last}}</td>
-            <td class="fs-5 font-weight-normal">{{course.handle}}</td>
-          </tr>
-        </tbody>
-      </table>
-      <button type="button" mdbBtn color="primary" block="true" mdbWavesEffect><a class="fs-5">課程年度計畫</a></button>
-    </div>
+  <app-hearsay></app-hearsay>
 
-    <!-- 出團期別 -->
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 潛店介紹 -->
+  <div class="row">
     <div class="col">
-      <table mdbTable>
-        <thead>
-          <th colspan="5">
-            <h4 style="font-weight:bold;">最新出團期別資訊</h4>
-            <!-- <th class="fs-4" scope="col"> 出團期別 </th> -->
-          </th>
-          <tr>
-            <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
-          </tr>
-        </thead>
-        <tbody>
-          <tr mdbTableCol *ngFor="let activity of activitys | async">
-            <th width="2%" scope="row">
-              <li>
-                <!-- {{el.id}} -->
-              </li>
-            </th>
-            <td class="fs-5 font-weight-normal">{{activity.first}}</td>
-            <td class="fs-5 font-weight-normal">{{activity.last}}</td>
-            <td class="fs-5 font-weight-normal">{{activity.handle}}</td>
-          </tr>
-        </tbody>
-      </table>
-      <button type="button" mdbBtn color="primary" block="true" mdbWavesEffect><a class="fs-5">出團年度計畫</a></button>
+      <br>
+      <h4 style="font-weight:bold;text-align: center;">都市店與海邊店一次滿足</h4>
+      <p class="fs-4" style="text-align: center;">／iDiving 前港店／</p>
+      <p class="fs-6" style="text-align: center;">都市店就近完成教室課、泳池課</p>
+      <p class="fs-6" style="text-align: center;">讓工作繁忙的你能妥善利用空閒時間</p>
+      <p class="fs-6" style="text-align: center;">課程問題、購買裝備不用大老遠找教練</p>
+      <br>
+      <p class="fs-4" style="text-align: center;">／iDiving 龍洞店／</p>
+      <p class="fs-6" style="text-align: center;">一天來回東北角，不用休假就可以潛水</p>
+      <p class="fs-6" style="text-align: center;">想要享受慢活步調，兩天一夜也可以</p>
+      <img src="../../../../assets/Image/Data/begin1.png" width="99%">
+      <img src="../../../../assets/Image/Data/begin2.png" width="99%">
+      <br>
+      <h4 style="font-weight:bold;text-align: center;">80人水肺自潛教練團</h4>
+      <p class="fs-6" style="text-align: center;">上課、活動教練人數高比例</p>
+      <p class="fs-6" style="text-align: center;">客製上課時間好安排</p>
+      <p class="fs-6" style="text-align: center;">駐店 SSI 教練訓練官從初級到教練培訓都包含</p>
+      <p class="fs-6" style="text-align: center;">每年冬季教練資格更新復訓一項都沒少</p>
+      <img src="../../../../assets/Image/Data/begin3.png" width="99%">
     </div>
   </div>
 
@@ -112,6 +97,24 @@
       </tr>
       <tr>
         <td>
+          <br>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <app-smallactivity></app-smallactivity>
+
+  <div class="row">
+    <table>
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br>
+          <br>
         </td>
       </tr>
     </table>
@@ -151,7 +154,17 @@
     </table>
   </div>
 
-  <app-team></app-team>
+  <!-- 經銷廠牌 -->
+  <!-- https://mdbootstrap.com/docs/b4/jquery/design-blocks/ -->
+  <div class="row text-center d-flex justify-content-center mt-4">
+    <h4 style="font-weight:bold;text-align: center;">經銷廠牌</h4>
+    <div class="col-lg-4 col-md-6 mb-5">
+      <i class="fa-3x mb-4"><img src="../../../../assets/Image/Data/MARES LOGO.png" width="99%"></i>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-5">
+      <i class="fa-3x mb-4"><img src="../../../../assets/Image/Data/水越_logo.png" width="99%"></i>
+    </div>
+  </div>
 
   <div class="row">
     <table>
