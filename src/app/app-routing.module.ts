@@ -43,9 +43,11 @@ import { Dz01Component } from './pages/dz01/dz01.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
+import { Mc100Component } from './pages/mc100/mc100.component';
 
 const routes: Routes = [
   { path: 'head', component: HeadComponent },
+  { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
