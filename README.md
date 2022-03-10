@@ -34,9 +34,15 @@ ng g c pages\linkidiving 小首網
 ng g c pages\begin 首網
 ng g c pages\bz01 課程年度計畫
 ng g c pages\b310 輕裝
+ng g c pages\b311 輕裝舊版
 ng g c pages\b320 重裝
+ng g c pages\b321 重裝舊版
+ng g c pages\b330 套裝區
+ng g c pages\b340 設備
 
 ng g c pages\b210 介紹
+ng g c pages\m100 消息
+ng g c pages\mc100 消息內容
 ng g c pages\b230 教練團
 ng g c pages\dz01 旅遊年度計畫
 
@@ -47,8 +53,10 @@ ng g c pages\c130 水肺複習
 ng g c pages\c210 進階探險潛水員
 ng g c pages\c310 各項專長潛水員
 ng g c pages\c510 減壓專長潛水員
+
 XRN技術潛水課程 X
 XR技術潛水課程 X
+
 ng g c pages\c410 水肺領導級
 ng g c pages\c420 水肺專業教練
 ng g c pages\c430 水肺高階教練
@@ -81,13 +89,14 @@ ng g c pages\ccs001 客戶關係
 ng g c pages\que001 問卷
 ng g c pages\eps001 考卷
 
+ng g c components\part\hearsay
+ng g c components\part\smallactivity
 ng g c components\part\team
 ng g c components\part\fdtabscourse
 ng g c components\part\fdlv1introduce
 ng g c components\part\paymentmethod
 ng g c components\part\fdschoolinformation
 ng g m operation
-
 
 
 
