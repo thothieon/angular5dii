@@ -37,7 +37,6 @@ export class B230Component implements OnInit {
     { img:'../../../assets/Image/Coach/155.jpg',hrf:'',name:'小陽', title:'SSI 自由潛水 LV2 教練' },
     { img:'../../../assets/Image/Coach/232.jpg',hrf:'',name:'子皓', title:'SSI 自由潛水 LV2 教練' },
     { img:'../../../assets/Image/Coach/206.jpg',hrf:'',name:'Jason', title:'SSI 助理教練訓練官\nSSI 技術潛水教練' },
-    { img:'../../../assets/Image/Coach/116.jpg',hrf:'',name:'Jeffrey', title:'SSI 進階潛水員教練' },
     { img:'../../../assets/Image/Coach/123.jpg',hrf:'',name:'偉良', title:'SSI 進階潛水員教練\nSSI 自由潛水 LV1 教練' },
     { img:'../../../assets/Image/Coach/214.jpg',hrf:'',name:'Brian', title:'SSI 進階潛水員教練\nSSI 攝影專長教練' },
     { img:'../../../assets/Image/Coach/228.jpg',hrf:'',name:'泰力 Tyler', title:'SSI 專長潛水員教練\nSSI 攝影專長教練' },
