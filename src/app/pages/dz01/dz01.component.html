@@ -42,13 +42,13 @@
                 <tbody>
                     <tr mdbTableCol *ngFor="let activity of activitys | async">
                         <th scope="row">{{activity.id}}</th>
-                        <td class="fs-5">{{activity.location}}</td>
-                        <td class="fs-5">{{activity.date}}</td>
-                        <td class="fs-5">{{activity.state}}</td>
+                        <td class="fs-6">{{activity.location}}</td>
+                        <td class="fs-6">{{activity.date}}</td>
+                        <td class="fs-6">{{activity.state}}</td>
                     </tr>
                 </tbody>
             </table>
-            <button type="button" mdbBtn class="fs-5" color="primary" block="true" onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+            <button type="button" mdbBtn class="fs-6" color="primary" block="true" onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
         </div>
         <div class="col-xl">
         </div>
