@@ -41,10 +41,10 @@
                 </thead>
                 <tbody>
                     <tr mdbTableCol *ngFor="let course of courses | async ">
-                        <th scope="row">{{course.id}}</th>
+                        <!-- <th scope="row">{{course.id}}</th> -->
                         <td class="fs-6">{{course.name}}</td>
                         <td class="fs-6">{{course.date}}</td>
-                        <td class="fs-6">{{course.state}}</td>
+                        <td class="fs-6" style="white-space:nowrap">{{course.state}}</td>
                     </tr>
                 </tbody>
             </table>
