@@ -26,6 +26,7 @@ import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component'
 import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
 import { HearsayComponent } from './hearsay/hearsay.component';
 import { SmallactivityComponent } from './smallactivity/smallactivity.component';
+import { DealerComponent } from './dealer/dealer.component';
 
 
 
@@ -45,7 +46,8 @@ import { SmallactivityComponent } from './smallactivity/smallactivity.component'
     PaymentmethodComponent,
     FdschoolinformationComponent,
     HearsayComponent,
-    SmallactivityComponent
+    SmallactivityComponent,
+    DealerComponent
   ],
   imports: [
     CommonModule,
@@ -80,7 +82,8 @@ import { SmallactivityComponent } from './smallactivity/smallactivity.component'
     PaymentmethodComponent,
     FdschoolinformationComponent,
     HearsayComponent,
-    SmallactivityComponent
+    SmallactivityComponent,
+    DealerComponent
   ]
 })
 export class PartModule { }
