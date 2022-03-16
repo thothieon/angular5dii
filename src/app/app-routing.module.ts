@@ -7,6 +7,7 @@ import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B310Component } from './pages/b310/b310.component';
+import { B311Component } from './pages/b311/b311.component';
 import { B320Component } from './pages/b320/b320.component';
 import { B330Component } from './pages/b330/b330.component';
 import { B340Component } from './pages/b340/b340.component';
@@ -81,6 +82,7 @@ const routes: Routes = [
   { path: 'cfd310', component: Cfd310Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },
+  { path: 'b311', component: B311Component },
   { path: 'b320', component: B320Component },
   { path: 'b330', component: B330Component },
   { path: 'b340', component: B340Component },

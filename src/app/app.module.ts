@@ -66,6 +66,7 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
+import { B311Component } from './pages/b311/b311.component';
 
 
 @NgModule({
@@ -111,7 +112,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B330Component,
     B340Component,
     M100Component,
-    Mc100Component
+    Mc100Component,
+    B311Component
   ],
   imports: [
     BrowserModule,
