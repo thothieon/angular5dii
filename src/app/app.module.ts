@@ -31,7 +31,9 @@ import { B210Component } from './pages/b210/b210.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
+import { B311Component } from './pages/b311/b311.component';
 import { B320Component } from './pages/b320/b320.component';
+import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
 import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
@@ -66,7 +68,6 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-import { B311Component } from './pages/b311/b311.component';
 
 
 @NgModule({
@@ -113,7 +114,8 @@ import { B311Component } from './pages/b311/b311.component';
     B340Component,
     M100Component,
     Mc100Component,
-    B311Component
+    B311Component,
+    B321Component
   ],
   imports: [
     BrowserModule,
