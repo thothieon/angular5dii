@@ -45,24 +45,20 @@
     <!-- https://mdbootstrap.com/docs/angular/content/images/ -->
     <!-- https://coreui.io/docs/4.1/components/card/ -->
     <!-- photoalbum -->
-    <div class="row justify-content-around">
-        <div class="card mb-4" *ngFor="let stand of stands" style="max-width: 400px;">
-            <div class="row g-1">
-                <div class="col-md-4">
-                    <div class="bg-image hover-overlay">
-                        <a href={{stand.hrf}}>
-                            <img src={{stand.img}} class="card-img-top" alt="...">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{{stand.name}}</h5>
-                        <p class="card-text" style="white-space: pre">{{stand.title}}</p>
-                        <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
-                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2 p-2" *ngFor="let stand of stands" >
+            <div class="card p-2">
+                <a href={{stand.hrf}}>
+                    <img src={{stand.img}} class="card-img-top" alt="...">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{stand.name}}</h5>
+                    <p class="card-text fs-6" >{{stand.title}}</p>
+                    <p class="card-text fs-6" >{{stand.title01}}</p>
+                    <p class="card-text fs-6" >{{stand.title02}}</p> <!-- style="white-space: pre" -->
+                    <!-- <a href="https://www.facebook.com/janicewa2002" class="btn btn-primary">This button</a> -->
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                 </div>
             </div>
         </div>
