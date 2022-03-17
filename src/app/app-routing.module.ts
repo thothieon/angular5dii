@@ -7,10 +7,13 @@ import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B310Component } from './pages/b310/b310.component';
+import { B311Component } from './pages/b311/b311.component';
 import { B320Component } from './pages/b320/b320.component';
+import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
 import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
+import { B411Component } from './pages/b411/b411.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C100Component } from './pages/c100/c100.component';
@@ -79,9 +82,12 @@ const routes: Routes = [
   { path: 'cfd210', component: Cfd210Component },
   { path: 'cfd220', component: Cfd220Component },
   { path: 'cfd310', component: Cfd310Component },
+  { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },
+  { path: 'b311', component: B311Component },
   { path: 'b320', component: B320Component },
+  { path: 'b321', component: B321Component },
   { path: 'b330', component: B330Component },
   { path: 'b340', component: B340Component },
   { path: 'b240', component: B240Component },
