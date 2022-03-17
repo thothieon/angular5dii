@@ -16,8 +16,6 @@ export class DealerComponent implements OnInit {
     {img: '../../../../assets/Image/Dealer/6.png'},
     {img: '../../../../assets/Image/Dealer/7.png'},
     {img: '../../../../assets/Image/Dealer/8.png'},
-    {img: '../../../../assets/Image/Dealer/9.png'},
-    {img: '../../../../assets/Image/Dealer/10.png'},
   ];
   
   slides: any = [[]];
