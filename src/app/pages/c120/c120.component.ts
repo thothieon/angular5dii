@@ -9,12 +9,12 @@ export class C120Component implements OnInit {
 
   active = 1;
   
-  Weekendcards = [
+  Weekenders = [
     {img: '../../../../assets/Image/Data/OWD_Weekend_Schedule_20221.png'},
     {img: '../../../../assets/Image/Data/OWD_Weekend_Schedule_20222.png'},
   ];
   
-  Weekdayscards = [
+  Weekdays = [
     {img: '../../../../assets/Image/Data/OWD_Weekdays_Schedule_20221.png'},
     {img: '../../../../assets/Image/Data/OWD_Weekdays_Schedule_20222.png'},
   ];
