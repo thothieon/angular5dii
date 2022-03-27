@@ -9,11 +9,13 @@ export class C120Component implements OnInit {
 
   active = 1;
   
+  //假日班
   Weekenders = [
     {img: '../../../../assets/Image/Data/OWD_Weekend_Schedule_20221.png'},
     {img: '../../../../assets/Image/Data/OWD_Weekend_Schedule_20222.png'},
   ];
   
+  //平日班
   Weekdays = [
     {img: '../../../../assets/Image/Data/OWD_Weekdays_Schedule_20221.png'},
     {img: '../../../../assets/Image/Data/OWD_Weekdays_Schedule_20222.png'},
