@@ -941,9 +941,15 @@
                                 </tbody>
                             </table>
                             <br>
-                            <img src="../../../../assets/Image/Data/FD_Text1.png" width="99%"
-                                style="display:block; margin:auto;"
-                                alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+
+                            <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+                                <mdb-slide *ngFor="let Weekender of Weekenders; let i = index">
+                                    <div class="view">
+                                        <img class="d-block" src="{{Weekender.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                                    </div>
+                                </mdb-slide>
+                            </mdb-carousel>
+
                         </div>
                         <!-- 夏季假日班 課程學費 -->
                         <!-- 方案一  -->
@@ -1563,9 +1569,15 @@
                                 </tbody>
                             </table>
                             <br>
-                            <img src="../../../../assets/Image/Data/FD_Text1.png" width="99%"
-                                style="display:block; margin:auto;"
-                                alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+
+                            <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+                                <mdb-slide *ngFor="let Weekday of Weekdays; let i = index">
+                                    <div class="view">
+                                        <img class="d-block" src="{{Weekday.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                                    </div>
+                                </mdb-slide>
+                            </mdb-carousel>
+
                         </div>
                         <!-- 夏季平日班 課程學費 -->
                         <!-- 方案一  -->

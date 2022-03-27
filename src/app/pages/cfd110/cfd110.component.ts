@@ -25,6 +25,18 @@ export class Cfd110Component implements OnInit {
   active = 1;
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'symbol1', 'symbol2'];
   dataSource = ELEMENT_DATA;
+  
+  //假日班
+  Weekenders = [
+    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_20221.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_20222.png'},
+  ];
+  
+  //平日班
+  Weekdays = [
+    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20221.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20222.png'},
+  ];
 
   constructor() { }
 
