@@ -28,6 +28,7 @@ import { PartModule } from './components/Part/part.module';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { B210Component } from './pages/b210/b210.component';
+import { B211Component } from './pages/b211/b211.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
@@ -37,6 +38,7 @@ import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
 import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
+import { B411Component } from './pages/b411/b411.component';
 import { C100Component } from './pages/c100/c100.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
@@ -68,7 +70,6 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-import { B411Component } from './pages/b411/b411.component';
 
 
 @NgModule({
@@ -117,7 +118,8 @@ import { B411Component } from './pages/b411/b411.component';
     Mc100Component,
     B311Component,
     B321Component,
-    B411Component
+    B411Component,
+    B211Component
   ],
   imports: [
     BrowserModule,
