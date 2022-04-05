@@ -29,6 +29,7 @@ import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
+import { B212Component } from './pages/b212/b212.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
@@ -119,7 +120,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B311Component,
     B321Component,
     B411Component,
-    B211Component
+    B211Component,
+    B212Component
   ],
   imports: [
     BrowserModule,

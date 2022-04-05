@@ -7,6 +7,7 @@ import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
+import { B212Component } from './pages/b212/b212.component';
 import { B310Component } from './pages/b310/b310.component';
 import { B311Component } from './pages/b311/b311.component';
 import { B320Component } from './pages/b320/b320.component';
@@ -95,6 +96,7 @@ const routes: Routes = [
   { path: 'b230', component: B230Component },
   { path: 'b210', component: B210Component },
   { path: 'b211', component: B211Component },
+  { path: 'b212', component: B212Component },
   { path: 'bz01', component: Bz01Component },
   { path: '', component: BeginComponent }
 ];
