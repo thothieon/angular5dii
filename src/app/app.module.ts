@@ -69,6 +69,7 @@ import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component'
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { B411Component } from './pages/b411/b411.component';
+import { D121Component } from './pages/d121/d121.component';
 
 
 @NgModule({
@@ -117,7 +118,8 @@ import { B411Component } from './pages/b411/b411.component';
     Mc100Component,
     B311Component,
     B321Component,
-    B411Component
+    B411Component,
+    D121Component
   ],
   imports: [
     BrowserModule,
