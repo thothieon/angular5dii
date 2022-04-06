@@ -37,6 +37,7 @@ import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
 import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
+import { B411Component } from './pages/b411/b411.component';
 import { C100Component } from './pages/c100/c100.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
@@ -60,17 +61,16 @@ import { Dz01Component } from './pages/dz01/dz01.component';
 import { D111Component } from './pages/d111/d111.component';
 import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
+import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
+import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-import { B411Component } from './pages/b411/b411.component';
-import { D121Component } from './pages/d121/d121.component';
-
 
 @NgModule({
   declarations: [
@@ -119,7 +119,8 @@ import { D121Component } from './pages/d121/d121.component';
     B311Component,
     B321Component,
     B411Component,
-    D121Component
+    D121Component,
+    D141Component
   ],
   imports: [
     BrowserModule,

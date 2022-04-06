@@ -48,6 +48,7 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
+import { D141Component } from './pages/d141/d141.component';
 
 const routes: Routes = [
   { path: 'head', component: HeadComponent },
@@ -59,6 +60,7 @@ const routes: Routes = [
   { path: 'd160', component: D160Component },
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },
+  { path: 'd141', component: D141Component },
   { path: 'd130', component: D130Component },
   { path: 'd121', component: D121Component },
   { path: 'd120', component: D120Component },
