@@ -312,12 +312,12 @@
                             </table>
                             <br>
 
-                            <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
-                                <mdb-slide *ngFor="let Weekender of Weekenders; let i = index">
+                            <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                                <mdb-carousel-item  *ngFor="let Weekender of Weekenders; let i = index">
                                     <div class="view">
                                         <img class="d-block" src="{{Weekender.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
                                     </div>
-                                </mdb-slide>
+                                </mdb-carousel-item>
                             </mdb-carousel>
 
                         </div>
@@ -940,12 +940,12 @@
                             </table>
                             <br>
 
-                            <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
-                                <mdb-slide *ngFor="let Weekday of Weekdays; let i = index">
+                            <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
                                     <div class="view">
                                         <img class="d-block" src="{{Weekday.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
                                     </div>
-                                </mdb-slide>
+                                </mdb-carousel-item>
                             </mdb-carousel>
 
                         </div>
