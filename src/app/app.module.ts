@@ -63,6 +63,7 @@ import { Dz01Component } from './pages/dz01/dz01.component';
 import { D111Component } from './pages/d111/d111.component';
 import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
+import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
 import { D150Component } from './pages/d150/d150.component';
@@ -121,7 +122,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B321Component,
     B411Component,
     B211Component,
-    B212Component
+    B212Component,
+    D121Component
   ],
   imports: [
     BrowserModule,

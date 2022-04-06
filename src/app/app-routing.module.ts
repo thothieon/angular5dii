@@ -39,6 +39,7 @@ import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
 import { D111Component } from './pages/d111/d111.component';
 import { D112Component } from './pages/d112/d112.component';
+import { D121Component } from './pages/d121/d121.component';
 import { D120Component } from './pages/d120/d120.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
@@ -61,6 +62,7 @@ const routes: Routes = [
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },
   { path: 'd130', component: D130Component },
+  { path: 'd121', component: D121Component },
   { path: 'd120', component: D120Component },
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
