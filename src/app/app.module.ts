@@ -66,13 +66,13 @@ import { D120Component } from './pages/d120/d120.component';
 import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D140Component } from './pages/d140/d140.component';
+import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-
 
 @NgModule({
   declarations: [
@@ -123,7 +123,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B411Component,
     B211Component,
     B212Component,
-    D121Component
+    D121Component,
+    D141Component
   ],
   imports: [
     BrowserModule,

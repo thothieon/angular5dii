@@ -1,0 +1,32 @@
+.DMClass {
+    background: url('../../../assets/Image/DataActivity/GOPR5918.jpg');
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
+
+    //text-align: center;
+}
+
+.DMClassMask1 {
+    // 透明度 0.6 的黑色半透明遮罩
+    background-color: rgba(255, 255, 255, 0.6);
+    // 設置背景混和模式為相乘模式
+    background-blend-mode: multiply;
+    border-radius: 4em;
+}
+
+.DMClass2 {
+    background: url('../../../assets/Image/DataActivity/GOPR5918.jpg');
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
+
+}
+
+.DMClassMask2 {
+    // 透明度 0.6 的黑色半透明遮罩
+    background-color: rgba(255, 255, 255, 0.6);
+    // 設置背景混和模式為相乘模式
+    background-blend-mode: multiply;
+    border-radius: 4em;
+}
