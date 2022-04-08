@@ -15,13 +15,6 @@
         </table>
     </div>
 
-    <!-- <div class="row">
-        <div>
-            <img src="../../../assets/Image/AD/05.jpg" width="99%" style="display:block; margin:auto;" 
-            alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水"/>
-        </div>
-    </div> -->
-
     <div class="row">
         <table>
             <tr>
@@ -64,55 +57,6 @@
         </table>
     </div>
 
-    <!-- class="z-depth-1"> -->
-    <!-- <div class="row">
-        <div class="container">
-            <table mdbTable #tableEl="mdbTable">
-                
-                <thead>
-                    <tr>
-                        <th *ngFor="let head of headElements; let i = index" scope="col">{{head}}
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let el of elements; let i = index">
-                        <th *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex"
-                            scope="row">{{el.id}}</th>
-                        <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
-                            {{el.first}}</td>
-                        <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
-                            {{el.last}}</td>
-                        <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
-                            {{el.handle}}</td>
-                    </tr>
-                </tbody>
-                <tfoot class="grey lighten-5 w-100">
-                    <tr>
-                        <td colspan="4">
-                            <mdb-table-pagination [tableEl]="tableEl" [searchDataSource]="elements">
-                            </mdb-table-pagination>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </div>
-
-    <div class="row">
-        <table>
-            <tr>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br>
-                </td>
-            </tr>
-        </table>
-    </div> -->
-
     <div class="row">
         <div class="col-xl">
         </div>
@@ -120,20 +64,20 @@
             <div class="container">
                 <table mdbTable borderless="true" #tableEl="mdbTable">
                     <tbody>
-                        <tr *ngFor="let el of elementsa; let i = index">
+                        <tr *ngFor="let el of hearsaytotals | async; let i = index">
                             <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;" width="50%">
-                                <img src="{{el.img}}" style="display:block;margin:5px 10px 15px 20px" class="img-thumbnail" align="right"
-                                    alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+                                <img src="{{el.img}}" style="display:block;margin:5px 10px 15px 20px" class="img-thumbnail" align="right" alt="" />
                             </td>
                             <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;">
                                 <div>
                                     <div>
                                         <br>
-                                        <a class="d-inline p-2 bg-primary text-white" style="border-radius:10px;padding-bottom: .5em;">{{el.item}}</a>
+                                        <a class="d-inline p-2 {{el.color}} text-white" style="border-radius:10px;padding-bottom: .5em;">{{el.item}}</a>
                                         <a class="fs-6">&nbsp;&nbsp; {{el.data}}</a>
+                                        <a class="fs-4"><br> {{el.title}}</a>
                                     </div>
                                     <br>
-                                    <p class="fs-6">{{el.text}}</p>
+                                    <p class="fs-6">{{el.detail}}</p>
                                 </div>
                             </td>
                         </tr>
@@ -141,7 +85,7 @@
                     <tfoot class="grey lighten-5 w-100">
                         <tr>
                             <td colspan="4">
-                                <mdb-table-pagination [tableEl]="tableEl" [searchDataSource]="elementsa" class="fs-6">
+                                <mdb-table-pagination [tableEl]="tableEl" [searchDataSource]="hearsaytotals" class="fs-6">
                                 </mdb-table-pagination>
                             </td>
                         </tr>
@@ -166,74 +110,6 @@
             </tr>
         </table>
     </div>
-
-    <!-- <div class="row">
-        <div class="col-xl">
-        </div>
-        <div class="col-xl-10">
-            <h2 class="hwarsayblock">最新消息</h2>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <img src="../../../../assets/Image/Data/綠島自潛深度團.jpg" style="display:block;margin:5px 10px 15px 20px"
-                        width="60%" align="right" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
-                    <br>
-                </div>
-                <div class="col">
-                    <div>
-                        <div>
-                            <br>
-                            <a class="d-inline p-2 bg-primary text-white"
-                                style="border-radius:10px;padding-bottom: .5em;">訊息</a>
-                            <a class="fs-6">&nbsp;&nbsp; 2022.02.24</a>
-                        </div>
-                        <br>
-                        <p class="fs-6">海洋博物誌 新書分享會，於2/26(六)15:00開始</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="../../../../assets/Image/Data/海洋博物誌2.jpg" style="display:block;margin:5px 10px 15px 20px"
-                        width="60%" align="right" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
-                    <br>
-                </div>
-                <div class="col">
-                    <div>
-                        <div>
-                            <br>
-                            <a class="d-inline p-2 bg-primary text-white"
-                                style="border-radius:10px;padding-bottom: .5em;">訊息</a>
-                            <a class="fs-6">&nbsp;&nbsp; 2022.02.24</a>
-                        </div>
-                        <br>
-                        <p class="fs-6">海洋博物誌 新書分享會，於2/26(六)15:00開始</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="../../../../assets/Image/Data/22新年壓歲金_n.jpg"
-                        style="display:block;margin:5px 10px 15px 20px" width="60%" align="right"
-                        alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
-                    <br>
-                </div>
-                <div class="col">
-                    <div>
-                        <div>
-                            <br>
-                            <a class="d-inline p-2 bg-danger text-white" style="border-radius:10px;">優惠</a>
-                            <a class="fs-6">&nbsp;&nbsp; 2022.02.18</a>
-                        </div>
-                        <br>
-                        <p class="fs-6">2022 OWD FD 課程夏季班早鳥優惠</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl">
-        </div>
-    </div> -->
 
     <div class="row">
         <table>
