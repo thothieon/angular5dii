@@ -132,9 +132,9 @@ export class B230Component implements OnInit {
     { img:'../../../assets/Image/Coach/211.jpg',
       hrf:'',
       name:'熱狗', title:'SSI 助理教練' },
-    { img:'../../../assets/Image/Coach/210.jpg',
+    /*{ img:'../../../assets/Image/Coach/210.jpg',
       hrf:'',
-      name:'美年', title:'SSI 專長潛水員教練' },
+      name:'美年', title:'SSI 專長潛水員教練' },*/
     { img:'../../../assets/Image/Coach/221.jpg',
       hrf:'',
       name:'聖祺', title:'SSI 助理教練' },
