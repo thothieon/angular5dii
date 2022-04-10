@@ -21,7 +21,7 @@
                 <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
 
                     <div class="card bg-dark">
-                        <a href="https://goo.gl/forms/AFgsrUnZYexX7L1i1">
+                        <a href="{{card.href}}">
                             <img src="{{card.img}}" class="card-img" alt="..." />
                             <div class="card-img-overlay text-white">
                                 <h5 class="card-title">{{card.title}}</h5>
