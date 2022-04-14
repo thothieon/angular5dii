@@ -60,15 +60,15 @@
     <div class="row">
         <div class="col-xl">
         </div>
-        <div class="col-xl-10">
+        <div class="col-xl-7">
             <div class="container">
                 <table mdbTable borderless="true" #tableEl="mdbTable">
                     <tbody>
                         <tr *ngFor="let el of hearsaytotals | async; let i = index">
-                            <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;" width="50%">
+                            <!-- <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;" width="50%">
                                 <img src="{{el.img}}" style="display:block;margin:5px 10px 15px 20px" class="img-thumbnail" align="right" alt="" />
-                            </td>
-                            <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;">
+                            </td> -->
+                            <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex">
                                 <div>
                                     <div>
                                         <br>
@@ -76,8 +76,14 @@
                                         <a class="fs-6">&nbsp;&nbsp; {{el.data}}</a>
                                         <a class="fs-4"><br> {{el.title}}</a>
                                     </div>
-                                    <br>
-                                    <p class="fs-6">{{el.detail}}</p>
+                                    <div>
+                                        <img src="{{el.img}}" style="display:block;margin:5px 10px 15px 20px" class="img-thumbnail" align="right" alt="" />
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <p class="fs-6">{{el.detail}}</p>
+                                        <br>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
