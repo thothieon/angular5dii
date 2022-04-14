@@ -8,9 +8,8 @@
             <br>
             <div *ngFor="let hearsay of hearsays | async">
                 <div>
-                    <a class="d-inline p-2 {{hearsay.color}} text-white" href="/#/m100" style="border-radius:10px;padding-bottom: .5em;text-decoration:none;">{{hearsay.item}}</a>
-                    <a class="fs-6">&nbsp;&nbsp;</a>
-                    <a class="fs-6">{{hearsay.data}}</a>
+                    <a class="d-inline p-2 {{hearsay.color}} text-white" href="/#/m100#vbn" style="border-radius:10px;padding-bottom: .5em;text-decoration:none;">{{hearsay.item}}</a>
+                    <a class="fs-6">&nbsp;&nbsp;{{hearsay.data}}</a>
                 </div>
                 <br>
                 <p class="fs-6 newsblock">{{hearsay.title}}</p>
