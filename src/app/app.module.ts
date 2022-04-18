@@ -49,6 +49,7 @@ import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
 import { C510Component } from './pages/c510/c510.component';
+import { C610Component } from './pages/c610/c610.component';
 import { Ccs001Component } from './pages/ccs001/ccs001.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
@@ -124,7 +125,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B211Component,
     B212Component,
     D121Component,
-    D141Component
+    D141Component,
+    C610Component
   ],
   imports: [
     BrowserModule,
