@@ -89,11 +89,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: 'Annie', title: 'SSI 專長潛水員教練', title01: '攝影專長教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/205.jpg',
       hrf: '',
       name: 'Sophie', title: 'SSI 專長潛水員教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/219.jpg',
       hrf: '',
