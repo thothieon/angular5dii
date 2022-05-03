@@ -25,19 +25,14 @@ export class B230Component implements OnInit {
       name: '薛', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
     },
     {
-      img: '../../../assets/Image/Coach/222.jpg',
-      hrf: 'https://www.facebook.com/jialing.hu.37',
-      name: '佳伶', title: '駐店教練', title01: 'SSI 助理教練', title03: ''
-    },
-    {
       img: '../../../assets/Image/Coach/235.jpg',
       hrf: 'https://www.facebook.com/profile.php?id=100000343460900',
-      name: '江江', title: 'SSI 助理教練', title01: 'SSI 自由潛水 LV1 教練', title03: ''
+      name: '江江', title: 'SSI 自由潛水 LV1 教練', title01: '', title03: ''
     },
     {
       img: '../../../assets/Image/Coach/229.jpg',
       hrf: '',
-      name: '維萱', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
+      name: '維萱', title: '', title01: 'SSI 自由潛水 LV2 教練', title03: ''
     },
     {
       img: '../../../assets/Image/Coach/234.jpg',
@@ -53,6 +48,11 @@ export class B230Component implements OnInit {
       img: '../../../assets/Image/Coach/254.jpg',
       hrf: '',
       name: '夢如', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
+    },
+    {
+      img: '../../../assets/Image/Coach/222.jpg',
+      hrf: 'https://www.facebook.com/jialing.hu.37',
+      name: '佳伶', title: '駐店教練', title01: 'SSI 助理教練', title03: ''
     },
     {
       img: '../../../assets/Image/Coach/200.jpg',
