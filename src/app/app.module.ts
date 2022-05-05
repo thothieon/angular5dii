@@ -74,6 +74,7 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
+import { Oc100Component } from './pages/oc100/oc100.component';
 
 @NgModule({
   declarations: [
@@ -126,7 +127,8 @@ import { Mc100Component } from './pages/mc100/mc100.component';
     B212Component,
     D121Component,
     D141Component,
-    C610Component
+    C610Component,
+    Oc100Component
   ],
   imports: [
     BrowserModule,
