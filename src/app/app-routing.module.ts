@@ -53,8 +53,10 @@ import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component'
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Oc100Component } from './pages/oc100/oc100.component';
+import { Qac001Component } from './pages/qac001/qac001.component';
 
 const routes: Routes = [
+  { path: 'qac001', component: Qac001Component },
   { path: 'oc100', component: Oc100Component },
   { path: 'head', component: HeadComponent },
   { path: 'mc100', component: Mc100Component },
