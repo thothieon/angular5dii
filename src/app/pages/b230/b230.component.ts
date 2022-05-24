@@ -50,6 +50,11 @@ export class B230Component implements OnInit {
       name: '夢如', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
     },
     {
+      img: '../../../assets/Image/Coach/256.jpg',
+      hrf: '',
+      name: '奕庭', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
+    },
+    {
       img: '../../../assets/Image/Coach/222.jpg',
       hrf: 'https://www.facebook.com/jialing.hu.37',
       name: '佳伶', title: '駐店教練', title01: 'SSI 助理教練', title03: ''
