@@ -2,15 +2,15 @@
     <div class="row">
         <h4 style="font-weight:bold;text-align: center;">活動照片</h4>
 
-        <div class="container" style="--count: 6">
-            <img src="https://drive.google.com/uc?export=view&id=1o9g3xdhONq-mMIIS4dt8NxmIz_f770K6" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1b_ODdEkIVB5h2v4c2FH-oPJqKNmoJl1Q" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1FVZlphZwLKBOHljqcQGrCRzBf9N95dcu" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1WUj5sMzqhMSoHr1zUPGDLDAwf5UHPfa-" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=13fWr3TjIczwrFYl0fFMrq8abTNB7qKeN" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1IpWytpsA0pe2hLGPSMdzNGSBJATaGDwm" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1aWk5JjMmW5-fq6xlf4fWg9YWru4HEFPE" alt="">
-            <img src="https://drive.google.com/uc?export=view&id=1n30en6Pw80_5cLsxn8albq7w_4aDkJQo" alt="">
+        <div class="container" *ngFor="let fewalbumsitem of fewalbumsitems | async " style="--count: 6">
+            <img src={{fewalbumsitem.t01}} alt="">
+            <img src={{fewalbumsitem.t02}} alt="">
+            <img src={{fewalbumsitem.t03}} alt="">
+            <img src={{fewalbumsitem.t04}} alt="">
+            <img src={{fewalbumsitem.t05}} alt="">
+            <img src={{fewalbumsitem.t06}} alt="">
+            <img src={{fewalbumsitem.t07}} alt="">
+            <img src={{fewalbumsitem.t08}} alt="">
         </div>
         <style>
             html,
