@@ -1,5 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+export interface Fewalbums { 
+  id: string;
+  img: string; 
+  hrf: string;
+  name: string;
+  title: string;
+}
+
 @Component({
   selector: 'app-b240',
   templateUrl: './b240.component.html',
@@ -14,7 +25,15 @@ export class B240Component implements OnInit {
     { img:'../../../assets/Image/FUNDIVE/L1030.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' }
   ]
 
-  constructor() { }
+  private fewalbumsitemCollection: AngularFirestoreCollection<Fewalbums>;
+  fewalbumsitems: Observable<Fewalbums[]>;
+  constructor(private afs: AngularFirestore) {
+    this.fewalbumsitemCollection = afs.collection<Fewalbums>('iDiving/activity/fewalbums');
+    this.fewalbumsitems = this.fewalbumsitemCollection.valueChanges();
+  }
+  addItem(fewalbumsitems: Fewalbums) {
+    this.fewalbumsitemCollection.add(fewalbumsitems);
+  }
 
   ngOnInit(): void {
   }

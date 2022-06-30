@@ -49,14 +49,14 @@
     <!-- https://coreui.io/docs/4.1/components/card/ -->
     <!-- photoalbum -->
     <div class="row justify-content-around">
-        <div class="card mb-4" *ngFor="let stand of stands" style="max-width: 400px;">
+        <div class="card mb-4" *ngFor="let fewalbumsitem of fewalbumsitems | async " style="max-width: 400px;">
             <div class="row">
                 <div class="bg-image hover-overlay">
-                    <a href={{stand.hrf}}>
-                        <img src={{stand.img}} class="card-img-top" alt="...">
+                    <a href={{fewalbumsitem.hrf}}>
+                        <img src={{fewalbumsitem.img}} class="card-img-top" alt="...">
                         <!-- <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div> -->
                         <div class="card-img-overlay white-text">
-                            <h5 class="card-title rgba-grey-strong">{{stand.name}} <br> {{stand.title}}</h5>
+                            <h5 class="card-title rgba-grey-strong">{{fewalbumsitem.name}} <br> {{fewalbumsitem.title}}</h5>
                         </div>
                     </a>
                 </div>

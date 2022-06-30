@@ -27,6 +27,7 @@ import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinfo
 import { HearsayComponent } from './hearsay/hearsay.component';
 import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 import { DealerComponent } from './dealer/dealer.component';
+import { FewalbumsComponent } from './fewalbums/fewalbums.component';
 
 
 
@@ -47,7 +48,8 @@ import { DealerComponent } from './dealer/dealer.component';
     FdschoolinformationComponent,
     HearsayComponent,
     SmallactivityComponent,
-    DealerComponent
+    DealerComponent,
+    FewalbumsComponent
   ],
   imports: [
     CommonModule,
@@ -83,7 +85,8 @@ import { DealerComponent } from './dealer/dealer.component';
     FdschoolinformationComponent,
     HearsayComponent,
     SmallactivityComponent,
-    DealerComponent
+    DealerComponent,
+    FewalbumsComponent
   ]
 })
 export class PartModule { }
