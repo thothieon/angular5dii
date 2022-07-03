@@ -48,6 +48,9 @@ import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
+import { Dz02Component } from './pages/dz02/dz02.component';
+import { Dz03Component } from './pages/dz03/dz03.component';
+import { Dz04Component } from './pages/dz04/dz04.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
@@ -65,6 +68,9 @@ const routes: Routes = [
   { path: 'm100', component: M100Component },
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
+  { path: 'dz04', component: Dz04Component },
+  { path: 'dz03', component: Dz03Component },
+  { path: 'dz02', component: Dz02Component },
   { path: 'dz01', component: Dz01Component },
   { path: 'd160', component: D160Component },
   { path: 'd150', component: D150Component },
