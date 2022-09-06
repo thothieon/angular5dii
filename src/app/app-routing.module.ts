@@ -62,7 +62,6 @@ import { Qac001Component } from './pages/qac001/qac001.component';
 const routes: Routes = [
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
-  { path: 'coc100', component: Coc100Component },
   { path: 'head', component: HeadComponent },
   { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },
@@ -102,6 +101,7 @@ const routes: Routes = [
   { path: 'cfd210', component: Cfd210Component },
   { path: 'cfd220', component: Cfd220Component },
   { path: 'cfd310', component: Cfd310Component },
+  { path: 'coc100', component: Coc100Component },
   { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },

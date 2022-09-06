@@ -54,7 +54,7 @@ ng g c pages\c210 進階探險潛水員
 ng g c pages\c310 各項專長潛水員
 ng g c pages\c510 減壓專長潛水員
 
-ng g c pages\coc100 技術潛水課程 XRN XRF
+ng g c pages\coc100 延伸領域潛水課程 XRN XRF
 XR技術潛水課程 X
 
 ng g c pages\c410 水肺領導級
