@@ -58,6 +58,7 @@ import { Cfd210Component } from './pages/cfd210/cfd210.component';
 import { Cfd220Component } from './pages/cfd220/cfd220.component';
 import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
+import { Coc100Component } from './pages/Coc100/Coc100.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
@@ -77,7 +78,6 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-import { Oc100Component } from './pages/oc100/oc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 
@@ -133,7 +133,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     D121Component,
     D141Component,
     C610Component,
-    Oc100Component,
+    Coc100Component,
     Qac001Component,
     Qaa001Component,
     Dz02Component,

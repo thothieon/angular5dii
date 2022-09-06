@@ -36,6 +36,7 @@ import { Cfd210Component } from './pages/cfd210/cfd210.component';
 import { Cfd220Component } from './pages/cfd220/cfd220.component';
 import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
+import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
 import { D111Component } from './pages/d111/d111.component';
@@ -55,14 +56,13 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
-import { Oc100Component } from './pages/oc100/oc100.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 
 const routes: Routes = [
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
-  { path: 'oc100', component: Oc100Component },
+  { path: 'coc100', component: Coc100Component },
   { path: 'head', component: HeadComponent },
   { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },

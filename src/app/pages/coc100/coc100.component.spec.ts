@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Oc100Component } from './oc100.component';
+import { Coc100Component } from './coc100.component';
 
-describe('Oc100Component', () => {
-  let component: Oc100Component;
-  let fixture: ComponentFixture<Oc100Component>;
+describe('Coc100Component', () => {
+  let component: Coc100Component;
+  let fixture: ComponentFixture<Coc100Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Oc100Component ]
+      declarations: [ Coc100Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Oc100Component);
+    fixture = TestBed.createComponent(Coc100Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
