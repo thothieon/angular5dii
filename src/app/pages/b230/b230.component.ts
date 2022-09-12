@@ -180,11 +180,6 @@ export class B230Component implements OnInit {
       name: '子皓', title: 'SSI 自由潛水 LV2 教練'
     },
     {
-      img: '../../../assets/Image/Coach/250.jpg',
-      hrf: '',
-      name: 'Benny', title: 'SSI 自由潛水 LV1 教練'
-    },
-    {
       img: '../../../assets/Image/Coach/251.jpg',
       hrf: '',
       name: 'Howard', title: 'SSI 自由潛水 LV1 教練'
