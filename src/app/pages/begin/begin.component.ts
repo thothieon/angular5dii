@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Routes } from '@angular/router';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
@@ -34,7 +34,10 @@ export class BeginComponent implements OnInit {
     this.activitysCollection = afs.collection<Activity>('iDiving/activity/keyactivity');
     this.activitys = this.activitysCollection.valueChanges();
   }
-  addItem(course: Course, activitys: Activity) {
+  addItem(
+    routes: Routes,
+    course: Course, 
+    activitys: Activity) {
     this.coursesCollection.add(course);
     this.activitysCollection.add(activitys);
   }
