@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
+import { About001Component } from './pages/about001/about001.component';
 import { HeadComponent } from './components/Part/head/head.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
@@ -116,6 +117,7 @@ const routes: Routes = [
   { path: 'b211', component: B211Component },
   { path: 'b212', component: B212Component },
   { path: 'bz01', component: Bz01Component },
+  { path: 'about001', component: About001Component },
   { path: '', component: BeginComponent }
 ];
 
