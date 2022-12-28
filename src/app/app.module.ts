@@ -80,6 +80,7 @@ import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
+import { About001Component } from './pages/about001/about001.component';
 
 @NgModule({
   declarations: [
@@ -138,7 +139,8 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     Qaa001Component,
     Dz02Component,
     Dz03Component,
-    Dz04Component
+    Dz04Component,
+    About001Component
   ],
   imports: [
     BrowserModule,
