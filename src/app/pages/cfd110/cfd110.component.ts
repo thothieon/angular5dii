@@ -28,14 +28,14 @@ export class Cfd110Component implements OnInit {
   
   //假日班
   Weekenders = [
-    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_20221.png'},
-    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_20222.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_01.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_02.png'}
   ];
   
   //平日班
   Weekdays = [
     {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20221.png'},
-    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20222.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20222.png'}
   ];
 
   constructor() { }

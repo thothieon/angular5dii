@@ -147,8 +147,16 @@
                     </tbody>
                 </table>
                 <br>
-                <img class="d-block" src="../../../../assets/Image/Data/AA_Schedule.png" width="60%"
-                    style="display:block; margin:auto;">
+                
+                <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
+                    <mdb-carousel-item *ngFor="let AA_Schedule of AA_Schedule; let i = index">
+                        <div class="view">
+                            <img class="d-block" src="{{AA_Schedule.img}}" width="100%" style="display:block; margin:auto;" alt="First slide">
+                        </div>
+                    </mdb-carousel-item>
+                </mdb-carousel>
+                <br>
+                
             </div>
             <!-- 進階探險 課程學費 -->
             <div>
