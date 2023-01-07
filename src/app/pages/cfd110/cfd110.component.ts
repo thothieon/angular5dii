@@ -34,8 +34,8 @@ export class Cfd110Component implements OnInit {
   
   //平日班
   Weekdays = [
-    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20221.png'},
-    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_20222.png'}
+    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_01.png'},
+    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_02.png'}
   ];
 
   constructor() { }
