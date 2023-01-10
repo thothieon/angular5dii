@@ -9,6 +9,11 @@ export class C210Component implements OnInit {
 
   active = 1;
 
+  AA_Schedule = [
+    {img: '../../../../assets/Image/Data/AA_Schedule_Weekend.png'},
+    {img: '../../../../assets/Image/Data/AA_Schedule_Weekdays.png'}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
