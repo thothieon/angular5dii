@@ -26,6 +26,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PartModule } from './components/Part/part.module';
 import { BeginComponent } from './pages/begin/begin.component';
+import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
@@ -140,7 +141,8 @@ import { About001Component } from './pages/about001/about001.component';
     Dz02Component,
     Dz03Component,
     Dz04Component,
-    About001Component
+    About001Component,
+    Businesscard001Component
   ],
   imports: [
     BrowserModule,

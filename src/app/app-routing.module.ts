@@ -18,6 +18,7 @@ import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
 import { BeginComponent } from './pages/begin/begin.component';
+import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C100Component } from './pages/c100/c100.component';
 import { C120Component } from './pages/c120/c120.component';
@@ -103,6 +104,7 @@ const routes: Routes = [
   { path: 'cfd220', component: Cfd220Component },
   { path: 'cfd310', component: Cfd310Component },
   { path: 'coc100', component: Coc100Component },
+  { path: 'businesscard001/:id', component: Businesscard001Component },
   { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },
