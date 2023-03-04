@@ -149,7 +149,16 @@
                                             </tbody>
                                         </table>
                                         <br>
-                                        <img class="d-block" src="../../../../assets/Image/Data/DD_Schedule.png" width="100%" style="display:block; margin:auto;">
+
+                                        <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
+                                            <mdb-carousel-item *ngFor="let DDSchedule of DDSchedules; let i = index">
+                                                <div class="view">
+                                                    <img class="d-block" src="{{DDSchedule.img}}" width="100%" style="display:block; margin:auto;" alt="First slide">
+                                                </div>
+                                            </mdb-carousel-item>
+                                        </mdb-carousel>
+                                        <br>
+
                                     </div>
                                     <!-- 課程學費 -->
                                     <div>
@@ -481,8 +490,16 @@
                                             </tbody>
                                         </table>
                                         <br>
-                                        <img class="d-block" src="../../../../assets/Image/Data/NL_Schedule.png"
-                                            width="100%" style="display:block; margin:auto;">
+
+                                        <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
+                                            <mdb-carousel-item *ngFor="let NLSchedule of NLSchedules; let i = index">
+                                                <div class="view">
+                                                    <img class="d-block" src="{{NLSchedule.img}}" width="100%" style="display:block; margin:auto;" alt="First slide">
+                                                </div>
+                                            </mdb-carousel-item>
+                                        </mdb-carousel>
+                                        <br>
+
                                     </div>
                                     <!-- 課程學費 -->
                                     <div>
