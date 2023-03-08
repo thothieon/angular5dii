@@ -1,0 +1,292 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">學潛水</a>
+                    <a class="breadcrumb-item">體驗潛水/水肺複習</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-8">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <a ngbNavLink>體驗潛水</a>
+                    <ng-template ngbNavContent class="custom-class">
+                        <br>
+                        <h3 style="font-family:DFKai-sb;">體驗潛水</h3>
+                        <hr>
+                        <!-- 課程介紹 -->
+                        <!-- 課程規劃 -->
+                        <div>
+                            <h3>課程規劃</h3>
+                            <table style="table-layout: fixed;">
+                                <tr>
+                                    <td class="fs-6" colspan="2">
+                                        不用會游泳，不用有證照，體驗後立即報名 OWD(Open Water Diver 開放水域潛水員課程) 課程還可享特殊優惠！
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-6" colspan="2">
+                                        iDiving 周末六日出動所有教練保障OWD訓練的安全，但是還在猶豫是否要學潛水的朋友，iDiving
+                                        知道你想了解更多的需求，我們特別在平日安排了水肺體驗活動。<br>
+                                        想到泳池試試無重力的飄浮感嗎？請報名泳池體驗水肺 TRY SCUBA。<br>
+                                        充滿冒險勇氣的你，想直接下海觀賞可愛的海洋生物嗎？請報名海洋體驗潛水TRY SCUBA DIVE。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../../../assets/Image/Data/Try_1.jpg" width="100%" /></td>
+                                    <td><img src="../../../assets/Image/Data/Try_2.jpg" width="100%" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 開課日期 -->
+                        <div>
+                            <h3>開課日期</h3>
+                            <ul class="fs-6">
+                                <li>預約制, 不接受現場報名</li>
+                                <li>5月~9月 每周二至周五, 每天上午下午兩時段</li>
+                                <li>活動時間：上午 10:00 ~ 11:00 / 下午 14:00 ~ 15:00</li>
+                            </ul>
+                        </div>
+                        <!-- 超值學費 -->
+                        <div>
+                            <h3>超值學費</h3>
+                            <table style="table-layout: fixed;">
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li class="fs-6">
+                                                泳池體驗水肺 TRY SCUBA（會提供體驗的照片）：<br />
+                                                兩米深水肺體驗 1,500 元，兩人同行價 2,500。<br />
+                                                五米深水肺體驗 2,500 元，兩人同行價 4,500。
+                                            </li>
+                                            <li class="fs-6">
+                                                海洋體驗水肺 TRY SCUBA DIVE（會提供當天活動的影片）：<br>
+                                                海底巡遊 3,000 元，兩人同行價 5,400 元，三人同行價 7,200 元。<br>
+                                                如須搭車，台北到東北角車資 300 元/每人。
+                                            </li>
+                                        </ul>
+                                        <div><span class="fs-6">體驗完立即報名OWD課程，學費可折抵 1,000元。</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="../../../assets/Image/Data/Try_3.jpg" width="130%" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- 報名方式 -->
+                        <div>
+                            <app-paymentmethod1000></app-paymentmethod1000>
+                        </div>
+                        <!-- 學前須知 -->
+                        <div>
+                            <h3>學前須知</h3>
+                            <ol class="fs-6">
+                                <li>各種體驗課程之教學說明約30分鐘，實際下水體驗時間約30~40分鐘。</li>
+                                <li>更改約定上課日期須在７天前告知。７天內更動或未告知而曠課，補課需額外負擔1000元，身體不適，出示醫院掛號收據者不收。</li>
+                                <li>費用包含：教練費、訓練期間潛水裝備使用、體驗水肺之泳池場地費、保險。</li>
+                                <li>費用不含：海洋公園門票（遇風浪因素而須進入海洋公園體驗潛水時）、餐飲與交通費用。</li>
+                                <li>學員自行放棄課程，本訓練中心將不予退費。</li>
+                                <li>訓練期間所提供之裝備若有穿戴不適或任何問題，請務必告知主持教練。</li>
+                                <li>體驗潛水之交通須自理，或由iDiving協調共乘，台北到東北角車資 300 元/每人</li>
+                                <li>體驗水肺泳池場地：２米深前港泳池或５米深南港、松山運動中心潛水池</li>
+                                <li>海洋體驗潛水：東北角海域體驗潛水時，餐食自理，若協調至餐廳用餐則費用均攤。</li>
+                            </ol>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a ngbNavLink>水肺複習</a>
+                    <ng-template ngbNavContent>
+                        <br>
+                        <h3 style="font-family:DFKai-sb;">水肺複習</h3>
+                        <hr>
+                        <!-- 課程介紹 -->
+                        <div>
+                            <table style="text-align: justify;">
+                                <tr>
+                                    <td class="fs-6" colspan="2">
+                                        <img style="float: left; margin: 5px 10px 0 0; vertical-align: text-top;" width="20%"
+                                            src="../../../assets/Image/Data/SSU_1.jpg" />
+                                        您是在渡假時快速取得執照嗎？還是取得執照後就沒有再潛水過呢？想到潛水還是會感到一些些恐懼嗎？沒關係！請參加 iDiving
+                                        為您準備的水肺複習班，將水肺潛水必備的技巧再次由專業教練帶著您一步步練習吧！
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../../../assets/Image/Data/SSU_2.jpg" width="100%" /></td>
+                                    <td><img src="../../../assets/Image/Data/SSU_3.jpg" width="100%" /></td>
+                                </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- 課程規劃 -->
+                        <div>
+                            <h3>課程規劃</h3>
+                            <table border="1" style="text-align: justify;">
+                                <tr align="center">
+                                    <td></td>
+                                    <td class="fs-6">時 間</td>
+                                    <td class="fs-6">課 程 內 容</td>
+                                </tr>
+                                <tr align="center">
+                                    <td class="fs-6" nowrap style="vertical-align:middle;">水肺複習</td>
+                                    <td class="fs-6" nowrap>
+                                        週末下午<br />
+                                        2-3小時<br />
+                                        視狀況調整
+                                    </td>
+                                    <td class="fs-6" style="vertical-align:middle;">
+                                        裝備調整及組裝、蛙鞋踢動、面鏡排水、二級頭尋回與排水、<br />
+                                        中性浮力、入水法、下潛＆上升、重裝脫著、緊急游泳上升
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table style="text-align: justify;">
+                                <tr>
+                                    <td><img src="../../../assets/Image/Data/SSU_4.jpg" width="100%" /></td>
+                                    <td><img src="../../../assets/Image/Data/SSU_5.jpg" width="100%" /></td>
+                                </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- 開課日期 -->
+                        <div>
+                            <h3>開課日期</h3>
+                            <table>
+                                <tr>
+                                    <td class="fs-6">「為 5~9 月每個周末皆可安排」，但請一周前填寫資料報名，以便安排。</td>
+                                </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- 超值學費 -->
+                        <div>
+                            <h3>超值學費</h3>
+                            <table style="text-align: justify;">
+                                <tr>
+                                    <td>
+                                        <Ul>
+                                            <li><span class="fs-6">前港泳池（兩米）為 2,000 元 / 南港泳池（五米）為 2,500 元</span></li>
+                                            <table width="100%" style="text-align: justify;">
+                                                <tr>
+                                                    <td class="fs-6">包含泳池場地費、教練費、全套裝備使用！</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6">自備全部裝備者（鉛塊除外），費用可減免 500 元</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6">參加 iDiving 出團活動者，費用減半！</td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table width="100%" style="text-align: justify;">
+                                                <tr>
+                                                    <td><img src="../../../assets/Image/Data/SSU_6.jpg" width="100%" /></td>
+                                                    <td><img src="../../../assets/Image/Data/SSU_7.jpg" width="100%" /></td>
+                                                </tr>
+                                            </table>
+                                        </Ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- 報名方式 -->
+                        <div>
+                            <app-paymentmethod1000></app-paymentmethod1000>
+                            <br>
+                        </div>
+                        <!-- 學前須知 -->
+                        <div>
+                            <h3>學前須知</h3>
+                            <table style="text-align: justify;">
+                                <tr>
+                                    <td>
+                                        <ol class="fs-6">
+                                            <li>學員自行放棄課程，本訓練中心將不予退費。</li>
+                                            <li>學員在學期間購買潛水器材享有會員優惠價。</li>
+                                            <li>訓練期間所提供之裝備若有穿戴不適或任何問題，請務必告知主持教練。</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </ng-template>
+                </li>
+            </ul>
+
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+            <!-- <pre>Active: {{ active }}</pre> -->
+
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

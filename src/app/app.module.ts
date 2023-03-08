@@ -42,10 +42,13 @@ import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
 import { C100Component } from './pages/c100/c100.component';
+import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
+import { C312Component } from './pages/c312/c312.component';
+import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
@@ -105,8 +108,11 @@ import { About001Component } from './pages/about001/about001.component';
     D110Component,
     C130Component,
     C100Component,
+    C101Component,
     B230Component,
     C310Component,
+    C312Component,
+    C313Component,
     Ccs001Component,
     Cfd220Component,
     D111Component,

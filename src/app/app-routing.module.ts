@@ -21,10 +21,13 @@ import { BeginComponent } from './pages/begin/begin.component';
 import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C100Component } from './pages/c100/c100.component';
+import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
+import { C312Component } from './pages/c312/c312.component';
+import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
@@ -89,10 +92,13 @@ const routes: Routes = [
   { path: 'c420', component: C420Component },
   { path: 'c410', component: C410Component },
   { path: 'c310', component: C310Component },
+  { path: 'c312', component: C312Component },
+  { path: 'c313', component: C313Component },
   { path: 'c210', component: C210Component },
   { path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
   { path: 'c100', component: C100Component },
+  { path: 'c101', component: C101Component },
   { path: 'cz01', component: Cz01Component },
   { path: 'ccs001', component: Ccs001Component },
   { path: 'ccs001/:id', component: Ccs001Component },
