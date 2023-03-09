@@ -4,6 +4,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 
@@ -25,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PartModule } from './components/Part/part.module';
+import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
@@ -79,12 +83,12 @@ import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
-import { About001Component } from './pages/about001/about001.component';
 
 @NgModule({
   declarations: [
@@ -148,7 +152,8 @@ import { About001Component } from './pages/about001/about001.component';
     Dz03Component,
     Dz04Component,
     About001Component,
-    Businesscard001Component
+    Businesscard001Component,
+    Health001Component
   ],
   imports: [
     BrowserModule,
@@ -173,6 +178,7 @@ import { About001Component } from './pages/about001/about001.component';
     NoopAnimationsModule,
     CommonModule,
     SharedMaterialModule,
+    PdfViewerModule,
     NgbModule
   ],
   providers: [],
