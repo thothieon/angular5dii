@@ -35,11 +35,17 @@
         <div class="col-xl-10">
             <table mdbTable>
                 <thead>
+                    <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
                     <th colspan="2">
                         <h4>課程年度計畫 </h4>
                     </th>
                 </thead>
                 <tbody>
+                    <!-- <tr mdbTableCol *ngFor="let el of elements"> -->
+                        <!-- <th scope="row">{{el.id}}</th>
+                        <td>{{el.first}}</td>
+                        <td>{{el.last}}</td>
+                        <td>{{el.handle}}</td>-->
                     <tr mdbTableCol *ngFor="let course of courses | async ">
                         <!-- <th scope="row">{{course.id}}</th> -->
                         <td class="fs-6">{{course.name}}</td>
@@ -48,7 +54,7 @@
                             <a href="/#/cz01" style="text-decoration:none;">
                                 {{course.state}}
                             </a>
-                        </td>
+                        </td> 
                     </tr>
                 </tbody>
             </table>

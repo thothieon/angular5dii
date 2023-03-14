@@ -2,7 +2,7 @@ import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstra
 
 import { Component, OnInit, ViewChild, HostListener, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
 export interface Hearsaytotal { 
