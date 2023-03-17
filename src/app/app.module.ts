@@ -24,6 +24,7 @@ import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, Checkbo
 import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -181,7 +182,9 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,
-    NgbModule
+    NgbModule,
+    NgbPaginationModule, 
+    NgbAlertModule
   ],
   providers: [],
   schemas: [
