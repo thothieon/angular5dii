@@ -113,6 +113,7 @@ const routes: Routes = [
   { path: 'cfd310', component: Cfd310Component },
   { path: 'coc100', component: Coc100Component },
   { path: 'businesscard001/:id', component: Businesscard001Component },
+  { path: 'bs', component: Businesscard001Component },
   { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },

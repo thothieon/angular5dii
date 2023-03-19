@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { NgxVcardModule } from "ngx-vcard";
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -182,6 +183,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,
+    NgxVcardModule,
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule

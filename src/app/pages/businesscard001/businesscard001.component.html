@@ -1,4 +1,3 @@
-
 <!-- 帶ID參數 -->
 <!-- https://angular-training-guide.rangle.io/routing/routeparams -->
 <!-- https://codecraft.tv/courses/angular/routing/parameterised-routes/ -->
@@ -6,9 +5,44 @@
 <!-- https://medium.com/@Idan_Co/angular-print-service-290651c721f9 -->
 
 <div class="container">
+    <a><br><hr><br></a>
+</div>
+
+<div class="container">
+    <!-- example.component.html -->
+    <div>
+        <!-- Normal -->
+        <button id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
+            Download VCard!
+        </button>
+
+        <br>
+        <br>
+
+        <!-- Generate VCard only on Click -->
+        <button id="downloadButtonFunction" vcdDownloadVCard [generateVCardFunction]="generateVCardOnTheFly">
+            Download generated VCard!
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <a><br><hr><br></a>
+</div>
+
+<div class="container">
+    <p>VCard String:</p>
+    <p>{{vCardString}}</p>
+</div>
+
+<div class="container">
+    <a><br><hr><br></a>
+</div>
+
+<div class="container">
 
     <div class="row">
-        
+
         <table class="table table-borderless">
             <tr>
                 <td>
