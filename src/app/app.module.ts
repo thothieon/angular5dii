@@ -92,6 +92,7 @@ import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
+import { InsideComponent } from './insidepages/inside/inside.component';
 
 @NgModule({
   declarations: [
@@ -156,7 +157,8 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     Dz04Component,
     About001Component,
     Businesscard001Component,
-    Health001Component
+    Health001Component,
+    InsideComponent
   ],
   imports: [
     BrowserModule,
