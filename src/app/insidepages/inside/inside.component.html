@@ -2,6 +2,33 @@
     <mat-toolbar color="primary" class="example-toolbar">
         <button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
         <h1 class="example-app-name">內部系統</h1>
+        <h1 class="example-app-name ml-auto">登入</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-container" autosize>
+        <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+            <mat-nav-list color="primary">
+                <mat-list-item (click)="showSubmenu_01 = !showSubmenu_01" class="parent">
+                    <hr>
+                    <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu_01}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+                    <span class="full-width" *ngIf="isExpanded || isShowing">個人資料</span>
+                </mat-list-item>
+                <div class="submenu" [ngClass]="{'expanded' : showSubmenu_01}" *ngIf="isShowing || isExpanded">
+                    <a mat-list-item href="/#/">個人資料</a>
+                </div>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <div class="example-sidenav-content">
+            Main content that resizes properly
+        </div>
+    </mat-sidenav-container>
+</div>
+
+<!-- <div class="wrapper">
+    <mat-toolbar color="primary" class="example-toolbar">
+        <button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
+        <h1 class="example-app-name">內部系統</h1>
     </mat-toolbar>
 
     <mat-sidenav-container class="example-container" autosize>
@@ -39,9 +66,9 @@
                 </mat-list-item>
             </mat-nav-list>
             <mat-nav-list>
-                <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+                <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent"> -->
                     <!-- <mat-icon mat-list-icon>home</mat-icon> -->
-                    <span class="full-width" *ngIf="isExpanded || isShowing">Parent Menu 01</span>
+                    <!-- <span class="full-width" *ngIf="isExpanded || isShowing">Parent Menu 01</span>
                     <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
                 </mat-list-item>
                 <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
@@ -63,4 +90,4 @@
             Main content that resizes properly
         </div>
     </mat-sidenav-container>
-</div>
+</div> -->
