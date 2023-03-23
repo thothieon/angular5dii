@@ -2,7 +2,7 @@
     <mat-toolbar color="primary" class="example-toolbar">
         <button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
         <h1 class="example-app-name">內部系統</h1>
-        <h1 class="example-app-name ml-auto">登入</h1>
+        <button mat-icon-button class=" ml-auto">登入</button>
     </mat-toolbar>
 
     <mat-sidenav-container class="example-container" autosize>
@@ -14,7 +14,7 @@
                     <span class="full-width" *ngIf="isExpanded || isShowing">個人資料</span>
                 </mat-list-item>
                 <div class="submenu" [ngClass]="{'expanded' : showSubmenu_01}" *ngIf="isShowing || isExpanded">
-                    <a mat-list-item href="/#/">個人資料</a>
+                    <a mat-list-item routerLink="../d160">個人資料</a>
                 </div>
             </mat-nav-list>
         </mat-sidenav>
