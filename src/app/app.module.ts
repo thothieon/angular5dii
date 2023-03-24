@@ -26,6 +26,8 @@ import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -93,6 +95,7 @@ import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { InsideComponent } from './insidepages/inside/inside.component';
+import { InsideflexComponent } from './insidepages/insideflex/insideflex.component';
 
 @NgModule({
   declarations: [
@@ -158,7 +161,8 @@ import { InsideComponent } from './insidepages/inside/inside.component';
     About001Component,
     Businesscard001Component,
     Health001Component,
-    InsideComponent
+    InsideComponent,
+    InsideflexComponent
   ],
   imports: [
     BrowserModule,
@@ -182,6 +186,7 @@ import { InsideComponent } from './insidepages/inside/inside.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     CommonModule,
+    FlexLayoutModule,
     SharedMaterialModule,
     PdfViewerModule,
     NgbModule,

@@ -61,6 +61,7 @@ import { Ec01Component } from './pages/ec01/ec01.component';
 import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { InsideComponent } from './insidepages/inside/inside.component';
+import { InsideflexComponent } from './insidepages/insideflex/insideflex.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
@@ -74,6 +75,7 @@ const routes: Routes = [
   { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },
   { path: 'is', component: InsideComponent },
+  { path: 'isf', component: InsideflexComponent },
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
   { path: 'dz04', component: Dz04Component },

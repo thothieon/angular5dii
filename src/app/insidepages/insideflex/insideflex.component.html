@@ -1,0 +1,33 @@
+<div class="container">
+    <!-- <div *ngIf="loading" class="loading-spinner">
+        <mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+    </div> -->
+    <div fxLayout="column" fxLayoutGap="10px" > <!-- *ngIf="!loading"> -->
+        <div fxLayout="row" fxLayoutGap="10px">
+            <a mat-stroked-button color="primary" routerLink="/member/new" class="button-gap">新增學員</a>
+        </div>
+        <div fxLayout.gt-xs="row" fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayoutAlign.gt-xs="start center" fxLayoutAlign.lt-sm="start">
+            <mat-form-field fxFlex.gt-xs="80" fxFlex.lt-sm="100">
+                <mat-label>輸入</mat-label>
+                <input matInput > <!-- (keyup.enter)="searchMember()"> -->
+            </mat-form-field>
+            <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign.gt-xs="start center" fxLayoutAlign.lt-sm="start center">
+                <mat-form-field fxFlex.gt-xs="70" fxFlex.lt-sm="70">
+                    <mat-label>搜尋欄位</mat-label>
+                    <mat-select>
+                        <mat-option>
+                            option.name
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div fxFlex.gt-xs="10" fxFlex.lt-sm="30">
+                    <button mat-stroked-button color="primary" ><!-- (click)="searchMember()"> -->
+                        搜尋
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <ag-grid-angular class="table ag-theme-balham" [rowData]="rows" [columnDefs]="columns"
+            (gridReady)="onGridReady($event)"></ag-grid-angular> -->
+    </div>
+</div>
