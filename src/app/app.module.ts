@@ -90,12 +90,12 @@ import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
 import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+import { InsideComponent } from './pagesinside/inside/inside.component';
+import { InsideflexComponent } from './pagesinside/insideflex/insideflex.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
-import { InsideComponent } from './insidepages/inside/inside.component';
-import { InsideflexComponent } from './insidepages/insideflex/insideflex.component';
 
 @NgModule({
   declarations: [
