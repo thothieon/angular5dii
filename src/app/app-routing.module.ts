@@ -58,6 +58,7 @@ import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { FileuploadComponent } from './pagesinside/fileupload/fileupload.component';
 import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
@@ -73,6 +74,7 @@ const routes: Routes = [
   { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },
   { path: 'linkidiving', component: LinkidivingComponent },
+  { path: 'ful', component: FileuploadComponent },
   { path: 'ec01', component: Ec01Component },
   { path: 'dz04', component: Dz04Component },
   { path: 'dz03', component: Dz03Component },

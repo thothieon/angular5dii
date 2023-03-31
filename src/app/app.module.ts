@@ -86,6 +86,7 @@ import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { FileuploadComponent } from './pagesinside/fileupload/fileupload.component';
 import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
@@ -151,6 +152,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     D150Component,
     D160Component,
     Ec01Component,
+    FileuploadComponent,
     Health001Component,
     LinkidivingComponent,
     M100Component,
