@@ -1,0 +1,84 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">學潛水</a>
+                    <a class="breadcrumb-item">健康聲明</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
+    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
+
+            <!-- https://www.npmjs.com/package/ng2-pdf-viewer -->
+            <div id="outerContainer">
+                <div class="pdf-container">
+                    <pdf-viewer [src]="pdfSrc" [rotation]="0" [original-size]="false" [show-all]="true"
+                        [fit-to-page]="false" [zoom]="1" [zoom-scale]="'page-width'" [stick-to-page]="false"
+                        [render-text]="true" [external-link-target]="'blank'" [autoresize]="true" [show-borders]="false"
+                        style="width: 100%; height: 100vh;">
+                    </pdf-viewer>
+                </div>
+            </div>
+            <br>
+
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

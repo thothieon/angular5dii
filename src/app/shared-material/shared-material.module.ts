@@ -1,13 +1,79 @@
+//import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+//import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSliderModule  } from '@angular/material/slider';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule
+  ],
+  exports: [
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule
+  ],
+  schemas: [  ]
+  //schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+})
+export class SharedMaterialModule { }
+
+/*import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatNativeDateModule, MAT_LABEL_GLOBAL_OPTIONS, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/core';
+import { MatNativeDateModule, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/core';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
@@ -46,10 +112,10 @@ export const TW_DATE_FORMAT = {
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    CommonModule,    
+    MatAutocompleteModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
@@ -58,6 +124,7 @@ export const TW_DATE_FORMAT = {
     MatSortModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
+    MatFormFieldModule,
     MatIconModule,
     MatProgressBarModule,
     MatToolbarModule,
@@ -74,13 +141,12 @@ export const TW_DATE_FORMAT = {
     MatTreeModule,
     MatSlideToggleModule,
     DragDropModule,
-    MatStepperModule,
-    MatAutocompleteModule,
+    MatStepperModule
   ],
   exports: [
+    MatAutocompleteModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
@@ -89,6 +155,7 @@ export const TW_DATE_FORMAT = {
     MatSortModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
+    MatFormFieldModule,
     MatIconModule,
     MatProgressBarModule,
     MatToolbarModule,
@@ -105,13 +172,12 @@ export const TW_DATE_FORMAT = {
     MatTreeModule,
     MatSlideToggleModule,
     DragDropModule,
-    MatStepperModule,
-    MatAutocompleteModule,
+    MatStepperModule
   ],
   providers: [
-    { provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } },
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { float: 'always' } },
     { provide: MAT_DATE_LOCALE, useValue: 'zh-TW' },
     { provide: MAT_DATE_FORMATS, useValue: TW_DATE_FORMAT }
   ]
 })
-export class SharedMaterialModule { }
+export class SharedMaterialModule { }*/

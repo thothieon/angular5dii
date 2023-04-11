@@ -1,14 +1,19 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+// 參考
+// https://www.codesolutionstuff.com/full-angular-13-firebase-authentication-tutorial-example/
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 // Import the timeline library
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
@@ -19,13 +24,16 @@ import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, Checkbo
 import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PartModule } from './components/Part/part.module';
+import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
+import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
@@ -41,10 +49,13 @@ import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
 import { C100Component } from './pages/c100/c100.component';
+import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
+import { C312Component } from './pages/c312/c312.component';
+import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
@@ -75,72 +86,77 @@ import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
-import { About001Component } from './pages/about001/about001.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    About001Component,
     BeginComponent,
-    LinkidivingComponent,
-    C120Component,
-    C210Component,
-    Cfd110Component,
-    Cfd120Component,
-    Cfd130Component,
-    Cfd310Component,
-    Cfdc210Component,
+    Businesscard001Component,
     Bz01Component,
-    Dz01Component,
-    Ec01Component,
-    Cz01Component,
-    Cfd210Component,
-    B310Component,
-    B320Component,
-    D110Component,
-    C130Component,
-    C100Component,
-    B230Component,
-    C310Component,
-    Ccs001Component,
-    Cfd220Component,
-    D111Component,
-    D112Component,
-    D120Component,
-    D130Component,
-    D140Component,
-    D150Component,
-    D160Component,
     B210Component,
-    C510Component,
+    B211Component,
+    B212Component,
+    B230Component,
     B240Component,
+    B310Component,
+    B311Component,
+    B320Component,
+    B321Component,
+    B330Component,
+    B340Component,
     B400Component,
+    B411Component,
+    C100Component,
+    C101Component,
+    C120Component,
+    C130Component,
+    C210Component,
+    C310Component,
+    C312Component,
+    C313Component,
     C410Component,
     C420Component,
     C430Component,
-    B330Component,
-    B340Component,
-    M100Component,
-    Mc100Component,
-    B311Component,
-    B321Component,
-    B411Component,
-    B211Component,
-    B212Component,
-    D121Component,
-    D141Component,
+    C510Component,
     C610Component,
+    Ccs001Component,
+    Cfd110Component,
+    Cfd120Component,
+    Cfd130Component,
+    Cfd210Component,
+    Cfd220Component,
+    Cfd310Component,
+    Cfdc210Component,
     Coc100Component,
-    Qac001Component,
-    Qaa001Component,
+    Cz01Component,
+    D110Component,
+    Dz01Component,
     Dz02Component,
     Dz03Component,
     Dz04Component,
-    About001Component
+    D111Component,
+    D112Component,
+    D120Component,
+    D121Component,
+    D130Component,
+    D140Component,
+    D141Component,
+    D150Component,
+    D160Component,
+    Ec01Component,
+    Health001Component,
+    LinkidivingComponent,
+    M100Component,
+    Mc100Component,
+    Qac001Component,
+    Qaa001Component
   ],
   imports: [
     BrowserModule,
@@ -165,9 +181,15 @@ import { About001Component } from './pages/about001/about001.component';
     NoopAnimationsModule,
     CommonModule,
     SharedMaterialModule,
-    NgbModule
+    PdfViewerModule,
+    NgbModule,
+    NgbPaginationModule, 
+    NgbAlertModule
   ],
   providers: [],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

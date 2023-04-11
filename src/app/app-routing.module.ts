@@ -18,12 +18,16 @@ import { B340Component } from './pages/b340/b340.component';
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
 import { BeginComponent } from './pages/begin/begin.component';
+import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
 import { C100Component } from './pages/c100/c100.component';
+import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
+import { C312Component } from './pages/c312/c312.component';
+import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
@@ -54,6 +58,7 @@ import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
 import { Ec01Component } from './pages/ec01/ec01.component';
+import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
@@ -64,6 +69,7 @@ const routes: Routes = [
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
   { path: 'head', component: HeadComponent },
+  { path: 'health001', component: Health001Component },
   { path: 'mc100', component: Mc100Component },
   { path: 'm100', component: M100Component },
   { path: 'linkidiving', component: LinkidivingComponent },
@@ -88,10 +94,13 @@ const routes: Routes = [
   { path: 'c420', component: C420Component },
   { path: 'c410', component: C410Component },
   { path: 'c310', component: C310Component },
+  { path: 'c312', component: C312Component },
+  { path: 'c313', component: C313Component },
   { path: 'c210', component: C210Component },
   { path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
   { path: 'c100', component: C100Component },
+  { path: 'c101', component: C101Component },
   { path: 'cz01', component: Cz01Component },
   { path: 'ccs001', component: Ccs001Component },
   { path: 'ccs001/:id', component: Ccs001Component },
@@ -103,6 +112,7 @@ const routes: Routes = [
   { path: 'cfd220', component: Cfd220Component },
   { path: 'cfd310', component: Cfd310Component },
   { path: 'coc100', component: Coc100Component },
+  { path: 'businesscard001/:id', component: Businesscard001Component },
   { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },

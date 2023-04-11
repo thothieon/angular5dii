@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+//import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Angular Forms Modules
@@ -10,6 +11,8 @@ import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, Waves
 import { CheckboxModule, ButtonsModule, InputsModule, IconsModule, CardsModule } from 'angular-bootstrap-md'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { SharedMaterialModule } from '../../shared-material/shared-material.module';
 
 import { HeadComponent } from './head/head.component';
 import { HeadmenuComponent } from './headmenu/headmenu.component';
@@ -70,7 +73,8 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     TableModule,
     WavesModule,
     MDBBootstrapModule.forRoot(),
-    NgbModule
+    NgbModule,
+    SharedMaterialModule
   ],
   exports: [
     HeadComponent,
@@ -91,6 +95,8 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     SmallactivityComponent,
     DealerComponent,
     FewalbumsComponent
-  ]
+  ],
+  //schemas: [  ]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class PartModule { }

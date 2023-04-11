@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { B310Component } from './b310.component';
 
 describe('B310Component', () => {
-  let component: B311Component;
-  let fixture: ComponentFixture<B311Component>;
+  let component: B310Component;
+  let fixture: ComponentFixture<B310Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

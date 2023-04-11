@@ -52,7 +52,13 @@ ng g c pages\c121
 ng g c pages\c130 水肺複習
 ng g c pages\c210 進階探險潛水員
 ng g c pages\c310 各項專長潛水員
-ng g c pages\c510 減壓專長潛水員
+
+ng g c pages\c311 基礎專長
+ng g c pages\c312 環保專長
+ng g c pages\c313 高階專長
+ng g c pages\c101 體驗/水肺
+
+ng g c pages\c510 減壓專長潛水員  專業選修
 
 ng g c pages\coc100 延伸領域潛水課程 XRN XRF
 XR技術潛水課程 X
@@ -89,12 +95,15 @@ ng g c pages\ccs001 客戶關係
 ng g c pages\que001 問卷
 ng g c pages\eps001 考卷
 
+ng g c pages\businesscard001 電子名片
+
 ng g c components\part\hearsay
 ng g c components\part\smallactivity
 ng g c components\part\team
 ng g c components\part\fdtabscourse
 ng g c components\part\fdlv1introduce
 ng g c components\part\paymentmethod
+ng g c components\part\paymentmethod1000
 ng g c components\part\fdschoolinformation
 ng g m operation
 
