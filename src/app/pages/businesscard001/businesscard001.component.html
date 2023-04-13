@@ -34,11 +34,11 @@
             <!-- Default form subscription -->
             <form class="text-center">
 
-                <p>
+                <!-- <p>
                     <a href="" target="_blank">@idiving_taiwan</a>
                 </p>
 
-                <p>水肺潛水｜自由潛水｜美人魚｜技術潛水｜國內外潛水旅遊｜裝備銷售與維修｜</p>
+                <p>水肺潛水｜自由潛水｜美人魚｜技術潛水｜國內外潛水旅遊｜裝備銷售與維修｜</p> -->
 
                 <p>
                     得到的id : {{srcid}}
@@ -48,24 +48,73 @@
         </div>
     </div>
 
-</div>
 
-<div class="container">
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <div class="row">
         <div class="col">
+        </div>
+        <div class="col-xl">
+            <div class="card" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <p class="card-text">姓名: &nbsp; {{vCardTest[0].name.firstNames}} &nbsp; {{vCardTest[0].name.lastNames}}</p>
+                    <p class="card-text">電話: &nbsp; {{vCardTest[0].photo}} </p>
+                    <p class="card-text">Email: &nbsp; {{vCardTest[0].workEmail}} </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-xl">
             <!-- Normal -->
-            <button id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
-                Download VCard!
-            </button>
-            <!-- Generate VCard only on Click -->
-            <button id="downloadButtonFunction" vcdDownloadVCard [generateVCardFunction]="generateVCardOnTheFly">
-                Download generated VCard!
+            <button id="downloadButtonNormal" [vcdDownloadVCard]="vCardTest[0]">
+                Download vCardTest!
             </button>
 
             <p><br></p>
 
-            <p>VCard String: {{vCardString}}</p>
+            <!-- Generate VCard only on Click -->
+            <button id="downloadButtonFunction" vcdDownloadVCard [generateVCardFunction]="generateVCardOnTheFly">
+                Download generated vCardTest!
+            </button>
+
+            <p><br></p>
+
+            <p>vCardTest String: {{vCardString}}</p>
+        </div>
+        <div class="col">
         </div>
     </div>
 

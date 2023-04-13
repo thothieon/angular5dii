@@ -13,18 +13,29 @@ export class Businesscard001Component implements OnInit {
 
   //https://stackoverflow.com/questions/57840288/why-bootstrap-table-do-not-use-styles-in-angular-7
   elements: any = [
-    {id: 1, firstNames: 'John', lastNames: 'Doe', email: 'ddsd@tswitter.com'},
-    {id: 2, firstNames: 'Jacob', lastNames: 'Thornton', email: 'ss@fat.ss'},
-    {id: 3, firstNames: 'Larry', lastNames: 'the Bird', email: 'ddd@twitter.com'},
+    { id: 1, firstNames: 'John', lastNames: 'Doe', email: 'ddsd@tswitter.com' },
+    { id: 2, firstNames: 'Jacob', lastNames: 'Thornton', email: 'ss@fat.ss' },
+    { id: 3, firstNames: 'Larry', lastNames: 'the Bird', email: 'ddd@twitter.com' },
   ];
 
   headElements = ['id', 'firstNames', 'lastNames', 'email'];
 
+  public vCardTest: Array<VCard> = [
+    {
+      photo: "0911098765",
+      workFax: ["0911098765"],
+      workEmail: ["hsiehieon@gmail.com"],
+      name: { firstNames: "hsieh", lastNames: "ihui", addtionalNames: "Auto" },
+      gender: { text: "sewtest" }
+    }, {}
+  ]
+
   srcid: string;
   private sub: any;
 
-  constructor(private route: ActivatedRoute,
-              private router: Router) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router ) {
     this.srcid = route.snapshot.params['id'];
   }
 
@@ -37,21 +48,16 @@ export class Businesscard001Component implements OnInit {
   }
 
   public vCard: VCard = {
-    name: {
-      firstNames: "John",
-      lastNames: "Doe",
-    },
+    name:
+      { firstNames: "John", lastNames: "Doe" },
   };
-
-  //public vCard: VCard = this.elements(2);
 
   public generateVCardOnTheFly = (): VCard => {
     // TODO: Generate the VCard before Download
-    return {
-      name: { firstNames: "John", lastNames: "Doe", addtionalNames: "Auto" },
-    };
+    return this.vCardTest[1];
   };
 
-  public vCardString = VCardFormatter.getVCardAsString(this.vCard);
+  //public vCardString = VCardFormatter.getVCardAsString(this.vCard);
+  public vCardString = VCardFormatter.getVCardAsString(this.vCardTest[0]);
 
 }
