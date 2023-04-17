@@ -11,23 +11,23 @@
 
             <table class="table table-borderless">
                 <tr>
-                    <td>
+                    <!-- <td>
                         <a href="">
                             <img src="../../../assets/Image/Data/advertiseL.jpg " class="rounded mx-auto d-block"
                                 alt="...">
                         </a>
-                    </td>
+                    </td> -->
                     <td>
                         <a href="">
                             <img src="../../../../assets/Image/Logo.png" class="rounded mx-auto d-block" alt="...">
                         </a>
                     </td>
-                    <td>
+                    <!-- <td>
                         <a href="">
                             <img src="../../../assets/Image/Data/advertiseR.jpg" class="rounded mx-auto d-block"
                                 alt="...">
                         </a>
-                    </td>
+                    </td> -->
                 </tr>
             </table>
 
@@ -40,16 +40,15 @@
 
                 <p>水肺潛水｜自由潛水｜美人魚｜技術潛水｜國內外潛水旅遊｜裝備銷售與維修｜</p> -->
 
-                <p>
+                <!-- <p>
                     得到的id : {{srcid}}
-                </p>
+                </p> -->
 
             </form>
         </div>
     </div>
 
-
-    <div class="row">
+    <!-- <div class="row">
         <table>
             <tr>
                 <td>
@@ -61,23 +60,164 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> -->
 
-    <div class="row">
+    <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
+    <!-- <div class="row">
         <div class="col">
         </div>
         <div class="col-xl">
             <div class="card" style="width: 18rem;">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                    <p class="card-text">姓名: &nbsp; {{vCardTest[0].name.firstNames}} &nbsp; {{vCardTest[0].name.lastNames}}</p>
-                    <p class="card-text">電話: &nbsp; {{vCardTest[0].photo}} </p>
+                <img class="card-img-top col" src={{vCardTest[0].photo}}>
+                <div class="card-body col">
+                    <p class="card-text">姓名: &nbsp; {{vCardTest[0].name.firstNames}} &nbsp;
+                        {{vCardTest[0].name.lastNames}}
+                    </p>
+                    <p class="card-text">電話: &nbsp; {{vCardTest[0].telephone}} </p>
                     <p class="card-text">Email: &nbsp; {{vCardTest[0].workEmail}} </p>
                 </div>
             </div>
         </div>
         <div class="col">
         </div>
+    </div> -->
+
+    <!-- <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div> -->
+
+    <!-- https://mdbootstrap.com/docs/angular/components/cards/ -->
+    <!-- https://mdbootstrap.com/docs/angular/content-styles/images/ images -->
+    <!-- <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-8">
+            <div class="card mb-3">  --><!-- style="max-width: 540px;"> -->
+                <!-- <div class="row">
+                    <div class="col-md-4">
+                        <img class="card-img-top" src={{OutVCardPhoto}}>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">ID: &nbsp; {{nbId}}</p>
+                            <p class="card-text">姓名: &nbsp; {{OutVCardFirstNames}} &nbsp; {{OutVCardLastNames}} &nbsp;
+                                {{OutVCardAddtionalNames}}</p>
+                            <p class="card-text">電話: &nbsp; {{OutVCardTelephone}} </p>
+                            <p class="card-text">Email: &nbsp; {{OutVCardWorkEmail}} </p>
+                            <p class="card-text">Text: &nbsp; {{OutVCardText}} </p>
+                            <div>
+                                <button id="downloadButtonNormal" [vcdDownloadVCard]="vCardTest[0]">
+                                    Download vCardTest!
+                                </button>
+                                &nbsp;
+                                <button id="downloadButtonFunction" vcdDownloadVCard
+                                    [generateVCardFunction]="generateVCardOnTheFly">
+                                    Download generated vCardTest!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div> -->
+
+    <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
+    <!-- https://www.devwares.com/docs/contrast/angular/components/card/ -->
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl">
+            <div class="card" style="width: 25rem">
+                <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+                <div class="mx-auto">
+                    <img class="img-fluid rounded-circle" style="margin-top: -5rem" width="150px" src="{{OutVCardPhoto}}">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center mb-4"> <!--  -->
+                    <h5 class="card-title">ID: &nbsp; {{nbId}}</h5>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="card-text" style="text-align:right">姓名: </p>
+                                </td>
+                                <td>
+                                    <p class="card-text" style="text-align:left">{{OutVCardFirstNames}}{{OutVCardLastNames}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p class="card-text" style="text-align:left">{{OutVCardAddtionalNames}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="card-text" style="text-align:right">電話: </p>
+                                </td>
+                                <td>
+                                    <p class="card-text" style="text-align:left">{{OutVCardTelephone}} </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="card-text" style="text-align:right">Email: </p>
+                                </td>
+                                <td>
+                                    <p class="card-text" style="text-align:left">{{OutVCardWorkEmail}} </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="card-text" style="text-align:right">Text: </p>
+                                </td>
+                                <td>
+                                    <p class="card-text" style="text-align:left">{{OutVCardText}} </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <a class="text-muted">Detroit, USA</a> -->
+                    <div class="mt-3">
+                        <!-- <button size="small" color="dark">Connect</button> -->
+                        <button class="btn btn-rounded idiving-color" id="downloadButtonFunction" vcdDownloadVCard [generateVCardFunction]="generateVCardOnTheFly">
+                            下載至通訊錄
+                        </button>
+                        &nbsp;
+                        <button class="btn btn-rounded idiving-color ms-3" size="small" color="warning"> Send Message </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl">
+        </div>
     </div>
 
     <div class="row">
@@ -94,18 +234,18 @@
         </table>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="col">
         </div>
-        <div class="col-xl">
-            <!-- Normal -->
-            <button id="downloadButtonNormal" [vcdDownloadVCard]="vCardTest[0]">
+        <div class="col-xl"> -->
+    <!-- Normal -->
+    <!-- <button id="downloadButtonNormal" [vcdDownloadVCard]="vCardTest[0]">
                 Download vCardTest!
             </button>
 
-            <p><br></p>
+            <p><br></p> -->
 
-            <!-- Generate VCard only on Click -->
+    <!-- Generate VCard only on Click
             <button id="downloadButtonFunction" vcdDownloadVCard [generateVCardFunction]="generateVCardOnTheFly">
                 Download generated vCardTest!
             </button>
@@ -116,6 +256,21 @@
         </div>
         <div class="col">
         </div>
-    </div>
+    </div> -->
+
+    <!-- https://mdbootstrap.com/docs/b5/angular/navigation/footer/ -->
+    <footer class="text-center idiving-color-light idiving-footer-color"> <!-- text-lg-start -->
+        <!--Grid row-->
+        <div class="row">
+            <div class="col">
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright: 愛潛水股份有限公司版權所有
+                    <!-- <a class="text-center" href="https://www.idiving.com.tw/">愛潛水股份有限公司版權所有</a> text-dark -->
+                </div>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
 
 </div>
