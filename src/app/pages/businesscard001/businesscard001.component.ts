@@ -131,38 +131,34 @@ export class Businesscard001Component implements OnInit {
       else if (this.srcid == "333160") //伊暉
       {
         this.nbId = 3;
-        this.OutVCardPhoto = this.vCardTest[this.nbId].photo;
-        this.OutVCardFirstNames = this.vCardTest[this.nbId].name.firstNames;
-        this.OutVCardLastNames = this.vCardTest[this.nbId].name.lastNames;
-        this.OutVCardAddtionalNames = this.vCardTest[this.nbId].name.addtionalNames;
-        this.OutVCardTelephone = this.vCardTest[this.nbId].telephone;
-        this.OutVCardWorkEmail = this.vCardTest[this.nbId].workEmail;
-        this.OutVCardText = this.vCardTest[this.nbId].gender.text;
       }
       else if (this.srcid == "676139") //東陸
       {
         this.nbId = 4;
       }
-      else if (this.srcid == "333160") //伊暉
+      else if (this.srcid == "1633543") //佳伶
       {
         this.nbId = 5;
       }
-      else if (this.srcid == "1633543") //佳伶
+      else if (this.srcid == "2519206") //聰穎
       {
         this.nbId = 6;
       }
-      else if (this.srcid == "2519206") //聰穎
+      else if (this.srcid == "2190788") //家輝
       {
         this.nbId = 7;
       }
-      else if (this.srcid == "2190788") //家輝
+      else if (this.srcid == "2925167") //晨柔
       {
         this.nbId = 8;
       }
-      else if (this.srcid == "2925167") //晨柔
-      {
-        this.nbId = 9;
-      }
+      this.OutVCardPhoto = this.vCardTest[this.nbId].photo;
+      this.OutVCardFirstNames = this.vCardTest[this.nbId].name.firstNames;
+      this.OutVCardLastNames = this.vCardTest[this.nbId].name.lastNames;
+      this.OutVCardAddtionalNames = this.vCardTest[this.nbId].name.addtionalNames;
+      this.OutVCardTelephone = this.vCardTest[this.nbId].telephone;
+      this.OutVCardWorkEmail = this.vCardTest[this.nbId].workEmail;
+      this.OutVCardText = this.vCardTest[this.nbId].gender.text;
     });
     console.log(this.vCardString);
   }
