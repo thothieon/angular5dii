@@ -40,6 +40,7 @@
     "jquery": "^3.6.0",
     "mdb-ui-kit": "^3.9.0",
     "ng2-pdf-viewer": "^7.0.0",
+    "ngx-vcard": "^4.1.15",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
