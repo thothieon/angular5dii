@@ -27,19 +27,27 @@ export class Businesscard001Component implements OnInit {
   public vCardTest: Array<VCard> = [
     {
       photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
-      telephone: ["+886","0911098765"],
-      workFax: ["0911098765"],
-      workEmail: ["hsiehieon@gmail.com"],
-      name: { firstNames: "hsieh", lastNames: "ihui", addtionalNames: "Auto" },
-      gender: { text: "sewtest" }
+      telephone: ["+886","0922803201"],
+      workFax: ["0909098786"],
+      workEmail: ["kankp726@gmail.com"],
+      name: { firstNames: "甘", lastNames: "昆平", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
     },
     {
       photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
-      telephone: ["0911098765"],
-      workFax: ["0911098765"],
-      workEmail: ["hsiehieon@gmail.com"],
-      name: { firstNames: "hsieh", lastNames: "ihui", addtionalNames: "Auto" },
-      gender: { text: "sewtest" }
+      telephone: ["+886","0970051587"],
+      workFax: ["0909098786"],
+      workEmail: ["misery918@gmail.com"],
+      name: { firstNames: "陳", lastNames: "彥儒", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0920313067"],
+      workFax: ["0909098786"],
+      workEmail: ["littleorca@gmail.com"],
+      name: { firstNames: "黃", lastNames: "上銘", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
     },
     {
       photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
@@ -47,7 +55,47 @@ export class Businesscard001Component implements OnInit {
       workFax: ["0911098765"],
       workEmail: ["hsiehieon@gmail.com"],
       name: { firstNames: "謝", lastNames: "伊暉", addtionalNames: "hsieh-ihui" },
-      gender: { text: "2sewtest" }
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0919533440"],
+      workFax: ["0911098765"],
+      workEmail: ["ytldylan@yahoo.com.tw"],
+      name: { firstNames: "楊", lastNames: "東陸", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0926600498"],
+      workFax: ["0911098765"],
+      workEmail: ["jennyhu1027@gmail.com"],
+      name: { firstNames: "胡", lastNames: "佳伶", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0966638962"],
+      workFax: ["0911098765"],
+      workEmail: ["chongying328@gmail.com"],
+      name: { firstNames: "潘", lastNames: "聰穎", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0989506696"],
+      workFax: ["0911098765"],
+      workEmail: ["b5200345@gmail.com"],
+      name: { firstNames: "林", lastNames: "家輝", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
+    {
+      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      telephone: ["+886","0919703112"],
+      workFax: ["0911098765"],
+      workEmail: ["kuroboo723@gmail.com"],
+      name: { firstNames: "徐", lastNames: "晨柔", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
     },
   ]
 
@@ -78,11 +126,11 @@ export class Businesscard001Component implements OnInit {
       }
       else if (this.srcid == "322717") //上銘
       {
-        this.nbId = 1;
+        this.nbId = 2;
       }
       else if (this.srcid == "333160") //伊暉
       {
-        this.nbId = 2;
+        this.nbId = 3;
         this.OutVCardPhoto = this.vCardTest[this.nbId].photo;
         this.OutVCardFirstNames = this.vCardTest[this.nbId].name.firstNames;
         this.OutVCardLastNames = this.vCardTest[this.nbId].name.lastNames;
@@ -93,27 +141,27 @@ export class Businesscard001Component implements OnInit {
       }
       else if (this.srcid == "676139") //東陸
       {
-        this.nbId = 3;
+        this.nbId = 4;
       }
       else if (this.srcid == "333160") //伊暉
       {
-        this.nbId = 4;
+        this.nbId = 5;
       }
       else if (this.srcid == "1633543") //佳伶
       {
-        this.nbId = 5;
+        this.nbId = 6;
       }
       else if (this.srcid == "2519206") //聰穎
       {
-        this.nbId = 6;
+        this.nbId = 7;
       }
       else if (this.srcid == "2190788") //家輝
       {
-        this.nbId = 7;
+        this.nbId = 8;
       }
       else if (this.srcid == "2925167") //晨柔
       {
-        this.nbId = 8;
+        this.nbId = 9;
       }
     });
     console.log(this.vCardString);
