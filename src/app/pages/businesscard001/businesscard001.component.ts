@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { VCardFormatter, VCard } from "ngx-vcard";
 
 export interface OutVCard {
-  photo: string;
+  lineIDURL: string;
 }
 
 @Component({
@@ -24,9 +24,21 @@ export class Businesscard001Component implements OnInit {
 
   headElements = ['id', 'firstNames', 'lastNames', 'email'];
 
+  public vCardOutTest: Array<OutVCard> = [
+    {lineIDURL : ""},
+    {lineIDURL : ""},
+    {lineIDURL : ""},
+    {lineIDURL : "https://line.me/ti/p/9kEtU-6H4d"},
+    {lineIDURL : ""},
+    {lineIDURL : ""},
+    {lineIDURL : ""},
+    {lineIDURL : ""},
+    {lineIDURL : ""}
+  ]
+
   public vCardTest: Array<VCard> = [
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1r324AKqyusFlb1otInIvqNn9q1teX-ye",
       telephone: ["+886","0922803201"],
       workFax: ["0909098786"],
       workEmail: ["kankp726@gmail.com"],
@@ -34,7 +46,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1Hpb6UHM-KF1_fTVDFch-k5-uE0g-N9WB",
       telephone: ["+886","0970051587"],
       workFax: ["0909098786"],
       workEmail: ["misery918@gmail.com"],
@@ -42,7 +54,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1QSwmFJjCdmfTQIdBhtBBPHvdGAYl6nto",
       telephone: ["+886","0920313067"],
       workFax: ["0909098786"],
       workEmail: ["littleorca@gmail.com"],
@@ -50,7 +62,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=17OTWb6S5vCYDolsVELgccgPTzfUjef10",
       telephone: ["+886","0911098765"],
       workFax: ["0911098765"],
       workEmail: ["hsiehieon@gmail.com"],
@@ -58,7 +70,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1sI0KY0jIHbQLPJQO3_HHBce7BKJi-FJm",
       telephone: ["+886","0919533440"],
       workFax: ["0911098765"],
       workEmail: ["ytldylan@yahoo.com.tw"],
@@ -66,7 +78,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1J5hAICJeu0jwfSQ1g1IAhjQjCBp-q8qA",
       telephone: ["+886","0926600498"],
       workFax: ["0911098765"],
       workEmail: ["jennyhu1027@gmail.com"],
@@ -74,7 +86,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1UUw3FxpT-VLMrW8BEopEfhR4rJvvNCDP",
       telephone: ["+886","0966638962"],
       workFax: ["0911098765"],
       workEmail: ["chongying328@gmail.com"],
@@ -82,7 +94,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1yBA9Yg_DQXX5fZJvzaU8PjSaZUXx8l_t",
       telephone: ["+886","0989506696"],
       workFax: ["0911098765"],
       workEmail: ["b5200345@gmail.com"],
@@ -90,7 +102,7 @@ export class Businesscard001Component implements OnInit {
       gender: { text: "統編 25122613" }
     },
     {
-      photo: "https://drive.google.com/uc?export=view&id=1b8QUP5F-jJXZ9sKp0AnWKFuZdpzBDjY3",
+      photo: "https://drive.google.com/uc?export=view&id=1J0I4Ie1ZUb5JI-UIuOJbG3i_SggHTqBs",
       telephone: ["+886","0919703112"],
       workFax: ["0911098765"],
       workEmail: ["kuroboo723@gmail.com"],
@@ -107,6 +119,7 @@ export class Businesscard001Component implements OnInit {
   OutVCardAddtionalNames: string;
   OutVCardTelephone: any;
   OutVCardWorkEmail: string[];
+  OutVCardOutLineID: string;
   OutVCardText: string;
   private sub: any;
 
@@ -123,6 +136,10 @@ export class Businesscard001Component implements OnInit {
       if (this.srcid == "296653")  //阿甘
       {
         this.nbId = 0;
+      }
+      else if (this.srcid == "340953") //彥儒
+      {
+        this.nbId = 1;
       }
       else if (this.srcid == "322717") //上銘
       {
@@ -159,6 +176,7 @@ export class Businesscard001Component implements OnInit {
       this.OutVCardTelephone = this.vCardTest[this.nbId].telephone;
       this.OutVCardWorkEmail = this.vCardTest[this.nbId].workEmail;
       this.OutVCardText = this.vCardTest[this.nbId].gender.text;
+      this.OutVCardOutLineID = this.vCardOutTest[this.nbId].lineIDURL;
     });
     console.log(this.vCardString);
   }
