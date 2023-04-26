@@ -4,6 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { VCardFormatter, VCard } from "ngx-vcard";
 
+import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels } from '@techiediaries/ngx-qrcode';
+
 export interface OutVCard {
   lineIDURL: string;
 }
@@ -14,6 +16,15 @@ export interface OutVCard {
   styleUrls: ['./businesscard001.component.scss']
 })
 export class Businesscard001Component implements OnInit {
+
+  // We can have Canvas/Img/Url as elementType
+  elementType = NgxQrcodeElementTypes.URL;
+  
+  // We can have High/Low/Medium/Quartile
+  correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
+  
+  // Need to specify the valid website address
+  value = 'https://www.geeksforgeeks.com/';
 
   //https://stackoverflow.com/questions/57840288/why-bootstrap-table-do-not-use-styles-in-angular-7
   elements: any = [
@@ -26,10 +37,11 @@ export class Businesscard001Component implements OnInit {
 
   public vCardOutTest: Array<OutVCard> = [
     {lineIDURL : ""},
+    {lineIDURL : "https://line.me/ti/p/M1kWJuRtYN"},
     {lineIDURL : ""},
     {lineIDURL : ""},
     {lineIDURL : "https://line.me/ti/p/9kEtU-6H4d"},
-    {lineIDURL : ""},
+    {lineIDURL : "https://line.me/ti/p/UXaWjPO2tS"},
     {lineIDURL : ""},
     {lineIDURL : ""},
     {lineIDURL : ""},
@@ -37,6 +49,14 @@ export class Businesscard001Component implements OnInit {
   ]
 
   public vCardTest: Array<VCard> = [
+    {
+      photo: "",
+      telephone: ["+886","0922803201"],
+      workFax: [""],
+      workEmail: [""],
+      name: { firstNames: "", lastNames: "", addtionalNames: "" },
+      gender: { text: "統編 25122613" }
+    },
     {
       photo: "https://drive.google.com/uc?export=view&id=1r324AKqyusFlb1otInIvqNn9q1teX-ye",
       telephone: ["+886","0922803201"],
@@ -133,13 +153,17 @@ export class Businesscard001Component implements OnInit {
     this.sub = this.route.params.subscribe(params => {
       this.srcid = params['id'];
       
-      if (this.srcid == "296653")  //阿甘
+      if (this.srcid == "000000")  //公司
       {
         this.nbId = 0;
       }
-      else if (this.srcid == "340953") //彥儒
+      else if (this.srcid == "296653")  //阿甘
       {
         this.nbId = 1;
+      }
+      else if (this.srcid == "340953") //彥儒
+      {
+        this.nbId = 2;
       }
       else if (this.srcid == "322717") //上銘
       {
@@ -147,27 +171,27 @@ export class Businesscard001Component implements OnInit {
       }
       else if (this.srcid == "333160") //伊暉
       {
-        this.nbId = 3;
+        this.nbId = 4;
       }
       else if (this.srcid == "676139") //東陸
       {
-        this.nbId = 4;
+        this.nbId = 5;
       }
       else if (this.srcid == "1633543") //佳伶
       {
-        this.nbId = 5;
+        this.nbId = 6;
       }
       else if (this.srcid == "2519206") //聰穎
       {
-        this.nbId = 6;
+        this.nbId = 7;
       }
       else if (this.srcid == "2190788") //家輝
       {
-        this.nbId = 7;
+        this.nbId = 8;
       }
       else if (this.srcid == "2925167") //晨柔
       {
-        this.nbId = 8;
+        this.nbId = 9;
       }
       this.OutVCardPhoto = this.vCardTest[this.nbId].photo;
       this.OutVCardFirstNames = this.vCardTest[this.nbId].name.firstNames;
@@ -177,6 +201,7 @@ export class Businesscard001Component implements OnInit {
       this.OutVCardWorkEmail = this.vCardTest[this.nbId].workEmail;
       this.OutVCardText = this.vCardTest[this.nbId].gender.text;
       this.OutVCardOutLineID = this.vCardOutTest[this.nbId].lineIDURL;
+      this.value = this.vCardOutTest[this.nbId].lineIDURL;
     });
     console.log(this.vCardString);
   }

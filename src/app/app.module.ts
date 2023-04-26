@@ -31,6 +31,8 @@ import { SharedMaterialModule } from '../app/shared-material/shared-material.mod
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+
 import { PartModule } from './components/Part/part.module';
 import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
@@ -186,7 +188,9 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     NgxVcardModule,
     NgbModule,
     NgbPaginationModule, 
-    NgbAlertModule
+    NgbAlertModule,
+    NgxQRCodeModule
+
   ],
   providers: [],
   schemas: [

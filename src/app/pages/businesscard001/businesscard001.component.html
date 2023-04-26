@@ -37,15 +37,15 @@
     <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
     <!-- https://www.devwares.com/docs/contrast/angular/components/card/ -->
     <div class="row">
-        <div class="col">
+        <div class="col-md-2">
         </div>
-        <div class="col-xl-8">
+        <div class="col-md-8">
             <div class="card container-xl" style="width: 20rem">
-                <img class="img-fluid" src="../../../../assets/Image/Logo.png">
+                <br>
                 <div class="mx-auto">
-                    <img class="img-fluid rounded-circle" style="margin-top: -5rem" width="150px"
-                        src="{{OutVCardPhoto}}">
+                    <img class="img-fluid" src="{{OutVCardPhoto}}"> <!--  rounded-circle style="margin-top: -5rem" width="150px" -->
                 </div>
+                <img class="img-fluid" src="../../../../assets/Image/Logo.png">
                 <div class="card-body d-flex flex-column align-items-center mb-4">
                     <h5 class="card-title">ID: &nbsp; {{srcid}}</h5>
                     <table class="table table-borderless">
@@ -56,7 +56,8 @@
                                 </td>
                                 <td>
                                     <p class="card-text" style="text-align:left">
-                                        {{OutVCardFirstNames}}{{OutVCardLastNames}}</p>
+                                        {{OutVCardFirstNames}}{{OutVCardLastNames}}
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -79,16 +80,16 @@
                                     <p class="card-text" style="text-align:right">Email: </p>
                                 </td>
                                 <td>
-                                    <p class="card-text" style="text-align:left">{{OutVCardWorkEmail}} </p>
+                                    <p class="card-text" style="text-align:left">{{OutVCardWorkEmail}}</p>
                                 </td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>
                                 </td>
                                 <td>
                                     <a class="card-text" style="text-align:left" href="{{OutVCardOutLineID}}">Line 連結</a>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <td>
                                     <p class="card-text" style="text-align:right">Text: </p>
@@ -108,10 +109,27 @@
                         <button class="btn btn-rounded idiving-color ms-3" size="small" color="warning">線上聯繫
                         </button>
                     </div>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <!-- https://www.geeksforgeeks.org/how-to-generate-qr-codes-with-angular-10/ -->
+                            <!-- https://www.npmjs.com/package/angular-qrcode -->
+                            <tr>
+                                <td style="text-align:center">
+                                </td>
+                                <td style="text-align:center">
+                                    <a class="card-text" style="vertical-align: sub" href="{{OutVCardOutLineID}}">Line 連結</a>
+                                    <ngx-qrcode [elementType]="elementType" [errorCorrectionLevel]="correctionLevel"
+                                        [value]="value" cssClass="qrcodeshadow"></ngx-qrcode>
+                                    <!-- value that you want to encode -->
+                                    <!-- <textarea [(ngModel)]="value"></textarea> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-md-2">
         </div>
     </div>
 

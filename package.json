@@ -27,6 +27,7 @@
     "@firebase/functions": "^0.7.5",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@ng-bootstrap/ng-bootstrap": "^11.0.1",
+    "@techiediaries/ngx-qrcode": "^9.1.0",
     "@types/chart.js": "^2.9.34",
     "angular-bootstrap-md": "^13.0.0",
     "angular-timeline": "^1.7.0",
