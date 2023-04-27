@@ -2,6 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -93,6 +94,7 @@ import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
+import { TesthttpclineComponent } from './test/testhttpcline/testhttpcline.component';
 
 @NgModule({
   declarations: [
@@ -157,10 +159,12 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     M100Component,
     Mc100Component,
     Qac001Component,
-    Qaa001Component
+    Qaa001Component,
+    TesthttpclineComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
