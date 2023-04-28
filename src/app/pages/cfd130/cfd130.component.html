@@ -72,6 +72,7 @@
                                 一門可以更貼近海洋生物的課程。現在！立即了解課程！享受大海享受優美吧！
                             </a>
                             <br>
+                            <br>
                         </div>
                         <!-- 美人魚自由潛水 課程內容 -->
                         <div>
@@ -92,7 +93,7 @@
                                         </td>
                                         <td>
                                             <a class="fs-6">
-                                                學科（6hr）<br />
+                                                學科（3hr）<br />
                                                 人魚相關知識 / 安全事項 / 陸地擺動練習
                                             </a>
                                         </td>
@@ -105,7 +106,7 @@
                                         </td>
                                         <td>
                                             <a class="fs-6">
-                                                泳池訓練（4-6hr）<br>
+                                                泳池訓練（4-7hr）<br>
                                                 人魚技巧應用 / 裝備使用 / 救援演練
                                             </a>
                                         </td>
@@ -245,7 +246,7 @@
                                             <a class="fs-6">
                                                 DAY 1 | 學科 3hr<br>
                                                 <hr>
-                                                人魚相關知識、裝備介紹<br>
+                                                人魚相關知識、裝備介紹、安全事項、美人魚技巧及練習。<br>
                                                 <br>
                                             </a>
                                         </td>
@@ -255,19 +256,7 @@
                                         </td>
                                         <td>
                                             <a class="fs-6">
-                                                DAY 2 | 學科 3hr<br>
-                                                <hr>
-                                                安全事項、美人魚技巧及練習<br>
-                                                <br>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        </td>
-                                        <td>
-                                            <a class="fs-6">
-                                                DAY 3 | 泳池術科 4-6hr<br>
+                                                DAY 2 | 學科 4-7hr<br>
                                                 <hr>
                                                 人魚技巧應用、裝備使用、救援演練等。<br>
                                                 <br>
@@ -279,7 +268,7 @@
                                         </td>
                                         <td>
                                             <a class="fs-6">
-                                                DAY 4 | 海洋術科 4-6hr<br>
+                                                DAY 3 | 泳池術科 4-7hr<br>
                                                 <hr>
                                                 海洋環境評估及相關注意事項、簡易擺拍教學等。<br>
                                                 <br>
@@ -296,8 +285,18 @@
                                 </tbody>
                             </table>
                             <br>
-                            <!-- <img src="../../../../assets/Image/Data/MM_05.png" width="99%" style="display:block; margin:auto;" -->
-                            <!-- alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" /> -->
+                            <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
+                                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
+                                    <div class="view">
+                                        <img class="d-block" src="{{Weekday.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                                    </div>
+                                </mdb-carousel-item>
+                            </mdb-carousel>
+                            <br>
+                            <br>
+                            <br>
+                            <img src="../../../assets/Image/Data/MM_05.png" width="99%" style="display: block; margin: auto"
+                            alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         </div>
                         <!-- 美人魚自由潛水 課程學費 -->
                         <!-- 方案  -->
@@ -306,31 +305,14 @@
                             <br>
                             <table borderless="true">
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <h4>2022年 美人魚 （採預約制）</h4>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fs-6">
-                                            <a>請加LINE客服預約上課日期<br></a>
-                                            <a>【海洋美人魚課程】即日起報名<br></a>
-                                        </td>
-                                    </tr>
+                                    
                                     <tr>
                                         <td class="fs-6">
                                             <ul>
-                                                <a>美人魚課程 12,000 元<br></a>
-                                                <a>海洋美人魚課程 15,000 元</a>
-                                                <li>現金優惠 300 元</li>
-                                                <li>人數優惠：兩人一起報名更優惠，每人優惠1000</li>
-                                                <li>iDiving 各級自潛員報名美人魚課程享1000元優惠!</li>
-                                                <li>加碼《 裝備還是自己的最好》報名預約美人魚系列課程前六名 即贈送透明面鏡一副！</li>
                                                 <li>
                                                     迷路了嗎？<br>
                                                     開放水域潛水員課程<a href="/#/c120">連結</a><br>
-                                                    自由潛水員課程LV1<a href="/#/cfd110">連結</a><br>
-                                                    防疫報到措施 ⚠️ 請大家務必遵守
+                                                    自由潛水員課程LV1<a href="/#/cfd110">連結</a>
                                                 </li>
                                                 <li>以上活動不得與其他優惠合併使用</li>
                                                 <li>已報名學員不得要求更改活動方案</li>
@@ -679,7 +661,7 @@
                                 <thead>
                                     <tr>
                                         <th colspan="2">
-                                            <h3 style="font-family:DFKai-sb;">【課程內容】</h3>
+                                            <h3 style="font-family:DFKai-sb;">【親子人魚課程內容】</h3>
                                         </th>
                                     </tr>
                                 </thead>
@@ -713,7 +695,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <a class="fs-6" style="color:red;">
-                                                <br>註:親子人魚課程無海洋課程
+                                                <br>註:無海洋課程
                                             </a>
                                         </td>
                                     </tr>
@@ -816,7 +798,7 @@
                                         </td>
                                         <td>
                                             <a class="fs-6">
-                                                DAY 2 | 學科 3hr<br>
+                                                DAY 2 | 泳池 3hr<br>
                                                 <hr>
                                                 人魚技巧應用、裝備使用、人魚趣味練習<br>
                                                 <br>
@@ -826,7 +808,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <a class="fs-6" style="color:red;">
-                                                <br>註:親子人魚課程無海洋術科
+                                                <br>註:無海洋術科
                                             </a>
                                         </td>
                                     </tr>
@@ -845,19 +827,19 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h4>2023年 親子人魚 （採預約制）</h4>
+                                            <h4>2023年 親子人魚</h4>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a>請加LINE客服預約上課日期<br></a>
+                                            <a>其他開課日期請加 LINE 客服安排上課日期<br></a>
                                             <a>【親子人魚課程】即日起報名<br></a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <!-- <img src="../../../../assets/Image/Data/MMParentChild_05.png" width="99%" style="display:block; margin:auto;" /> -->
+                            <img src="../../../../assets/Image/Data/MMParentChild_05.png" width="99%" style="display:block; margin:auto;" />
                         </div>
                         <!-- 親子人魚自由潛水 報名方式 -->
                         <app-paymentmethod></app-paymentmethod>
