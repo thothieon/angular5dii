@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -30,6 +31,8 @@ import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap'
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AgGridModule } from 'ag-grid-angular';
 
 import { PartModule } from './components/Part/part.module';
 import { About001Component } from './pages/about001/about001.component';
@@ -171,6 +174,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
@@ -190,6 +194,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     VerticalTimelineModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
+    AgGridModule,
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,
