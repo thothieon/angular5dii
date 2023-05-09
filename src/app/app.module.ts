@@ -33,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { PartModule } from './components/Part/part.module';
 import { About001Component } from './pages/about001/about001.component';
@@ -195,6 +196,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AgGridModule,
+    FlexLayoutModule,
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,
