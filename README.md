@@ -112,6 +112,6 @@ ng g c components\part\paymentmethod1000
 ng g c components\part\fdschoolinformation
 ng g m operation
 
-
+00
 
 

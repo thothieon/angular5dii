@@ -6,7 +6,7 @@
     <div>
         <span><br></span>
     </div>
-    <div fxLayout="row" fxLayoutGap="10px">
+    <div>
         <a mat-stroked-button routerLink="/custome/new" class="button-gap bg-primary fs-6">新增客戶</a>
     </div>
     <div>
@@ -50,6 +50,7 @@
             <ag-grid-angular class="table ag-theme-alpine" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef"
             [rowData]="rowData$ | async" [rowSelection]="'multiple'" [animateRows]="true"
             (gridReady)="onGridReady($event)" (cellClicked)="onCellClicked($event)"></ag-grid-angular>
+
 
     </div>
 </div>
