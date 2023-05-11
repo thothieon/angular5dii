@@ -29,6 +29,8 @@
     "@ng-bootstrap/ng-bootstrap": "^14.1.1",
     "@popperjs/core": "^2.11.7",
     "@types/chart.js": "^2.9.34",
+    "ag-grid-angular": "^29.3.4",
+    "ag-grid-community": "^29.3.4",
     "angular-bootstrap-md": "^15.0.0",
     "angular-timeline": "^1.7.0",
     "angular-vertical-timeline": "^0.6.0",

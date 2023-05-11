@@ -7,6 +7,9 @@
 
 @import "~angular-vertical-timeline/dist/vertical-timeline.css";
 
+// AG Grid
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 mdb-carousel .carousel-multi-item .controls-top .btn-floating {
   background: red;
