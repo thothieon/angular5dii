@@ -1,0 +1,22 @@
+/* You can add global styles to this file, 
+and also import other style files */
+.qrcodeshadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(15px 15px 15px #e42424);
+    opacity: .5;
+}
+    
+textarea {
+    margin-top: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: green;
+    opacity: .5;
+}
