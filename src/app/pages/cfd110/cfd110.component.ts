@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class Cfd110Component implements OnInit {
 
-  active = 3;
+  active = 1;
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'symbol1', 'symbol2'];
   dataSource = ELEMENT_DATA;
   

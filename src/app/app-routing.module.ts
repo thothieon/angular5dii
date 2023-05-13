@@ -53,6 +53,11 @@ import { D140Component } from './pages/d140/d140.component';
 import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
+import { D230Component } from './pages/d230/d230.component';
+import { D310Component } from './pages/d310/d310.component';
+import { D340Component } from './pages/d340/d340.component';
+import { D410Component } from './pages/d410/d410.component';
+import { D420Component } from './pages/d420/d420.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
@@ -62,6 +67,7 @@ import { Health001Component } from './pages/health001/health001.component';
 import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Mc100Component } from './pages/mc100/mc100.component';
+//import { MemberModule } from './modules/member/member.module';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { TesthttpclineComponent } from './test/testhttpcline/testhttpcline.component';
@@ -73,6 +79,7 @@ const routes: Routes = [
   { path: 'head', component: HeadComponent },
   { path: 'health001', component: Health001Component },
   { path: 'mc100', component: Mc100Component },
+  { path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },
   { path: 'm100', component: M100Component },
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },
@@ -80,6 +87,11 @@ const routes: Routes = [
   { path: 'dz03', component: Dz03Component },
   { path: 'dz02', component: Dz02Component },
   { path: 'dz01', component: Dz01Component },
+  { path: 'd420', component: D420Component },
+  { path: 'd410', component: D410Component },
+  { path: 'd340', component: D340Component },
+  { path: 'd310', component: D310Component },
+  { path: 'd230', component: D230Component },
   { path: 'd160', component: D160Component },
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },

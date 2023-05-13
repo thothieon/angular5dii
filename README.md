@@ -86,6 +86,11 @@ ng g c pages\d130 小琉球
 ng g c pages\d140 綠島
 ng g c pages\d150 蘭嶼
 ng g c pages\d160 澎湖
+ng g c pages\d230 杜馬蓋地
+ng g c pages\d310 峇里島
+ng g c pages\d340 西巴丹
+ng g c pages\d410 帛琉
+ng g c pages\d420 馬爾地夫
 ng g c pages\ec01 旅遊年度計畫
 ng g c pages\b240 活動照片
 ng g c pages\b400 俱樂部介紹
@@ -107,6 +112,6 @@ ng g c components\part\paymentmethod1000
 ng g c components\part\fdschoolinformation
 ng g m operation
 
-
+00
 
 
