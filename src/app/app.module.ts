@@ -33,6 +33,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 import { PartModule } from './components/Part/part.module';
 import { About001Component } from './pages/about001/about001.component';
@@ -77,6 +79,7 @@ import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
 import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
+import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
@@ -147,6 +150,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     Cz01Component,
     D110Component,
     Dz01Component,
+    Dz01tComponent,
     Dz02Component,
     Dz03Component,
     Dz04Component,
@@ -195,6 +199,10 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AgGridModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,

@@ -11,6 +11,9 @@
 @import 'ag-grid-community/styles/ag-grid.css';
 @import 'ag-grid-community/styles/ag-theme-alpine.css';
 
+/* angular-calendar */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
 mdb-carousel .carousel-multi-item .controls-top .btn-floating {
   background: red;
 }
