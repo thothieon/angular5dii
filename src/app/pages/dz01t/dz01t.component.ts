@@ -13,6 +13,21 @@ export interface Activity {
   state: string; 
 }
 
+export const colors: any = {
+  red: {
+    primary: '#ad2121',
+    secondary: '#FAE3E3'
+  },
+  blue: {
+    primary: '#1e90ff',
+    secondary: '#D1E8FF'
+  },
+  yellow: {
+    primary: '#e3bc08',
+    secondary: '#FDF1BA'
+  }
+};
+
 @Component({
   selector: 'app-dz01t',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -24,7 +39,25 @@ export class Dz01tComponent implements OnInit {
   //angular-calendar
   view: CalendarView = CalendarView.Month;
   viewDate: Date = new Date();
-  events: CalendarEvent[] = [];
+  events: CalendarEvent[] = [
+    {
+      start: new Date(),
+      title: 'Has custom class',
+      color: colors.yellow,
+      cssClass: 'my-custom-class',
+    },
+    {
+      title: 'Draggable event',
+      color: colors.yellow,
+      start: new Date(),
+      draggable: true
+    },
+    {
+      title: 'A non draggable event',
+      color: colors.blue,
+      start: new Date()
+    }
+  ];
 
   activitys: Observable<Activity[]>;
 
@@ -32,11 +65,13 @@ export class Dz01tComponent implements OnInit {
   }
 
   addItem(activitys: Activity) {
-    console.log('dfsdf');
+    console.log('asas');
     //this.activity = this.firebaseService.addItemActivityadd(activitys);
   }
 
   ngOnInit(): void {
+    console.log('view', this.view);
+    console.log('viewDate', this.viewDate);
   }
 
 }
