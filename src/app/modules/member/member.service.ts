@@ -9,8 +9,8 @@ export class MemberService {
 
   constructor( private mysql: MysqlService) { }
   
-  searchCustomerService() {
-    console.log('searchCustomerService');
+  searchMemberService() {
+    console.log('searchMemberService');
     return this.mysql.getMember();
   }
 }
