@@ -7,7 +7,11 @@
         <span><br></span>
     </div>
     <div>
-        <a mat-stroked-button class="button-gap bg-primary fs-2">執行新增</a>
+        <button type="button" class="btn btn-primary" (click)="addItems(undefined)">執行新增</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" (click)="updateItems()">更新</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" (click)="onRemoveSelected()">刪除</button>
     </div>
     <div>
         <span><br></span>
@@ -15,10 +19,16 @@
     <div>
         <br>
         <br>
-        <!-- AG Grid Angular Component -->
-        <ag-grid-angular class="table ag-theme-alpine" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef"
-            [rowData]="rowData$ | async" [rowSelection]="'multiple'" [animateRows]="true"
-            (gridReady)="onGridReady($event)" (cellClicked)="onCellClicked($event)">
-        </ag-grid-angular>
-
+        <!-- https://medium.com/codalyze/4-ag-grid-adding-rows-deleting-rows-column-groups-sizing-moving-pinning-dc394c163713 -->
+        <!-- https://www.ag-grid.com/angular-data-grid/data-update-transactions/ -->
+        <ag-grid-angular
+            class="table ag-theme-alpine"
+            [columnDefs]="columnDefs"
+            [defaultColDef]="defaultColDef"
+            [rowData]="rowData"
+            [rowSelection]="rowSelection"
+            [animateRows]="true"
+            (gridReady)="onGridReady($event)"
+        ></ag-grid-angular>
     </div>
+</div>
