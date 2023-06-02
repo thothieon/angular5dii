@@ -100,6 +100,7 @@ const routes: Routes = [
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
   { path: 'd112', component: D112Component },
+  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },
   { path: 'c610', component: C610Component },
   { path: 'c510', component: C510Component },
   { path: 'c430', component: C430Component },
