@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 import { MemberService } from '../../../member/member.service';
 
-import { Customer } from '../../../../interfaces/customer';
+import { Member } from '../../../../interfaces/member';
 
 @Component({
   selector: 'app-member-search',
@@ -48,7 +48,7 @@ export class MemberSearchComponent implements OnInit {
   };
 
   // Data that gets displayed in the grid
-  public rowData$!: Observable<Customer[]>;
+  public rowData$!: Observable<Member[]>;
   //myAGData: Customer[] = [];
 
   // For accessing the Grid's API
