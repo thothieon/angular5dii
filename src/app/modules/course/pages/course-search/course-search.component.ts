@@ -33,13 +33,17 @@ export class CourseSearchComponent implements OnInit {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'joinYear', headerName:'年分' },
-    { field: 'identity', headerName:'身分', editable: true },
+    { field: 'id', headerName:'開課期別' },
     { field: 'latestLicense', headerName:'課程', editable: true },
-    { field: 'idNumber', headerName:'身分證字號', editable: true },
-    { field: 'chineseName', headerName:'姓名'},
-    { field: 'englishName', headerName:'英文姓名'},
-    { field: 'birthday', headerName:'生日'},
+    { field: 'chineseName', headerName:'姓名', editable: true},
+    //{ field: 'idNumber', headerName:'身分證字號', editable: true},
+    { field: 'action', 
+      headerName:'動作項目', 
+      editable: true, 
+      headerCheckboxSelection: true,
+      checkboxSelection: true,
+      showDisabledCheckboxes: true, },
+    { field: 'remark', headerName:'備註', editable: true },
   ];
 
   // DefaultColDef sets props common to all Columns
@@ -57,7 +61,7 @@ export class CourseSearchComponent implements OnInit {
 
   // Example load data from server
   onGridReady(params: GridReadyEvent) {
-    this.rowData$ = this.courseService.searchMemberService()
+    this.rowData$ = this.courseService.searchCourseService()
   }
 
   // Example of consuming Grid Event

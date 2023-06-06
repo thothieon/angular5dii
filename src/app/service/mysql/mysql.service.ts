@@ -78,4 +78,13 @@ export class MysqlService {
     return this.http.get<Customer[]>(baseurl + '/idiving/Member')//.pipe(retry(1));
   }
 
+  // Course ==================================================
+
+  // Search Course 
+  // Course GET
+  getCourse(): Observable<Customer[]> {
+    console.log('getCourse');
+    return this.http.get<Customer[]>(baseurl + '/idiving/Course')//.pipe(retry(1));
+  }
+
 }

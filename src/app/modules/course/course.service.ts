@@ -9,8 +9,8 @@ export class CourseService {
 
   constructor( private mysql: MysqlService) { }
   
-  searchMemberService() {
-    console.log('searchMemberService');
-    return this.mysql.getMember();
+  searchCourseService() {
+    console.log('searchCourseService');
+    return this.mysql.getCourse();
   }
 }

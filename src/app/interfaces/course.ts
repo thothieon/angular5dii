@@ -1,6 +1,8 @@
 export interface Course {
     id: string;
-    name: string; 
-    date: string; 
-    state: string; 
+    latestLicense: string; 
+    chineseName: string; 
+    idNumber: string; 
+    action: string; 
+    remark: string; 
 }
