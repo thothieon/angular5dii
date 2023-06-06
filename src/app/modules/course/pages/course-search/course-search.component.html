@@ -1,0 +1,63 @@
+
+<div class="container">
+    <p>course-search works!</p>
+</div>
+
+<div class="container">
+    <div>
+        <span><br></span>
+    </div>
+    <div>
+        <a mat-stroked-button routerLink="/member/new" class="button-gap bg-primary fs-6">新增客戶</a>
+    </div>
+    <div>
+        <span><br></span>
+    </div>
+    <div>
+        <mat-form-field>
+            <mat-label>輸入</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <span> &nbsp; </span>
+        <mat-form-field>
+            <mat-label>搜尋欄位</mat-label>
+            <mat-select>
+                <mat-option value="one">First option</mat-option>
+                <mat-option value="two">Second option</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <span> &nbsp; </span>
+    </div>
+    <div>
+        <span><br></span>
+    </div>
+    <div>
+        <mat-list></mat-list>
+        <input id="input1" type="text">
+        <span> &nbsp; </span>
+        <select name="pets">
+            <option value="" selected>搜尋欄位</option>
+            <option value="dog">Dog</option>
+            <option value="cat">cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+        <span> &nbsp; </span>
+        <button>Clear Selection</button>
+        <br>
+        <br>
+        <!-- AG Grid Angular Component -->
+            <ag-grid-angular 
+                class="table ag-theme-alpine" 
+                [columnDefs]="columnDefs" 
+                [defaultColDef]="defaultColDef"
+                [rowData]="rowData$ | async" 
+                [rowSelection]="'multiple'" 
+                [animateRows]="true"
+                (gridReady)="onGridReady($event)" 
+                (cellClicked)="onCellClicked($event)"
+            ></ag-grid-angular>
+
+    </div>
+</div>
