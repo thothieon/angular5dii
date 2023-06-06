@@ -56,7 +56,7 @@ export class MemberSearchComponent implements OnInit {
 
   // Example load data from server
   onGridReady(params: GridReadyEvent) {
-    this.rowData$ = this.memberService.searchCustomerService()
+    this.rowData$ = this.memberService.searchMemberService()
   }
 
   // Example of consuming Grid Event
