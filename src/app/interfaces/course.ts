@@ -6,3 +6,9 @@ export interface Course {
     action: string; 
     remark: string; 
 }
+
+
+export interface Food {
+    value: string;
+    viewValue: string;
+}
