@@ -19,6 +19,14 @@
                 {{food.viewValue}}
             </option>
         </select>
+        &nbsp;
+        <label>身分種類</label>
+        &nbsp;
+        <select id="idEntity" style="width: 25%;">
+            <option *ngFor="let identity of identitys" [(ngModel)]="OWD" [value]="identity.value">
+                {{identity.viewValue}}
+            </option>
+        </select>
     </div>
     <div>
         <br>

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 import { CourseService } from '../../../course/course.service';
 
-import { Food } from './../../../../interfaces/course';
+import { Food, Identity } from './../../../../interfaces/course';
 
 @Component({
   selector: 'app-course-new',
@@ -20,8 +20,13 @@ export class CourseNewComponent implements OnInit {
 
   foods: Food[] = [
     {value: 'OWD', viewValue: 'OWD'},
-    {value: 'AA', viewValue: 'AA'},
-    {value: 'tacos-2', viewValue: 'Tacos'},
+    {value: 'AA', viewValue: 'AA'}
+  ];
+
+  identitys: Identity[] = [
+    {value: '學員', viewValue: '學員'},
+    {value: '會員', viewValue: '會員'},
+    {value: '幹部', viewValue: '幹部'}
   ];
 
   //loading: boolean = true;
@@ -31,6 +36,7 @@ export class CourseNewComponent implements OnInit {
   public columnDefs: ColDef[] = [
     { field: 'courseNumber', headerName:'課程編號' },
     { field: 'latestLicense', headerName:'課程', editable: true },
+    { field: 'identity', headerName:'身分', editable: true },
     { field: 'chineseName', headerName:'姓名', editable: true },
     { field: 'idNumber', headerName:'身分證字號', editable: true },
     { field: 'mobilePhone', headerName:'電話', editable: true }
@@ -60,15 +66,13 @@ export class CourseNewComponent implements OnInit {
 
     var isWorkProjects = (<HTMLInputElement>document.getElementById("isWorkProjects")).value;
     console.log('isWorkProjects : ' + isWorkProjects);
-    //var isWorkProjectsele = (document.getElementById("organization") as HTMLSelectElement).value;
-    //console.log('isWorkProjectsele : ' + isWorkProjectsele);
     const isCourseNumberSelect = (<HTMLSelectElement>document.getElementById('isCourseNumber')).value;
     console.log('isCourseNumberSelect : ' + isCourseNumberSelect);
-    //select.addEventListener('change', () => (console.log(select.value)));
-    //console.log(select.options[select.selectedIndex].value)
+    const idEntitySelect = (<HTMLSelectElement>document.getElementById('idEntity')).value;
+    console.log('idEntitySelect : ' + idEntitySelect);
 
     const newItems = [
-      createNewRowData(isWorkProjects, isCourseNumberSelect)
+      createNewRowData(isWorkProjects, isCourseNumberSelect, idEntitySelect)
     ];
     const res = this.gridApi.applyTransaction({
       add: newItems,
@@ -113,15 +117,15 @@ function addz(num) {
   return num < 10 ? '0' + num : num;
 }
 
-function createNewRowData(data01, data02) {
-  let strYear = date.getFullYear().toString();
+function createNewRowData(data01, data02, data03) {
+  /*let strYear = date.getFullYear().toString();
   let strMonth = addz(date.getMonth() + 1); //(date.getMonth() + 1).toString();
   let strDay = addz(date.getDay() * 2);
   console.log("date = " + date);  
   console.log("Year = " + strYear);  
   console.log("Year = " + strYear.slice(2));  
   console.log("Month = " + strMonth);
-  console.log(strDay);
+  console.log(strDay);*/
 
   const newData = {
     /*make: 'Toyota ' + newCount,
@@ -130,8 +134,9 @@ function createNewRowData(data01, data02) {
     zombies: 'Headless',
     style: 'Little',
     clothes: 'Airbag',*/
-    courseNumber: data01, //'OWD' + strYear.slice(2) + strMonth + strDay + 'N' + newCount,
+    courseNumber: data01,
     latestLicense: data02,
+    identity: data03,
     chineseName: '',
     idNumber: '',
     mobilePhone: '',

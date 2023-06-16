@@ -7,8 +7,12 @@ export interface Course {
     remark: string; 
 }
 
-
 export interface Food {
+    value: string;
+    viewValue: string;
+}
+
+export interface Identity {
     value: string;
     viewValue: string;
 }
