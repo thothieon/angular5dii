@@ -1,0 +1,126 @@
+<p>dz01t works!</p>
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col w-100">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">玩潛水</a>
+                    <a class="breadcrumb-item">旅遊年度計畫</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
+            <mwl-demo-utils-calendar-header [(view)]="view" [(viewDate)]="viewDate">
+            </mwl-demo-utils-calendar-header>
+
+            <div class="alert alert-info">
+                For details on how to customise any of the templates, please see
+                <a href="https://github.com/mattlewis92/angular-calendar#how-do-i-use-a-custom-template">this guide</a>
+            </div>
+
+            <ng-template #customCellTemplate let-day="day" let-locale="locale">
+                <div class="cal-cell-top">
+                    <span class="cal-day-badge" *ngIf="day.badgeTotal > 0">{{ day.badgeTotal }}</span>
+                    <span class="cal-day-number">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>
+                </div>
+                <small style="margin: 5px">There are {{ day.events.length }} events on this day</small>
+            </ng-template>
+
+            <div [ngSwitch]="view">
+                <mwl-calendar-month-view *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events"
+                    [cellTemplate]="customCellTemplate">
+                </mwl-calendar-month-view>
+                <mwl-calendar-week-view *ngSwitchCase="'week'" [viewDate]="viewDate" [events]="events">
+                </mwl-calendar-week-view>
+                <mwl-calendar-day-view *ngSwitchCase="'day'" [viewDate]="viewDate" [events]="events">
+                </mwl-calendar-day-view>
+            </div>
+
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-10">
+            <table mdbTable>
+                <thead>
+                    <th colspan="2">
+                        <h4>旅遊年度計畫 </h4>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr mdbTableCol *ngFor="let activity of activitys | async">
+                        <!-- <th scope="row">{{activity.id}}</th> -->
+                        <td class="fs-6">{{activity.location}}</td>
+                        <td class="fs-6">{{activity.date}}</td>
+                        <td class="fs-6" style="white-space:nowrap">
+                            <a href="https://goo.gl/forms/AFgsrUnZYexX7L1i1">
+                                {{activity.state}}
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" mdbBtn class="fs-6" color="primary" block="true" onclick="window.location.href='/#/'"
+                mdbWavesEffect>回首頁</button>
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>

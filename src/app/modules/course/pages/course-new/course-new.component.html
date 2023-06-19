@@ -1,0 +1,61 @@
+
+<div class="container">
+    <p>course-new works!</p>
+</div>
+
+<div class="container">
+    <div>
+        <span><br></span>
+    </div>
+    <div>
+        <label>課程編號</label>
+        &nbsp;
+        <input mdbInput id="isWorkProjects">
+        &nbsp;
+        <label>課程種類</label>
+        &nbsp;
+        <select id="isCourseNumber" style="width: 25%;">
+            <option *ngFor="let food of foods" [(ngModel)]="OWD" [value]="food.value">
+                {{food.viewValue}}
+            </option>
+        </select>
+        &nbsp;
+        <label>身分種類</label>
+        &nbsp;
+        <select id="idEntity" style="width: 25%;">
+            <option *ngFor="let identity of identitys" [(ngModel)]="OWD" [value]="identity.value">
+                {{identity.viewValue}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="addCourseNumber()">新增課程編號</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" (click)="addItems(undefined)">執行新增</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" (click)="updateItems()">更新</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" (click)="onRemoveSelected()">刪除</button>
+        &nbsp;
+        <button type="button" class="btn btn-primary" >輸出</button>
+    </div>
+    <div>
+        <span><br></span>
+    </div>
+    <div>
+        <!-- https://medium.com/codalyze/4-ag-grid-adding-rows-deleting-rows-column-groups-sizing-moving-pinning-dc394c163713 -->
+        <!-- https://www.ag-grid.com/angular-data-grid/data-update-transactions/ -->
+        <ag-grid-angular
+            class="table ag-theme-alpine"
+            [columnDefs]="columnDefs"
+            [defaultColDef]="defaultColDef"
+            [rowData]="rowData"
+            [rowSelection]="rowSelection"
+            [animateRows]="true"
+            (gridReady)="onGridReady($event)"
+        ></ag-grid-angular>
+    </div>
+</div>

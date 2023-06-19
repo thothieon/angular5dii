@@ -7,23 +7,23 @@ import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 
 import { Observable } from 'rxjs';
 
-import { MemberService } from '../../../member/member.service';
+import { CourseService } from '../../../course/course.service';
 
 import { Customer } from '../../../../interfaces/customer';
 
 @Component({
-  selector: 'app-member-search',
-  templateUrl: './member-search.component.html',
-  styleUrls: ['./member-search.component.scss']
+  selector: 'app-course-search',
+  templateUrl: './course-search.component.html',
+  styleUrls: ['./course-search.component.scss']
 })
-export class MemberSearchComponent implements OnInit {
+export class CourseSearchComponent implements OnInit {
 
   //loading: boolean = true;
   //myData: any[] = [];
 
   constructor(
     private http: HttpClient,
-    private memberService: MemberService
+    private courseService: CourseService
   ) { }
 
   ngOnInit() {
@@ -33,12 +33,17 @@ export class MemberSearchComponent implements OnInit {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'joinYear', headerName:'年分' },
-    { field: 'identity', headerName:'身分', editable: true },
+    { field: 'id', headerName:'開課期別' },
     { field: 'latestLicense', headerName:'課程', editable: true },
-    { field: 'idNumber', headerName:'身分證字號', editable: true },
-    { field: 'chineseName', headerName:'姓名'},
-    { field: 'englishName', headerName:'英文姓名'}
+    { field: 'chineseName', headerName:'姓名', editable: true},
+    //{ field: 'idNumber', headerName:'身分證字號', editable: true},
+    { field: 'action', 
+      headerName:'動作項目', 
+      editable: true, 
+      headerCheckboxSelection: true,
+      checkboxSelection: true,
+      showDisabledCheckboxes: true, },
+    { field: 'remark', headerName:'備註', editable: true },
   ];
 
   // DefaultColDef sets props common to all Columns
@@ -56,7 +61,7 @@ export class MemberSearchComponent implements OnInit {
 
   // Example load data from server
   onGridReady(params: GridReadyEvent) {
-    this.rowData$ = this.memberService.searchMemberService()
+    this.rowData$ = this.courseService.searchCourseService()
   }
 
   // Example of consuming Grid Event

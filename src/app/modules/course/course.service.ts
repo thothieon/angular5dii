@@ -5,12 +5,12 @@ import { MysqlService } from '../../service/mysql/mysql.service';
 @Injectable({
   providedIn: 'root'
 })
-export class MemberService {
+export class CourseService {
 
   constructor( private mysql: MysqlService) { }
   
-  searchMemberService() {
-    console.log('searchMemberService');
-    return this.mysql.getMember();
+  searchCourseService() {
+    console.log('searchCourseService');
+    return this.mysql.getCourse();
   }
 }

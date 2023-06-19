@@ -59,6 +59,7 @@ import { D340Component } from './pages/d340/d340.component';
 import { D410Component } from './pages/d410/d410.component';
 import { D420Component } from './pages/d420/d420.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
+import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
@@ -85,6 +86,7 @@ const routes: Routes = [
   { path: 'dz03', component: Dz03Component },
   { path: 'dz02', component: Dz02Component },
   { path: 'dz01', component: Dz01Component },
+  { path: 'dz01t', component: Dz01tComponent },
   { path: 'd420', component: D420Component },
   { path: 'd410', component: D410Component },
   { path: 'd340', component: D340Component },
@@ -100,6 +102,7 @@ const routes: Routes = [
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
   { path: 'd112', component: D112Component },
+  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },
   { path: 'c610', component: C610Component },
   { path: 'c510', component: C510Component },
   { path: 'c430', component: C430Component },
