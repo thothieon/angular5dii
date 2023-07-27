@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 
@@ -19,7 +19,8 @@ import { Food, Identity } from './../../../../interfaces/course';
 export class CourseNewComponent implements OnInit {
 
   foods: Food[] = [
-    {value: 'OWD', viewValue: 'OWD'},
+    {value: 'OWDN', viewValue: 'OWD(假日)'},
+    {value: 'OWDP', viewValue: 'OWD(平日)'},
     {value: 'AA', viewValue: 'AA'}
   ];
 
@@ -66,9 +67,9 @@ export class CourseNewComponent implements OnInit {
 
     var isWorkProjects = (<HTMLInputElement>document.getElementById("isWorkProjects")).value;
     console.log('isWorkProjects : ' + isWorkProjects);
-    const isCourseNumberSelect = (<HTMLSelectElement>document.getElementById('isCourseNumber')).value;
+    var isCourseNumberSelect = (<HTMLSelectElement>document.getElementById('isCourseNumber')).value;
     console.log('isCourseNumberSelect : ' + isCourseNumberSelect);
-    const idEntitySelect = (<HTMLSelectElement>document.getElementById('idEntity')).value;
+    var idEntitySelect = (<HTMLSelectElement>document.getElementById('idEntity')).value;
     console.log('idEntitySelect : ' + idEntitySelect);
 
     const newItems = [
@@ -134,7 +135,7 @@ function createNewRowData(data01, data02, data03) {
     zombies: 'Headless',
     style: 'Little',
     clothes: 'Airbag',*/
-    courseNumber: data01,
+    courseNumber: data02 + data01,
     latestLicense: data02,
     identity: data03,
     chineseName: '',
