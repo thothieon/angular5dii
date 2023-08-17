@@ -32,6 +32,7 @@ import { HearsayComponent } from './hearsay/hearsay.component';
 import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 import { DealerComponent } from './dealer/dealer.component';
 import { FewalbumsComponent } from './fewalbums/fewalbums.component';
+import { ActivityPleaseNoteComponent } from './activitypleasenote/activitypleasenote.component';
 
 
 
@@ -55,7 +56,8 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     SmallactivityComponent,
     DealerComponent,
     FewalbumsComponent,
-    Paymentmethod1000Component
+    Paymentmethod1000Component,
+    ActivityPleaseNoteComponent
   ],
   imports: [
     CommonModule,
@@ -94,7 +96,8 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     HearsayComponent,
     SmallactivityComponent,
     DealerComponent,
-    FewalbumsComponent
+    FewalbumsComponent,
+    ActivityPleaseNoteComponent
   ],
   //schemas: [  ]
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
