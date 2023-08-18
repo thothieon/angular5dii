@@ -225,6 +225,11 @@ export class B230Component implements OnInit {
       name: '家豪', title: 'SSI 開放水域教練'
     },
     {
+      img: '../../../assets/Image/Coach/209.jpg',
+      hrf: '',
+      name: '志陽', title: 'SSI 開放水域教練'
+    },
+    {
       img: '../../../assets/Image/Coach/241.jpg',
       hrf: '',
       name: '啟森', title: 'SSI 開放水域教練'
@@ -273,11 +278,6 @@ export class B230Component implements OnInit {
       img: '../../../assets/Image/Coach/138.jpg',
       hrf: '',
       name: '阿哲', title: 'SSI 助理教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/209.jpg',
-      hrf: '',
-      name: '志陽', title: 'SSI 助理教練'
     },
     {
       img: '../../../assets/Image/Coach/211.jpg',
