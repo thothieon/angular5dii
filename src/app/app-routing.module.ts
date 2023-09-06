@@ -142,6 +142,7 @@ const routes: Routes = [
   { path: 'b211', component: B211Component },
   { path: 'b212', component: B212Component },
   { path: 'bz01', component: Bz01Component },
+  { path: 'activity', loadChildren: () => import('./modules/activity/activity.module').then((m) => m.ActivityModule) },
   { path: 'about001', component: About001Component },
   { path: '', component: BeginComponent }
 ];
