@@ -21,9 +21,10 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 // For MDB Angular Free
-import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, CheckboxModule, CollapseModule, IconsModule } from 'angular-bootstrap-md';
+//import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, CheckboxModule, CollapseModule, IconsModule } from 'angular-bootstrap-md';
 // For MDB Angular Free
-import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
+//import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
+import { SharedMdbModule } from '../app/shared/shared-mdb/shared-mdbl.module';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
@@ -183,18 +184,19 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AppRoutingModule,
-    ButtonsModule, 
-    CardsModule,
-    CarouselModule.forRoot(),
-    CheckboxModule, 
-    CollapseModule.forRoot(),
-    DropdownModule.forRoot(),
-    IconsModule,
-    InputsModule.forRoot(), 
-    NavbarModule,
-    TableModule,
-    WavesModule,
-    MDBBootstrapModule.forRoot(),
+    //ButtonsModule, 
+    //CardsModule,
+    //CarouselModule.forRoot(),
+    //CheckboxModule, 
+    //CollapseModule.forRoot(),
+    //DropdownModule.forRoot(),
+    //IconsModule,
+    //InputsModule.forRoot(), 
+    //NavbarModule,
+    //TableModule,
+    //WavesModule,
+    //MDBBootstrapModule.forRoot(),
+    SharedMdbModule,
     PartModule,
     VerticalTimelineModule,
     BrowserAnimationsModule,
