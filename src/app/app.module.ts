@@ -90,6 +90,7 @@ import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
 import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
+import { D130aComponent } from './pages/d130a/d130a.component';
 import { D140Component } from './pages/d140/d140.component';
 import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
@@ -161,6 +162,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     D120Component,
     D121Component,
     D130Component,
+    D130aComponent,
     D140Component,
     D141Component,
     D150Component,
@@ -176,7 +178,8 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     M100Component,
     Mc100Component,
     Qac001Component,
-    Qaa001Component
+    Qaa001Component,
+    D130aComponent
   ],
   imports: [
     BrowserModule,
