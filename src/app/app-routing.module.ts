@@ -55,6 +55,7 @@ import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { D230Component } from './pages/d230/d230.component';
 import { D310Component } from './pages/d310/d310.component';
+import { D130aComponent } from './pages/d130a/d130a.component';
 import { D340Component } from './pages/d340/d340.component';
 import { D410Component } from './pages/d410/d410.component';
 import { D420Component } from './pages/d420/d420.component';
@@ -96,6 +97,7 @@ const routes: Routes = [
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },
   { path: 'd141', component: D141Component },
+  { path: 'd130a', component: D130aComponent },
   { path: 'd130', component: D130Component },
   { path: 'd121', component: D121Component },
   { path: 'd120', component: D120Component },
