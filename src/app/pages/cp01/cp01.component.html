@@ -1,0 +1,87 @@
+<div class="container-fluid">
+
+    <app-head></app-head>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td style="height: 12vh;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container-fluid">
+                <nav class="breadcrumb bg-white">
+                    <a class="breadcrumb-item" href="#">首頁</a>
+                    <a class="breadcrumb-item">學潛水</a>
+                    <a class="breadcrumb-item">課程價格表</a>
+                </nav>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl">
+        </div>
+        <div class="col-xl-8">
+
+            <div>
+                <table matSort (matSortChange)="sortData($event)" align="center">
+                    <!-- <tr>
+                        <th mat-sort-header="name">Dessert (100g)</th>
+                        <th mat-sort-header="price">Calories</th>
+                    </tr> -->
+                    <tr *ngFor="let dessert of sortedData">
+                        <td class="fs-2">{{dessert.name}}</td>
+                        <td> &nbsp; </td>
+                        <td> &nbsp; </td>
+                        <td> &nbsp; </td>
+                        <td class="fs-2">{{dessert.price}}</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+        </div>
+        <div class="col-xl">
+        </div>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <app-foot></app-foot>
+
+</div>
