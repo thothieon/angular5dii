@@ -25,12 +25,12 @@
         &nbsp;
     </div>
     <div>
-        <span><br></span>
+        <br>
     </div>
     <div>
         <label>課程種類</label>
         &nbsp;
-        <select id="isCourseNumber" style="width: 25%; height: 30%;">
+        <select id="isCourseNumber" style="width: 25%;">
             <option *ngFor="let food of foods" [(ngModel)]="OWD" [value]="food.value">
                 {{food.viewValue}}
             </option>
@@ -38,7 +38,7 @@
         &nbsp;
         <label>身分種類</label>
         &nbsp;
-        <select id="idEntity" style="width: 25%; height: 30%;">
+        <select id="idEntity" style="width: 25%;">
             <option *ngFor="let identity of identitys" [(ngModel)]="OWD" [value]="identity.value">
                 {{identity.viewValue}}
             </option>
