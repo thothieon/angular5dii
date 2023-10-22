@@ -2,7 +2,6 @@
 <div class="container">
     <!-- <div class="row"> -->
         <!-- <div class="col w-100"> -->
-            <br>
             <!-- <div class="container-fluid"> -->
                 <nav class="breadcrumb bg-white">
                     <a class="breadcrumb-item" href="#">首頁</a>
@@ -10,23 +9,28 @@
                     <a class="breadcrumb-item">課程班級建立編輯 course-new works!</a>
                 </nav>
             <!-- </div> -->
-            <br>
         <!-- </div> -->
     <!-- </div> -->
 </div>
 
 <div class="container">
     <div>
-        <span><br></span>
-    </div>
-    <div>
         <label>課程編號</label>
         &nbsp;
         <input mdbInput id="isWorkProjects">
         &nbsp;
+        <button type="button" class="btn btn-primary" (click)="addCourseNumber()">課程編號確認</button>
+        &nbsp;
+        <label>--</label>
+        &nbsp;
+    </div>
+    <div>
+        <span><br></span>
+    </div>
+    <div>
         <label>課程種類</label>
         &nbsp;
-        <select id="isCourseNumber" style="width: 25%;">
+        <select id="isCourseNumber" style="width: 25%; height: 30%;">
             <option *ngFor="let food of foods" [(ngModel)]="OWD" [value]="food.value">
                 {{food.viewValue}}
             </option>
@@ -34,7 +38,7 @@
         &nbsp;
         <label>身分種類</label>
         &nbsp;
-        <select id="idEntity" style="width: 25%;">
+        <select id="idEntity" style="width: 25%; height: 30%;">
             <option *ngFor="let identity of identitys" [(ngModel)]="OWD" [value]="identity.value">
                 {{identity.viewValue}}
             </option>
@@ -44,8 +48,6 @@
         <br>
     </div>
     <div>
-        <button type="button" class="btn btn-primary" (click)="addCourseNumber()">新增課程編號</button>
-        &nbsp;
         <button type="button" class="btn btn-primary" (click)="addItems(undefined)">新增學員</button>
         &nbsp;
         <button type="button" class="btn btn-primary" (click)="updateItems()">更新</button>
