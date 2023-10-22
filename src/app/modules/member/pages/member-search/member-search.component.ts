@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { HttpClient } from '@angular/common/http';
 
@@ -23,7 +24,8 @@ export class MemberSearchComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private memberService: MemberService
+    private memberService: MemberService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -33,16 +35,18 @@ export class MemberSearchComponent implements OnInit {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'joinYear', headerName:'年分' },
-    { field: 'identity', headerName:'身分', editable: true },
-    { field: 'latestLicense', headerName:'課程', editable: true },
-    { field: 'idNumber', headerName:'身分證字號', editable: true },
-    { field: 'chineseName', headerName:'姓名'},
-    { field: 'englishName', headerName:'英文姓名'}
+    { field: 'joinYear', headerName:'年分', width:80 },
+    { field: 'identity', headerName:'身分', editable: true, width:100 },
+    { field: 'latestLicense', headerName:'課程', editable: true, width:150 },
+    { field: 'idNumber', headerName:'身分證字號', editable: true, width:130 },
+    { field: 'chineseName', headerName:'姓名', width:110},
+    { field: 'mid', headerName:'MID', cellRenderer: this.createHyperLink.bind(this), width:110},
+    { field: 'englishName', headerName:'英文姓名', width:200}
   ];
 
   // DefaultColDef sets props common to all Columns
   public defaultColDef: ColDef = {
+    resizable: true,
     sortable: true,
     filter: true,
   };
@@ -67,6 +71,26 @@ export class MemberSearchComponent implements OnInit {
   // Example using Grid's API
   clearSelection(): void {
     this.agGrid.api.deselectAll();
+  }
+
+  createHyperLink(params): any {
+    if (!params.data) { return; }
+    const spanElement = document.createElement('span');
+    //spanElement.innerHTML = `<a href="${this.homeUrl}" > ${params.value} </a> `;
+    spanElement.innerHTML = `<a href="/#/c120" > ${params.value} </a> `;
+    console.log(spanElement.innerHTML);
+    spanElement.addEventListener('click', ($event) => {
+      $event.preventDefault();
+      // The below code is used to navigate from one page to another page in angular. you can change it          // according to your requirement.
+      //this.router.navigate([this.homeUrl]);
+      this.router.navigate(['/', 'member']);
+    });
+    return spanElement;
+  }
+
+  get homeUrl(): string {
+    //return 'home';
+    return '/#/';
   }
 
 }
