@@ -35,12 +35,12 @@ export class MemberSearchComponent implements OnInit {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
+    { field: 'mid', headerName:'MID', cellRenderer: this.createHyperLink.bind(this), width:90},
     { field: 'joinYear', headerName:'年分', width:80 },
     { field: 'identity', headerName:'身分', editable: true, width:100 },
     { field: 'latestLicense', headerName:'課程', editable: true, width:150 },
     { field: 'idNumber', headerName:'身分證字號', editable: true, width:130 },
     { field: 'chineseName', headerName:'姓名', width:110},
-    { field: 'mid', headerName:'MID', cellRenderer: this.createHyperLink.bind(this), width:110},
     { field: 'englishName', headerName:'英文姓名', width:200}
   ];
 
@@ -77,20 +77,20 @@ export class MemberSearchComponent implements OnInit {
     if (!params.data) { return; }
     const spanElement = document.createElement('span');
     //spanElement.innerHTML = `<a href="${this.homeUrl}" > ${params.value} </a> `;
-    spanElement.innerHTML = `<a href="/#/c120" > ${params.value} </a> `;
+    spanElement.innerHTML = `<a href="/#/member/infor/id:${params.value}" > ${params.value} </a> `;
     console.log(spanElement.innerHTML);
     spanElement.addEventListener('click', ($event) => {
       $event.preventDefault();
       // The below code is used to navigate from one page to another page in angular. you can change it          // according to your requirement.
       //this.router.navigate([this.homeUrl]);
-      this.router.navigate(['/', 'member']);
+      this.router.navigate(["/member/infor/id:" + params.value]);
     });
     return spanElement;
   }
 
   get homeUrl(): string {
     //return 'home';
-    return '/#/';
+    return 'begin';
   }
 
 }
