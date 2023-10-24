@@ -1,5 +1,5 @@
 export interface Member {
-    No: number;
-    Name: string;
-    Tel: string;
+    customerNo: number;
+    companyName: string;
+    companyTel: string;
 }
