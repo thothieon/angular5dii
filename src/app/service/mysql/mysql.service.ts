@@ -78,4 +78,13 @@ export class MysqlService {
     return this.http.get<Customer[]>(baseurl + '/idiving/Member')//.pipe(retry(1));
   }
 
+  // Member Single GET
+  getMemberSingle(strid: string): Observable<Customer[]> {
+    console.log('getMemberSingle strid', strid );
+    let searchparams = new HttpParams();
+    searchparams = searchparams.append('id', strid);
+    console.log('getMemberSingle', searchparams );
+    return this.http.get<Customer[]>(baseurl + '/idiving/GetTestSingle',  { params: searchparams })//.pipe(retry(1));
+  }
+
 }
