@@ -6,3 +6,13 @@ export interface Course {
     action: string; 
     remark: string; 
 }
+
+export interface Food {
+    value: string;
+    viewValue: string;
+}
+
+export interface Identity {
+    value: string;
+    viewValue: string;
+}

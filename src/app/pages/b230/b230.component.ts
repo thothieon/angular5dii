@@ -40,11 +40,6 @@ export class B230Component implements OnInit {
       name: '佑佑', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
     },
     {
-      img: '../../../assets/Image/Coach/253.jpg',
-      hrf: '',
-      name: '小乖', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
-    },
-    {
       img: '../../../assets/Image/Coach/254.jpg',
       hrf: '',
       name: '夢如', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
@@ -87,7 +82,7 @@ export class B230Component implements OnInit {
     {
       img: '../../../assets/Image/Coach/246.jpg',
       hrf: '',
-      name: '春瑤', title: 'SSI 助理教練'
+      name: '春瑤', title: 'SSI 專長潛水員教練'
     },
     {
       img: '../../../assets/Image/Coach/247.jpg',
@@ -104,11 +99,6 @@ export class B230Component implements OnInit {
       hrf: '',
       name: 'Annie', title: 'SSI 專長潛水員教練', title01: '攝影專長教練'
     },
-    /*{
-      img: '../../../assets/Image/Coach/205.jpg',
-      hrf: '',
-      name: 'Sophie', title: 'SSI 專長潛水員教練'
-    },*/
     {
       img: '../../../assets/Image/Coach/219.jpg',
       hrf: '',
@@ -230,6 +220,56 @@ export class B230Component implements OnInit {
       name: '勇成', title: 'SSI 專長潛水員教練'
     },
     {
+      img: '../../../assets/Image/Coach/240.jpg',
+      hrf: '',
+      name: '家豪', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/209.jpg',
+      hrf: '',
+      name: '志陽', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/241.jpg',
+      hrf: '',
+      name: '啟森', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/242.jpg',
+      hrf: '',
+      name: '柏森', title: 'SSI 專長潛水員教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/243.jpg',
+      hrf: '',
+      name: '彥百', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/244.jpg',
+      hrf: '',
+      name: '鈺峯', title: 'SSI 專長潛水員教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/257.jpg',
+      hrf: '',
+      name: '慶全', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/258.jpg',
+      hrf: '',
+      name: '偉泰', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/260.jpg',
+      hrf: '',
+      name: '書碩', title: 'SSI 開放水域教練'
+    },
+    {
+      img: '../../../assets/Image/Coach/259.jpg',
+      hrf: '',
+      name: '仕鑫', title: 'SSI 開放水域教練'
+    },
+    {
       img: '../../../assets/Image/Coach/216.jpg',
       hrf: '',
       name: '阿源', title: 'SSI 助理教練'
@@ -240,39 +280,9 @@ export class B230Component implements OnInit {
       name: '阿哲', title: 'SSI 助理教練'
     },
     {
-      img: '../../../assets/Image/Coach/209.jpg',
-      hrf: '',
-      name: '志陽', title: 'SSI 助理教練'
-    },
-    {
       img: '../../../assets/Image/Coach/211.jpg',
       hrf: '',
       name: '熱狗', title: 'SSI 助理教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/240.jpg',
-      hrf: '',
-      name: '家豪', title: 'SSI 開放水域教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/241.jpg',
-      hrf: '',
-      name: '啟森', title: 'SSI 開放水域教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/242.jpg',
-      hrf: '',
-      name: '柏森', title: 'SSI 開放水域教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/243.jpg',
-      hrf: '',
-      name: '彥百', title: 'SSI 開放水域教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/244.jpg',
-      hrf: '',
-      name: '鈺峯', title: 'SSI 開放水域教練'
     },
     {
       img: '../../../assets/Image/Coach/220.jpg',
@@ -285,13 +295,15 @@ export class B230Component implements OnInit {
       name: 'Jimmy', title: 'SSI 助理教練'
     },
     {
+      img: '../../../assets/Image/Coach/261.jpg',
+      hrf: '',
+      name: 'JJ', title: 'SSI 助理教練'
+    },
+    {
       img: '../../../assets/Image/Coach/201.jpg',
       hrf: '',
       name: '于堯', title: 'SSI 助理教練'
     },
-    /*{ img:'../../../assets/Image/Coach/210.jpg',
-      hrf:'',
-      name:'美年', title:'SSI 專長潛水員教練' },*/
     {
       img: '../../../assets/Image/Coach/221.jpg',
       hrf: '',
