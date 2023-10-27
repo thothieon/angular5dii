@@ -63,7 +63,7 @@ export class Cp01Component {
     {type:'font-size: 15px;', name: 'NV導航', price: '6000'},
     {type:'font-size: 15px;', name: 'BD船潛', price: '7000/出團+4500'},
     {type:'font-size: 15px;', name: 'PV水下攝影', price: '7000'},
-    {type:'font-size: 15px;', name: '搜索與尋回', price: ''},
+    //{type:'font-size: 15px;', name: '搜索與尋回', price: ''},
     {type:'font-size: 15px;', name: '水肺安全專長', price: ''},
     {type:'font-size: 15px;', name: 'SSI RR正確反應員', price: '5000'},
     {type:'font-size: 15px;', name: 'SSI RR正確反應員(Renew)', price: '2000'},

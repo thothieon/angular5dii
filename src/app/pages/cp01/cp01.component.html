@@ -53,13 +53,12 @@
                         <th mat-sort-header="name">Dessert (100g)</th>
                         <th mat-sort-header="price">Calories</th>
                     </tr> -->
-                    <h3>課程價格表</h3>
-                    <tr style="{{dessert.type}}" *ngFor="let dessert of sortedData">
-                        <td>{{dessert.name}}</td>
+                    <tr *ngFor="let dessert of sortedData">
+                        <td class="fs-2">{{dessert.name}}</td>
                         <td> &nbsp; </td>
                         <td> &nbsp; </td>
                         <td> &nbsp; </td>
-                        <td>{{dessert.price}}</td>
+                        <td class="fs-2">{{dessert.price}}</td>
                     </tr>
                 </table>
             </div>
