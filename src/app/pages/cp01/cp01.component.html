@@ -54,8 +54,8 @@
                         <th mat-sort-header="price">Calories</th>
                     </tr> -->
                     <!-- https://hackmd.io/@Heidi-Liu/angular-data-binding -->
-                    <h3>課程價格總表</h3>
-                    <tr style="{{dessert.type}}" *ngFor="let dessert of sortedData">
+                    <h3>課程價格表</h3>
+                    <tr [style.font-size.px]="dessert.type" *ngFor="let dessert of sortedData" >
                         <td>{{dessert.name}}</td>
                         <td> &nbsp; </td>
                         <td> &nbsp; </td>
