@@ -87,6 +87,7 @@ import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
+import { Dz05Component } from './pages/dz05/dz05.component';
 import { D111Component } from './pages/d111/d111.component';
 import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
@@ -161,6 +162,7 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     Dz02Component,
     Dz03Component,
     Dz04Component,
+    Dz05Component,
     D111Component,
     D112Component,
     D120Component,
