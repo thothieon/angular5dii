@@ -13,4 +13,9 @@ export class MemberService {
     console.log('searchMemberService');
     return this.mysql.getMember();
   }
+
+  serviceInferMember(strId) {
+    console.log('serviceInferMember', strId);
+    return this.mysql.getMemberSingle(strId);
+  }
 }
