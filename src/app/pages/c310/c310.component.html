@@ -56,352 +56,6 @@
 
                         <ul ngbNav #nav="ngbNav" [(activeId)]="active_01" class="nav-tabs">
                             <li [ngbNavItem]="1">
-                                <a class="fs-4" ngbNavLink>深潛</a>
-                                <ng-template ngbNavContent class="custom-class">
-
-                                    <br>
-                                    <h3 style="font-family:DFKai-sb;">深潛 Deep Diving</h3>
-                                    <hr>
-                                    <!-- 課程內容 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">開課內容</h3>
-                                        <ul>
-                                            <li class="fs-6">
-                                                學科（3hr）<br>
-                                                裝備對於深潛的重要性 / 規劃合適的深潛行程<br>
-                                                深潛時特定技巧的掌控 / 深潛的潛在風險<br>
-                                                重複進行深潛的安排
-                                            </li>
-                                            <li class="fs-6">
-                                                海洋訓練（7hr）<br>
-                                                利用電腦錶進行潛水計畫 / 深度改變時的浮力控制<br>
-                                                監控免減壓時間的改變 / 計算水面耗氣速率
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <img src="../../../../assets/Image/Data/SC_DD_01.png" width="60%"
-                                            style="display:block; margin:auto;">
-                                    </div>
-                                    <!-- 課程特色 -->
-                                    <div>
-                                        <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
-                                        <ul class="fs-6">
-                                            <li>
-                                                最大潛水深度可達休閒潛水的極限40米。
-                                            </li>
-                                            <li>
-                                                海洋課程期間提供調節器、B.C.D.、電腦錶。
-                                            </li>
-                                            <li>
-                                                平日 / 假日 均有開課，課程安排很方便。
-                                            </li>
-                                            <li>
-                                                領導級人員對學員比例 1：3，教練時時刻刻都在您身旁。
-                                            </li>
-                                            <li>
-                                                數位教材伴您一生，不必擔心知識忘記。
-                                            </li>
-                                            <li>
-                                                學員上課期間，購買潛水器材享有學員優惠價。
-                                            </li>
-                                            <li>
-                                                搭配移地結訓，冬季也能完成課程。
-                                            </li>
-                                            <li>
-                                                於iDiving上完AA可享深潛課程優惠。
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <img src="../../../../assets/Image/Data/SC_DD_02.png" width="100%"
-                                            style="display:block; margin:auto;">
-                                    </div>
-                                    <!-- 課程規劃 -->
-                                    <div>
-                                        <h3 style="font-family:DFKai-sb;"><br>課程規劃</h3>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td width="10%">
-                                                    </td>
-                                                    <td>
-                                                        <a class="fs-6">
-                                                            DAY 1 | 學科 19:00~22:00<br>
-                                                            <hr>
-                                                            裝備對於深潛的重要性、規劃合適的深潛行程<br>
-                                                            深潛時特定技巧的掌控、深潛的潛在風險<br>
-                                                            重複進行深潛的安排
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <td>
-                                                        <a class="fs-6">
-                                                            <br>DAY 2 | 開放水域 09:00~17:30<br>
-                                                            <hr>
-                                                            利用電腦錶進行潛水計畫、深度改變時的浮力控制<br>
-                                                            監控免減壓時間的改變、計算水面耗氣速率
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <br>
-
-                                        <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                                            <mdb-carousel-item *ngFor="let DDSchedule of DDSchedules; let i = index">
-                                                <div class="view">
-                                                    <img class="d-block" src="{{DDSchedule.img}}" width="100%" style="display:block; margin:auto;" alt="First slide">
-                                                </div>
-                                            </mdb-carousel-item>
-                                        </mdb-carousel>
-                                        <br>
-
-                                    </div>
-                                    <!-- 課程學費 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">課程學費</h3>
-                                        <hr>
-                                        <ul class="fs-6">
-                                            <li style="color: green;">定價 7,000 元。<br>
-                                                優惠方案：搭配出團上課，費用為團費 + 6000 元
-                                            </li>
-                                            <li>現金優惠，折扣 300 元。</li>
-                                            <li style="color: red;">已完成 iDiving AA 課程之學員可減免 1,000 元。</li>
-                                            <li>費用包含：SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、術科課程期間保險。</li>
-                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借、移地結訓時之旅遊團費（請參考各地旅遊活動的費用）。</li>
-                                        </ul>
-                                        <br>
-                                    </div>
-                                    <!-- 報名方式 -->
-                                    <div>
-                                        <br>
-                                        <app-paymentmethod></app-paymentmethod>
-                                        <br>
-                                    </div>
-                                    <!-- 報名須知 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">報名須知</h3>
-                                        <hr>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fs-6" colspan="2">
-                                                        <a>具備開放水域潛水員OWD證照（不分系統）</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" colspan="2">
-                                                        <a>年齡需滿12歲以上，健康狀況良好</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" colspan="2">
-                                                        <a href="https://drive.google.com/file/d/13Lltu9vx3duMY8BWTbkFMDUY5FbmipIw/view?pli=1">健康聲明書在此請點擊</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- 上課地點 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">上課地點</h3>
-                                        <hr>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fs-6" colspan="2">
-                                                        <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                                        <a>教室學科:</a>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>iDiving 士林前港店（台北市士林區前港街 8 號）</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <a>海洋實習:</a>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="color:green;vertical-align:text-top;">
-                                                        <a>註: </a>
-                                                    </td>
-                                                    <td class="fs-6" style="color:green;">
-                                                        <a>
-                                                            上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修等），若有額外增加的費用本中心將自行吸收，不會另外收費，但學員不可因課程時間調整而要求退費。
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- 特約課程 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">特約課程</h3>
-                                        <hr>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>學科部份，每另外約一日課程加價 300 元</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>術科部份，每另外約一日課程加價 500 元</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- 課程更改 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">課程更改</h3>
-                                        <hr>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>課程須於開始上課後的兩個月內完成。</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>上課日期之更改須在 10 天前告知</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>因身體不適，出示醫院掛號單據者則不收取。</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>女性夥伴參加課程前請自行評估生理期影響。</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- 課程取消 -->
-                                    <div>
-                                        <br>
-                                        <h3 style="font-family:DFKai-sb;">課程取消</h3>
-                                        <hr>
-                                        <table borderless="true">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>學員自行放棄課程，本訓練中心將不予退費。</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fs-6" style="vertical-align:text-top;">
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="fs-6">
-                                                        <a>若因身體因素不適合從事潛水活動，並開立醫生證明者，除了NT 3,000元購買數位教材的訂金，其餘將會退還。</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <br>
-                                    </div>
-                                </ng-template>
-                            </li>
-                            <li [ngbNavItem]="2">
                                 <a class="fs-4" ngbNavLink>夜潛</a>
                                 <ng-template ngbNavContent>
 
@@ -741,7 +395,7 @@
                                     </div>
                                 </ng-template>
                             </li>
-                            <li [ngbNavItem]="3">
+                            <li [ngbNavItem]="2">
                                 <a class="fs-4" ngbNavLink>高氧</a>
                                 <ng-template ngbNavContent>
 
@@ -999,7 +653,7 @@
                                     </div>
                                 </ng-template>
                             </li>
-                            <li [ngbNavItem]="4">
+                            <li [ngbNavItem]="3">
                                 <a class="fs-4" ngbNavLink>完美浮力</a>
                                 <ng-template ngbNavContent>
 
@@ -1334,46 +988,34 @@
                                     </div>
                                 </ng-template>
                             </li>
-                        </ul>
-
-                        <div [ngbNavOutlet]="nav" class="mt-2"></div>
-
-                        <!-- <pre>Active: {{ active }}</pre> -->
-
-                    </ng-template>
-                </li>
-                <li [ngbNavItem]="2">
-                    <a class="fs-4" ngbNavLink>選修專長</a>
-                    <ng-template ngbNavContent>
-
-                        <ul ngbNav #nav="ngbNav" [(activeId)]="active_02" class="nav-tabs">
-                            <li [ngbNavItem]="1">
-                                <a class="fs-4" ngbNavLink>導航</a>
+                            <li [ngbNavItem]="4">
+                                <a class="fs-4" ngbNavLink>深潛</a>
                                 <ng-template ngbNavContent class="custom-class">
-
                                     <br>
-                                    <h3 style="font-family:DFKai-sb;">導航 Navigation</h3>
+                                    <h3 style="font-family:DFKai-sb;">深潛 Deep Diving</h3>
                                     <hr>
                                     <!-- 課程內容 -->
                                     <div>
+                                        <br>
+                                        <a style="color: red;">報名條件：建議潛水支數25支後再參加此課程。</a>
+                                        <br>
                                         <br>
                                         <h3 style="font-family:DFKai-sb;">開課內容</h3>
                                         <ul>
                                             <li class="fs-6">
                                                 學科（3hr）<br>
-                                                自然導航 / 指北針導航<br>
-                                                自然導航搭配指北針使用<br>
-                                                需要特殊導航技術的狀況<br>
-                                                導航技巧的實際應用
+                                                裝備對於深潛的重要性 / 規劃合適的深潛行程<br>
+                                                深潛時特定技巧的掌控 / 深潛的潛在風險<br>
+                                                重複進行深潛的安排
                                             </li>
                                             <li class="fs-6">
-                                                海洋訓練（5hr）<br>
-                                                水中距離計算 / 自然導航練習<br>
-                                                指北針導航練習
+                                                海洋訓練（7hr）<br>
+                                                利用電腦錶進行潛水計畫 / 深度改變時的浮力控制<br>
+                                                監控免減壓時間的改變 / 計算水面耗氣速率
                                             </li>
                                         </ul>
                                         <br>
-                                        <img src="../../../../assets/Image/Data/SC_NV_01.png" width="60%"
+                                        <img src="../../../../assets/Image/Data/SC_DD_01.png" width="60%"
                                             style="display:block; margin:auto;">
                                     </div>
                                     <!-- 課程特色 -->
@@ -1381,7 +1023,7 @@
                                         <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
                                         <ul class="fs-6">
                                             <li>
-                                                加強指北針使用，練習水中方向辨認技巧，安全往返目的地。
+                                                最大潛水深度可達休閒潛水的極限40米。
                                             </li>
                                             <li>
                                                 海洋課程期間提供調節器、B.C.D.、電腦錶。
@@ -1399,11 +1041,14 @@
                                                 學員上課期間，購買潛水器材享有學員優惠價。
                                             </li>
                                             <li>
-                                                於iDiving上完AA可享導航課程優惠。
+                                                搭配移地結訓，冬季也能完成課程。
+                                            </li>
+                                            <li>
+                                                於iDiving上完AA可享深潛課程優惠。
                                             </li>
                                         </ul>
                                         <br>
-                                        <img src="../../../../assets/Image/Data/SC_NV_02.png" width="100%"
+                                        <img src="../../../../assets/Image/Data/SC_DD_02.png" width="100%"
                                             style="display:block; margin:auto;">
                                     </div>
                                     <!-- 課程規劃 -->
@@ -1418,10 +1063,9 @@
                                                         <a class="fs-6">
                                                             DAY 1 | 學科 19:00~22:00<br>
                                                             <hr>
-                                                            自然導航 / 指北針導航<br>
-                                                            自然導航搭配指北針使用<br>
-                                                            需要特殊導航技術的狀況<br>
-                                                            導航技巧的實際應用
+                                                            裝備對於深潛的重要性、規劃合適的深潛行程<br>
+                                                            深潛時特定技巧的掌控、深潛的潛在風險<br>
+                                                            重複進行深潛的安排
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -1430,17 +1074,26 @@
                                                     </td>
                                                     <td>
                                                         <a class="fs-6">
-                                                            <br>DAY 2 | 開放水域 08:00~13:00<br>
+                                                            <br>DAY 2 | 開放水域 09:00~17:30<br>
                                                             <hr>
-                                                            水中距離計算、自然導航練習<br>
-                                                            指北針導航練習
+                                                            利用電腦錶進行潛水計畫、深度改變時的浮力控制<br>
+                                                            監控免減壓時間的改變、計算水面耗氣速率
                                                         </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                         <br>
-                                        <img class="d-block" src="../../../../assets/Image/Data/NV_Schedule.png" width="100%" style="display:block; margin:auto;">
+
+                                        <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
+                                            <mdb-carousel-item *ngFor="let DDSchedule of DDSchedules; let i = index">
+                                                <div class="view">
+                                                    <img class="d-block" src="{{DDSchedule.img}}" width="100%" style="display:block; margin:auto;" alt="First slide">
+                                                </div>
+                                            </mdb-carousel-item>
+                                        </mdb-carousel>
+                                        <br>
+
                                     </div>
                                     <!-- 課程學費 -->
                                     <div>
@@ -1448,11 +1101,363 @@
                                         <h3 style="font-family:DFKai-sb;">課程學費</h3>
                                         <hr>
                                         <ul class="fs-6">
-                                            <li style="color: green;">定價 6,000 元。</li>
+                                            <li style="color: green;">定價 7,000 元。<br>
+                                                優惠方案：搭配出團上課，費用為團費 + 6000 元
+                                            </li>
                                             <li>現金優惠，折扣 300 元。</li>
-                                            <li style="color: red;">已完成iDiving的AA課程之學員可減免1,000元。</li>
+                                            <li style="color: red;">已完成 iDiving AA 課程之學員可減免 1,000 元。</li>
                                             <li>費用包含：SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、術科課程期間保險。</li>
-                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借。</li>
+                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借、移地結訓時之旅遊團費（請參考各地旅遊活動的費用）。</li>
+                                        </ul>
+                                        <br>
+                                    </div>
+                                    <!-- 報名方式 -->
+                                    <div>
+                                        <br>
+                                        <app-paymentmethod></app-paymentmethod>
+                                        <br>
+                                    </div>
+                                    <!-- 報名須知 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">報名須知</h3>
+                                        <hr>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fs-6" colspan="2">
+                                                        <a>具備開放水域潛水員OWD證照（不分系統）</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" colspan="2">
+                                                        <a>年齡需滿12歲以上，健康狀況良好</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" colspan="2">
+                                                        <a href="https://drive.google.com/file/d/13Lltu9vx3duMY8BWTbkFMDUY5FbmipIw/view?pli=1">健康聲明書在此請點擊</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 上課地點 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">上課地點</h3>
+                                        <hr>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fs-6" colspan="2">
+                                                        <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" width="100px" style="vertical-align:text-top;">
+                                                        <a>教室學科:</a>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>iDiving 士林前港店（台北市士林區前港街 8 號）</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <a>海洋實習:</a>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="color:green;vertical-align:text-top;">
+                                                        <a>註: </a>
+                                                    </td>
+                                                    <td class="fs-6" style="color:green;">
+                                                        <a>
+                                                            上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修等），若有額外增加的費用本中心將自行吸收，不會另外收費，但學員不可因課程時間調整而要求退費。
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 特約課程 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">特約課程</h3>
+                                        <hr>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>學科部份，每另外約一日課程加價 300 元</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>術科部份，每另外約一日課程加價 500 元</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 課程更改 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">課程更改</h3>
+                                        <hr>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>課程須於開始上課後的兩個月內完成。</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>上課日期之更改須在 10 天前告知</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 課程取消 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">課程取消</h3>
+                                        <hr>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fs-6" style="vertical-align:text-top;">
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="fs-6">
+                                                        <a>若因身體因素不適合從事潛水活動，並開立醫生證明者，除了NT 3,000元購買數位教材的訂金，其餘將會退還。</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                    </div>
+                                </ng-template>
+                            </li>
+                        </ul>
+
+                        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+                        <!-- <pre>Active: {{ active }}</pre> -->
+
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a class="fs-4" ngbNavLink>選修專長</a>
+                    <ng-template ngbNavContent>
+
+                        <ul ngbNav #nav="ngbNav" [(activeId)]="active_02" class="nav-tabs">
+                            <li [ngbNavItem]="1">
+                                <a class="fs-4" ngbNavLink>船潛</a>
+                                <ng-template ngbNavContent>
+
+                                    <br>
+                                    <h3 style="font-family:DFKai-sb;">船潛 Boat Diving</h3>
+                                    <hr>
+                                    <!-- 課程內容 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">開課內容</h3>
+                                        <ul>
+                                            <li class="fs-6">
+                                                學科（3hr）<br>
+                                                不同類型的潛水船 / 船潛行前準備<br>
+                                                登船程序與船上禮儀 / 船潛出入水程序<br>
+                                                船潛結束時的注意事項
+                                            </li>
+                                            <li class="fs-6">
+                                                海洋訓練（7hr）<br>
+                                                學習登船程序 / 有效率的收納裝備<br>
+                                                制定合適的船潛行程 / 水中浮力棒使用<br>
+                                                船潛出入水的注意事項
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <img src="../../../../assets/Image/Data/SC_BD_01.png" width="60%"
+                                            style="display:block; margin:auto;">
+                                    </div>
+                                    <!-- 課程特色 -->
+                                    <div>
+                                        <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
+                                        <ul class="fs-6">
+                                            <li>
+                                                海洋課程期間提供調節器、B.C.D.、電腦錶、浮力袋與手輪。
+                                            </li>
+                                            <li>
+                                                領導級人員對學員比例 1：3，教練時時刻刻都在您身旁。
+                                            </li>
+                                            <li>
+                                                數位教材伴您一生，不必擔心知識忘記。
+                                            </li>
+                                            <li>
+                                                學員上課期間，購買潛水器材享有學員優惠價。
+                                            </li>
+                                            <li>
+                                                搭配移地結訓，冬季也能完成課程，還可享有課程優惠。
+                                            </li>
+                                            <li>
+                                                於iDiving上完AA可享船潛課程優惠。
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <img src="../../../../assets/Image/Data/SC_BD_02.png" width="100%"
+                                            style="display:block; margin:auto;">
+                                    </div>
+                                    <!-- 課程規劃 -->
+                                    <div>
+                                        <h3 style="font-family:DFKai-sb;"><br>課程規劃</h3>
+                                        <table borderless="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="10%">
+                                                    </td>
+                                                    <td>
+                                                        <a class="fs-6">
+                                                            DAY 1 | 學科 19:00~22:00<br>
+                                                            <hr>
+                                                            不同類型的潛水船、船潛行前準備<br>
+                                                            登船程序與船上禮儀、船潛出入水程序<br>
+                                                            船潛結束時的注意事項
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <a class="fs-6">
+                                                            <br>DAY 2 | 開放水域 07:00~14:00<br>
+                                                            <hr>
+                                                            學習登船程序、有效率的收納裝備<br>
+                                                            制定合適的船潛行程、水中浮力棒使用<br>
+                                                            船潛出入水的注意事項
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br>
+                                        <img class="d-block" src="../../../../assets/Image/Data/BD_Schedule.png" width="100%" style="display:block; margin:auto;">
+                                    </div>
+                                    <!-- 課程學費 -->
+                                    <div>
+                                        <br>
+                                        <h3 style="font-family:DFKai-sb;">課程學費</h3>
+                                        <hr>
+                                        <ul class="fs-6">
+                                            <li style="color: green;">
+                                                方案一：東北角結訓（實際船潛）費用為 7,000 元<br>
+                                                方案二：搭配出團上課，費用為團費 + 4,500 元
+                                            </li>
+                                            <li>現金優惠，折扣 300 元。</li>
+                                            <li style="color: red;">已完成 iDiving AA 課程之學員可減免 1,000 元。</li>
+                                            <li>
+                                                費用包含：線上教材、國際數位證照申請、教練費、重裝租借費用、東北角海洋實習費用與保險費SSI數位教材、
+                                                國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、術科課程期間保險。
+                                            </li>
+                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借、移地結訓時之旅遊團費（請參考各地旅遊活動的費用）。</li>
                                         </ul>
                                         <br>
                                     </div>
@@ -1682,11 +1687,11 @@
                                 </ng-template>
                             </li>
                             <li [ngbNavItem]="2">
-                                <a class="fs-4" ngbNavLink>船潛</a>
-                                <ng-template ngbNavContent>
+                                <a class="fs-4" ngbNavLink>導航</a>
+                                <ng-template ngbNavContent class="custom-class">
 
                                     <br>
-                                    <h3 style="font-family:DFKai-sb;">船潛 Boat Diving</h3>
+                                    <h3 style="font-family:DFKai-sb;">導航 Navigation</h3>
                                     <hr>
                                     <!-- 課程內容 -->
                                     <div>
@@ -1695,19 +1700,19 @@
                                         <ul>
                                             <li class="fs-6">
                                                 學科（3hr）<br>
-                                                不同類型的潛水船 / 船潛行前準備<br>
-                                                登船程序與船上禮儀 / 船潛出入水程序<br>
-                                                船潛結束時的注意事項
+                                                自然導航 / 指北針導航<br>
+                                                自然導航搭配指北針使用<br>
+                                                需要特殊導航技術的狀況<br>
+                                                導航技巧的實際應用
                                             </li>
                                             <li class="fs-6">
-                                                海洋訓練（7hr）<br>
-                                                學習登船程序 / 有效率的收納裝備<br>
-                                                制定合適的船潛行程 / 水中浮力棒使用<br>
-                                                船潛出入水的注意事項
+                                                海洋訓練（5hr）<br>
+                                                水中距離計算 / 自然導航練習<br>
+                                                指北針導航練習
                                             </li>
                                         </ul>
                                         <br>
-                                        <img src="../../../../assets/Image/Data/SC_BD_01.png" width="60%"
+                                        <img src="../../../../assets/Image/Data/SC_NV_01.png" width="60%"
                                             style="display:block; margin:auto;">
                                     </div>
                                     <!-- 課程特色 -->
@@ -1715,7 +1720,13 @@
                                         <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
                                         <ul class="fs-6">
                                             <li>
-                                                海洋課程期間提供調節器、B.C.D.、電腦錶、浮力袋與手輪。
+                                                加強指北針使用，練習水中方向辨認技巧，安全往返目的地。
+                                            </li>
+                                            <li>
+                                                海洋課程期間提供調節器、B.C.D.、電腦錶。
+                                            </li>
+                                            <li>
+                                                平日 / 假日 均有開課，課程安排很方便。
                                             </li>
                                             <li>
                                                 領導級人員對學員比例 1：3，教練時時刻刻都在您身旁。
@@ -1727,14 +1738,11 @@
                                                 學員上課期間，購買潛水器材享有學員優惠價。
                                             </li>
                                             <li>
-                                                搭配移地結訓，冬季也能完成課程，還可享有課程優惠。
-                                            </li>
-                                            <li>
-                                                於iDiving上完AA可享船潛課程優惠。
+                                                於iDiving上完AA可享導航課程優惠。
                                             </li>
                                         </ul>
                                         <br>
-                                        <img src="../../../../assets/Image/Data/SC_BD_02.png" width="100%"
+                                        <img src="../../../../assets/Image/Data/SC_NV_02.png" width="100%"
                                             style="display:block; margin:auto;">
                                     </div>
                                     <!-- 課程規劃 -->
@@ -1749,9 +1757,10 @@
                                                         <a class="fs-6">
                                                             DAY 1 | 學科 19:00~22:00<br>
                                                             <hr>
-                                                            不同類型的潛水船、船潛行前準備<br>
-                                                            登船程序與船上禮儀、船潛出入水程序<br>
-                                                            船潛結束時的注意事項
+                                                            自然導航 / 指北針導航<br>
+                                                            自然導航搭配指北針使用<br>
+                                                            需要特殊導航技術的狀況<br>
+                                                            導航技巧的實際應用
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -1760,18 +1769,17 @@
                                                     </td>
                                                     <td>
                                                         <a class="fs-6">
-                                                            <br>DAY 2 | 開放水域 07:00~14:00<br>
+                                                            <br>DAY 2 | 開放水域 08:00~13:00<br>
                                                             <hr>
-                                                            學習登船程序、有效率的收納裝備<br>
-                                                            制定合適的船潛行程、水中浮力棒使用<br>
-                                                            船潛出入水的注意事項
+                                                            水中距離計算、自然導航練習<br>
+                                                            指北針導航練習
                                                         </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                         <br>
-                                        <img class="d-block" src="../../../../assets/Image/Data/BD_Schedule.png" width="100%" style="display:block; margin:auto;">
+                                        <img class="d-block" src="../../../../assets/Image/Data/NV_Schedule.png" width="100%" style="display:block; margin:auto;">
                                     </div>
                                     <!-- 課程學費 -->
                                     <div>
@@ -1779,17 +1787,11 @@
                                         <h3 style="font-family:DFKai-sb;">課程學費</h3>
                                         <hr>
                                         <ul class="fs-6">
-                                            <li style="color: green;">
-                                                方案一：東北角結訓（實際船潛）費用為 7,000 元<br>
-                                                方案二：搭配出團上課，費用為團費 + 4,500 元
-                                            </li>
+                                            <li style="color: green;">定價 6,000 元。</li>
                                             <li>現金優惠，折扣 300 元。</li>
-                                            <li style="color: red;">已完成 iDiving AA 課程之學員可減免 1,000 元。</li>
-                                            <li>
-                                                費用包含：線上教材、國際數位證照申請、教練費、重裝租借費用、東北角海洋實習費用與保險費SSI數位教材、
-                                                國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、術科課程期間保險。
-                                            </li>
-                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借、移地結訓時之旅遊團費（請參考各地旅遊活動的費用）。</li>
+                                            <li style="color: red;">已完成iDiving的AA課程之學員可減免1,000元。</li>
+                                            <li>費用包含：SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、術科課程期間保險。</li>
+                                            <li>費用不含：海洋實習交通與餐食費用、輕裝租借。</li>
                                         </ul>
                                         <br>
                                     </div>

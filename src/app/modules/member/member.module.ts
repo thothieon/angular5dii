@@ -13,12 +13,14 @@ import { MemberRoutingModule } from './member-routing.module';
 
 import { MemberSearchComponent } from './pages/member-search/member-search.component';
 import { MemberNewComponent } from './pages/member-new/member-new.component';
+import { MemberInforComponent } from './pages/member-infor/member-infor.component';
 
 
 @NgModule({
   declarations: [
     MemberSearchComponent,
-    MemberNewComponent
+    MemberNewComponent,
+    MemberInforComponent
   ],
   imports: [
     CommonModule,
