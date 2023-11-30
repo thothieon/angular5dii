@@ -30,6 +30,7 @@
     "@popperjs/core": "^2.11.7",
     "@techiediaries/ngx-qrcode": "^9.1.0",
     "@types/chart.js": "^2.9.34",
+    "@types/jquery": "^3.5.29",
     "ag-grid-angular": "^29.3.4",
     "ag-grid-community": "^29.3.4",
     "angular-bootstrap-md": "^15.0.0",
