@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { environment } from '../environments/environment';
@@ -13,7 +14,7 @@ declare const gtag: Function;
 export class AppComponent {
   title = 'iDiving';
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private meta: Meta) {
     this.addGAScript();
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
@@ -23,7 +24,16 @@ export class AppComponent {
         page_path: event.urlAfterRedirects
       })
       /** END */
-    })
+    });
+    //https://blog.poychang.net/how-to-use-html-head/
+    this.meta.addTags([
+          {name: 'title', content: 'iDiving 全方位潛水中心，提供水肺潛水 自由潛水 技術潛水 美人魚課程 各項教練班課程 潛水旅遊 潛水器材裝備販售。'},
+          //{name: 'description', content: 'How to use Angular 4 meta service'},
+          //{name: 'author', content: 'talkingdotnet'},
+          //{name: 'keywords', content: 'Angular, Meta Service'}
+        ]);
+        // this.meta.updateTag({ name: 'description', content: 'Angular 4 meta service - original method'});
+        //this.meta.updateTag({ name: 'description', content: 'Angular 4 meta service - updated' });
   }
 
   /** Add Google Analytics Script Dynamically */
