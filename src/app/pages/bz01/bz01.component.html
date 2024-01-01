@@ -18,13 +18,13 @@
     <div class="row">
         <div class="col w-100">
             <br>
-            <div class="container-fluid">
-                <nav class="breadcrumb bg-white">
-                    <a class="breadcrumb-item" href="#">首頁</a>
-                    <a class="breadcrumb-item">學潛水</a>
-                    <a class="breadcrumb-item">課程年度計畫</a>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">課程年度計畫</li>
+                </ol>
+            </nav>
             <br>
         </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="col-xl">
         </div>
         <div class="col-xl-10">
-            <table mdbTable>
+            <table class="table table-striped">
                 <thead>
                     <!-- <th *ngFor="let head of headElements" scope="col">{{head}} </th> -->
                     <th colspan="2">
@@ -46,7 +46,7 @@
                         <td>{{el.first}}</td>
                         <td>{{el.last}}</td>
                         <td>{{el.handle}}</td>-->
-                    <tr mdbTableCol *ngFor="let course of courses | async ">
+                    <tr *ngFor="let course of courses | async ">
                         <!-- <th scope="row">{{course.id}}</th> -->
                         <td class="fs-6">{{course.name}}</td>
                         <td class="fs-6">{{course.date}}</td>
@@ -58,7 +58,11 @@
                     </tr>
                 </tbody>
             </table>
+            <br>
             <button type="button" mdbBtn class="fs-6" color="primary" block="true" onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+            <br>
+            <br>
+            <br>
         </div>
         <div class="col-xl">
         </div>
