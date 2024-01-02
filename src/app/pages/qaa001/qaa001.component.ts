@@ -1,4 +1,4 @@
-import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstrap-md';
+//import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstrap-md';
 import { Component, OnInit, ViewChild, HostListener, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
@@ -16,8 +16,8 @@ export interface Infos {
 })
 export class Qaa001Component implements OnInit, AfterViewInit {
 
-  @ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
-  @ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
+  //@ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
+  //@ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
 
   previous: any = [];
 
@@ -33,16 +33,16 @@ export class Qaa001Component implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.mdbTable.setDataSource(this.infos);
-    this.infos = this.mdbTable.getDataSource();
-    this.previous = this.mdbTable.getDataSource();
+    //this.mdbTable.setDataSource(this.infos);
+    //this.infos = this.mdbTable.getDataSource();
+    //this.previous = this.mdbTable.getDataSource();
   }
 
   ngAfterViewInit() {
-    this.mdbTablePagination.setMaxVisibleItemsNumberTo(5);
+    //this.mdbTablePagination.setMaxVisibleItemsNumberTo(5);
 
-    this.mdbTablePagination.calculateFirstItemIndex();
-    this.mdbTablePagination.calculateLastItemIndex();
-    this.cdRef.detectChanges();
+    //this.mdbTablePagination.calculateFirstItemIndex();
+    //this.mdbTablePagination.calculateLastItemIndex();
+    //this.cdRef.detectChanges();
   }
 }
