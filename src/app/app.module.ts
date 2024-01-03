@@ -38,24 +38,24 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 import { PartModule } from './components/Part/part.module';
-//import { About001Component } from './pages/about001/about001.component';
+import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
 //import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
-/*import { B210Component } from './pages/b210/b210.component';
+//import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
 import { B212Component } from './pages/b212/b212.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
-import { B311Component } from './pages/b311/b311.component';
-import { B320Component } from './pages/b320/b320.component';
+//import { B311Component } from './pages/b311/b311.component';
+import { B320Component } from './pages/b320/b320.component';/*
 import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
-import { B340Component } from './pages/b340/b340.component';
+import { B340Component } from './pages/b340/b340.component';*/
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
-import { C100Component } from './pages/c100/c100.component';*/
+//import { C100Component } from './pages/c100/c100.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 //import { C130Component } from './pages/c130/c130.component';
@@ -81,58 +81,58 @@ import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cp01Component } from './pages/cp01/cp01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
-/*import { D110Component } from './pages/d110/d110.component';
+//import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
-import { Dz01tComponent } from './pages/dz01t/dz01t.component';
+//import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
-import { Dz04Component } from './pages/dz04/dz04.component';*/
-import { Dz05Component } from './pages/dz05/dz05.component';/*
-import { D111Component } from './pages/d111/d111.component';
-import { D112Component } from './pages/d112/d112.component';
+import { Dz04Component } from './pages/dz04/dz04.component';
+import { Dz05Component } from './pages/dz05/dz05.component';
+//import { D111Component } from './pages/d111/d111.component';
+//import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
-import { D121Component } from './pages/d121/d121.component';
+//import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D130aComponent } from './pages/d130a/d130a.component';
 import { D140Component } from './pages/d140/d140.component';
-import { D141Component } from './pages/d141/d141.component';
+//import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { D230Component } from './pages/d230/d230.component';
 import { D310Component } from './pages/d310/d310.component';
 import { D340Component } from './pages/d340/d340.component';
 import { D410Component } from './pages/d410/d410.component';
-import { D420Component } from './pages/d420/d420.component';
+import { D420Component } from './pages/d420/d420.component';/*
 import { Ec01Component } from './pages/ec01/ec01.component';*/
 import { Health001Component } from './pages/health001/health001.component';
-/*import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+//import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
-import { Mc100Component } from './pages/mc100/mc100.component';*/
+//import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
-//import { Qaa001Component } from './pages/qaa001/qaa001.component';
+import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { TestComponent } from './pages/test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //About001Component,
+    About001Component,
     BeginComponent,
     //Businesscard001Component,
     Bz01Component,
-    /*B210Component,
+    //B210Component,
     B211Component,
     B212Component,
     B230Component,
     B240Component,
     B310Component,
-    B311Component,
-    B320Component,
+    //B311Component,
+    B320Component,/*
     B321Component,
     B330Component,
-    B340Component,
+    B340Component,*/
     B400Component,
     B411Component,
-    C100Component,*/
+    //C100Component,
     C101Component,
     C120Component,
     //C130Component,
@@ -158,36 +158,35 @@ import { TestComponent } from './pages/test/test.component';
     Coc100Component,
     Cp01Component,
     Cz01Component,
-    /*D110Component,
+    //D110Component,
     Dz01Component,
-    Dz01tComponent,
+    //Dz01tComponent,
     Dz02Component,
     Dz03Component,
-    Dz04Component,*/
+    Dz04Component,
     Dz05Component,/*
     D111Component,
-    D112Component,
+    D112Component,*/
     D120Component,
-    D121Component,
+    //D121Component,
     D130Component,
     D130aComponent,
     D140Component,
-    D141Component,
+    //D141Component,
     D150Component,
     D160Component,
     D230Component,
     D310Component,
     D340Component,
     D410Component,
-    D420Component,
+    D420Component,/*
     Ec01Component,*/
-    Health001Component,/*
-    LinkidivingComponent,
+    Health001Component,
+    //LinkidivingComponent,
     M100Component,
-    Mc100Component,*/
-    Qac001Component,/*
+    //Mc100Component,
+    Qac001Component,
     Qaa001Component,
-    D130aComponent,*/
     TestComponent
   ],
   imports: [
