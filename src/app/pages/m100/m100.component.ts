@@ -1,4 +1,4 @@
-import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstrap-md';
+//import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstrap-md';
 
 import { Component, OnInit, ViewChild, HostListener, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 
@@ -22,8 +22,8 @@ export interface Hearsaytotal {
 })
 export class M100Component implements OnInit, AfterViewInit {
 
-  @ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
-  @ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
+  //@ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
+  //@ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
 
   previous: any = [];
 
@@ -39,16 +39,16 @@ export class M100Component implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.mdbTable.setDataSource(this.hearsaytotals);
-    this.hearsaytotals = this.mdbTable.getDataSource();
-    this.previous = this.mdbTable.getDataSource();
+    //this.mdbTable.setDataSource(this.hearsaytotals);
+    //this.hearsaytotals = this.mdbTable.getDataSource();
+    //this.previous = this.mdbTable.getDataSource();
   }
 
   ngAfterViewInit() {
-    this.mdbTablePagination.setMaxVisibleItemsNumberTo(5);
+    //this.mdbTablePagination.setMaxVisibleItemsNumberTo(5);
 
-    this.mdbTablePagination.calculateFirstItemIndex();
-    this.mdbTablePagination.calculateLastItemIndex();
-    this.cdRef.detectChanges();
+    //this.mdbTablePagination.calculateFirstItemIndex();
+    //this.mdbTablePagination.calculateLastItemIndex();
+    //this.cdRef.detectChanges();
   }
 }

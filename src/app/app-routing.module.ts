@@ -3,38 +3,37 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { About001Component } from './pages/about001/about001.component';
-import { HeadComponent } from './components/Part/head/head.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
-import { B210Component } from './pages/b210/b210.component';
+//import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
 import { B212Component } from './pages/b212/b212.component';
 import { B310Component } from './pages/b310/b310.component';
-import { B311Component } from './pages/b311/b311.component';
-import { B320Component } from './pages/b320/b320.component';
+//import { B311Component } from './pages/b311/b311.component';
+import { B320Component } from './pages/b320/b320.component';/*
 import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
-import { B340Component } from './pages/b340/b340.component';
+import { B340Component } from './pages/b340/b340.component';*/
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
 import { BeginComponent } from './pages/begin/begin.component';
-import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
+//import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
-import { C100Component } from './pages/c100/c100.component';
+//import { C100Component } from './pages/c100/c100.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
-import { C130Component } from './pages/c130/c130.component';
+//import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
 import { C312Component } from './pages/c312/c312.component';
 import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
-import { C420Component } from './pages/c420/c420.component';
+/*import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
-import { C510Component } from './pages/c510/c510.component';
+import { C510Component } from './pages/c510/c510.component';*/
 import { C610Component } from './pages/c610/c610.component';
 import { Ccr100Component } from './pages/ccr100/ccr100.component';
-import { Ccs001Component } from './pages/ccs001/ccs001.component';
+//import { Ccs001Component } from './pages/ccs001/ccs001.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
@@ -46,53 +45,54 @@ import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cp01Component } from './pages/cp01/cp01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
-import { D110Component } from './pages/d110/d110.component';
+/*import { D110Component } from './pages/d110/d110.component';
 import { D111Component } from './pages/d111/d111.component';
 import { D112Component } from './pages/d112/d112.component';
-import { D121Component } from './pages/d121/d121.component';
+import { D121Component } from './pages/d121/d121.component';*/
 import { D120Component } from './pages/d120/d120.component';
 import { D130Component } from './pages/d130/d130.component';
+import { D130aComponent } from './pages/d130a/d130a.component';
 import { D140Component } from './pages/d140/d140.component';
-import { D141Component } from './pages/d141/d141.component';
+//import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { D230Component } from './pages/d230/d230.component';
 import { D310Component } from './pages/d310/d310.component';
-import { D130aComponent } from './pages/d130a/d130a.component';
 import { D340Component } from './pages/d340/d340.component';
 import { D410Component } from './pages/d410/d410.component';
 import { D420Component } from './pages/d420/d420.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
-import { Dz01tComponent } from './pages/dz01t/dz01t.component';
+//import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
-import { Dz05Component } from './pages/dz05/dz05.component';
-import { Ec01Component } from './pages/ec01/ec01.component';
+import { Dz05Component } from './pages/dz05/dz05.component';/*
+import { Ec01Component } from './pages/ec01/ec01.component';*/
 import { Health001Component } from './pages/health001/health001.component';
-import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+//import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
-import { Mc100Component } from './pages/mc100/mc100.component';
+//import { Mc100Component } from './pages/mc100/mc100.component';
 //import { MemberModule } from './modules/member/member.module';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
+import { TestComponent } from './pages/test/test.component';
 
 const routes: Routes = [
+  { path: 'test', component: TestComponent },
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
-  { path: 'head', component: HeadComponent },
-  { path: 'health001', component: Health001Component },
+  { path: 'health001', component: Health001Component },/*
   { path: 'mc100', component: Mc100Component },
-  { path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },
-  { path: 'm100', component: M100Component },
+  { path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },*/
+  { path: 'm100', component: M100Component },/*
   { path: 'linkidiving', component: LinkidivingComponent },
-  { path: 'ec01', component: Ec01Component },
+  { path: 'ec01', component: Ec01Component },*/
   { path: 'dz05', component: Dz05Component },
   { path: 'dz04', component: Dz04Component },
   { path: 'dz03', component: Dz03Component },
   { path: 'dz02', component: Dz02Component },
   { path: 'dz01', component: Dz01Component },
-  { path: 'dz01t', component: Dz01tComponent },
+  //{ path: 'dz01t', component: Dz01tComponent },
   { path: 'd420', component: D420Component },
   { path: 'd410', component: D410Component },
   { path: 'd340', component: D340Component },
@@ -101,32 +101,32 @@ const routes: Routes = [
   { path: 'd160', component: D160Component },
   { path: 'd150', component: D150Component },
   { path: 'd140', component: D140Component },
-  { path: 'd141', component: D141Component },
+  //{ path: 'd141', component: D141Component },
   { path: 'd130a', component: D130aComponent },
   { path: 'd130', component: D130Component },
-  { path: 'd121', component: D121Component },
-  { path: 'd120', component: D120Component },
+  //{ path: 'd121', component: D121Component },
+  { path: 'd120', component: D120Component },/*
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
   { path: 'd112', component: D112Component },
-  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },
-  { path: 'c610', component: C610Component },
+  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },*/
+  { path: 'c610', component: C610Component },/*
   { path: 'c510', component: C510Component },
   { path: 'c430', component: C430Component },
-  { path: 'c420', component: C420Component },
+  { path: 'c420', component: C420Component },*/
   { path: 'c410', component: C410Component },
   { path: 'c310', component: C310Component },
   { path: 'c312', component: C312Component },
   { path: 'c313', component: C313Component },
   { path: 'c210', component: C210Component },
-  { path: 'c130', component: C130Component },
+  //{ path: 'c130', component: C130Component },
   { path: 'c120', component: C120Component },
-  { path: 'c100', component: C100Component },
-  { path: 'c101', component: C101Component },
+  { path: 'c101', component: C101Component },/*
+  { path: 'c100', component: C100Component },*/
   { path: 'cz01', component: Cz01Component },
   { path: 'ccr100', component: Ccr100Component },
-  { path: 'ccs001', component: Ccs001Component },
-  { path: 'ccs001/:id', component: Ccs001Component },
+  //{ path: 'ccs001', component: Ccs001Component },
+  //{ path: 'ccs001/:id', component: Ccs001Component },
   { path: 'cfdc210', component: Cfdc210Component },
   { path: 'cfd110', component: Cfd110Component },
   { path: 'cfd120', component: Cfd120Component },
@@ -137,23 +137,23 @@ const routes: Routes = [
   { path: 'cfd310', component: Cfd310Component },
   { path: 'cp01', component: Cp01Component },
   { path: 'coc100', component: Coc100Component },
-  { path: 'businesscard001/:id', component: Businesscard001Component },
+  //{ path: 'businesscard001/:id', component: Businesscard001Component },
   { path: 'b411', component: B411Component },
   { path: 'b400', component: B400Component },
   { path: 'b310', component: B310Component },
-  { path: 'b311', component: B311Component },
-  { path: 'b320', component: B320Component },
+  //{ path: 'b311', component: B311Component },
+  { path: 'b320', component: B320Component },/*
   { path: 'b321', component: B321Component },
   { path: 'b330', component: B330Component },
-  { path: 'b340', component: B340Component },
+  { path: 'b340', component: B340Component },*/
   { path: 'b240', component: B240Component },
   { path: 'b230', component: B230Component },
-  { path: 'b210', component: B210Component },
+  //{ path: 'b210', component: B210Component },
   { path: 'b211', component: B211Component },
   { path: 'b212', component: B212Component },
   { path: 'begin', component: BeginComponent },
-  { path: 'bz01', component: Bz01Component },
-  { path: 'activity', loadChildren: () => import('./modules/activity/activity.module').then((m) => m.ActivityModule) },
+  //{ path: 'bz01', component: Bz01Component },
+  //{ path: 'activity', loadChildren: () => import('./modules/activity/activity.module').then((m) => m.ActivityModule) },
   { path: 'about001', component: About001Component },
   { path: '', component: BeginComponent }
 ];
