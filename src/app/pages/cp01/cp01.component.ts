@@ -15,7 +15,6 @@ export interface Dessert {
 })
 export class Cp01Component {
   desserts: Dessert[] = [
-    {type:'15', name: '', price: ''},
     {type:'20', name: '自由潛水', price: ''},
     {type:'15', name: 'TRY Freediving 前港', price: '2500'},
     {type:'15', name: 'TRY Freediving 南港', price: '3000'},

@@ -32,13 +32,13 @@
     <div class="row">
         <div class="col w-100">
             <br>
-            <div class="container-fluid">
-                <nav class="breadcrumb bg-white">
-                    <a class="breadcrumb-item" href="#">首頁</a>
-                    <a class="breadcrumb-item">學潛水</a>
-                    <a class="breadcrumb-item">課程 Q&A</a>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">課程 Q&A</li>
+                </ol>
+            </nav>
             <br>
         </div>
     </div>
@@ -60,11 +60,36 @@
     <div class="row">
         <div class="col-xl">
         </div>
-        <div class="col-xl-7">
+        <div class="col-xl-10">
             <div class="container">
-                <h2>課程 Q&A</h2>
+                <h3>課程 Q&A</h3>
                 <hr>
-                <table mdbTable borderless="true" #tableEl="mdbTable">
+                <table>
+                    <tbody>
+                        <tr *ngFor="let qa of infos | async; let i = index">
+                            <td>
+                                <div>
+                                    <div>
+                                        <p class="fs-4"><br>Q: {{qa.q}}</p>
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <p class="fs-6">A: {{qa.a}}</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <!-- <h3>課程 Q&A</h3> -->
+                <!-- <hr> -->
+                <table>
                     <tbody>
                         <tr *ngFor="let qa of infos | async; let i = index">
                             <!-- <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;" width="50%">
@@ -88,8 +113,8 @@
                     <tfoot class="grey lighten-5 w-100">
                         <tr>
                             <td colspan="4">
-                                <mdb-table-pagination [tableEl]="tableEl" [searchDataSource]="infos" class="fs-6">
-                                </mdb-table-pagination>
+                                <!-- <mdb-table-pagination [tableEl]="tableEl" [searchDataSource]="infos" class="fs-6">
+                                </mdb-table-pagination> -->
                             </td>
                         </tr>
                     </tfoot>

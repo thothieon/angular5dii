@@ -31,23 +31,21 @@
     <div class="row">
         <div class="col">
             <br>
-            <div class="container-fluid">
-                <nav class="breadcrumb bg-white">
-                    <a class="breadcrumb-item" href="#">首頁</a>
-                    <a class="breadcrumb-item">學潛水</a>
-                    <a class="breadcrumb-item">體驗潛水/水肺複習</a>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">體驗潛水/水肺複習</li>
+                </ol>
+            </nav>
             <br>
         </div>
     </div>
 
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
     <div class="row">
         <div class="col-xl">
         </div>
-        <div class="col-xl-8">
+        <div class="col-xl-10">
             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
                 <li [ngbNavItem]="1">
                     <a ngbNavLink>體驗潛水</a>
@@ -109,7 +107,9 @@
                                                 如須搭車，台北到東北角車資 300 元/每人。
                                             </li>
                                         </ul>
-                                        <div><span class="fs-6">體驗完立即報名OWD課程，學費可折抵 1,000元。</span></div>
+                                        <div>
+                                            <p class="fs-6">體驗完立即報名OWD課程，學費可折抵 1,000元。</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -156,35 +156,35 @@
                             <br>
                             <ul>
                                 <li>潛水池訓練（兩米）</li>
-                                <span>
+                                <p>
                                     潛水簡報、計畫 / 入水和出水 / 全方位潛水系統浮力檢查 / 有控制的下潛<br>
                                     面鏡排水 / 二級頭排水（爆吐法與按鈕排水法）<br>
                                     二級頭尋回（手臂橫掃與順管摸索） / 氣源共享<br>
                                     中性浮力（潛水姿勢） / 與潛伴有控制上升 / 氣源共享上升<br>
                                     緊急上升技巧 / 裝備整理 / 總結
-                                </span>
+                                </p>
                             </ul>
                             <br>
                             <ul>
                                 <li>潛水池訓練（五米）</li>
-                                <span>
+                                <p>
                                     潛水簡報、計畫 / 入水和出水 / 全方位潛水系統浮力檢查 / 有控制的下潛<br>
                                     面鏡排水 / 二級頭排水（爆吐法與按鈕排水法）<br>
                                     二級頭尋回（手臂橫掃與順管摸索） / 氣源共享<br>
                                     中性浮力（潛水姿勢） / 與潛伴有控制上升 / 氣源共享上升<br>
                                     緊急上升技巧 / 裝備整理 / 總結
-                                </span>
+                                </p>
                             </ul>
                             <br>
                             <ul>
                                 <li>海洋訓練</li>
-                                <span>
+                                <p>
                                     潛水簡報、計畫 / 入水和出水 / 全方位潛水系統浮力檢查 / 有控制的下潛<br>
                                     面鏡排水 / 二級頭排水（爆吐法與按鈕排水法）<br>
                                     二級頭尋回（手臂橫掃與順管摸索） / 氣源共享<br>
                                     中性浮力（潛水姿勢） / 與潛伴有控制上升 / 氣源共享上升<br>
                                     緊急上升技巧 / DSMB練習 / 裝備整理 / 總結 / 潛水日誌填寫
-                                </span>
+                                </p>
                             </ul>
                             <br>
                             <img width="30%" src="../../../assets/Image/Data/SSU_1.jpg" />
@@ -195,7 +195,7 @@
                         <div>
                             <h3>開課日期</h3>
                             <hr>
-                            <span class="fs-6">「為 5~9 月每個周末皆可安排」，但請一周前填寫資料報名，以便安排。</span>
+                            <p class="fs-6">「為 5~9 月每個周末皆可安排」，但請一周前填寫資料報名，以便安排。</p>
                             <br>
                             <br>
                             <img width="75%" src="../../../assets/Image/Data/SSU_5.jpg" />
@@ -242,7 +242,7 @@
                                     <a href="/#/health001">健康聲明書在此請點擊。</a>
                                 </li>
                                 <li>
-                                    <a >潛水支數24支以內或距離上次潛水超過6個月者，請填寫</a><a href="/#/dz05">自我能力評估表。</a>
+                                    <p>潛水支數24支以內或距離上次潛水超過6個月者，請填寫</p><a href="/#/dz05">自我能力評估表。</a>
                                 </li>
                                 <li>本中心依據自我能力評估表分數，有權建議調整學員水肺複習上課內容。</li>
                             </ol>
@@ -256,44 +256,44 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="80px" style="vertical-align:text-top;">
-                                            <a>泳池:</a>
+                                            <p>泳池:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>南港運動中心（台北市南港區玉成街69號）</a>
+                                            <p>南港運動中心（台北市南港區玉成街69號）</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>海洋:</a>
+                                            <p>海洋:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</a>
+                                            <p>iDiving東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修無法預約等），若有額外增加的費用本中心將自行吸收（大台北區轉換場地之費用），
                                                 不會另外收費。學員不可因課程時間/地點有調整而要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a></a>
+                                            <p></p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 交通須自理，或由iDiving協調共乘，台北到東北角車資 300 元/人。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -319,7 +319,7 @@
                             <hr>
                             <ul>
                                 <li>
-                                    <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                    <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                 </li>
                             </ul>
                             <br>
