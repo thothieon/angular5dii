@@ -75,10 +75,8 @@ import { M100Component } from './pages/m100/m100.component';
 //import { MemberModule } from './modules/member/member.module';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
-import { TestComponent } from './pages/test/test.component';
 
 const routes: Routes = [
-  { path: 'test', component: TestComponent },
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
   { path: 'health001', component: Health001Component },/*
