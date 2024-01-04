@@ -289,30 +289,45 @@
                                 </tbody>
                             </table>
                             <br>
-                            <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                                <mdb-carousel-item *ngFor="let Weekender of Weekenders; let i = index">
-                                    <div class="view">
-                                        <img class="d-block" src="{{Weekender.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../../assets/Image/Data/FD_Weekend_Schedule_01.png" class="d-block w-100" alt="...">
                                     </div>
-                                </mdb-carousel-item>
-                            </mdb-carousel>
-                            <br>
-                            <br>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_Weekend_Schedule_02.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- 夏季假日班 課程學費 -->
-                        <!-- 方案二  -->
+                        <br>
                         <div class="row">
-                            <div class="col d-block grey lighten-3">
-                                <br>
-                                <h3 style="font-family:DFKai-sb;">最新優惠</h3>
-                                <br>
+                            <div class="col bg-light">
                                 <table borderless="true">
                                     <tbody>
                                         <tr>
                                             <td colspan="3" class="fs-6">
-                                                <p>
-                                                    灰姑娘/灰王子專案:
-                                                </p>
+                                                <br>
+                                                <h3 style="font-family:DFKai-sb;">最新優惠</h3>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="fs-6">
+                                                <p>灰姑娘/灰王子專案:</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -340,49 +355,12 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <br>
                             </div>
                         </div>
-                        <!-- 方案一  -->
-                        <div class="row">
-                            <div class="col">
-                                <br>
-                                <br>
-                                <h3 style="font-family:DFKai-sb;">課程學費</h3>
-                                <table borderless="true">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="3" class="fs-6">
-                                                <a style="color: green;"><br>Freediver $14,000 元</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" class="fs-6">
-                                                <ul>
-                                                    <li style="color: red;">現金優惠:折扣 300 元。</li>
-                                                    <li style="color: red;">人數優惠:兩人一起報名更優惠，每人優惠 700 元。三人同樂優惠加倍，每人優惠
-                                                        1,200 元。</li>
-                                                    <li>費用包含:SSI線上教材、國際數位證照申請、教練費、泳池場地費、東北角海洋實習及保險、訓練期間之裝備。</li>
-                                                    <li>費用不含:海洋實習交通費、餐食住宿費。</li>
-                                                    <li>課程輕裝優惠，面鏡、呼吸管、配重帶原價2,580元，配合課程只需<a style="color: red;">加價1,400</a>元。</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <br>
-                                <img src="../../../../assets/Image/Data/FD_17.png" width="100%" />
-                                <ul>
-                                    <li>「本店OWD學生」報名 Freediver 可享 $1,000 元折扣</li>
-                                    <li>他店學生來iDiving 進行後續課程，欲取得 Freediver 自由潛水員 課程贈品，享會員價</li>
-                                    <li>往後參加自潛活動費用:每次 750 元</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
                         <!-- 夏季假日班 報名方式 -->
-                        <app-paymentmethod></app-paymentmethod>
+                        <div>
+                            <app-paymentmethod></app-paymentmethod>
+                        </div>
                         <!-- 夏季假日班 考核標準 -->
                         <div>
                             <br>
@@ -458,11 +436,15 @@
                         </div>
                         <!-- 夏季假日班 上課地點 -->
                         <div>
-                            <br>
-                            <h3 style="font-family:DFKai-sb;">上課地點</h3>
-                            <hr>
                             <table borderless="true">
                                 <tbody>
+                                    <tr>
+                                        <td class="fs-6" colspan="2">
+                                            <br>
+                                            <h3 style="font-family:DFKai-sb;">上課地點</h3>
+                                            <hr>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="fs-6" colspan="2">
                                             <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
@@ -939,15 +921,28 @@
                                 </tbody>
                             </table>
                             <br>
-                            <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
-                                    <div class="view">
-                                        <img class="d-block" src="{{Weekday.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../../assets/Image/Data/FD_Weekdays_Schedule_01.png" class="d-block w-100" alt="...">
                                     </div>
-                                </mdb-carousel-item>
-                            </mdb-carousel>
-                            <br>
-                            <br>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_Weekdays_Schedule_02.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- 夏季平日班 課程學費 -->
                         <!-- 方案二  -->
@@ -1590,8 +1585,8 @@
                                             <p class="fs-6">
                                                 <br>DAY 5 | 潛立方1天or移地2天 09:00~17:00<br>
                                             </p>
-                                                <hr>
-                                                <p class="fs-6">
+                                            <hr>
+                                            <p class="fs-6">
                                                 10m划手、無面鏡上升、10m救援<br>
                                                 10m恆重下潛，同時展現適當身體技巧<br>
                                                 綜合考核。
