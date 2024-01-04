@@ -171,17 +171,29 @@
                 </tbody>
               </table>
               <br>
-
-              <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                <mdb-carousel-item *ngFor="let Weekender of Weekenders; let i = index">
-                  <div class="view">
-                    <img class="d-block" src="{{Weekender.img}}" width="100%" style="display:block; margin:auto;"
-                      alt="First slide">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
-                </mdb-carousel-item>
-              </mdb-carousel>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="../../../../assets/Image/Data/OWD_Weekend_Schedule01.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../../../../assets/Image/Data/OWD_Weekend_Schedule02.png" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
               <br>
-
             </div>
             <!-- 假日班 課程學費 -->
             <!-- 最新優惠
@@ -636,15 +648,28 @@
                 </tbody>
               </table>
               <br>
-
-              <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
-                  <div class="view">
-                    <img class="d-block" src="{{Weekday.img}}" width="100%" style="display:block; margin:auto;"
-                      alt="First slide">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
-                </mdb-carousel-item>
-              </mdb-carousel>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="../../../../assets/Image/Data/OWD_Weekdays_Schedule01.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../../../../assets/Image/Data/OWD_Weekdays_Schedule02.png" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
               <br>
 
             </div>
