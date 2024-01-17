@@ -13,20 +13,20 @@ export class C310Component implements OnInit {
   active_03 = 1;
 
   // DD 課表
-  DDSchedules = [
+  //DDSchedules = [
     // 假日班
-    {img: '../../../../assets/Image/Data/DD_Weekend_Schedule.png'},
+    //{img: '../../../../assets/Image/Data/DD_Weekend_Schedule.png'},
     // 平日班
-    {img: '../../../../assets/Image/Data/DD_Weekdays_Schedule.png'}
-  ];
+    //{img: '../../../../assets/Image/Data/DD_Weekdays_Schedule.png'}
+  //];
 
   // NL 課表
-  NLSchedules = [
+  //NLSchedules = [
     // 假日班
-    {img: '../../../../assets/Image/Data/NL_Weekend_Schedule.png'},
+    //{img: '../../../../assets/Image/Data/NL_Weekend_Schedule.png'},
     // 平日班
-    {img: '../../../../assets/Image/Data/NL_Weekdays_Schedule.png'}
-  ];
+    //{img: '../../../../assets/Image/Data/NL_Weekdays_Schedule.png'}
+  //];
 
   constructor() { }
 
