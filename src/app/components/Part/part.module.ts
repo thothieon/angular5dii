@@ -28,7 +28,7 @@ import { LinkComponent } from './link/link.component';
 //import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
 //import { Paymentmethod1000Component } from './paymentmethod1000/paymentmethod1000.component';
 //import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
-//import { HearsayComponent } from './hearsay/hearsay.component';
+import { HearsayComponent } from './hearsay/hearsay.component';
 //import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 import { DealerComponent } from './dealer/dealer.component';
 //import { FewalbumsComponent } from './fewalbums/fewalbums.component';
@@ -52,7 +52,7 @@ import { DealerComponent } from './dealer/dealer.component';
     //PaymentmethodComponent,
     //Paymentmethod1000Component,
     //FdschoolinformationComponent,
-    //HearsayComponent,
+    HearsayComponent,
     //SmallactivityComponent,
     DealerComponent,
     //FewalbumsComponent,
@@ -93,7 +93,7 @@ import { DealerComponent } from './dealer/dealer.component';
     //PaymentmethodComponent,
     //Paymentmethod1000Component,
     //FdschoolinformationComponent,
-    //HearsayComponent,
+    HearsayComponent,
     //SmallactivityComponent,
     DealerComponent,
     //FewalbumsComponent,
