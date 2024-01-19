@@ -72,16 +72,15 @@ import { Health001Component } from './pages/health001/health001.component';
 //import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 //import { Mc100Component } from './pages/mc100/mc100.component';
-//import { MemberModule } from './modules/member/member.module';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 
 const routes: Routes = [
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
-  { path: 'health001', component: Health001Component },/*
-  { path: 'mc100', component: Mc100Component },
-  { path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },*/
+  { path: 'health001', component: Health001Component },
+  //{ path: 'mc100', component: Mc100Component },
+  //{ path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },
   { path: 'm100', component: M100Component },/*
   { path: 'linkidiving', component: LinkidivingComponent },
   { path: 'ec01', component: Ec01Component },*/
@@ -106,8 +105,8 @@ const routes: Routes = [
   { path: 'd120', component: D120Component },/*
   { path: 'd110', component: D110Component },
   { path: 'd111', component: D111Component },
-  { path: 'd112', component: D112Component },
-  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },*/
+  { path: 'd112', component: D112Component },*/
+  { path: 'course', loadChildren: () => import('./modules/course/course.module').then((m) => m.CourseModule) },
   { path: 'c610', component: C610Component },/*
   { path: 'c510', component: C510Component },
   { path: 'c430', component: C430Component },
