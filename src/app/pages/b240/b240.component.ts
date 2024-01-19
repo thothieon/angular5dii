@@ -18,19 +18,21 @@ export interface Fewalbums {
 })
 export class B240Component implements OnInit {
 
-  stands = [
+  /*stands = [
     { img:'../../../assets/Image/FUNDIVE/L1120.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' },
     { img:'../../../assets/Image/FUNDIVE/L1105.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' },
     { img:'../../../assets/Image/FUNDIVE/L1102.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' },
     { img:'../../../assets/Image/FUNDIVE/L1030.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' }
-  ]
+  ]*/
 
   private fewalbumsitemCollection: AngularFirestoreCollection<Fewalbums>;
   fewalbumsitems: Observable<Fewalbums[]>;
+
   constructor(private afs: AngularFirestore) {
     this.fewalbumsitemCollection = afs.collection<Fewalbums>('iDiving/activity/fewalbums');
     this.fewalbumsitems = this.fewalbumsitemCollection.valueChanges();
   }
+  
   addItem(fewalbumsitems: Fewalbums) {
     this.fewalbumsitemCollection.add(fewalbumsitems);
   }
