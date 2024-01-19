@@ -31,31 +31,29 @@
     <div class="row">
         <div class="col w-100">
             <br>
-            <div class="container-fluid">
-                <nav class="breadcrumb bg-white">
-                    <a class="breadcrumb-item" href="#">首頁</a>
-                    <a class="breadcrumb-item">學潛水</a>
-                    <a class="breadcrumb-item">Freediver </a>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Freediver</li>
+                </ol>
+            </nav>
             <br>
         </div>
     </div>
 
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
     <div class="row">
         <div class="col-xl">
         </div>
-        <div class="col-xl-8">
+        <div class="col-xl-10">
             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
                 <li [ngbNavItem]="1">
-                    <a ngbNavLink>夏季假日班</a>
+                    <button class="fs-6" ngbNavLink>夏季假日班</button>
                     <ng-template ngbNavContent class="custom-class">
                         <br />
                         <img src="../../../assets/Image/Data/FD_Text1.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         <br />
-                        <h3><a style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver </a></h3>
+                        <h3 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver</h3>
                         <hr />
                         <!-- 夏季假日班 課程內容 -->
                         <div>
@@ -69,16 +67,16 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td width="1%" style="vertical-align:text-top;">
+                                        <td width="1%"> <!-- style="vertical-align:text-top;"> -->
                                             <ul>
                                                 <li class="fs-6"></li>
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學科（6hr）<br />
                                                 裝備介紹／自潛生理學／自潛技巧／海洋環境
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -88,10 +86,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池訓練（4hr）<br />
                                                 閉氣練習／踢動技巧／平潛練習／潛伴制度
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -101,11 +99,11 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 海洋訓練（8hr）<br />
                                                 5m 划手／無面鏡上升／救援／鴨式技巧<br />
                                                 10m 划手／鴨式下潛／恆重下潛
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -131,9 +129,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 教練人數比 1:3~4，教練全程盯著你。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -143,9 +141,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 數位教材伴你一生，不用擔心知識忘記。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -155,9 +153,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學員上課期間購買潛水器材享有學員優惠價。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -167,9 +165,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 如深度考核無法通過，即簽發Pool等級，持照可先至泳池練習。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -179,9 +177,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池團練、潛立方、墾丁、小琉球、綠島、蘭嶼，出團活動iDiving幫你揪人。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -191,9 +189,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 本店學生一年內POOL等級補考LV1免裝備租借、證照升級費用，只需繳交補考費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -215,86 +213,110 @@
                                     <tr>
                                         <td width="2%">
                                         </td>
-                                        <td>
-                                            <a class="fs-6">
+                                        <td class="fs-6">
+                                            <p>
                                                 DAY 1 | 學科 19:00~22:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p>
                                                 自由潛水生理學、海洋環境
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 2 | 學科 19:00~22:00<br>
-                                                <hr>
-                                                裝備介紹、自由潛水技巧
-                                            </a>
+                                            </p>
+                                            <hr>
+                                            <p>
+                                                裝備介紹、自由潛水技巧<br>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 3 | 泳池術科 13:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p>
                                                 裝備使用、閉氣練習、踢動技巧<br>
                                                 平潛練習、潛伴制度
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 4 | 海洋 08:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p>
                                                 平壓技巧、5-10m划手、無面鏡上升<br>
                                                 救援技巧、鴨式技巧
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 5 | 海洋 08:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p>
                                                 10m划手、無面鏡上升、10m救援<br>
                                                 10m恆重下潛，同時展現適當身體技巧<br>
                                                 綜合考核
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
+                                            <p class="fs-6" style="color:red;">
                                                 <br>註:實際下水時間將依照現場情況調整
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                                <mdb-carousel-item *ngFor="let Weekender of Weekenders; let i = index">
-                                    <div class="view">
-                                        <img class="d-block" src="{{Weekender.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../../assets/Image/Data/FD_Weekend_Schedule_01.png" class="d-block w-100" alt="...">
                                     </div>
-                                </mdb-carousel-item>
-                            </mdb-carousel>
-                            <br>
-                            <br>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_Weekend_Schedule_02.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- 夏季假日班 課程學費 -->
                         <!-- 方案二  -->
+                        <br>
                         <div class="row">
-                            <div class="col d-block grey lighten-3">
+                            <div class="col bg-light">
                                 <br>
                                 <h3 style="font-family:DFKai-sb;">最新優惠</h3>
                                 <br>
@@ -302,9 +324,9 @@
                                     <tbody>
                                         <tr>
                                             <td colspan="3" class="fs-6">
-                                                <a>
+                                                <p>
                                                     灰姑娘/灰王子專案:
-                                                </a>
+                                                </p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -363,17 +385,6 @@
                                     </tbody>
                                 </table>
                                 <br>
-                                <a class="fs-6" style="color: red;">iDiving挺你fun肆玩夏天</a>
-                                <ul>
-                                    <li>
-                                        即日起報名8/15至8/30開課之Freediver課程期別(舊稱LV1)。<br>
-                                        原價14000 挺你玩夏天，現折2000<br>
-                                        同時報名自由潛水員與開放水域潛水員，再挺你1000 !!
-                                    </li>
-                                    <li>不可與其他優惠並用。</li>
-                                    <li>尾款需以現金繳交。</li>
-                                </ul>
-                                <br>
                                 <img src="../../../../assets/Image/Data/FD_17.png" width="100%" />
                                 <ul>
                                     <li>「本店OWD學生」報名 Freediver 可享 $1,000 元折扣</li>
@@ -385,7 +396,9 @@
                         <br>
                         <br>
                         <!-- 夏季假日班 報名方式 -->
-                        <app-paymentmethod></app-paymentmethod>
+                        <div>
+                            <app-paymentmethod></app-paymentmethod>
+                        </div>
                         <!-- 夏季假日班 考核標準 -->
                         <div>
                             <br>
@@ -395,31 +408,31 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                                            <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>學科:</a>
+                                            <p>學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                                            <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>泳池:</a>
+                                            <p>泳池:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>動態平潛30m。</a>
+                                            <p>動態平潛30m。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>深度:</a>
+                                            <p>深度:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</a>
+                                            <p>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -428,32 +441,32 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" width="4%" style="vertical-align:text-top;">
-                                            <a>註:</a>
+                                            <p>註:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 1.Freediver 課程，如無法通過深度測驗，則降階簽發Pool Diver證照(須完成POOL學科、泳池考核)
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 2.鼓勵學員取得 Freediver 證照取得Pool 一年內補考，只需繳交補考費用，通過後證照升級費用我們負擔。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 3.夏季海洋補考 750/次，冬季潛立方補考 2500/3hr。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -468,43 +481,43 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                            <a>教室學科:</a>
+                                            <p>教室學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving士林前港店</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fs-6">
-                                            <a>泳池術科:</a>
-                                        </td>
-                                        <td class="fs-6">
-                                            <a>各配合泳池（需先到iDiving集合）</a>
+                                            <p>iDiving士林前港店</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a>海洋實習: </a>
+                                            <p>泳池術科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</a>
+                                            <p>各配合泳池（需先到iDiving集合）</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">
+                                            <p>海洋實習: </p>
+                                        </td>
+                                        <td class="fs-6">
+                                            <p>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 ＊如遇天候不佳或泳池場地整修等，上課地點與時間可能視狀況調整，若有額外增加的場地費用，本中心將自行吸收（大台北區轉換場地之費用，台中泳池費用），不會另外收費。
                                                 墾丁離島移地訓練產生之費用需自付。
                                                 <br>＊學員不可因課程之"地點/時間"有調整而拒學並要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -524,7 +537,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學科部份，每另外約一日課程加價 300 元</a>
+                                            <p>學科部份，每另外約一日課程加價 300 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -534,17 +547,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>術科部份，每另外約一日課程加價 500 元</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fs-6" style="vertical-align:text-top;">
-                                            <ul>
-                                                <li></li>
-                                            </ul>
-                                        </td>
-                                        <td class="fs-6">
-                                            <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                                            <p>術科部份，每另外約一日課程加價 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -554,7 +557,17 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</a>
+                                            <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6" style="vertical-align:text-top;">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td class="fs-6">
+                                            <p>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -574,7 +587,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>課程須於開始上課後的兩個月內完成。</a>
+                                            <p>課程須於開始上課後的兩個月內完成。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -584,7 +597,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期之更改須在 10 天前告知</a>
+                                            <p>上課日期之更改須在 10 天前告知</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -594,7 +607,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                            <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -604,7 +617,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                            <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -614,7 +627,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                            <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -624,7 +637,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                            <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -644,7 +657,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                            <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -654,8 +667,8 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
-                                                元訂金用做購買線上教材，無法退費。</a>
+                                            <p>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
+                                                元訂金用做購買線上教材，無法退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -665,10 +678,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 退費金額依據繳交之費用總額，扣除行政及教材費用各階段扣除費用參考如下:<br>
                                                 學員自行放棄課程，本訓練中心將不予退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -716,7 +729,7 @@
                         <br />
                         <img src="../../../assets/Image/Data/FD_Text1.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         <br />
-                        <h3><a style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver </a></h3>
+                        <h3 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver</h3>
                         <hr />
                         <!-- 夏季平日班 課程內容 -->
                         <div>
@@ -736,10 +749,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                學科（6hr）<br />
+                                            <p class="fs-6">
+                                                學科（6hr）<br>
                                                 裝備介紹／自潛生理學／自潛技巧／海洋環境
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -749,10 +762,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                泳池訓練（4hr）<br />
+                                            <p class="fs-6">
+                                                泳池訓練（4hr）<br>
                                                 閉氣練習／踢動技巧／平潛練習／潛伴制度
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -762,11 +775,11 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                海洋訓練（8hr）<br />
+                                            <p class="fs-6">
+                                                海洋訓練（8hr）<br>
                                                 5m 划手／無面鏡上升／救援／鴨式技巧<br />
                                                 10m 划手／鴨式下潛／恆重下潛
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -792,9 +805,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 教練人數比 1:3~4，教練全程盯著你。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -804,9 +817,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 數位教材伴你一生，不用擔心知識忘記。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -816,9 +829,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學員上課期間購買潛水器材享有學員優惠價。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -828,9 +841,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 如深度考核無法通過，即簽發Pool等級，持照可先至泳池練習。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -840,9 +853,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池團練、潛立方、墾丁、小琉球、綠島、蘭嶼，出團活動iDiving幫你揪人。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -852,9 +865,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 本店學生一年內POOL等級補考LV1免裝備租借、證照升級費用，只需繳交補考費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -877,77 +890,98 @@
                                         <td width="2%">
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 DAY 1 | 學科 + 泳池術科 09:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 自由潛水生理學、海洋環境。<br>
                                                 <br>
                                                 裝備使用、閉氣練習、踢動技巧<br>
                                                 平潛練習、潛伴制度。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 2 | 學科 + 海洋 09:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 裝備介紹、自由潛水技巧。<br>
                                                 <br>
                                                 平壓技巧、5m划手、無面鏡上升<br>
                                                 救援技巧、鴨式技巧。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 3 | 海洋 09:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 10m划手、無面鏡上升、鴨式下潛、10m救援<br>
                                                 10m恆重下潛，同時展現適當身體技巧。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 4 | 海洋 08:30~12:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 綜合考核。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
+                                            <p class="fs-6" style="color:red;">
                                                 <br>註:實際下水時間將依照現場情況調整
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
-                                    <div class="view">
-                                        <img class="d-block" src="{{Weekday.img}}" width="80%" style="display:block; margin:auto;" alt="First slide">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../../assets/Image/Data/FD_Weekdays_Schedule_01.png" class="d-block w-100" alt="...">
                                     </div>
-                                </mdb-carousel-item>
-                            </mdb-carousel>
-                            <br>
-                            <br>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_Weekdays_Schedule_02.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- 夏季平日班 課程學費 -->
                         <!-- 方案二  -->
                         <div class="row">
-                            <div class="col d-block grey lighten-3">
+                            <div class="col bg-light">
                                 <br>
                                 <h3 style="font-family:DFKai-sb;">最新優惠</h3>
                                 <br>
@@ -955,9 +989,9 @@
                                     <tbody>
                                         <tr>
                                             <td colspan="3" class="fs-6">
-                                                <a>
+                                                <p>
                                                     灰姑娘/灰王子專案:
-                                                </a>
+                                                </p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -998,7 +1032,7 @@
                                     <tbody>
                                         <tr>
                                             <td colspan="3" class="fs-6">
-                                                <a style="color: green;"><br>Freediver $14,000 元</a>
+                                                <p style="color: green;"><br>Freediver $14,000 元</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1034,7 +1068,9 @@
                             </div>
                         </div>
                         <!-- 夏季平日班 報名方式 -->
-                        <app-paymentmethod></app-paymentmethod>
+                        <div>
+                            <app-paymentmethod></app-paymentmethod>
+                        </div>
                         <!-- 夏季平日班 考核標準 -->
                         <div>
                             <br>
@@ -1044,31 +1080,31 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                                            <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>學科:</a>
+                                            <p>學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                                            <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>泳池:</a>
+                                            <p>泳池:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>動態平潛30m。</a>
+                                            <p>動態平潛30m。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>深度:</a>
+                                            <p>深度:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</a>
+                                            <p>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1077,32 +1113,32 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" width="4%" style="vertical-align:text-top;">
-                                            <a>註:</a>
+                                            <p>註:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 1. Freediver 課程，如無法通過深度測驗，則降階簽發Pool Diver證照(須完成POOL學科、泳池考核)
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 2.鼓勵學員取得 Freediver 證照取得Pool 一年內補考，只需繳交補考費用，通過後證照升級費用我們負擔。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 3.夏季海洋補考 750/次，冬季潛立方補考 2500/3hr。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1117,15 +1153,15 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                            <a>教室學科:</a>
+                                            <p>教室學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving士林前港店</a>
+                                            <p>iDiving士林前港店</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1138,22 +1174,22 @@
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a>海洋實習: </a>
+                                            <p>海洋實習: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</a>
+                                            <p>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 ＊如遇天候不佳或泳池場地整修等，上課地點與時間可能視狀況調整，若有額外增加的場地費用，本中心將自行吸收（大台北區轉換場地之費用，台中泳池費用），不會另外收費。
                                                 墾丁離島移地訓練產生之費用需自付。
                                                 <br>＊學員不可因課程之"地點/時間"有調整而拒學並要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1173,7 +1209,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學科部份，每另外約一日課程加價 300 元</a>
+                                            <p>學科部份，每另外約一日課程加價 300 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1183,17 +1219,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>術科部份，每另外約一日課程加價 500 元</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fs-6" style="vertical-align:text-top;">
-                                            <ul>
-                                                <li></li>
-                                            </ul>
-                                        </td>
-                                        <td class="fs-6">
-                                            <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                                            <p>術科部份，每另外約一日課程加價 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1203,7 +1229,17 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</a>
+                                            <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6" style="vertical-align:text-top;">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td class="fs-6">
+                                            <p>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1223,7 +1259,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>課程須於開始上課後的兩個月內完成。</a>
+                                            <p>課程須於開始上課後的兩個月內完成。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1233,7 +1269,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期之更改須在 10 天前告知</a>
+                                            <p>上課日期之更改須在 10 天前告知</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1243,7 +1279,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                            <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1253,7 +1289,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                            <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1263,7 +1299,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                            <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1273,7 +1309,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                            <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1293,7 +1329,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                            <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1303,8 +1339,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
-                                                元訂金用做購買線上教材，無法退費。</a>
+                                            <p>
+                                                若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
+                                                元訂金用做購買線上教材，無法退費。
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1314,10 +1352,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 退費金額依據繳交之費用總額，扣除行政及教材費用各階段扣除費用參考如下:<br>
                                                 學員自行放棄課程，本訓練中心將不予退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1365,7 +1403,7 @@
                         <br />
                         <img src="../../../assets/Image/Data/FD_Text1.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         <br />
-                        <h3><a style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver </a></h3>
+                        <h3 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">Freediver</h3>
                         <hr />
                         <!-- 冬季班 課程內容 -->
                         <div>
@@ -1385,10 +1423,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學科（6hr）<br>
                                                 裝備介紹／自潛生理學／自潛技巧／海洋環境
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1398,10 +1436,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池訓練（4hr）<br>
                                                 閉氣練習／踢動技巧／平潛練習／潛伴制度
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1411,11 +1449,11 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                海洋訓練（8hr）<br />
-                                                5m 划手／無面鏡上升／救援／鴨式技巧<br />
+                                            <p class="fs-6">
+                                                海洋訓練（8hr）<br>
+                                                5m 划手／無面鏡上升／救援／鴨式技巧<br>
                                                 10m 划手／鴨式下潛／恆重下潛
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1441,9 +1479,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 教練人數比 1:3~4，教練全程盯著你。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1453,9 +1491,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 數位教材伴你一生，不用擔心知識忘記。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1465,9 +1503,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學員上課期間購買潛水器材享有學員優惠價。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1477,9 +1515,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 如深度考核無法通過，即簽發Pool等級，持照可先至泳池練習。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1489,9 +1527,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池團練、潛立方、墾丁、小琉球、綠島、蘭嶼，出團活動iDiving幫你揪人。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1501,9 +1539,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 本店學生一年內POOL等級補考LV1免裝備租借、證照升級費用，只需繳交補考費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1526,66 +1564,76 @@
                                         <td width="2%">
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 DAY 1 | 學科 19:00~22:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 自由潛水生理學、海洋環境
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 2 | 學科 19:00~22:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 裝備介紹、自由潛水技巧
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 3 | 泳池術科 13:00~16:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 裝備使用、閉氣練習、踢動技巧<br>
                                                 平潛練習、潛伴制度
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 4 | 泳池術科 13:00~16:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 平壓技巧、5m划手、無面鏡上升<br>
                                                 救援技巧、鴨式技巧
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 <br>DAY 5 | 潛立方1天or移地2天 09:00~17:00<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 10m划手、無面鏡上升、10m救援<br>
                                                 10m恆重下潛，同時展現適當身體技巧<br>
                                                 綜合考核。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
+                                            <p class="fs-6" style="color:red;">
                                                 <br>註:實際下水時間將依照現場情況調整
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1606,9 +1654,9 @@
                                     <tbody>
                                         <tr>
                                             <td colspan="3" class="fs-6">
-                                                <a>
+                                                <p>
                                                     灰姑娘/灰王子專案:
-                                                </a>
+                                                </p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1664,22 +1712,39 @@
                                                 </ul>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="3">
-                                                <img src="../../../../assets/Image/Data/FD_17.png" width="100%" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-6" colspan="3">
-                                                <ul>
-                                                    <li>「本店OWD學生」報名 Freediver 可享 $1,000 元折扣</li>
-                                                    <li>他店學生來iDiving 進行後續課程，欲取得 Freediver 自由潛水員 課程贈品，享會員價</li>
-                                                    <li>往後參加自潛活動費用:每次 750 元</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
+                                <br>
+                                <a class="fs-6" style="color: red;">🏮iDiving 新年禮金🐲龍總來</a>
+                                <ul>
+                                    <li>
+                                        凡是在2024/2/29前<br>
+                                        完成2、3月開課之 自由潛水員🤿/人魚🧜‍♀ 課程報名<br>
+                                        🧧立刻送你1500元課程壓歲金！<br>
+                                        🧧再送1000課程好彩金！<br>
+                                        <br>
+                                        🎉1000元課程好彩金適用於🎉<br>
+                                        FreeDiver ➡️ 初階OWD、人魚課程！<br>
+                                        Mermaid ➡️ 初階OWD、FD課程！<br>
+                                    </li>
+                                    <li>不可與其他優惠並用。</li>
+                                    <li>尾款需以現金繳交。</li>
+                                </ul>
+                                <a class="fs-6" style="color: red;">⚠️注意⚠️</a>
+                                <ul>
+                                    <li>限2024/2/29 前完成報名者，期別／名額有限，額滿為止！！！</li>
+                                    <li>本方案優惠不得與其他折扣、優惠、行銷活動合併使用。</li>
+                                    <li>本方案優惠好彩金限本人使用，不得與其他特殊優惠、行銷活動合併使用。</li>
+                                    <li>須臨櫃以現金繳交全額尾款，方能享本優惠。</li>
+                                    <li>iDiving 保留對本活動文字的解釋權利。</li>
+                                </ul>
+                                <br>
+                                <img src="../../../../assets/Image/Data/FD_17.png" width="100%" />
+                                <ul>
+                                    <li>「本店OWD學生」報名 Freediver 可享 $1,000 元折扣</li>
+                                    <li>他店學生來iDiving 進行後續課程，欲取得 Freediver 自由潛水員 課程贈品，享會員價</li>
+                                    <li>往後參加自潛活動費用:每次 750 元</li>
+                                </ul>
                             </div>
                         </div>
                         <br>
@@ -1695,31 +1760,31 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                                            <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>學科:</a>
+                                            <p>學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                                            <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>泳池:</a>
+                                            <p>泳池:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>動態平潛30m、徒手推進15m。</a>
+                                            <p>動態平潛30m、徒手推進15m。</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                                            <a>深度:</a>
+                                            <p>深度:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</a>
+                                            <p>10m划手上升、10m無面鏡上升、10m救援、10m恆重下潛，同時展現適當身體技巧。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1728,32 +1793,32 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" width="4%" style="vertical-align:text-top;">
-                                            <a>註:</a>
+                                            <p>註:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 1. Freediver 課程，如無法通過深度測驗，則降階簽發Pool Diver證照(須完成POOL學科、泳池考核)
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 2.鼓勵學員取得 Freediver 自由潛水員 證照取得Pool 一年內補考，只需繳交補考費用，通過後證照升級費用我們負擔。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a> </a>
+                                            <p> </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 3.夏季海洋補考 750/次，冬季潛立方補考 2500/3hr。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1768,43 +1833,43 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                            <a>教室學科:</a>
+                                            <p>教室學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving士林前港店</a>
+                                            <p>iDiving士林前港店</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>泳池術科:</a>
+                                            <p>泳池術科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>各配合泳池（需先到iDiving集合）</a>
+                                            <p>各配合泳池（需先到iDiving集合）</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>海洋實習: </a>
+                                            <p>海洋實習: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</a>
+                                            <p>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 ＊如遇天候不佳或泳池場地整修等，上課地點與時間可能視狀況調整，若有額外增加的場地費用，本中心將自行吸收（大台北區轉換場地之費用，台中泳池費用），不會另外收費。
                                                 墾丁離島移地訓練產生之費用需自付。
                                                 <br>＊學員不可因課程之"地點/時間"有調整而拒學並要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1824,7 +1889,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學科部份，每另外約一日課程加價 300 元</a>
+                                            <p>學科部份，每另外約一日課程加價 300 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1834,17 +1899,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>術科部份，每另外約一日課程加價 500 元</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="fs-6" style="vertical-align:text-top;">
-                                            <ul>
-                                                <li></li>
-                                            </ul>
-                                        </td>
-                                        <td class="fs-6">
-                                            <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                                            <p>術科部份，每另外約一日課程加價 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1854,7 +1909,17 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</a>
+                                            <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6" style="vertical-align:text-top;">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td class="fs-6">
+                                            <p>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1874,7 +1939,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>課程須於開始上課後的兩個月內完成。</a>
+                                            <p>課程須於開始上課後的兩個月內完成。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1884,7 +1949,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期之更改須在 10 天前告知</a>
+                                            <p>上課日期之更改須在 10 天前告知</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1894,7 +1959,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                            <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1904,7 +1969,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                            <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1914,7 +1979,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                            <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1924,7 +1989,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                            <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1944,7 +2009,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                            <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1954,8 +2019,8 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
-                                                元訂金用做購買線上教材，無法退費。</a>
+                                            <p>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
+                                                元訂金用做購買線上教材，無法退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1965,10 +2030,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 退費金額依據繳交之費用總額，扣除行政及教材費用各階段扣除費用參考如下:<br>
                                                 學員自行放棄課程，本訓練中心將不予退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>

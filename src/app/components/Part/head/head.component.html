@@ -1,186 +1,162 @@
-<div class="container-fluid">
-<div class="row">
-  <div class="col w-100">
+<div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark idiving-header-color fixed-top">
-      <a class="navbar-brand fs-2 text-dark" href="#">
-        <img style="z-index:3" src="../../../../assets/Image/Logo.png" />
-        <!-- <h1 class="text-hide" style="background-image: url('../../../../assets/Image/Logo.png'); width: 250px; height: 90px;">MDBootstrap</h1> -->
-        <!-- <span>全方位潛水中心</span> -->
-      </a>
+  <div class="row">
+    <div class="col">
+      <nav class="navbar navbar-expand-lg navbar-light idiving-header-color fixed-top">
+        <div class="container-fluid">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+          <a class="navbar-brand text-dark" href="#">
+            <img style="z-index:3" src="../../../../assets/Image/Logo.png" />
+            <!-- <h1 class="text-hide" style="background-image: url('../../../../assets/Image/Logo.png'); width: 250px; height: 90px;">MDBootstrap</h1> -->
+            <!-- <span>全方位潛水中心</span> -->
+          </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <li class="nav-item dropdown has-megamenu flex-row-reverse"> <!-- 變得比較柔和 d-flex -->
-            <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;">
-              學潛水
-            </a>
-            <div class="dropdown-menu megamenu idiving-header-color" role="menu" > <!-- aria-labelledby="navbarDropdown"> -->
-              <div class="row">
-                <!-- <div class="col">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div> -->
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">自由潛水</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd110"> Freediver </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd210"> Advanced Freediver </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd310"> Performance Freediver </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd130"> 美人魚課程 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd120"> FD 初階專長 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cfd220"> FD 進階專長 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">水肺潛水</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/c120"> OWD潛水課程 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c210"> 進階探險潛水員 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c310"> 各項專長潛水員 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c312"> 環保專長潛水員 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c313"> 高階專長潛水員 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c101"> 體驗潛水/水肺複習 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">技術潛水</h6>
-                  <li><a class="dropdown-item" href="/#/coc100"> 延伸領域潛水課程 </a></li>
-                  <li><a class="dropdown-item" href="/#/ccr100"> 全密閉循環潛水課程 </a></li>
-                  <li><a class="dropdown-item" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">潛水教練課程</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/c410"> 水肺教練培訓 </a></li>
-                  <!-- <li><a class="dropdown-item fs-6" href="/#/c420"> 水肺專業教練課程 </a></li> -->
-                  <!-- <li><a class="dropdown-item fs-6" href="/#/c430"> 水肺高階教練課程 </a></li> -->
-                  <li><a class="dropdown-item fs-6" href="/#/cfdc210"> 自潛教練培訓 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">課程相關</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/cz01"> 線上報名 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/bz01"> 課程年度計畫 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/cp01"> 課程價格表 </a></li><!--  -->
-                  <li><a class="dropdown-item fs-6" href="/#/qac001"> 課程Q&A </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/c610"> 獎勵認證 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/health001"> 健康聲明 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/dz05"> 自評表 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-              </div>
-            </div>
-          </li>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
 
-          <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;">
-              玩潛水
-            </a>
-            <div class="dropdown-menu megamenu idiving-header-color" role="menu" > <!-- aria-labelledby="navbarDropdown"> -->
-              <div class="row">
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">東北角潛點</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/d110"> 東北角 </a></li>
-                  <!-- <li><a class="dropdown-item fs-6" href="/#/d111"> 東北角岸潛 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d112"> 東北角船潛 </a></li> -->
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">台灣潛點</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/d120"> 墾丁 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d130a"> 小琉球 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d140"> 綠島 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d150"> 蘭嶼 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d160"> 澎湖 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">國外潛點</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/d230"> 杜馬蓋地 </a></li>
-                  <!-- <li><a class="dropdown-item fs-6" href="#"> 圖巴塔哈 </a></li> -->
-                  <li><a class="dropdown-item fs-6" href="/#/d310"> 峇里島 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d420"> 馬爾地夫 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d410"> 帛琉 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/d340"> 西巴丹 </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-                <div class="col">
-                  <h6 class="sub-title text-uppercase font-weight-bold">活動相關</h6>
-                  <li><a class="dropdown-item fs-6" href="/#/dz04"> 自由潛水活動報名 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/dz02"> 東北角水肺活動報名表 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/dz03"> 國內外水肺活動報名表 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/b400"> 俱樂部 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/dz01"> 旅遊年度計畫 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/b240"> 活動照片 </a></li>
-                  <li><a class="dropdown-item fs-6" href="/#/qaa001"> 活動Q&A </a></li>
-                  <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;">
-              愛潛水
-            </a>
-            <div class="dropdown-menu megamenu idiving-header-color" role="menu" > <!-- aria-labelledby="navbarDropdown"> -->
-              <div class="row">
-                <!-- <div class="col">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div> -->
-                  <div class="col">
-                    <h6 class="sub-title text-uppercase font-weight-bold">裝備</h6>
-                    <li><a class="dropdown-item fs-6" href="/#/b310"> 輕裝 </a></li>
-                    <li><a class="dropdown-item fs-6" href="/#/b320"> 重裝 </a></li>
-                    <!-- <li><a class="dropdown-item fs-6" href="/#/b330"> 套裝 </a></li> -->
-                    <li><a class="dropdown-item fs-6" href="https://reurl.cc/1Yovx8"> 線上商品型錄 </a></li>
-                    <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+              <li class="nav-item dropdown has-megamenu flex-row-reverse">
+                <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  學潛水
+                </a>
+                <ul class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <div class="row">
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">自由潛水</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd110"> Freediver </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd210"> Advanced Freediver </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd310"> Performance Freediver </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd131"> 美人魚體驗 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd130"> 美人魚課程 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd120"> FD 初階專長 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cfd220"> FD 進階專長 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">水肺潛水</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/c120"> OWD潛水課程 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c210"> 進階探險潛水員 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c310"> 各項專長潛水員 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c312"> 環保專長潛水員 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c313"> 高階專長潛水員 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c101"> 體驗潛水/水肺複習 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">技術潛水</h6>
+                      <li><a class="dropdown-item" href="/#/coc100"> 延伸領域潛水課程 </a></li>
+                      <li><a class="dropdown-item" href="/#/ccr100"> 全密閉循環潛水課程 </a></li>
+                      <li><a class="dropdown-item" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">潛水教練課程</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/c410"> 水肺教練培訓 </a></li>
+                      <!-- <li><a class="dropdown-item fs-6" href="/#/c420"> 水肺專業教練課程 </a></li> -->
+                      <!-- <li><a class="dropdown-item fs-6" href="/#/c430"> 水肺高階教練課程 </a></li> -->
+                      <li><a class="dropdown-item fs-6" href="/#/cfdc210"> 自潛教練培訓 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">課程相關</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/cz01"> 線上報名 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/bz01"> 課程年度計畫 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/cp01"> 課程價格表 </a></li><!--  -->
+                      <li><a class="dropdown-item fs-6" href="/#/qac001"> 課程Q&A </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/c610"> 獎勵認證 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/health001"> 健康聲明 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/dz05"> 自評表 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
                   </div>
-                  <!--<div class="col">
-                    <h6 class="sub-title text-uppercase font-weight-bold">冬季活動</h6>
-                    <li><a class="dropdown-item fs-6" href="#"> 滑雪 </a></li>
-                    <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
-                  </div>-->
-                  <div class="col">
-                    <h6 class="sub-title text-uppercase font-weight-bold">環保</h6>
-                    <li><a class="dropdown-item fs-6" href="/#/b411"> 環保里程碑 </a></li>
-                    <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  玩潛水
+                </a>
+                <ul class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <div class="row">
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">台灣潛點</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/d120"> 墾丁 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d130a"> 小琉球 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d140"> 綠島 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d150"> 蘭嶼 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d160"> 澎湖 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">國外潛點</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/d230"> 杜馬蓋地 </a></li>
+                      <!-- <li><a class="dropdown-item fs-6" href="#"> 圖巴塔哈 </a></li> -->
+                      <li><a class="dropdown-item fs-6" href="/#/d310"> 峇里島 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d420"> 馬爾地夫 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d410"> 帛琉 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/d340"> 西巴丹 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">活動相關</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/dz04"> 自由潛水活動報名 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/dz02"> 東北角水肺活動報名表 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/dz03"> 國內外水肺活動報名表 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/b400"> 俱樂部 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/dz01"> 旅遊年度計畫 </a></li>
+                      <!-- <li><a class="dropdown-item fs-6" href="/#/b240"> 活動照片 </a></li> 目前有問題 -->
+                      <li><a class="dropdown-item fs-6" href="/#/qaa001"> 活動Q&A </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
                   </div>
-                  <div class="col">
-                    <h6 class="sub-title text-uppercase font-weight-bold" style="white-space:nowrap">關於iDiving</h6>
-                    <li><a class="dropdown-item fs-6" href="/#/m100"> 最新消息 </a></li>
-                    <!--<li><a class="dropdown-item fs-6" href="/#/b210"> 介紹 </a></li>-->
-                    <li><a class="dropdown-item fs-6" href="/#/b211"> 前港店介紹 </a></li>
-                    <li><a class="dropdown-item fs-6" href="/#/b212"> 龍洞店介紹 </a></li>
-                    <li><a class="dropdown-item fs-6" href="/#/b230"> 教練團 </a></li>
-                    <li><a class="dropdown-item fs-6" href="/#/about001"> 關於我們 </a></li>
-                    <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle fs-5 text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  愛潛水
+                </a>
+                <ul class="dropdown-menu megamenu" role="menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <div class="row">
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">裝備</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/b310"> 輕裝 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/b320"> 重裝 </a></li>
+                      <!-- <li><a class="dropdown-item fs-6" href="/#/b330"> 套裝 </a></li> -->
+                      <li><a class="dropdown-item fs-6" href="https://reurl.cc/1Yovx8"> 線上商品型錄 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <!-- <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">冬季活動</h6>
+                      <li><a class="dropdown-item fs-6" href="#"> 滑雪 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div> -->
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold">環保</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/b411"> 環保里程碑 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
+                    <div class="col">
+                      <h6 class="sub-title text-uppercase font-weight-bold" style="white-space:nowrap">關於iDiving</h6>
+                      <li><a class="dropdown-item fs-6" href="/#/m100"> 最新消息 </a></li>
+                      <!--<li><a class="dropdown-item fs-6" href="/#/b210"> 介紹 </a></li>-->
+                      <li><a class="dropdown-item fs-6" href="/#/b211"> 前港店介紹 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/b212"> 龍洞店介紹 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/b230"> 教練團 </a></li>
+                      <li><a class="dropdown-item fs-6" href="/#/about001"> 關於我們 </a></li>
+                      <li><a class="dropdown-item fs-6" href=""> <br> </a></li>
+                    </div>
                   </div>
-              </div>
-            </div>
-          </li>
+                </ul>
+              </li>
 
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li> -->
-
-        </ul>
-
-      </div>
-    </nav>
-
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </div>
-</div>
+
 </div>

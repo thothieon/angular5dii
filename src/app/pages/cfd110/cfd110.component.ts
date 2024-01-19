@@ -23,20 +23,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class Cfd110Component implements OnInit {
 
   active = 3;
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'symbol1', 'symbol2'];
-  dataSource = ELEMENT_DATA;
-  
-  //假日班
-  Weekenders = [
-    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_02.png'},
-    {img: '../../../../assets/Image/Data/FD_Weekend_Schedule_01.png'}
-  ];
-  
-  //平日班
-  Weekdays = [
-    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_02.png'},
-    {img: '../../../../assets/Image/Data/FD_Weekdays_Schedule_01.png'}
-  ];
 
   constructor() { }
 

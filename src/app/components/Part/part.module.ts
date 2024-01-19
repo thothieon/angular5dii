@@ -6,64 +6,64 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 // For MDB Angular Free
-import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
+//import { MDBBootstrapModule, CarouselModule, CollapseModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
 // MDB Angular Free
-import { CheckboxModule, ButtonsModule, InputsModule, IconsModule, CardsModule } from 'angular-bootstrap-md'
+//import { CheckboxModule, ButtonsModule, InputsModule, IconsModule, CardsModule } from 'angular-bootstrap-md'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SharedMaterialModule } from '../../shared-material/shared-material.module';
 
 import { HeadComponent } from './head/head.component';
-import { HeadmenuComponent } from './headmenu/headmenu.component';
-import { YoutubeComponent } from './youtube/youtube.component';
+//import { HeadmenuComponent } from './headmenu/headmenu.component';
+//import { YoutubeComponent } from './youtube/youtube.component';
 import { FootComponent } from './foot/foot.component';
-import { CarouselComponent } from './carousel/carousel.component';
+//import { CarouselComponent } from './carousel/carousel.component';
 import { LinkComponent } from './link/link.component';
-import { TeamComponent } from './team/team.component';
-import { PhotoalbumComponent } from './photoalbum/photoalbum.component';
-import { OwdtabscourseComponent } from './owdtabscourse/owdtabscourse.component';
-import { FdtabscourseComponent } from './fdtabscourse/fdtabscourse.component';
-import { Fdlv1introduceComponent } from './fdlv1introduce/fdlv1introduce.component';
-import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
-import { Paymentmethod1000Component } from './paymentmethod1000/paymentmethod1000.component';
-import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
+//import { TeamComponent } from './team/team.component';
+//import { PhotoalbumComponent } from './photoalbum/photoalbum.component';
+//import { OwdtabscourseComponent } from './owdtabscourse/owdtabscourse.component';
+//import { FdtabscourseComponent } from './fdtabscourse/fdtabscourse.component';
+//import { Fdlv1introduceComponent } from './fdlv1introduce/fdlv1introduce.component';
+//import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
+//import { Paymentmethod1000Component } from './paymentmethod1000/paymentmethod1000.component';
+//import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
 import { HearsayComponent } from './hearsay/hearsay.component';
-import { SmallactivityComponent } from './smallactivity/smallactivity.component';
+//import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 import { DealerComponent } from './dealer/dealer.component';
-import { FewalbumsComponent } from './fewalbums/fewalbums.component';
-import { ActivityPleaseNoteComponent } from './activitypleasenote/activitypleasenote.component';
+//import { FewalbumsComponent } from './fewalbums/fewalbums.component';
+//import { ActivityPleaseNoteComponent } from './activitypleasenote/activitypleasenote.component';
 
 
 
 @NgModule({
   declarations: [
     HeadComponent,
-    HeadmenuComponent,
-    CarouselComponent,
-    YoutubeComponent,
+    //HeadmenuComponent,
+    //CarouselComponent,
+    //YoutubeComponent,
     FootComponent,
     LinkComponent,
-    TeamComponent,
-    PhotoalbumComponent,
-    OwdtabscourseComponent,
-    FdtabscourseComponent,
-    Fdlv1introduceComponent,
-    PaymentmethodComponent,
-    Paymentmethod1000Component,
-    FdschoolinformationComponent,
+    //TeamComponent,
+    //PhotoalbumComponent,
+    //OwdtabscourseComponent,
+    //FdtabscourseComponent,
+    //Fdlv1introduceComponent,
+    //PaymentmethodComponent,
+    //Paymentmethod1000Component,
+    //FdschoolinformationComponent,
     HearsayComponent,
-    SmallactivityComponent,
+    //SmallactivityComponent,
     DealerComponent,
-    FewalbumsComponent,
-    Paymentmethod1000Component,
-    ActivityPleaseNoteComponent
+    //FewalbumsComponent,
+    //Paymentmethod1000Component,
+    //ActivityPleaseNoteComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ButtonsModule, 
+    /*ButtonsModule, 
     CardsModule,
     CarouselModule.forRoot(),
     CheckboxModule, 
@@ -74,30 +74,30 @@ import { ActivityPleaseNoteComponent } from './activitypleasenote/activityplease
     NavbarModule,
     TableModule,
     WavesModule,
-    MDBBootstrapModule.forRoot(),
+    MDBBootstrapModule.forRoot(),*/
     NgbModule,
     SharedMaterialModule
   ],
   exports: [
     HeadComponent,
-    HeadmenuComponent,
-    CarouselComponent,
-    YoutubeComponent,
+    //HeadmenuComponent,
+    //CarouselComponent,
+    //YoutubeComponent,
     FootComponent,
     LinkComponent,
-    TeamComponent,
-    PhotoalbumComponent,
-    OwdtabscourseComponent,
-    FdtabscourseComponent,
-    Fdlv1introduceComponent,
-    PaymentmethodComponent,
-    Paymentmethod1000Component,
-    FdschoolinformationComponent,
+    //TeamComponent,
+    //PhotoalbumComponent,
+    //OwdtabscourseComponent,
+    //FdtabscourseComponent,
+    //Fdlv1introduceComponent,
+    //PaymentmethodComponent,
+    //Paymentmethod1000Component,
+    //FdschoolinformationComponent,
     HearsayComponent,
-    SmallactivityComponent,
+    //SmallactivityComponent,
     DealerComponent,
-    FewalbumsComponent,
-    ActivityPleaseNoteComponent
+    //FewalbumsComponent,
+    //ActivityPleaseNoteComponent
   ],
   //schemas: [  ]
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

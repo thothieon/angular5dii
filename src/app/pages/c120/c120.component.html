@@ -31,23 +31,21 @@
   <div class="row">
     <div class="col">
       <br>
-      <div class="container-fluid">
-        <nav class="breadcrumb bg-white">
-          <a class="breadcrumb-item" href="#">首頁</a>
-          <a class="breadcrumb-item">學潛水</a>
-          <a class="breadcrumb-item">開放水域潛水員</a>
-        </nav>
-      </div>
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">首頁</a></li>
+              <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+              <li class="breadcrumb-item active" aria-current="page">開放水域潛水員</li>
+          </ol>
+      </nav>
       <br>
     </div>
   </div>
 
-  <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
-  <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
   <div class="row">
     <div class="col-xl">
     </div>
-    <div class="col-xl-8">
+    <div class="col-xl-10">
       <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
         <li [ngbNavItem]="1">
           <a ngbNavLink>假日班</a>
@@ -109,76 +107,96 @@
                     <td width="10%">
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         DAY 1 | 學科+泳池訓練 09:00~19:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水物理學<br>
                         裝備介紹與組裝練習<br>
                         贈品套量<br>
                         潛水技巧練習
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>
                         DAY 2 | 學科+泳池訓練 08:00~17:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水生理學<br>
                         海洋生物與環境<br>
                         潛水技巧練習<br>
                         狀況模擬及障礙排除
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 3 | 開放水域08:15~19:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧練習<br>
                         水中障礙排除<br>
                         潛水日誌記錄<br>
                         裝備清洗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 4 | 開放水域 08:15~15:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧複習<br>
                         狀況模擬及障礙排除<br>
                         水中方向辨認<br>
                         Fun Dive體驗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <br>
-
-              <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                <mdb-carousel-item *ngFor="let Weekender of Weekenders; let i = index">
-                  <div class="view">
-                    <img class="d-block" src="{{Weekender.img}}" width="100%" style="display:block; margin:auto;"
-                      alt="First slide">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
-                </mdb-carousel-item>
-              </mdb-carousel>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="../../../../assets/Image/Data/OWD_Weekend_Schedule.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../../../../assets/Image/Data/OWD_Weekend_Schedule01.png" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
               <br>
-
             </div>
             <!-- 假日班 課程學費 -->
-            <!-- 最新優惠
+            <!-- 最新優惠 -->
             <div>
               <br>
               <br>
@@ -190,22 +208,31 @@
                 <table borderless="true">
                   <tbody>
                     <tr>
-                      <td colspan="3" class="fs-5">
+                      <td colspan="3" class="fs-6">
                         <p>
-                          迎接2023甜甜紅包價 16800<br>
-                          完成報名 = 填寫線上表單 + 繳交訂金<br>
-                          可再享現金優惠，課程費用付現，可折扣 600 元。<br>
+                          🐤早鳥優惠方案<br>
+                          即日起至2024/2/14完成指定期別課程報名（填寫報名表+繳交定金3000元）<br>
+                          🎉立即給您3000元早鳥優惠金<br>
+                          🎉尾款現金繳交再扣300元！<br>
                           <br>
-                          本活動不與其他優惠併用！<br>
-                          限2023/2/1前完成報名者得享優惠！<br>
-                          年節期間，店面不營業，回訊較慢請見諒，1/31開始正常營業！
+                          <br>
+                          ⚠️注意⚠️<br>
+                          ＊限2024/2/14 前完成報名者，期別／名額有限，額滿為止！！！<br>
+                          ＊本方案優惠不得與其他折扣、優惠、行銷活動合併使用。<br>
+                          ＊本方案優惠限本人使用，不得與其他特殊優惠、行銷活動合併使用。<br>
+                          ＊iDiving 保留對本活動文字的解釋權利。<br>
+                          <br>
+                          🐤早鳥優惠指定期別🐤<br>
+                          假日班 第01期 ～ 第03期<br>
+                          平日班 第01期  & 第02期<br>
+                          <br>
                         </p>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div> -->
+            </div>
             <!-- 方案一  -->
             <div>
               <br>
@@ -213,25 +240,17 @@
               <h3 style="font-family:DFKai-sb;">課程學費</h3>
               <hr>
               <br>
-              <a class="fs-6" style="color: green;">定價 19,800 元（含贈品）</a>
+              <p class="fs-6" style="color: green;">定價 19,800 元（含贈品）</p>
               <ul>
-                <li>現金優惠，課程費用付現，可折扣 600 元。</li>
-                <li>費用包含：輕裝組、SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、旅遊平安保險。</li>
-                <li>費用不含：海洋實習交通與用餐費用、浮潛裝備租借。</li>
+                <li>現金優惠，課程尾款付現金，可折扣 300 元。</li>
+                <li>費用包含：輕裝組、SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、水域遊憩責任保險。</li>
+                <li>費用不含：餐費、海洋實習之交通、住宿費、浮潛裝備租借450元/天。</li>
                 <li>
                   自備輕裝 ( 不要贈品 ) 可折扣 3000 元，但自備之裝備需經教練確認安全無虞，才可在課程中使用！<br>
                   註：以上優惠只要符合條件，可合併使用
                 </li>
               </ul>
-              <a class="fs-6" style="color: red;">iDiving挺你fun肆玩夏天</a>
-              <ul>
-                <li>即日起報名8月開課任何開放水域潛水員課程期別。</li>
-                <li>原價19800 挺你玩夏天，現折2000。</li>
-                <li>同時報名自由潛水員與開放水域潛水員，再挺你1000 !!</li>
-                <li>不可與其他優惠並用。</li>
-                <li>尾款需以現金繳交。</li>
-              </ul>
-              <a class="fs-6" style="color: red;">團結賺優惠!</a>
+              <p class="fs-6" style="color: red;">團結賺優惠!</p>
               <ul>
                 <li>
                   兩人成行，每人折扣 700 元<br>
@@ -244,13 +263,18 @@
               <ul>
                 <li>iDiving 的 Freediver/人魚學員，可再享有1000 元折扣。</li>
               </ul>
-              <img src="../../../../assets/Image/Data/22OWDgiveaway.png" width="100%"
-                style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+              <img src="../../../assets/Image/Data/OWD_Giveaway.png" width="100%" style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
               <ul>
                 <li>
                   贈品:<br>
                   全套總價14,000元。<br>
                   面鏡、呼吸管、防寒衣、潛水手套、套鞋、蛙鞋、網袋
+                </li>
+                <li>
+                  贈品樣式及規格尺寸以實品為準。
+                </li>
+                <li>
+                  如欲指定其他款式可補價差更換，建議課前告知以便上課使用。
                 </li>
               </ul>
             </div>
@@ -269,23 +293,23 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                      <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                      <a>學科:</a>
+                      <p>學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                      <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>術科:</a>
+                      <p>術科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</a>
+                      <p>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -300,33 +324,33 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                      <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="80px" style="vertical-align:text-top;">
-                      <a>教室學科:</a>
+                      <p>教室學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>iDiving 士林前港店（台北市士林區前港街 8 號）</a>
+                      <p>iDiving 士林前港店（台北市士林區前港街 8 號）</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>海洋實習:</a>
+                      <p>海洋實習:</p>
                     </td>
                     <td class="fs-6">
-                      <a>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</a>
+                      <p>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>註: </a>
+                      <p>註: </p>
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修等），若有額外增加的場地費用本中心將自行吸收，不會另外收費，但學員不可因課程時間調整而要求退費。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -346,7 +370,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學科部份，每另外約一日課程加價 300 元</a>
+                      <p>學科部份，每另外約一日課程加價 300 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -356,7 +380,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>術科部份，每另外約一日課程加價 500 元</a>
+                      <p>術科部份，每另外約一日課程加價 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -366,7 +390,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                      <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
                     </td>
                   </tr>
                   <tr>
@@ -376,7 +400,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</a>
+                      <p>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -396,7 +420,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>課程須於開始上課後的兩個月內完成。</a>
+                      <p>課程須於開始上課後的兩個月內完成。</p>
                     </td>
                   </tr>
                   <tr>
@@ -406,7 +430,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期之更改須在 10 天前告知</a>
+                      <p>上課日期之更改須在 10 天前告知</p>
                     </td>
                   </tr>
                   <tr>
@@ -416,7 +440,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                      <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -426,7 +450,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                      <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -436,7 +460,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                      <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                     </td>
                   </tr>
                   <tr>
@@ -446,7 +470,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                      <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                     </td>
                   </tr>
                   <tr>
@@ -456,7 +480,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</a>
+                      <p>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -476,7 +500,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                      <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                     </td>
                   </tr>
                   <tr>
@@ -486,21 +510,21 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</a>
+                      <p>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         1. NT 3,000 元訂金用做購買線上教材，無法退費。<br>
                         2. 開課前 30 天以上，退回全新贈品，可退費NT 12,000元。<br>
                         3. 開課前 30 天之內，退回全新贈品，可退費NT 10,000元。<br>
                         4. 已上過學科，退回全新贈品，可退費NT 8,000元。<br>
                         5 .已上過泳池課程或贈品已使用，可退費NT 4,000元。<br>
                         6. 已上過海洋實習，恕不退費。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -541,19 +565,19 @@
               <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
               <ul class="fs-6">
                 <li>
-                  SSI數位教材搭配MySSI APP，課前預習與紀錄潛水日誌好方便。
+                  SSI數位教材搭配MySSI APP，課前預習、課後潛水日誌記錄，精確掌握學習動態。
                 </li>
                 <li>
-                  合格的領導級人員與學員比例2：3~5（不含移地結訓部分）。
+                  合格的領導級教練與學員比例1：2~3。
                 </li>
                 <li>
-                  超值贈品方案，合身且全新的裝備好衛生，日後潛水省下輕裝租借費。
+                  海洋課程期間免費提供電腦錶使用，並指導電腦錶操作，讓潛水過程更加安全。
                 </li>
                 <li>
                   海洋課程期間提供電腦錶使用，讓潛水過程安全又方便。
                 </li>
                 <li>
-                  課程結訓後一年內，參加東北角岸潛活動享有迎新優惠價，每個場次最低只需要1000元（含裝備租借）
+                  課程結訓即日起至一年內，參加東北角岸潛活動享有迎新優惠價，每場次含裝備租借最低價1000元。
                 </li>
               </ul>
               <br>
@@ -569,76 +593,97 @@
                     <td width="10%">
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         DAY 1 | 學科+泳池訓練 09:00~19:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水物理學<br>
                         裝備介紹與組裝練習<br>
                         贈品套量<br>
                         潛水技巧練習
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>
                         DAY 2 | 學科+泳池訓練 08:00~17:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水生理學<br>
                         海洋生物與環境<br>
                         潛水技巧練習<br>
                         狀況模擬及障礙排除
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 3 | 開放水域08:15~19:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧練習<br>
                         水中障礙排除<br>
                         潛水日誌記錄<br>
                         裝備清洗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                     </td>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 4 | 開放水域 08:15~15:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧複習<br>
                         狀況模擬及障礙排除<br>
                         水中方向辨認<br>
                         Fun Dive體驗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <br>
-
-              <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
-                <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
-                  <div class="view">
-                    <img class="d-block" src="{{Weekday.img}}" width="100%" style="display:block; margin:auto;"
-                      alt="First slide">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   </div>
-                </mdb-carousel-item>
-              </mdb-carousel>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="../../../../assets/Image/Data/OWD_Weekdays_Schedule.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="../../../../assets/Image/Data/OWD_Weekdays_Schedule01.png" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
               <br>
 
             </div>
             <!-- 平日班 超值學費 -->
-            <!-- 最新優惠
+            <!-- 最新優惠 -->
             <div>
               <br>
               <br>
@@ -650,22 +695,31 @@
                 <table borderless="true">
                   <tbody>
                     <tr>
-                      <td colspan="3" class="fs-5">
+                      <td colspan="3" class="fs-6">
                         <p>
-                          迎接2023甜甜紅包價 16800<br>
-                          完成報名 = 填寫線上表單 + 繳交訂金<br>
-                          可再享現金優惠，課程費用付現，可折扣 600 元。<br>
+                          🐤早鳥優惠方案<br>
+                          即日起至2024/2/14完成指定期別課程報名（填寫報名表+繳交定金3000元）<br>
+                          🎉立即給您3000元早鳥優惠金<br>
+                          🎉尾款現金繳交再扣300元！<br>
                           <br>
-                          本活動不與其他優惠併用！<br>
-                          限2023/2/1前完成報名者得享優惠！<br>
-                          年節期間，店面不營業，回訊較慢請見諒，1/31開始正常營業！
+                          <br>
+                          ⚠️注意⚠️<br>
+                          ＊限2024/2/14 前完成報名者，期別／名額有限，額滿為止！！！<br>
+                          ＊本方案優惠不得與其他折扣、優惠、行銷活動合併使用。<br>
+                          ＊本方案優惠限本人使用，不得與其他特殊優惠、行銷活動合併使用。<br>
+                          ＊iDiving 保留對本活動文字的解釋權利。<br>
+                          <br>
+                          🐤早鳥優惠指定期別🐤<br>
+                          假日班 第01期 ～ 第03期<br>
+                          平日班 第01期  & 第02期<br>
+                          <br>
                         </p>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div> -->
+            </div>
             <!-- 方案一  -->
             <div>
               <br>
@@ -673,9 +727,9 @@
               <h3 style="font-family:DFKai-sb;">課程學費</h3>
               <hr>
               <br>
-              <a class="fs-5" style="color: green;">定價 19,800 元（含贈品）</a>
+              <p class="fs-5" style="color: green;">定價 19,800 元（含贈品）</p>
               <ul>
-                <li>現金優惠，課程費用付現，可折扣 600 元。</li>
+                <li>現金優惠，課程費用付現，可折扣 300 元。</li>
                 <li>費用包含：輕裝組、SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、旅遊平安保險。</li>
                 <li>費用不含：海洋實習交通與用餐費用、浮潛裝備租借。</li>
                 <li>
@@ -683,7 +737,7 @@
                   註：以上優惠只要符合條件，可合併使用
                 </li>
               </ul>
-              <a class="fs-6" style="color: red;">團結賺優惠!</a>
+              <p class="fs-6" style="color: red;">團結賺優惠!</p>
               <ul>
                 <li>
                   兩人成行，每人折扣 700 元<br>
@@ -692,18 +746,11 @@
                   六人以上請來電洽談。
                 </li>
               </ul>
-              <a class="fs-6" style="color: red;">老同學秀臉有優惠!</a>
+              <p class="fs-6" style="color: red;">老同學秀臉有優惠!</p>
               <ul>
                 <li>iDiving 的 自潛Lv1/人魚學員，可再享有1000 元折扣。</li>
               </ul>
-              <a class="fs-6" style="color: red;">凍不了我的潛水夢!</a>
-              <ul>
-                <li>報名4/16-5/21 區間之課程，優惠1000元</li>
-                <li>報名5/23-6/18 區間之課程，優惠500元</li>
-                <li>適合提早規劃又耐寒的學員! (夏初水溫稍低20-25之間)</li>
-              </ul>
-              <img src="../../../../assets/Image/Data/22OWDgiveaway.png" width="100%"
-                style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+              <img src="../../../assets/Image/Data/OWD_Giveaway.png" width="100%" style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
               <ul>
                 <li>
                   贈品:<br>
@@ -727,23 +774,23 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                      <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                      <a>學科:</a>
+                      <p>學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                      <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                      <a>術科:</a>
+                      <p>術科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</a>
+                      <p>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -758,33 +805,33 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                      <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="80px" style="vertical-align:text-top;">
-                      <a>教室學科:</a>
+                      <p>教室學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>iDiving 士林前港店（台北市士林區前港街 8 號）</a>
+                      <p>iDiving 士林前港店（台北市士林區前港街 8 號）</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>海洋實習:</a>
+                      <p>海洋實習:</p>
                     </td>
                     <td class="fs-6">
-                      <a>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</a>
+                      <p>iDiving 東北角龍洞店（新北市貢寮區龍洞街 66-1 號）</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>註: </a>
+                      <p>註: </p>
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修等），若有額外增加的費用本中心將自行吸收，不會另外收費，但學員不可因課程時間調整而要求退費。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -804,7 +851,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學科部份，每另外約一日課程加價 300 元</a>
+                      <p>學科部份，每另外約一日課程加價 300 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -814,7 +861,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>術科部份，每另外約一日課程加價 500 元</a>
+                      <p>術科部份，每另外約一日課程加價 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -824,7 +871,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                      <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
                     </td>
                   </tr>
                   <tr>
@@ -834,7 +881,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</a>
+                      <p>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -854,7 +901,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>課程須於開始上課後的兩個月內完成。</a>
+                      <p>課程須於開始上課後的兩個月內完成。</p>
                     </td>
                   </tr>
                   <tr>
@@ -864,7 +911,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期之更改須在 10 天前告知</a>
+                      <p>上課日期之更改須在 10 天前告知</p>
                     </td>
                   </tr>
                   <tr>
@@ -874,7 +921,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                      <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -884,7 +931,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                      <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -894,7 +941,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                      <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                     </td>
                   </tr>
                   <tr>
@@ -904,7 +951,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                      <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                     </td>
                   </tr>
                   <tr>
@@ -914,7 +961,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</a>
+                      <p>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -934,7 +981,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                      <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                     </td>
                   </tr>
                   <tr>
@@ -944,21 +991,21 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</a>
+                      <p>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         1. NT 3,000 元訂金用做購買線上教材，無法退費。<br>
                         2. 開課前 30 天以上，退回全新贈品，可退費NT 12,000元。<br>
                         3. 開課前 30 天之內，退回全新贈品，可退費NT 10,000元。<br>
                         4. 已上過學科，退回全新贈品，可退費NT 8,000元。<br>
                         5 .已上過泳池課程或贈品已使用，可退費NT 4,000元。<br>
                         6. 已上過海洋實習，恕不退費。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -999,19 +1046,19 @@
               <h3 style="font-family:DFKai-sb;"><br>課程特色</h3>
               <ul class="fs-6">
                 <li>
-                  SSI數位教材搭配MySSI APP，課前預習與紀錄潛水日誌好方便。
+                  SSI數位教材搭配MySSI APP，課前預習、課後潛水日誌記錄，精確掌握學習動態。
                 </li>
                 <li>
-                  合格的領導級人員與學員比例1：2~3。
+                  合格的領導級教練與學員比例1：2~3。
                 </li>
                 <li>
-                  超值贈品方案，合身且全新的裝備好衛生，日後潛水省下輕裝租借費。
+                  海洋課程期間免費提供電腦錶使用，並指導電腦錶操作，讓潛水過程更加安全。
                 </li>
                 <li>
                   海洋課程期間提供電腦錶使用，讓潛水過程安全又方便。
                 </li>
                 <li>
-                  課程結訓後一年內，參加東北角岸潛活動享有迎新優惠價，每個場次最低只需要1000元（含裝備租借）。
+                  課程結訓即日起至一年內，參加東北角岸潛活動享有迎新優惠價，每場次含裝備租借最低價1000元。
                 </li>
               </ul>
               <br>
@@ -1025,69 +1072,76 @@
                 <tbody>
                   <tr>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         DAY 1 | 學科 + 泳池術科 08:00~18:30<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水物理學、潛水生理學、贈品套量<br>
                         裝備介紹與組裝練習<br>
                         <br>
                         裝備調整<br>
                         潛水技巧練習<br>
                         狀況模擬及障礙排除
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 2 | 學科 + 泳池術科 08:00~17:30<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水計畫與執行、潛水電腦錶介紹<br>
                         海洋環境、海洋生物介紹<br>
                         <br>
                         潛水技巧練習<br>
                         狀況模擬及障礙排除
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 3 | 開放水域 09:00~17:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧練習<br>
                         水中障礙排除<br>
                         日誌記錄<br>
                         裝備清洗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a class="fs-6">
+                      <p class="fs-6">
                         <br>DAY 4 | 開放水域 09:00~14:00<br>
-                        <hr>
+                      </p>
+                      <hr>
+                      <p class="fs-6">
                         潛水技巧複習<br>
                         狀況模擬及障礙排除<br>
                         水中方向辨認<br>
                         Fun Dive體驗
-                      </a>
+                      </p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <a class="fs-6" style="color: red;">
+                      <p class="fs-6" style="color: red;">
                         <br>
                         註:實際下水時間將依照現場情況調整
                         <br>
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <br>
-              <img src="../../../../assets/Image/Data/OWD_Winter_Schedule.webp" width="100%"
-                style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+              <img src="../../../../assets/Image/Data/OWD_Winter_Schedule.webp" width="100%" style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
             </div>
             <!-- 冬季班 課程學費 -->
             <!-- 方案一  -->
@@ -1096,9 +1150,9 @@
               <br>
               <h3 style="font-family:DFKai-sb;">課程學費</h3>
               <br>
-              <a class="fs-5" style="color: orange;">定價 19,800 元（含贈品）</a>
+              <p class="fs-5" style="color: orange;">定價 19,800 元（含贈品）</p>
               <ul>
-                <li>現金優惠，課程費用付現，可折扣 600 元。</li>
+                <li>現金優惠，課程費用付現，可折扣 300 元。</li>
                 <li>費用包含：輕裝組、SSI數位教材、國際數位證照申請、教練費、訓練期間潛水重裝使用（浮力調整裝置、調節器、電腦錶）、旅遊平安保險。</li>
                 <li>費用不含：海洋實習交通與用餐費用、浮潛裝備租借。</li>
                 <li>
@@ -1106,7 +1160,7 @@
                   註：以上優惠只要符合條件，可合併使用
                 </li>
               </ul>
-              <a class="fs-6" style="color: orange;">團結賺優惠!</a>
+              <p class="fs-6" style="color: orange;">團結賺優惠!</p>
               <ul>
                 <li>
                   兩人成行，每人折扣 700 元<br>
@@ -1115,18 +1169,11 @@
                   六人以上請來電洽談。
                 </li>
               </ul>
-              <a class="fs-6" style="color: orange;">老同學秀臉有優惠!</a>
+              <p class="fs-6" style="color: orange;">老同學秀臉有優惠!</p>
               <ul>
                 <li>iDiving 的 自潛Lv1/人魚學員，可再享有1000 元折扣。</li>
               </ul>
-              <a class="fs-6" style="color: orange;">凍不了我的潛水夢!</a>
-              <ul>
-                <li>報名4/16-5/21 區間之課程，優惠1000元</li>
-                <li>報名5/23-6/18 區間之課程，優惠500元</li>
-                <li>適合提早規劃又耐寒的學員! (夏初水溫稍低20-25之間)</li>
-              </ul>
-              <img src="../../../../assets/Image/Data/22OWDgiveaway.png" width="100%"
-                style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+              <img src="../../../assets/Image/Data/OWD_Giveaway.png" width="100%" style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
               <ul>
                 <li>
                   贈品:<br>
@@ -1150,23 +1197,23 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>學員結訓均需達到學科與術科課程標準之評鑑</a>
+                      <p>學員結訓均需達到學科與術科課程標準之評鑑</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                      <a>學科:</a>
+                      <p>學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</a>
+                      <p>需通過筆試測驗（成績達80分以上），未達標準需於檢討後重考。</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="50px" style="vertical-align:text-top;">
-                      <a>術科:</a>
+                      <p>術科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</a>
+                      <p>平靜水域所學之潛水技巧須在開放水域操作，並接受教練評鑑。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -1181,33 +1228,33 @@
                 <tbody>
                   <tr>
                     <td class="fs-6" colspan="2">
-                      <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                      <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" width="80px" style="vertical-align:text-top;">
-                      <a>教室學科:</a>
+                      <p>教室學科:</p>
                     </td>
                     <td class="fs-6">
-                      <a>iDiving 士林前港店（台北市士林區前港街 8 號）</a>
+                      <p>iDiving 士林前港店（台北市士林區前港街 8 號）</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>海洋實習:</a>
+                      <p>海洋實習:</p>
                     </td>
                     <td class="fs-6">
-                      <a>墾丁</a>
+                      <p>墾丁</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
-                      <a>註: </a>
+                      <p>註: </p>
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         上課地點與時間可能視狀況調整（如遇天候不佳或泳池場地整修等），若有額外增加的費用本中心將自行吸收，不會另外收費，但學員不可因課程時間調整而要求退費。 墾丁離島移地訓練產生之費用需自付。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -1227,7 +1274,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學科部份，每另外約一日課程加價 300 元</a>
+                      <p>學科部份，每另外約一日課程加價 300 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -1237,7 +1284,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>術科部份，每另外約一日課程加價 500 元</a>
+                      <p>術科部份，每另外約一日課程加價 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -1247,7 +1294,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>三人同行，一起約定特殊時間上課，不須額外加價。</a>
+                      <p>三人同行，一起約定特殊時間上課，不須額外加價。</p>
                     </td>
                   </tr>
                   <tr>
@@ -1257,7 +1304,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</a>
+                      <p>指定教練，須加價500元/日，如果該名教練已安排其他課程或出團恕無法指定。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -1277,7 +1324,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>課程須於開始上課後的兩個月內完成。</a>
+                      <p>課程須於開始上課後的兩個月內完成。</p>
                     </td>
                   </tr>
                   <tr>
@@ -1287,7 +1334,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期之更改須在 10 天前告知</a>
+                      <p>上課日期之更改須在 10 天前告知</p>
                     </td>
                   </tr>
                   <tr>
@@ -1297,7 +1344,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                      <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -1307,7 +1354,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                      <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                     </td>
                   </tr>
                   <tr>
@@ -1317,7 +1364,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                      <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                     </td>
                   </tr>
                   <tr>
@@ -1327,7 +1374,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                      <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                     </td>
                   </tr>
                   <tr>
@@ -1337,7 +1384,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</a>
+                      <p>假日班學生可改於平日班完成術科，無額外優惠，亦不須額外付費。</p>
                     </td>
                   </tr>
                 </tbody>
@@ -1357,7 +1404,7 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                      <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                     </td>
                   </tr>
                   <tr>
@@ -1367,21 +1414,21 @@
                       </ul>
                     </td>
                     <td class="fs-6">
-                      <a>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</a>
+                      <p>若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下:</p>
                     </td>
                   </tr>
                   <tr>
                     <td class="fs-6" style="vertical-align:text-top;">
                     </td>
                     <td class="fs-6">
-                      <a>
+                      <p>
                         1. NT 3,000 元訂金用做購買線上教材，無法退費。<br>
                         2. 開課前 30 天以上，退回全新贈品，可退費NT 12,000元。<br>
                         3. 開課前 30 天之內，退回全新贈品，可退費NT 10,000元。<br>
                         4. 已上過學科，退回全新贈品，可退費NT 8,000元。<br>
                         5 .已上過泳池課程或贈品已使用，可退費NT 4,000元。<br>
                         6. 已上過海洋實習，恕不退費。
-                      </a>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -1420,18 +1467,18 @@
             <!-- 特約班 課程規劃 -->
             <div>
               <h3 style="font-family:DFKai-sb;"><br>課程規劃</h3>
-              <a class="fs-6">
+              <p class="fs-6">
                 您的排休無法自行安排又充滿變數嗎？ iDiving 為課程增加額外的彈性，您可以先報名，再客製化您的專屬上課時間！
-              </a>
+              </p>
             </div>
             <!-- 特約班 超值學費 -->
             <div>
               <br>
               <h3 style="font-family:DFKai-sb;">課程學費</h3>
               <hr>
-              <a class="fs-6" style="color: yellowgreen;">定價 19,800 元（含贈品）</a>
-              <a class="fs-6">可搭配固定班，若時間無法配合則可以與 iDiving 另外約定時間上課！平日固定班資訊請參照平日班。</a>
-              <a class="fs-6">特殊約定課程費用</a>
+              <p class="fs-6" style="color: yellowgreen;">定價 19,800 元（含贈品）</p>
+              <p class="fs-6">可搭配固定班，若時間無法配合則可以與 iDiving 另外約定時間上課！平日固定班資訊請參照平日班。</p>
+              <p class="fs-6">特殊約定課程費用</p>
               <ul class="fs-6">
                 <li>學科部份，每另外約一日課程加價 300 元</li>
                 <li>術科部份，每另外約一日課程加價 500 </li>

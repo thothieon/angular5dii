@@ -15,7 +15,6 @@ export interface Dessert {
 })
 export class Cp01Component {
   desserts: Dessert[] = [
-    {type:'15', name: '', price: ''},
     {type:'20', name: '自由潛水', price: ''},
     {type:'15', name: 'TRY Freediving 前港', price: '2500'},
     {type:'15', name: 'TRY Freediving 南港', price: '3000'},
@@ -52,8 +51,9 @@ export class Cp01Component {
     {type:'15', name: 'SSI Advanced Adventurer 進階探險課程', price: '11000'},
     {type:'15', name: '水肺複習(前港泳池)', price: '2500'},
     {type:'15', name: '水肺複習(南港泳池)', price: '3500'},
-    {type:'15', name: '水肺複習(海洋平靜水域 5米)', price: '11000'},
-    {type:'15', name: '水肺複習 (課程更新) 執照申請(+1000)', price: '6000'},
+    {type:'15', name: '水肺複習(海洋平靜水域 5米)', price: '5000'},
+    {type:'15', name: '水肺複習(複習課程)', price: '6000'},
+    {type:'15', name: '水肺複習(複習課程 + 執照申請)', price: '7000'},
     {type:'15', name: '進階探險潛水員 AA', price: '11000'},
     {type:'15', name: '', price: ''},
     {type:'20', name: '水肺基礎專長', price: ''},

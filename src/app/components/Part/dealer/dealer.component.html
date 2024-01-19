@@ -1,17 +1,58 @@
 <!-- 參考網頁 -->
+<!-- https://ng-bootstrap.github.io/#/components/carousel/examples -->
 <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
 <!-- https://mdbootstrap.com/docs/angular/advanced/carousel/ -->
+<!-- https://blog.angular-university.io/angular-for/ -->
 
 <h4 style="font-weight:bold;text-align: center;">經銷廠牌</h4>
-
+<br>
 <div class="row">
     <div class="col">
-        <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
-            <mdb-slide *ngFor="let card of cards; let i = index">
-                <div class="view w-100">
-                    <img class="d-block w-100" src="{{card.img}}" alt="First slide">
+    </div>
+    <div class="col">
+        <ngb-carousel *ngIf="showCarousel" #carousel [interval]="5000">
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/1.png" />
                 </div>
-            </mdb-slide>
-        </mdb-carousel>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/2.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/3.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/4.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/5.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/6.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/7.png" />
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div>
+                    <img src="../../../../assets/Image/Dealer/8.png" />
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <div class="col">
     </div>
 </div>

@@ -1,13 +1,13 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+//import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { NgxVcardModule } from "ngx-vcard";
+//import { NgxVcardModule } from "ngx-vcard";
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -18,22 +18,21 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 // Import the timeline library
-import { VerticalTimelineModule } from 'angular-vertical-timeline';
+//import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 // For MDB Angular Free
 //import { MDBBootstrapModule, ButtonsModule, CardsModule, CarouselModule, CheckboxModule, CollapseModule, IconsModule } from 'angular-bootstrap-md';
 // For MDB Angular Free
 //import { InputsModule, NavbarModule, WavesModule, DropdownModule, TableModule } from 'angular-bootstrap-md';
-import { SharedMdbModule } from '../app/shared/shared-mdb/shared-mdbl.module';
+//import { SharedMdbModule } from '../app/shared/shared-mdb/shared-mdbl.module';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+//import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { AgGridModule } from 'ag-grid-angular';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
@@ -41,73 +40,74 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { PartModule } from './components/Part/part.module';
 import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
-import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
+//import { Businesscard001Component } from './pages/businesscard001/businesscard001.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
-import { B210Component } from './pages/b210/b210.component';
+//import { B210Component } from './pages/b210/b210.component';
 import { B211Component } from './pages/b211/b211.component';
 import { B212Component } from './pages/b212/b212.component';
 import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
 import { B310Component } from './pages/b310/b310.component';
-import { B311Component } from './pages/b311/b311.component';
-import { B320Component } from './pages/b320/b320.component';
+//import { B311Component } from './pages/b311/b311.component';
+import { B320Component } from './pages/b320/b320.component';/*
 import { B321Component } from './pages/b321/b321.component';
 import { B330Component } from './pages/b330/b330.component';
-import { B340Component } from './pages/b340/b340.component';
+import { B340Component } from './pages/b340/b340.component';*/
 import { B400Component } from './pages/b400/b400.component';
 import { B411Component } from './pages/b411/b411.component';
-import { C100Component } from './pages/c100/c100.component';
+//import { C100Component } from './pages/c100/c100.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
-import { C130Component } from './pages/c130/c130.component';
+//import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
 import { C312Component } from './pages/c312/c312.component';
 import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
-import { C420Component } from './pages/c420/c420.component';
+/*import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
-import { C510Component } from './pages/c510/c510.component';
+import { C510Component } from './pages/c510/c510.component';*/
 import { C610Component } from './pages/c610/c610.component';
 import { Ccr100Component } from './pages/ccr100/ccr100.component';
-import { Ccs001Component } from './pages/ccs001/ccs001.component';
+//import { Ccs001Component } from './pages/ccs001/ccs001.component';
 import { Cfd110Component } from './pages/cfd110/cfd110.component';
 import { Cfd120Component } from './pages/cfd120/cfd120.component';
 import { Cfd130Component } from './pages/cfd130/cfd130.component';
 import { Cfd210Component } from './pages/cfd210/cfd210.component';
 import { Cfd220Component } from './pages/cfd220/cfd220.component';
 import { Cfd310Component } from './pages/cfd310/cfd310.component';
+import { Cfd131Component } from './pages/cfd131/cfd131.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cp01Component } from './pages/cp01/cp01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
-import { D110Component } from './pages/d110/d110.component';
+//import { D110Component } from './pages/d110/d110.component';
 import { Dz01Component } from './pages/dz01/dz01.component';
-import { Dz01tComponent } from './pages/dz01t/dz01t.component';
+//import { Dz01tComponent } from './pages/dz01t/dz01t.component';
 import { Dz02Component } from './pages/dz02/dz02.component';
 import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
 import { Dz05Component } from './pages/dz05/dz05.component';
-import { D111Component } from './pages/d111/d111.component';
-import { D112Component } from './pages/d112/d112.component';
+//import { D111Component } from './pages/d111/d111.component';
+//import { D112Component } from './pages/d112/d112.component';
 import { D120Component } from './pages/d120/d120.component';
-import { D121Component } from './pages/d121/d121.component';
+//import { D121Component } from './pages/d121/d121.component';
 import { D130Component } from './pages/d130/d130.component';
 import { D130aComponent } from './pages/d130a/d130a.component';
 import { D140Component } from './pages/d140/d140.component';
-import { D141Component } from './pages/d141/d141.component';
+//import { D141Component } from './pages/d141/d141.component';
 import { D150Component } from './pages/d150/d150.component';
 import { D160Component } from './pages/d160/d160.component';
 import { D230Component } from './pages/d230/d230.component';
 import { D310Component } from './pages/d310/d310.component';
 import { D340Component } from './pages/d340/d340.component';
 import { D410Component } from './pages/d410/d410.component';
-import { D420Component } from './pages/d420/d420.component';
-import { Ec01Component } from './pages/ec01/ec01.component';
+import { D420Component } from './pages/d420/d420.component';/*
+import { Ec01Component } from './pages/ec01/ec01.component';*/
 import { Health001Component } from './pages/health001/health001.component';
-import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
+//import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
-import { Mc100Component } from './pages/mc100/mc100.component';
+//import { Mc100Component } from './pages/mc100/mc100.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 
@@ -116,76 +116,76 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     AppComponent,
     About001Component,
     BeginComponent,
-    Businesscard001Component,
+    //Businesscard001Component,
     Bz01Component,
-    B210Component,
+    //B210Component,
     B211Component,
     B212Component,
     B230Component,
     B240Component,
     B310Component,
-    B311Component,
-    B320Component,
+    //B311Component,
+    B320Component,/*
     B321Component,
     B330Component,
-    B340Component,
+    B340Component,*/
     B400Component,
     B411Component,
-    C100Component,
+    //C100Component,
     C101Component,
     C120Component,
-    C130Component,
+    //C130Component,
     C210Component,
     C310Component,
     C312Component,
     C313Component,
     C410Component,
-    C420Component,
+    /*C420Component,
     C430Component,
-    C510Component,
+    C510Component,*/
     C610Component,
     Ccr100Component,
-    Ccs001Component,
+    //Ccs001Component,
     Cfd110Component,
     Cfd120Component,
     Cfd130Component,
     Cfd210Component,
     Cfd220Component,
     Cfd310Component,
+    Cfd131Component,
     Cfdc210Component,
     Coc100Component,
     Cp01Component,
     Cz01Component,
-    D110Component,
+    //D110Component,
     Dz01Component,
-    Dz01tComponent,
+    //Dz01tComponent,
     Dz02Component,
     Dz03Component,
     Dz04Component,
-    Dz05Component,
+    Dz05Component,/*
     D111Component,
-    D112Component,
+    D112Component,*/
     D120Component,
-    D121Component,
+    //D121Component,
     D130Component,
     D130aComponent,
     D140Component,
-    D141Component,
+    //D141Component,
     D150Component,
     D160Component,
     D230Component,
     D310Component,
     D340Component,
     D410Component,
-    D420Component,
-    Ec01Component,
+    D420Component,/*
+    Ec01Component,*/
     Health001Component,
-    LinkidivingComponent,
+    //LinkidivingComponent,
     M100Component,
-    Mc100Component,
+    //Mc100Component,
     Qac001Component,
-    Qaa001Component,
-    D130aComponent
+    Qaa001Component
   ],
   imports: [
     BrowserModule,
@@ -205,9 +205,9 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     //TableModule,
     //WavesModule,
     //MDBBootstrapModule.forRoot(),
-    SharedMdbModule,
+    ////SharedMdbModule,
     PartModule,
-    VerticalTimelineModule,
+    ////VerticalTimelineModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AgGridModule,
@@ -218,11 +218,13 @@ import { Qaa001Component } from './pages/qaa001/qaa001.component';
     CommonModule,
     SharedMaterialModule,
     PdfViewerModule,
-    NgxVcardModule,
+    ////NgxVcardModule,
     NgbModule,
     NgbPaginationModule, 
-    NgbAlertModule,
-    NgxQRCodeModule
+    NgbAlertModule//,
+    //NgbCollapseModule,
+    //NgbDropdownModule //,
+    //NgxQRCodeModule
 
   ],
   providers: [],

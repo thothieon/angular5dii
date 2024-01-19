@@ -26,13 +26,13 @@
     <div class="row">
         <div class="col w-100">
             <br>
-            <div class="container-fluid">
-                <nav class="breadcrumb bg-white">
-                    <a class="breadcrumb-item" href="#">首頁</a>
-                    <a class="breadcrumb-item">學潛水</a>
-                    <a class="breadcrumb-item">美人魚</a>
-                </nav>
-            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="#">學潛水</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">人魚</li>
+                </ol>
+            </nav>
             <br>
         </div>
     </div>
@@ -46,35 +46,31 @@
         </div>
     </div>
 
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-usage/ -->
-    <!-- https://mdbootstrap.com/docs/angular/layout/grid-examples/ -->
     <div class="row">
         <div class="col-xl">
         </div>
-        <div class="col-xl-8">
+        <div class="col-xl-10">
             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
                 <li [ngbNavItem]="1">
-                    <a ngbNavLink>海洋美人魚</a>
+                    <a ngbNavLink>人魚</a>
                     <ng-template ngbNavContent class="custom-class">
 
-                        <br />
-                        <img src="../../../assets/Image/Data/MM_01.png" width="99%" style="display: block; margin: auto"
-                            alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
-                        <br />
-                        <h3>海洋美人魚</h3>
+                        <br>
+                        <img src="../../../assets/Image/Data/MM_01.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+                        <br>
+                        <h3>人魚 Mermaid</h3>
                         <hr />
-                        <!-- 美人魚自由潛水 課程介紹 -->
+                        <!-- 人魚自由潛水 課程介紹 -->
                         <div>
                             <h3 style="font-family:DFKai-sb;">【課程介紹】</h3>
-                            <a class="fs-6">
-                                美人魚不單單是穿上魚尾，跳入海中，這麼簡單！iDiving最注重的安全與正確水中的踢動，不但適合各同年齡層的人，也可以讓你帶有 Aqua man
-                                的英姿、童話故事中小美人魚優雅，
-                                一門可以更貼近海洋生物的課程。現在！立即了解課程！享受大海享受優美吧！
-                            </a>
+                            <p class="fs-6">
+                                美人魚不單單是穿上魚尾，跳入水中，這麼簡單！iDiving 最注重的安全與水中的踢動，提供符合 SSI 官方課程內容的人魚課程。適合各個年齡層的人們，也可以讓你帶
+                                有 Aqua man 的英姿、童話故事中小美人魚優雅。
+                            </p>
                             <br>
                             <br>
                         </div>
-                        <!-- 美人魚自由潛水 課程內容 -->
+                        <!-- 人魚自由潛水 課程內容 -->
                         <div>
                             <table borderless="true">
                                 <thead>
@@ -92,10 +88,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                學科（3hr）<br />
+                                            <p class="fs-6">
+                                                學科（4hr）<br />
                                                 人魚相關知識 / 安全事項 / 陸地擺動練習
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -105,40 +101,25 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                泳池訓練（4-7hr）<br>
+                                            <p class="fs-6">
+                                                泳池訓練（8-12hr）<br>
                                                 人魚技巧應用 / 裝備使用 / 救援演練
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="2%" style="vertical-align:text-top;">
-                                            <ul>
-                                                <li class="fs-6"></li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <a class="fs-6">
-                                                海洋術科(4-6hr)<br>
-                                                環境評估 / 海洋相關注意事項 / 救援演練
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
-                                                <br>註:美人魚課程無海洋術科
-                                            </a>
+                                            <p class="fs-6" style="color:red;">
+                                                <br>註:建議安排至少 2 天的時間，課程安排依據現場狀況為主
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br />
-                            <img src="../../../../assets/Image/Data/MM_02.png" width="99%"
-                                style="display: block; margin: auto"
-                                alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+                            <img src="../../../../assets/Image/Data/MM_02.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         </div>
-                        <!-- 美人魚自由潛水 課程特色 -->
+                        <!-- 人魚自由潛水 課程特色 -->
                         <div>
                             <table borderless="true">
                                 <thead>
@@ -156,9 +137,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 補訓、團練搭配人魚教練進行
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -168,9 +149,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 術科練習，精實你的夏天
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -180,9 +161,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 高品質教學人數比 1:2，教練全程盯著你
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -192,9 +173,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 數位教材伴你一生，不用擔心知識忘記
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -204,9 +185,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學員上課期間購買潛水器材享有學員優惠價
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -216,25 +197,24 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 水中攝影活動，搭配一位專門攝影師及人魚教練動作指導
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <img src="../../../../assets/Image/Data/MM_03.png" width="99%"
-                                style="display:block; margin:auto;"
-                                alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+                            <img src="../../../../assets/Image/Data/MM_03.png" width="99%" style="display:block; margin:auto;" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         </div>
-                        <!-- 美人魚自由潛水 課程規劃 -->
+                        <!-- 人魚自由潛水 課程規劃 -->
                         <div>
+                            <h3 style="font-family:DFKai-sb;"><br>【課程規劃】</h3>
                             <table borderless="true">
                                 <thead>
                                     <tr>
                                         <th colspan="2">
-                                            <h3 style="font-family:DFKai-sb;"><br>【課程規劃】</h3>
+                                            <h3 style="font-family:DFKai-sb;"><br>平日班</h3>
                                         </th>
                                     </tr>
                                 </thead>
@@ -243,47 +223,126 @@
                                         <td width="2%">
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                DAY 1 | 學科 3hr<br>
+                                            <p class="fs-6">
+                                                DAY 1 | 學科 +泳池術科 09:00-18:00
+                                            </p>
                                                 <hr>
+                                                <p class="fs-6">
                                                 人魚相關知識、裝備介紹、安全事項、美人魚技巧及練習。<br>
-                                                <br>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        </td>
-                                        <td>
-                                            <a class="fs-6">
-                                                DAY 2 | 學科 4-7hr<br>
-                                                <hr>
                                                 人魚技巧應用、裝備使用、救援演練等。<br>
                                                 <br>
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
-                                                DAY 3 | 泳池術科 4-7hr<br>
+                                            <p class="fs-6">
+                                                DAY 2 | 泳池術科 12:00-19:00
+                                            </p>
                                                 <hr>
-                                                海洋環境評估及相關注意事項、簡易擺拍教學等。<br>
+                                                <p class="fs-6">
+                                                深水區人魚技巧應用、人魚裝備使用、救援演練等。<br>
                                                 <br>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
-                                                <br>註:美人魚課程無海洋術科
-                                            </a>
+                                                <br>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <table borderless="true">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">
+                                            <h3 style="font-family:DFKai-sb;"><br>假日班</h3>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="2%">
+                                        </td>
+                                        <td>
+                                            <p class="fs-6">
+                                                DAY 1 | 學科 19:00-22:00
+                                            </p>
+                                                <hr>
+                                                <p class="fs-6">
+                                                人魚相關知識、裝備介紹、安全事項、人魚技巧及練習。<br>
+                                                <br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <p class="fs-6">
+                                                DAY 2 | 泳池術科 12:00-19:00
+                                            </p>
+                                                <hr>
+                                                <p class="fs-6">
+                                                人魚技巧應用、裝備使用、救援演練等。<br>
+                                                <br>
+                                                </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <p class="fs-6">
+                                                DAY 3 | 泳池術科 12:00-19:00
+                                            </p>
+                                                <hr>
+                                                <p class="fs-6">
+                                                深水區人魚技巧應用、人魚裝備使用、救援演練等。
+                                                <br>
+                                                <br>
+                                                </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <ul>
+                                <li>建議安排至少 2 天的時間，課程安排依據現場狀況為主</li>
+                            </ul>
+                            <p class="fs-6" style="color:red;">
+                                <br>註:人魚課程無海洋術科
+                            </p>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../../../../assets/Image/Data/FD_MM_01.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_MM_02.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_MM_03.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../../../../assets/Image/Data/FD_MM_04.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- <br>
                             <br>
                             <mdb-carousel class="carousel slide carousel-fade" interval="false" [animation]="'fade'">
                                 <mdb-carousel-item *ngFor="let Weekday of Weekdays; let i = index">
@@ -292,20 +351,18 @@
                                     </div>
                                 </mdb-carousel-item>
                             </mdb-carousel>
+                            <br> -->
                             <br>
                             <br>
-                            <br>
-                            <img src="../../../assets/Image/Data/MM_05.png" width="99%" style="display: block; margin: auto"
-                            alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
+                            <img src="../../../assets/Image/Data/MM_05.png" width="99%" style="display: block; margin: auto" alt="潛水 潛水證照 水肺證照 水肺潛水課程 台北學潛水 潛水課程 東北角 龍洞灣 台北水肺潛水課程 水肺潛水" />
                         </div>
-                        <!-- 美人魚自由潛水 課程學費 -->
+                        <!-- 人魚自由潛水 課程學費 -->
                         <!-- 方案  -->
                         <div>
                             <br>
                             <br>
                             <table borderless="true">
                                 <tbody>
-                                    
                                     <tr>
                                         <td class="fs-6">
                                             <ul>
@@ -322,9 +379,35 @@
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 美人魚自由潛水 報名方式 -->
+                        <div>
+                            <a class="fs-6" style="color: red;">🏮iDiving 新年禮金🐲龍總來</a>
+                            <ul>
+                                <li>
+                                    凡是在2024/2/29前<br>
+                                    完成2、3月開課之 自由潛水員🤿/人魚🧜‍♀ 課程報名<br>
+                                    🧧立刻送你1500元課程壓歲金！<br>
+                                    🧧再送1000課程好彩金！<br>
+                                    <br>
+                                    🎉1000元課程好彩金適用於🎉<br>
+                                    FreeDiver ➡️ 初階OWD、人魚課程！<br>
+                                    Mermaid ➡️ 初階OWD、FD課程！<br>
+                                </li>
+                                <li>不可與其他優惠並用。</li>
+                                <li>尾款需以現金繳交。</li>
+                            </ul>
+                            <br>
+                            <a class="fs-6" style="color: red;">⚠️注意⚠️</a>
+                            <ul>
+                                <li>限2024/2/29 前完成報名者，期別／名額有限，額滿為止！！！</li>
+                                <li>本方案優惠不得與其他折扣、優惠、行銷活動合併使用。</li>
+                                <li>本方案優惠好彩金限本人使用，不得與其他特殊優惠、行銷活動合併使用。</li>
+                                <li>須臨櫃以現金繳交全額尾款，方能享本優惠。</li>
+                                <li>iDiving 保留對本活動文字的解釋權利。</li>
+                            </ul>
+                        </div>
+                        <!-- 人魚自由潛水 報名方式 -->
                         <app-paymentmethod></app-paymentmethod>
-                        <!-- 美人魚自由潛水 考核標準 -->
+                        <!-- 人魚自由潛水 考核標準 -->
                         <!-- 
                         <div>
                             <br>
@@ -427,7 +510,7 @@
                                 </tbody>
                             </table>
                         </div> -->
-                        <!-- 美人魚自由潛水 上課地點 -->
+                        <!-- 人魚自由潛水 上課地點 -->
                         <div>
                             <br>
                             <h3 style="font-family:DFKai-sb;">上課地點</h3>
@@ -436,49 +519,49 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                            <a>教室學科:</a>
+                                            <p>教室學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving士林前港店</a>
+                                            <p>iDiving士林前港店</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>泳池術科:</a>
+                                            <p>泳池術科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>各配合泳池（需先到iDiving集合）</a>
+                                            <p>各配合泳池（需先到iDiving集合）</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>海洋實習: </a>
+                                            <p>海洋實習: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</a>
+                                            <p>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 ＊如遇天候不佳或泳池場地整修等，上課地點與時間可能視狀況調整，若有額外增加的場地費用，本中心將自行吸收（大台北區轉換場地之費用，台中泳池費用），不會另外收費。
                                                 墾丁離島移地訓練產生之費用需自付。
                                                 <br>＊學員不可因課程之"地點/時間"有調整而拒學並要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 美人魚自由潛水 特約課程 -->
+                        <!-- 人魚自由潛水 特約課程 -->
                         <div>
                             <br>
                             <h3 style="font-family:DFKai-sb;">特約課程</h3>
@@ -492,7 +575,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學科部份，每另外約一日課程加價 300 元</a>
+                                            <p>學科部份，每另外約一日課程加價 300 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -502,7 +585,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>術科部份，每另外約一日課程加價 500 元</a>
+                                            <p>術科部份，每另外約一日課程加價 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -512,13 +595,13 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</a>
+                                            <p>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 美人魚自由潛水 更改辦法 -->
+                        <!-- 人魚自由潛水 更改辦法 -->
                         <div>
                             <br>
                             <h3 style="font-family:DFKai-sb;">更改辦法</h3>
@@ -532,7 +615,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>課程須於開始上課後的兩個月內完成。</a>
+                                            <p>課程須於開始上課後的兩個月內完成。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -542,7 +625,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期之更改須在 10 天前告知</a>
+                                            <p>上課日期之更改須在 10 天前告知</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -552,7 +635,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                            <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -562,7 +645,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                            <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -572,7 +655,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                            <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -582,13 +665,13 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                            <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 美人魚自由潛水 取消辦法 -->
+                        <!-- 人魚自由潛水 取消辦法 -->
                         <div>
                             <br>
                             <h3 style="font-family:DFKai-sb;">取消辦法</h3>
@@ -602,7 +685,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                            <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -612,10 +695,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
                                                 元訂金用做購買線上教材，無法退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -625,9 +708,9 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 學員自行放棄課程，本訓練中心將不予退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -642,17 +725,16 @@
                     <a ngbNavLink>親子人魚</a>
                     <ng-template ngbNavContent>
 
-                        <br />
-                        <img src="../../../assets/Image/Data/MMParentChild_01.png" width="99%"
-                            style="display: block; margin: auto" />
-                        <br />
+                        <br>
+                        <img src="../../../assets/Image/Data/MMParentChild_01.png" width="99%" style="display: block; margin: auto" />
+                        <br>
                         <h3>親子人魚</h3>
                         <hr />
                         <!-- 親子人魚自由潛水 課程介紹 -->
                         <div>
-                            <a class="fs-6">
+                            <p class="fs-6">
                                 人魚不再只是童話故事！一起來實現童話帶給孩子們的夢想跟憧憬。讓孩子們積極的接受全新的挑戰，學習人魚自由自在地悠遊在水中的同時，學會基本的安全知識，讓安全與樂趣並存。
-                            </a>
+                            </p>
                             <br>
                         </div>
                         <!-- 親子人魚自由潛水 課程內容 -->
@@ -673,10 +755,10 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學科<br />
                                                 人魚相關知識 / 陸地擺動練習
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -686,24 +768,23 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 泳池訓練<br>
                                                 人魚技巧應用 / 裝備使用 / 人魚趣味練習
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
+                                            <p class="fs-6" style="color:red;">
                                                 <br>註:無海洋課程
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br />
-                            <img src="../../../../assets/Image/Data/MMParentChild_02.png" width="99%"
-                                style="display: block; margin: auto" />
+                            <img src="../../../../assets/Image/Data/MMParentChild_02.png" width="99%" style="display: block; margin: auto" />
                         </div>
                         <!-- 親子人魚自由潛水 課程特色 -->
                         <div>
@@ -723,9 +804,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 補訓、團練搭配人魚教練進行
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -735,9 +816,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 高品質教學人數比 1:2~4，教練全程陪伴
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -747,9 +828,9 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 數位教材伴你一生，不用擔心知識忘記
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -759,16 +840,15 @@
                                             </ul>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 學員上課期間購買潛水器材享有學員優惠價
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <img src="../../../../assets/Image/Data/MMParentChild_03.png" width="99%"
-                                style="display:block; margin:auto;" />
+                            <img src="../../../../assets/Image/Data/MMParentChild_03.png" width="99%" style="display:block; margin:auto;" />
                         </div>
                         <!-- 親子人魚自由潛水 課程規劃 -->
                         <div>
@@ -785,38 +865,41 @@
                                         <td width="2%">
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 DAY 1 | 學科 3hr<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 人魚相關知識、裝備介紹 、人魚技巧及練習<br>
                                                 <br>
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                         </td>
                                         <td>
-                                            <a class="fs-6">
+                                            <p class="fs-6">
                                                 DAY 2 | 泳池 3hr<br>
-                                                <hr>
+                                            </p>
+                                            <hr>
+                                            <p class="fs-6">
                                                 人魚技巧應用、裝備使用、人魚趣味練習<br>
                                                 <br>
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <a class="fs-6" style="color:red;">
+                                            <p class="fs-6" style="color:red;">
                                                 <br>註:無海洋術科
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <br>
-                            <img src="../../../../assets/Image/Data/MMParentChild_04.png" width="99%"
-                                style="display:block; margin:auto;" />
+                            <img src="../../../../assets/Image/Data/MMParentChild_Schedule.png" width="99%" style="display:block; margin:auto;" />
                         </div>
                         <!-- 親子人魚自由潛水 課程學費 -->
                         <!-- 方案  -->
@@ -832,8 +915,8 @@
                                     </tr>
                                     <tr>
                                         <td class="fs-6">
-                                            <a>其他開課日期請加 LINE 客服安排上課日期<br></a>
-                                            <a>【親子人魚課程】即日起報名<br></a>
+                                            <p>其他開課日期請加 LINE 客服安排上課日期<br></p>
+                                            <p>【親子人魚課程】即日起報名<br></p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -854,43 +937,43 @@
                                 <tbody>
                                     <tr>
                                         <td class="fs-6" colspan="2">
-                                            <a>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</a>
+                                            <p>上課地點，往返之交通請自行處理，若有需要可以詢問是否能代為安排</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" width="100px" style="vertical-align:text-top;">
-                                            <a>教室學科:</a>
+                                            <p>教室學科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>iDiving士林前港店</a>
+                                            <p>iDiving士林前港店</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>泳池術科:</a>
+                                            <p>泳池術科:</p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>各配合泳池（需先到iDiving集合）</a>
+                                            <p>各配合泳池（需先到iDiving集合）</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>海洋實習: </a>
+                                            <p>海洋實習: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</a>
+                                            <p>夏季東北角（iDiving 東北角龍洞店）冬季潛立方（台中市西屯區安和西路 69 號）或 各移地結訓地</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>註: </a>
+                                            <p>註: </p>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 ＊如遇天候不佳或泳池場地整修等，上課地點與時間可能視狀況調整，若有額外增加的場地費用，本中心將自行吸收（大台北區轉換場地之費用，台中泳池費用），不會另外收費。
                                                 墾丁離島移地訓練產生之費用需自付。
                                                 <br>＊學員不可因課程之"地點/時間"有調整而拒學並要求退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -910,7 +993,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學科部份，每另外約一日課程加價 300 元</a>
+                                            <p>學科部份，每另外約一日課程加價 300 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -920,7 +1003,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6" style="vertical-align:text-top;">
-                                            <a>術科部份，每另外約一日課程加價 500 元</a>
+                                            <p>術科部份，每另外約一日課程加價 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -930,7 +1013,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</a>
+                                            <p>指定教練費: 指定教練，加價 500 元/日，教練如果已安排既定課程或是出團，恕無法指定。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -950,7 +1033,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>課程須於開始上課後的兩個月內完成。</a>
+                                            <p>課程須於開始上課後的兩個月內完成。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -960,7 +1043,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期之更改須在 10 天前告知</a>
+                                            <p>上課日期之更改須在 10 天前告知</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -970,7 +1053,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課日期 10 天內調整，每次需收取調整費 500 元</a>
+                                            <p>上課日期 10 天內調整，每次需收取調整費 500 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -980,7 +1063,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</a>
+                                            <p>上課當天通知要更改日期或曠課未通知則需收取調整費 1,000 元</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -990,7 +1073,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>因身體不適，出示醫院掛號單據者則不收取。</a>
+                                            <p>因身體不適，出示醫院掛號單據者則不收取。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1000,7 +1083,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>女性夥伴參加課程前請自行評估生理期影響。</a>
+                                            <p>女性夥伴參加課程前請自行評估生理期影響。</p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1020,7 +1103,7 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>學員自行放棄課程，本訓練中心將不予退費。</a>
+                                            <p>學員自行放棄課程，本訓練中心將不予退費。</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1030,10 +1113,10 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 若因身體因素而不適合從事潛水活動，並開立醫生證明者，繳交之費用退費方式如下: NT 3,000
                                                 元訂金用做購買線上教材，無法退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1043,9 +1126,9 @@
                                             </ul>
                                         </td>
                                         <td class="fs-6">
-                                            <a>
+                                            <p>
                                                 學員自行放棄課程，本訓練中心將不予退費。
-                                            </a>
+                                            </p>
                                         </td>
                                     </tr>
                                 </tbody>
