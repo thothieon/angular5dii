@@ -33,7 +33,7 @@ export class CourseSearchComponent implements OnInit {
 
   // Each Column Definition results in one Column.
   public columnDefs: ColDef[] = [
-    { field: 'id', headerName:'開課期別' },
+    { field: 'courseNumber', headerName:'開課期別' },
     { field: 'latestLicense', headerName:'課程', editable: true },
     { field: 'chineseName', headerName:'姓名', editable: true},
     //{ field: 'idNumber', headerName:'身分證字號', editable: true},
