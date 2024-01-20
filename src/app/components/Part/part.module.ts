@@ -25,7 +25,7 @@ import { LinkComponent } from './link/link.component';
 //import { OwdtabscourseComponent } from './owdtabscourse/owdtabscourse.component';
 //import { FdtabscourseComponent } from './fdtabscourse/fdtabscourse.component';
 //import { Fdlv1introduceComponent } from './fdlv1introduce/fdlv1introduce.component';
-//import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
+import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
 //import { Paymentmethod1000Component } from './paymentmethod1000/paymentmethod1000.component';
 //import { FdschoolinformationComponent } from './fdschoolinformation/fdschoolinformation.component';
 import { HearsayComponent } from './hearsay/hearsay.component';
@@ -49,7 +49,7 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     //OwdtabscourseComponent,
     //FdtabscourseComponent,
     //Fdlv1introduceComponent,
-    //PaymentmethodComponent,
+    PaymentmethodComponent,
     //Paymentmethod1000Component,
     //FdschoolinformationComponent,
     HearsayComponent,
@@ -90,7 +90,7 @@ import { FewalbumsComponent } from './fewalbums/fewalbums.component';
     //OwdtabscourseComponent,
     //FdtabscourseComponent,
     //Fdlv1introduceComponent,
-    //PaymentmethodComponent,
+    PaymentmethodComponent,
     //Paymentmethod1000Component,
     //FdschoolinformationComponent,
     HearsayComponent,
