@@ -31,7 +31,7 @@ import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component'
 import { HearsayComponent } from './hearsay/hearsay.component';
 //import { SmallactivityComponent } from './smallactivity/smallactivity.component';
 import { DealerComponent } from './dealer/dealer.component';
-//import { FewalbumsComponent } from './fewalbums/fewalbums.component';
+import { FewalbumsComponent } from './fewalbums/fewalbums.component';
 //import { ActivityPleaseNoteComponent } from './activitypleasenote/activitypleasenote.component';
 
 
@@ -55,7 +55,7 @@ import { DealerComponent } from './dealer/dealer.component';
     HearsayComponent,
     //SmallactivityComponent,
     DealerComponent,
-    //FewalbumsComponent,
+    FewalbumsComponent,
     //Paymentmethod1000Component,
     //ActivityPleaseNoteComponent
   ],
@@ -96,7 +96,7 @@ import { DealerComponent } from './dealer/dealer.component';
     HearsayComponent,
     //SmallactivityComponent,
     DealerComponent,
-    //FewalbumsComponent,
+    FewalbumsComponent,
     //ActivityPleaseNoteComponent
   ],
   //schemas: [  ]
