@@ -9,21 +9,21 @@ export class B230Component implements OnInit {
 
   // 新增屬性及內容
   stands = [
-    {
+    /*{
       img: '../../../assets/Image/Coach/237.jpg',
       hrf: 'https://www.facebook.com/janicewa2002',
       name: '麗瑜', title: '', title01: '', title02: 'SSI 自由潛水 LV1 教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/233.jpg',
       hrf: 'https://www.facebook.com/profile.php?id=100004661648909',
       name: 'Kayla', title: 'SSI 開放水域潛水員教練', title01: 'SSI 自由潛水 LV1 教練', title03: 'SSI 美人魚教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/236.jpg',
       hrf: 'https://www.facebook.com/xueqian91',
       name: '薛', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/235.jpg',
       hrf: 'https://www.facebook.com/profile.php?id=100000343460900',
@@ -49,11 +49,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '奕庭', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/222.jpg',
       hrf: 'https://www.facebook.com/jialing.hu.37',
       name: '佳伶', title: '駐店教練', title01: 'SSI 助理教練', title03: ''
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/200.jpg',
       hrf: '',
@@ -144,11 +144,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '東陸', title: '駐店教練', title01: 'SSI 進階潛水員教練', title03: 'SSI 技術潛水教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/126.jpg',
       hrf: '',
       name: '智堯', title: '駐店教練', title01: 'SSI 助理教練訓練官'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/248.jpg',
       hrf: '',
@@ -159,11 +159,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '致維', title: 'SSI 助理教練', title01: 'ECO生態潛水員教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/155.jpg',
       hrf: '',
       name: '小陽', title: 'SSI 自由潛水 LV2 教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/232.jpg',
       hrf: '',
@@ -179,11 +179,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '煌偉', title: 'SSI 自由潛水 LV1 教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/255.jpg',
       hrf: '',
       name: '阿維', title: 'SSI 自由潛水 LV1 教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/123.jpg',
       hrf: '',
