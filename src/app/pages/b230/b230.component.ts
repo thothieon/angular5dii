@@ -144,11 +144,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '東陸', title: '駐店教練', title01: 'SSI 進階潛水員教練', title03: 'SSI 技術潛水教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/126.jpg',
       hrf: '',
       name: '智堯', title: '駐店教練', title01: 'SSI 助理教練訓練官'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/248.jpg',
       hrf: '',
