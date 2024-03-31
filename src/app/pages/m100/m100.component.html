@@ -61,7 +61,38 @@
         <div class="col-xl">
         </div>
         <div class="col-xl-10">
-            <div class="container">
+            <h3>最新消息</h3>
+            <hr>
+            <div class="container" *ngFor="let el of hearsaytotals | async; let i = index">
+                <div class="row">
+                    <div>
+                        <br>
+                        <p class="d-inline p-2 {{el.color}} text-white" style="border-radius:10px;padding-bottom: .5em;">{{el.item}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <br>
+                        <p class="fs-6">{{el.data}}</p>
+                        <p class="fs-4">{{el.title}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <br>
+                        <img src="{{el.img}}" style="display:block;margin:5px 10px 15px 20px" class="img-thumbnail" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <br>
+                        <p class="fs-6">{{el.detail}}</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <div class="container">
                 <h3>最新消息</h3>
                 <hr>
                 <table>
@@ -91,12 +122,12 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </div> -->
             <br>
             <br>
             <br>
-            <div class="container">
-                <!--  <table> mdbTable borderless="true" #tableEl="mdbTable">
+            <!--  <div class="container">
+                <table> mdbTable borderless="true" #tableEl="mdbTable">
                     <tbody>
                         <tr *ngFor="let el of hearsaytotals | async; let i = index"> -->
                             <!-- <td *ngIf="i+1 >= mdbTablePagination.firstItemIndex && i < mdbTablePagination.lastItemIndex" style="padding:2px;" width="50%">
@@ -130,8 +161,8 @@
                             </td>
                         </tr>
                     </tfoot>
-                </table> -->
-            </div>
+                </table>
+            </div> -->
         </div>
         <div class="col-xl">
         </div>

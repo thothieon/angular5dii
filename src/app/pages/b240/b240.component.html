@@ -42,21 +42,20 @@
         </div>
     </div>
 
-    <!-- https://mdbootstrap.com/docs/angular/content/images/ -->
-    <!-- https://coreui.io/docs/4.1/components/card/ -->
-    <!-- photoalbum -->
     <div class="row justify-content-around">
         <div class="card mb-4" *ngFor="let fewalbumsitem of fewalbumsitems | async " style="max-width: 400px;">
-            <div class="row">
-                <div class="bg-image hover-overlay">
-                    <a href={{fewalbumsitem.hrf}}>
-                        <img src={{fewalbumsitem.img}} class="card-img-top" alt="...">
-                        <!-- <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div> -->
-                        <div class="card-img-overlay white-text">
-                            <h5 class="card-title rgba-grey-strong">{{fewalbumsitem.name}} <br> {{fewalbumsitem.title}}</h5>
-                        </div>
-                    </a>
-                </div>
+            <br>
+            <div class="card-header">
+                <h5 class="card-title fs-4 rgba-grey-strong">{{fewalbumsitem.name}}</h5>
+            </div>
+            <div class="bg-image hover-overlay">
+                <a href={{fewalbumsitem.hrf}}>
+                    <img src={{fewalbumsitem.img}} class="card-img-top" alt="...">
+                </a>
+            </div>
+            <div class="card-body">
+                <br>
+                <a class="card-text fs-6" href={{fewalbumsitem.hrf}}>{{fewalbumsitem.title}}</a>
             </div>
         </div>
     </div>
