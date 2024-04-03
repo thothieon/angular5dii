@@ -74,37 +74,4 @@ export class ActivityMainComponent {
     }
   ]
 
-  stands01 = [
-    {
-      img: '../../../assets/Image/Coach/237.jpg',
-      hrf: 'https://www.facebook.com/janicewa2002',
-      name: '麗瑜', title: '', title01: '', title02: 'SSI 自由潛水 LV1 教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/233.jpg',
-      hrf: 'https://www.facebook.com/profile.php?id=100004661648909',
-      name: 'Kayla', title: 'SSI 開放水域潛水員教練', title01: 'SSI 自由潛水 LV1 教練', title03: 'SSI 美人魚教練'
-    },
-    {
-      img: '../../../assets/Image/Coach/236.jpg',
-      hrf: 'https://www.facebook.com/xueqian91',
-      name: '薛', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
-    },
-    {
-      img: '../../../assets/Image/Coach/236.jpg',
-      hrf: 'https://www.facebook.com/xueqian91',
-      name: '薛', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
-    },
-    {
-      img: '../../../assets/Image/Coach/236.jpg',
-      hrf: 'https://www.facebook.com/xueqian91',
-      name: '薛', title: '', title01: 'SSI 自由潛水 LV1 教練', title03: ''
-    },
-    {
-      img: '../../../assets/Image/Coach/235.jpg',
-      hrf: 'https://www.facebook.com/profile.php?id=100000343460900',
-      name: '江江', title: 'SSI 自由潛水 LV1 教練', title01: '', title03: ''
-    }
-  ]
-
 }
