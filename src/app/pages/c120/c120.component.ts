@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class C120Component implements OnInit {
 
-  active = 3;
+  active = 1;
 
   constructor() { }
 
