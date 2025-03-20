@@ -76,16 +76,18 @@ import { M100Component } from './pages/m100/m100.component';
 //import { MemberModule } from './modules/member/member.module';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
+import { J100Component } from './pages/j100/j100.component';
 
 const routes: Routes = [
   { path: 'qac001', component: Qac001Component },
   { path: 'qaa001', component: Qaa001Component },
-  { path: 'health001', component: Health001Component },/*
+  { path: 'j100', component: J100Component },/*
   { path: 'mc100', component: Mc100Component },
   { path: 'member', loadChildren: () => import('./modules/member/member.module').then((m) => m.MemberModule) },*/
-  { path: 'm100', component: M100Component },/*
-  { path: 'linkidiving', component: LinkidivingComponent },
-  { path: 'ec01', component: Ec01Component },*/
+  { path: 'm100', component: M100Component },
+  //{ path: 'linkidiving', component: LinkidivingComponent },
+  { path: 'health001', component: Health001Component },
+  //{ path: 'ec01', component: Ec01Component },
   { path: 'dz05', component: Dz05Component },
   { path: 'dz04', component: Dz04Component },
   { path: 'dz03', component: Dz03Component },
