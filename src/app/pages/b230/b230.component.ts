@@ -88,12 +88,12 @@ export class B230Component implements OnInit {
       img: '../../../assets/Image/Coach/247.jpg',
       hrf: '',
       name: '郁玲', title: 'SSI 助理教練'
-    },
+    },/*
     {
       img: '../../../assets/Image/Coach/217.jpg',
       hrf: '',
       name: '玟嬡 Aiko', title: '', title01: 'SSI 助理教練訓練官', title03: 'SSI 自由潛水助理教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/203.jpg',
       hrf: '',
@@ -284,11 +284,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: '熱狗', title: 'SSI 助理教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/220.jpg',
       hrf: '',
       name: '智偉', title: 'SSI 助理教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/136.jpg',
       hrf: '',
