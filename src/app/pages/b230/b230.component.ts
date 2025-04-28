@@ -299,11 +299,11 @@ export class B230Component implements OnInit {
       hrf: '',
       name: 'JJ', title: 'SSI 助理教練'
     },
-    {
+    /*{
       img: '../../../assets/Image/Coach/201.jpg',
       hrf: '',
       name: '于堯', title: 'SSI 助理教練'
-    },
+    },*/
     {
       img: '../../../assets/Image/Coach/221.jpg',
       hrf: '',
