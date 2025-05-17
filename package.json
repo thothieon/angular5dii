@@ -26,6 +26,7 @@
     "@firebase/auth": "^1.5.1",
     "@firebase/functions": "^0.7.5",
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "@popperjs/core": "^2.11.7",
     "@techiediaries/ngx-qrcode": "^9.1.0",
     "@types/chart.js": "^2.9.34",
