@@ -1,48 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { Routes } from '@angular/router';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
 
-export interface Course { 
-  id: string;
-  first: string; 
-  last: string; 
-  handle: string; 
-}
-
-export interface Activity { 
-  id: string;
-  first: string; 
-  last: string; 
-  handle: string; 
-}
+//import { DealerComponent } from '../../components/dealer/dealer.component';
+import { FewalbumsComponent } from '../../components/fewalbums/fewalbums.component';
+import { FootComponent } from '../../components/foot/foot.component';
+import { HearsayComponent } from '../../components/hearsay/hearsay.component';
+import { HeadComponent } from '../../components/head/head.component';
+import { LinkComponent } from '../../components/link/link.component';
 
 @Component({
   selector: 'app-begin',
+  standalone: true,
+  imports: [
+    //DealerComponent,
+    HeadComponent,
+    HearsayComponent,
+    LinkComponent,
+    FewalbumsComponent,
+    FootComponent
+  ],
   templateUrl: './begin.component.html',
-  styleUrls: ['./begin.component.scss']
+  styleUrl: './begin.component.scss'
 })
-export class BeginComponent implements OnInit {
-
-  private coursesCollection: AngularFirestoreCollection<Course>;
-  courses: Observable<Course[]>;
-  private activitysCollection: AngularFirestoreCollection<Activity>;
-  activitys: Observable<Activity[]>;
-  constructor(private afs: AngularFirestore) {
-    this.coursesCollection = afs.collection<Course>('iDiving/course/keycourse');
-    this.courses = this.coursesCollection.valueChanges();
-    this.activitysCollection = afs.collection<Activity>('iDiving/activity/keyactivity');
-    this.activitys = this.activitysCollection.valueChanges();
-  }
-  addItem(
-    routes: Routes,
-    course: Course, 
-    activitys: Activity) {
-    this.coursesCollection.add(course);
-    this.activitysCollection.add(activitys);
-  }
-
-  ngOnInit(): void {
-  }
+export class BeginComponent {
 
 }
