@@ -8,13 +8,13 @@ import { HeadComponent } from '../../components/head/head.component';
 
 @Component({
   selector: 'app-c101',
-    standalone: true,
-    imports: [
-      CommonModule,
-      NgbNavModule,
-      HeadComponent,
-      FootComponent
-    ],
+  standalone: true,
+  imports: [
+    CommonModule,
+    NgbNavModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './c101.component.html',
   styleUrls: ['./c101.component.scss']
 })

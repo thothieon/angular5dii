@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
-export interface Equipmentbcs { 
-  id: string;
-  img: string; 
-  label: string; 
-  name: string; 
-  price: string; 
-  title: string; 
-}
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
 
-export interface Equipmentrms { 
+
+export interface Equipment {
   id: string;
   img: string; 
   label: string; 
@@ -23,6 +21,13 @@ export interface Equipmentrms {
 
 @Component({
   selector: 'app-b320',
+  standalone: true,
+  imports: [
+    CommonModule,
+    NgbNavModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './b320.component.html',
   styleUrls: ['./b320.component.scss']
 })
@@ -30,84 +35,23 @@ export class B320Component implements OnInit {
 
   active = 1;
 
-  // 新增屬性及內容
-  stands = [
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能將配重袋鬆脫，配重袋裝填只需插入口袋即可”卡住”。'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1DymrwxurBFpIVrwBNDaRfyvlaE909Yax',
-      name: 'Aqualung PRO HD BCD', 
-      price: '17,500',
-      title: 'Pro HD配備整合式配重系統，簡單一拉就能\n將配重袋鬆脫，配重袋裝填只需插入口袋\n即可”卡住”。'
-    },
-  ]
+  firestore = inject(Firestore);
 
-  private equipmentbcsCollection: AngularFirestoreCollection<Equipmentbcs>;
-  equipmentbcs: Observable<Equipmentbcs[]>;
-  private equipmentrmsCollection: AngularFirestoreCollection<Equipmentrms>;
-  equipmentrms: Observable<Equipmentrms[]>;
+  // 設定三個 Collection 引用
+  private bcsRef = collection(this.firestore, 'iDiving/equipment/totalequipmentbc') as CollectionReference<Equipment>;
+  private rcsRef = collection(this.firestore, 'iDiving/equipment/totalequipmentrm') as CollectionReference<Equipment>;
 
-  constructor(private afs: AngularFirestore) {
-    this.equipmentbcsCollection = afs.collection<Equipmentbcs>('iDiving/equipment/totalequipmentbc');
-    this.equipmentbcs = this.equipmentbcsCollection.valueChanges();
-    this.equipmentrmsCollection = afs.collection<Equipmentrms>('iDiving/equipment/totalequipmentrm');
-    this.equipmentrms = this.equipmentrmsCollection.valueChanges();
+  // 透過 collectionData() 建立 observable
+  bcs$: Observable<Equipment[]> = collectionData(this.bcsRef, { idField: 'id' });
+  rcs$: Observable<Equipment[]> = collectionData(this.rcsRef, { idField: 'id' });
+
+  // 分別新增資料的方法
+  addMssItem(item: Equipment) {
+    return addDoc(this.bcsRef, item);
   }
-  addItem(equipmentbcs: Equipmentbcs, equipmentrms: Equipmentrms) {
-    this.equipmentbcsCollection.add(equipmentbcs);
-    this.equipmentrmsCollection.add(equipmentrms);
+
+  addHbsItem(item: Equipment) {
+    return addDoc(this.rcsRef, item);
   }
 
   ngOnInit(): void {

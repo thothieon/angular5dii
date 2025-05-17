@@ -1,10 +1,17 @@
 import { Routes } from '@angular/router';
 
 
+import { About001Component } from './pages/about001/about001.component';
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
+import { B211Component } from './pages/b211/b211.component';
+import { B212Component } from './pages/b212/b212.component';
+import { B230Component } from './pages/b230/b230.component';
 import { B240Component } from './pages/b240/b240.component';
+import { B310Component } from './pages/b310/b310.component';
+import { B320Component } from './pages/b320/b320.component';
 import { B400Component } from './pages/b400/b400.component';
+import { B411Component } from './pages/b411/b411.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
@@ -47,6 +54,7 @@ import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
 import { Dz05Component } from './pages/dz05/dz05.component';
 import { Health001Component } from './pages/health001/health001.component';
+import { M100Component } from './pages/m100/m100.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { J100Component } from './pages/j100/j100.component';
@@ -56,6 +64,7 @@ export const routes: Routes = [
     { path: 'j100', component: J100Component },
     { path: 'qac001', component: Qac001Component },
     { path: 'qaa001', component: Qaa001Component },
+    { path: 'm100', component: M100Component },
     { path: 'health001', component: Health001Component },
     { path: 'dz05', component: Dz05Component },
     { path: 'dz04', component: Dz04Component },
@@ -100,8 +109,15 @@ export const routes: Routes = [
     { path: 'c130', component: C130Component },
     { path: 'c120', component: C120Component },
     { path: 'c101', component: C101Component },
+    { path: 'b411', component: B411Component },
     { path: 'b400', component: B400Component },
+    { path: 'b320', component: B320Component },
+    { path: 'b310', component: B310Component },
     { path: 'b240', component: B240Component },
+    { path: 'b230', component: B230Component },
+    { path: 'b212', component: B212Component },
+    { path: 'b211', component: B211Component },
     { path: 'bz01', component: Bz01Component },
+    { path: 'about001', component: About001Component },
     { path: '', component: BeginComponent }
 ];
