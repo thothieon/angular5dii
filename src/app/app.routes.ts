@@ -14,6 +14,15 @@ import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
 import { C510Component } from './pages/c510/c510.component';
 import { C610Component } from './pages/c610/c610.component';
+import { Cfd110Component } from './pages/cfd110/cfd110.component';
+import { Cfd120Component } from './pages/cfd120/cfd120.component';
+import { Cfd130Component } from './pages/cfd130/cfd130.component';
+import { Cfd131Component } from './pages/cfd131/cfd131.component';
+import { Cfd140Component } from './pages/cfd140/cfd140.component';
+import { Cfd210Component } from './pages/cfd210/cfd210.component';
+import { Cfd220Component } from './pages/cfd220/cfd220.component';
+import { Cfd310Component } from './pages/cfd310/cfd310.component';
+import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Ccr100Component } from './pages/ccr100/ccr100.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
 import { J100Component } from './pages/j100/j100.component';
@@ -22,6 +31,16 @@ import { J100Component } from './pages/j100/j100.component';
 export const routes: Routes = [
     { path: 'j100', component: J100Component },
     { path: 'coc100', component: Coc100Component },
+    { path: 'cfdc210', component: Cfdc210Component },
+    { path: 'cfd310', component: Cfd310Component },
+    { path: 'cfd220', component: Cfd220Component },
+    { path: 'cfd210', component: Cfd210Component },
+    { path: 'cfd140', component: Cfd140Component },
+    { path: 'cfd131', component: Cfd131Component },
+    { path: 'cfd130', component: Cfd130Component },
+    { path: 'cfd130', component: Cfd130Component },
+    { path: 'cfd120', component: Cfd120Component },
+    { path: 'cfd110', component: Cfd110Component },
     { path: 'ccr100', component: Ccr100Component },
     { path: 'c610', component: C610Component },
     { path: 'c510', component: C510Component },
