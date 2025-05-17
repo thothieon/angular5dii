@@ -5,7 +5,6 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FootComponent } from '../../components/foot/foot.component';
 import { HeadComponent } from '../../components/head/head.component';
-import { PaymentmethodComponent } from '../../components/paymentmethod/paymentmethod.component';
 
 @Component({
   selector: 'app-c430',
@@ -14,8 +13,7 @@ import { PaymentmethodComponent } from '../../components/paymentmethod/paymentme
     CommonModule,
     NgbNavModule,
     HeadComponent,
-    FootComponent,
-    PaymentmethodComponent
+    FootComponent
   ],
   templateUrl: './c430.component.html',
   styleUrls: ['./c430.component.scss']

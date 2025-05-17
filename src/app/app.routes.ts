@@ -14,8 +14,15 @@ import { C420Component } from './pages/c420/c420.component';
 import { C430Component } from './pages/c430/c430.component';
 import { C510Component } from './pages/c510/c510.component';
 import { C610Component } from './pages/c610/c610.component';
+import { Ccr100Component } from './pages/ccr100/ccr100.component';
+import { Coc100Component } from './pages/coc100/coc100.component';
+import { J100Component } from './pages/j100/j100.component';
+
 
 export const routes: Routes = [
+    { path: 'j100', component: J100Component },
+    { path: 'coc100', component: Coc100Component },
+    { path: 'ccr100', component: Ccr100Component },
     { path: 'c610', component: C610Component },
     { path: 'c510', component: C510Component },
     { path: 'c430', component: C430Component },
