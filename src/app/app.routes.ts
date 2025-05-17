@@ -11,8 +11,14 @@ import { C312Component } from './pages/c312/c312.component';
 import { C313Component } from './pages/c313/c313.component';
 import { C410Component } from './pages/c410/c410.component';
 import { C420Component } from './pages/c420/c420.component';
+import { C430Component } from './pages/c430/c430.component';
+import { C510Component } from './pages/c510/c510.component';
+import { C610Component } from './pages/c610/c610.component';
 
 export const routes: Routes = [
+    { path: 'c610', component: C610Component },
+    { path: 'c510', component: C510Component },
+    { path: 'c430', component: C430Component },
     { path: 'c420', component: C420Component },
     { path: 'c410', component: C410Component },
     { path: 'c313', component: C313Component },
