@@ -40,7 +40,7 @@
                     </th>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let activity of activitys | async">
+                    <tr *ngFor="let activity of activitys$ | async">
                         <!-- <th scope="row">{{activity.id}}</th> -->
                         <td class="fs-6">{{activity.location}}</td>
                         <td class="fs-6">{{activity.date}}</td>

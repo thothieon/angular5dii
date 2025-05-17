@@ -3,6 +3,8 @@ import { Routes } from '@angular/router';
 
 import { BeginComponent } from './pages/begin/begin.component';
 import { Bz01Component } from './pages/bz01/bz01.component';
+import { B240Component } from './pages/b240/b240.component';
+import { B400Component } from './pages/b400/b400.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
@@ -28,8 +30,24 @@ import { Ccr100Component } from './pages/ccr100/ccr100.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
 import { Cp01Component } from './pages/cp01/cp01.component';
 import { Cz01Component } from './pages/cz01/cz01.component';
+import { D120Component } from './pages/d120/d120.component';
+import { D130Component } from './pages/d130/d130.component';
+import { D130aComponent } from './pages/d130a/d130a.component';
+import { D140Component } from './pages/d140/d140.component';
+import { D150Component } from './pages/d150/d150.component';
+import { D160Component } from './pages/d160/d160.component';
+import { D230Component } from './pages/d230/d230.component';
+import { D310Component } from './pages/d310/d310.component';
+import { D340Component } from './pages/d340/d340.component';
+import { D410Component } from './pages/d410/d410.component';
+import { D420Component } from './pages/d420/d420.component';
+import { Dz01Component } from './pages/dz01/dz01.component';
+import { Dz02Component } from './pages/dz02/dz02.component';
+import { Dz03Component } from './pages/dz03/dz03.component';
+import { Dz04Component } from './pages/dz04/dz04.component';
 import { Dz05Component } from './pages/dz05/dz05.component';
 import { Health001Component } from './pages/health001/health001.component';
+import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
 import { J100Component } from './pages/j100/j100.component';
 
@@ -37,8 +55,24 @@ import { J100Component } from './pages/j100/j100.component';
 export const routes: Routes = [
     { path: 'j100', component: J100Component },
     { path: 'qac001', component: Qac001Component },
+    { path: 'qaa001', component: Qaa001Component },
     { path: 'health001', component: Health001Component },
     { path: 'dz05', component: Dz05Component },
+    { path: 'dz04', component: Dz04Component },
+    { path: 'dz03', component: Dz03Component },
+    { path: 'dz02', component: Dz02Component },
+    { path: 'dz01', component: Dz01Component },
+    { path: 'd420', component: D420Component },
+    { path: 'd410', component: D410Component },
+    { path: 'd340', component: D340Component },
+    { path: 'd310', component: D310Component },
+    { path: 'd230', component: D230Component },
+    { path: 'd160', component: D160Component },
+    { path: 'd150', component: D150Component },
+    { path: 'd140', component: D140Component },
+    { path: 'd130a', component: D130aComponent },
+    { path: 'd130', component: D130Component },
+    { path: 'd120', component: D120Component },
     { path: 'cz01', component: Cz01Component },
     { path: 'cp01', component: Cp01Component },
     { path: 'coc100', component: Coc100Component },
@@ -66,6 +100,8 @@ export const routes: Routes = [
     { path: 'c130', component: C130Component },
     { path: 'c120', component: C120Component },
     { path: 'c101', component: C101Component },
+    { path: 'b400', component: B400Component },
+    { path: 'b240', component: B240Component },
     { path: 'bz01', component: Bz01Component },
     { path: '', component: BeginComponent }
 ];

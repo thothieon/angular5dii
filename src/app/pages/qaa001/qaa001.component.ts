@@ -1,7 +1,12 @@
 //import { MdbTablePaginationComponent, MdbTableDirective } from 'angular-bootstrap-md';
-import { Component, OnInit, ViewChild, HostListener, AfterViewInit, ChangeDetectorRef } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { Component, OnInit, inject, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
 
 export interface Infos { 
   id: string;
@@ -11,38 +16,33 @@ export interface Infos {
 
 @Component({
   selector: 'app-qaa001',
+  standalone: true,
+  imports: [
+    CommonModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './qaa001.component.html',
   styleUrls: ['./qaa001.component.scss']
 })
 export class Qaa001Component implements OnInit, AfterViewInit {
 
-  //@ViewChild(MdbTablePaginationComponent, { static: true }) mdbTablePagination: MdbTablePaginationComponent;
-  //@ViewChild(MdbTableDirective, { static: true }) mdbTable: MdbTableDirective
-
   previous: any = [];
+  
+  firestore = inject(Firestore);
 
-  private hearsaytotalsCollection: AngularFirestoreCollection<Infos>;
-  infos: Observable<Infos[]>;
-  constructor(private cdRef: ChangeDetectorRef, private afs: AngularFirestore) {
-    this.hearsaytotalsCollection = afs.collection<Infos>('/iDiving/begin/qaa');
-    this.infos = this.hearsaytotalsCollection.valueChanges();
-  }
+  infosRef = collection(this.firestore, '/iDiving/begin/qaa') as CollectionReference<Infos>;
+  infos$: Observable<Infos[]> = collectionData(this.infosRef, { idField: 'id' });
 
-  addItem(infos: Infos) {
-    this.hearsaytotalsCollection.add(infos);
+  constructor(private cdRef: ChangeDetectorRef) {}
+
+  addItem(item: Infos) {
+    return addDoc(this.infosRef, item);
   }
 
   ngOnInit(): void {
-    //this.mdbTable.setDataSource(this.infos);
-    //this.infos = this.mdbTable.getDataSource();
-    //this.previous = this.mdbTable.getDataSource();
   }
 
   ngAfterViewInit() {
-    //this.mdbTablePagination.setMaxVisibleItemsNumberTo(5);
-
-    //this.mdbTablePagination.calculateFirstItemIndex();
-    //this.mdbTablePagination.calculateLastItemIndex();
-    //this.cdRef.detectChanges();
   }
 }

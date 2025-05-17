@@ -28,14 +28,7 @@ export class Qac001Component implements OnInit, AfterViewInit {
 
   previous: any = [];
 
-  /**private hearsaytotalsCollection: AngularFirestoreCollection<Infos>;
-  infos: Observable<Infos[]>;
-  constructor(private cdRef: ChangeDetectorRef, private afs: AngularFirestore) {
-    this.hearsaytotalsCollection = afs.collection<Infos>('/iDiving/begin/qac');
-    this.infos = this.hearsaytotalsCollection.valueChanges();
-  }*/
-
-  private firestore = inject(Firestore);
+  private firestore = inject(Firestore);  
   private infosRef = collection(this.firestore, 'iDiving/begin/qac') as CollectionReference<Infos>;
   infos$: Observable<Infos[]> = collectionData(this.infosRef, { idField: 'id' });
 

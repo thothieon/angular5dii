@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 import { FootComponent } from '../../components/foot/foot.component';
@@ -17,6 +18,7 @@ export interface Activity {
   selector: 'app-dz01',
   standalone: true,
   imports: [
+    CommonModule,
     HeadComponent,
     FootComponent
   ],
@@ -25,14 +27,13 @@ export interface Activity {
 })
 export class Dz01Component implements OnInit {
 
-  private activitysCollection: AngularFirestoreCollection<Activity>;
-  activitys: Observable<Activity[]>;
-  constructor(private afs: AngularFirestore) {
-    this.activitysCollection = afs.collection<Activity>('iDiving/activity/totalactivity');
-    this.activitys = this.activitysCollection.valueChanges();
-  }
-  addItem(activitys: Activity) {
-    this.activitysCollection.add(activitys);
+  firestore = inject(Firestore);
+
+  private activityRef = collection(this.firestore, 'iDiving/activity/totalactivity') as CollectionReference<Activity>;
+  activitys$: Observable<Activity[]> = collectionData(this.activityRef, { idField: 'id' });
+
+  async addItem(activity: Activity) {
+    await addDoc(this.activityRef, activity);
   }
 
   ngOnInit(): void {

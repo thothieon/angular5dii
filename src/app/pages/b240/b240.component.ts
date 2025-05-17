@@ -1,7 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { CommonModule } from '@angular/common';
+
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
 
 export interface Fewalbums { 
   id: string;
@@ -13,6 +18,12 @@ export interface Fewalbums {
 
 @Component({
   selector: 'app-b240',
+  standalone: true,
+  imports: [
+    CommonModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './b240.component.html',
   styleUrls: ['./b240.component.scss']
 })
@@ -25,16 +36,13 @@ export class B240Component implements OnInit {
     { img:'../../../assets/Image/FUNDIVE/L1030.png',hrf:'https://www.facebook.com/janicewa2002',name:'墾丁', title:'2021 / 11 / 20 ~ 21' }
   ]*/
 
-  private fewalbumsitemCollection: AngularFirestoreCollection<Fewalbums>;
-  fewalbumsitems: Observable<Fewalbums[]>;
+  private firestore = inject(Firestore);
 
-  constructor(private afs: AngularFirestore) {
-    this.fewalbumsitemCollection = afs.collection<Fewalbums>('iDiving/activity/fewalbums');
-    this.fewalbumsitems = this.fewalbumsitemCollection.valueChanges();
-  }
-  
-  addItem(fewalbumsitems: Fewalbums) {
-    this.fewalbumsitemCollection.add(fewalbumsitems);
+  private fewalbumsRef = collection(this.firestore, 'iDiving/activity/fewalbums') as CollectionReference<Fewalbums>;
+  fewalbumsitems$: Observable<Fewalbums[]> = collectionData(this.fewalbumsRef, { idField: 'id' });
+
+  addItem(fewalbums: Fewalbums) {
+    return addDoc(this.fewalbumsRef, fewalbums);
   }
 
   ngOnInit(): void {
