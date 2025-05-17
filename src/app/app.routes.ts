@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 
 import { BeginComponent } from './pages/begin/begin.component';
+import { Bz01Component } from './pages/bz01/bz01.component';
 import { C101Component } from './pages/c101/c101.component';
 import { C120Component } from './pages/c120/c120.component';
 import { C130Component } from './pages/c130/c130.component';
@@ -25,11 +26,21 @@ import { Cfd310Component } from './pages/cfd310/cfd310.component';
 import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
 import { Ccr100Component } from './pages/ccr100/ccr100.component';
 import { Coc100Component } from './pages/coc100/coc100.component';
+import { Cp01Component } from './pages/cp01/cp01.component';
+import { Cz01Component } from './pages/cz01/cz01.component';
+import { Dz05Component } from './pages/dz05/dz05.component';
+import { Health001Component } from './pages/health001/health001.component';
+import { Qac001Component } from './pages/qac001/qac001.component';
 import { J100Component } from './pages/j100/j100.component';
 
 
 export const routes: Routes = [
     { path: 'j100', component: J100Component },
+    { path: 'qac001', component: Qac001Component },
+    { path: 'health001', component: Health001Component },
+    { path: 'dz05', component: Dz05Component },
+    { path: 'cz01', component: Cz01Component },
+    { path: 'cp01', component: Cp01Component },
     { path: 'coc100', component: Coc100Component },
     { path: 'cfdc210', component: Cfdc210Component },
     { path: 'cfd310', component: Cfd310Component },
@@ -55,5 +66,6 @@ export const routes: Routes = [
     { path: 'c130', component: C130Component },
     { path: 'c120', component: C120Component },
     { path: 'c101', component: C101Component },
+    { path: 'bz01', component: Bz01Component },
     { path: '', component: BeginComponent }
 ];

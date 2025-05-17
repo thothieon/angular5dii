@@ -46,12 +46,12 @@
                         <td>{{el.first}}</td>
                         <td>{{el.last}}</td>
                         <td>{{el.handle}}</td>-->
-                    <tr *ngFor="let course of courses | async ">
+                    <tr *ngFor="let course of Course$ | async ">
                         <!-- <th scope="row">{{course.id}}</th> -->
                         <td class="fs-6">{{course.name}}</td>
                         <td class="fs-6">{{course.date}}</td>
                         <td class="fs-6" style="white-space:nowrap">
-                            <a href="/#/cz01" style="text-decoration:none;">
+                            <a href="cz01" style="text-decoration:none;">
                                 {{course.state}}
                             </a>
                         </td> 
@@ -59,7 +59,7 @@
                 </tbody>
             </table>
             <br>
-            <button type="button" mdbBtn class="fs-6" color="primary" block="true" onclick="window.location.href='/#/'" mdbWavesEffect>回首頁</button>
+            <button type="button" mdbBtn class="fs-6" color="primary" block="true" onclick="window.location.href=''" mdbWavesEffect>回首頁</button>
             <br>
             <br>
             <br>

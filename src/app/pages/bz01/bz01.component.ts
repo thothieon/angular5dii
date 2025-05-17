@@ -1,7 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { CommonModule } from '@angular/common';
+
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
 
 export interface Course { 
   id: string;
@@ -12,6 +17,12 @@ export interface Course {
 
 @Component({
   selector: 'app-bz01',
+  standalone: true,
+  imports: [
+    CommonModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './bz01.component.html',
   styleUrls: ['./bz01.component.scss']
 })
@@ -26,16 +37,13 @@ export class Bz01Component implements OnInit {
 
   headElements = ['id', 'first', 'last', 'handle'];
 
-  private coursesCollection: AngularFirestoreCollection<Course>;
-  courses: Observable<Course[]>;
+  firestore = inject(Firestore);
 
-  constructor(private afs: AngularFirestore) {
-    this.coursesCollection = afs.collection<Course>('iDiving/course/totalcourse');
-    this.courses = this.coursesCollection.valueChanges();
-  }
+  private CourseRef = collection(this.firestore, 'iDiving/course/totalcourse') as CollectionReference<Course>;
+  Course$: Observable<Course[]> = collectionData(this.CourseRef);
 
-  addItem(course: Course) {
-    this.coursesCollection.add(course);
+  addItem(Courseitems: Course) {
+    return addDoc(this.CourseRef, Courseitems);
   }
 
   ngOnInit(): void {
