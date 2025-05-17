@@ -3,8 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  firebase: {
+  firebaseConfig: {
     apiKey: "AIzaSyBHB7pLLcOKgGzxSXSW8yUDoXWM356D2zc",
     authDomain: "idiving-littlehelper.firebaseapp.com",
     databaseURL: "https://idiving-littlehelper-default-rtdb.asia-southeast1.firebasedatabase.app",
