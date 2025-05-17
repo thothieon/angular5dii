@@ -9,8 +9,10 @@ import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
 import { C312Component } from './pages/c312/c312.component';
 import { C313Component } from './pages/c313/c313.component';
+import { C410Component } from './pages/c410/c410.component';
 
 export const routes: Routes = [
+    { path: 'c410', component: C410Component },
     { path: 'c313', component: C313Component },
     { path: 'c312', component: C312Component },
     { path: 'c310', component: C310Component },
