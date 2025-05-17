@@ -8,8 +8,10 @@ import { C130Component } from './pages/c130/c130.component';
 import { C210Component } from './pages/c210/c210.component';
 import { C310Component } from './pages/c310/c310.component';
 import { C312Component } from './pages/c312/c312.component';
+import { C313Component } from './pages/c313/c313.component';
 
 export const routes: Routes = [
+    { path: 'c313', component: C313Component },
     { path: 'c312', component: C312Component },
     { path: 'c310', component: C310Component },
     { path: 'c210', component: C210Component },
