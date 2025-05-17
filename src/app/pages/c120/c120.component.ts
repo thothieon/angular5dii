@@ -8,13 +8,13 @@ import { HeadComponent } from '../../components/head/head.component';
 
 @Component({
   selector: 'app-c120',
-    standalone: true,
-    imports: [
-      CommonModule,
-      NgbNavModule,
-      HeadComponent,
-      FootComponent
-    ],
+  standalone: true,
+  imports: [
+    CommonModule,
+    NgbNavModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './c120.component.html',
   styleUrls: ['./c120.component.scss']
 })
