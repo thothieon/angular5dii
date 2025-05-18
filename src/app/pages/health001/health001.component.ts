@@ -19,36 +19,47 @@ import { HeadComponent } from '../../components/head/head.component';
 })
 export class Health001Component implements AfterViewInit {
 
-  pdfSrc = "assets/pdf/2022_HealthStatement_Chinese_Traditional.pdf";
-
-  constructor() { }
+  pdfDoc!: PDFDocumentProxy;
+  currentPage = 1;
+  totalPages = 0;
+  scale = 1.5;
 
   ngAfterViewInit(): void {
-    
     GlobalWorkerOptions.workerSrc = 'assets/pdf/pdf.worker.min.mjs';
-    
-    const url = 'assets/pdf/2022_HealthStatement_Chinese_Traditional.pdf'; // 本地或遠端 PDF 檔案
+    const url = 'assets/pdf/2022_HealthStatement_Chinese_Traditional.pdf';
 
-    const loadingTask = getDocument(url);
-    loadingTask.promise.then((pdf: PDFDocumentProxy) => {
-      // 取得第一頁
-      pdf.getPage(1).then((page) => {
-        const canvas = document.getElementById('pdf-canvas') as HTMLCanvasElement;
-        const context = canvas.getContext('2d');
-
-        const viewport = page.getViewport({ scale: 1.5 });
-
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        const renderContext = {
-          canvasContext: context!,
-          viewport: viewport,
-        };
-
-        page.render(renderContext);
-      });
+    getDocument(url).promise.then((pdf: PDFDocumentProxy) => {
+      this.pdfDoc = pdf;
+      this.totalPages = pdf.numPages;
+      this.renderPage(this.currentPage);
     });
+  }
+
+  renderPage(pageNumber: number): void {
+    this.pdfDoc.getPage(pageNumber).then((page) => {
+      const canvas = document.getElementById('pdf-canvas') as HTMLCanvasElement;
+      const context = canvas.getContext('2d');
+      const viewport = page.getViewport({ scale: this.scale });
+
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      page.render({ canvasContext: context!, viewport });
+    });
+  }
+
+  nextPage(): void {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+      this.renderPage(this.currentPage);
+    }
+  }
+
+  prevPage(): void {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+      this.renderPage(this.currentPage);
+    }
   }
 
 }
