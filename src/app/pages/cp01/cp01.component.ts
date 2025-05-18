@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import {Sort, MatSortModule} from '@angular/material/sort';
 import {NgFor} from '@angular/common';
 
+import { CommonModule } from '@angular/common';
+
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
+
 export interface Dessert {
   type: string;
   name: string;
@@ -10,6 +17,13 @@ export interface Dessert {
 
 @Component({
   selector: 'app-cp01',
+    standalone: true,
+    imports: [
+      CommonModule,
+      NgbNavModule,
+      HeadComponent,
+      FootComponent
+    ],
   templateUrl: './cp01.component.html',
   styleUrls: ['./cp01.component.scss']
 })

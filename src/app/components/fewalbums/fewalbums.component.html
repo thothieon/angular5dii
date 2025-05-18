@@ -1,0 +1,89 @@
+<div>
+    <div class="row">
+        <h4 style="font-weight:bold;text-align: center;">活動照片</h4>
+
+        <div class="container" *ngFor="let fewalbumsitem of fewalbums$ | async " style="--count: 6">
+            <img src={{fewalbumsitem.t01}} alt="">
+            <img src={{fewalbumsitem.t02}} alt="">
+            <img src={{fewalbumsitem.t03}} alt="">
+            <img src={{fewalbumsitem.t04}} alt="">
+            <img src={{fewalbumsitem.t05}} alt="">
+            <img src={{fewalbumsitem.t06}} alt="">
+            <img src={{fewalbumsitem.t07}} alt="">
+            <img src={{fewalbumsitem.t08}} alt="">
+        </div>
+        <style>
+            html,
+            body {
+                margin: 0;
+                background-color: rgb(33, 35, 37);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                display: grid;
+                place-items: center;
+                /* 置中語法 */
+                min-height: 100vh;
+            }
+
+            :root {
+                --magnifier: 3;
+                /* 放大倍率 */
+                --gap: .5rem;
+                /* 物件之間的間隔 */
+                --transition: 0.5s;
+                /* 動態速率 */
+            }
+
+            .container {
+                width: 100vw;
+                height: 80vmin;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: var(--gap);
+                /* gap: grid 的物件間隔，亦也能套用在 flex 上 */
+            }
+
+            img {
+                --width: calc(100% / var(--count));
+                /* 圖片的數量使用外部傳入的變數進行計算 */
+                --brightness: 0.75;
+                --grayscale: 1;
+
+                width: var(--width);
+                transition: width var(--transition), filter var(--transition);
+                height: 100%;
+                filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+                object-fit: cover;
+                object-position: top center;
+                overflow: hidden;
+            }
+
+            .container:hover img:hover {
+                /* 當圖片被 hover 時，重新計算被 hover 圖片佔用的空間 */
+                /* 因為 flex 的屬性特性，因此實際的空間不會佔用到以下數值 */
+                /* 100 - (100 / 6) * 3 = 50 */
+                --width: calc(100% / var(--count) * var(--magnifier));
+                --brightness: 1.15;
+                --grayscale: 0;
+            }
+        </style>
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col" style="text-align:center;">
+            <br>
+            <!-- <button type="button" mdbBtn class="fs-6 btn btn-lg btn01 idiving-color btn-block" color="primary" block="true" onclick="window.location.href='/#/b240'" mdbWavesEffect>更多活動照片</button> -->
+            <!-- <button type="button" class="fs-6 btn btn-primary btn-lg" onclick="window.location.href='/#/b240'" >更多活動照片</button> -->
+            <a type="button" class="btn btn01 btn-primary btn-lg fs-6" href="/#/b240">更多活動照片</a>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>

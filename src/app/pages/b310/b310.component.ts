@@ -1,27 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { Firestore, collection, collectionData, CollectionReference, addDoc  } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
-export interface Equipmentmss { 
-  id: string;
-  img: string; 
-  label: string; 
-  name: string; 
-  price: string; 
-  title: string; 
-}
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
 
-export interface Equipmenthbs { 
-  id: string;
-  img: string; 
-  label: string; 
-  name: string; 
-  price: string; 
-  title: string; 
-}
-
-export interface Equipmentls { 
+export interface Equipment {
   id: string;
   img: string; 
   label: string; 
@@ -32,6 +20,13 @@ export interface Equipmentls {
 
 @Component({
   selector: 'app-b310',
+  standalone: true,
+  imports: [
+    CommonModule,
+    NgbNavModule,
+    HeadComponent,
+    FootComponent
+  ],
   templateUrl: './b310.component.html',
   styleUrls: ['./b310.component.scss']
 })
@@ -39,89 +34,29 @@ export class B310Component implements OnInit {
 
   active = 1;
 
-  // 新增屬性及內容 stands
-  /*eequipments = [
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    },
-    {
-      img: 'https://drive.google.com/uc?export=view&id=1_aUKzW9vgOZqqRt3VphwSOa1ilXZekgs',
-      name: 'TUSA', 
-      price: '70',
-      title: 'M212 雙面鏡 （水肺）\n特色：Freedom任意貼裙邊更加貼合臉型\n專利3D立體面鏡帶舒適不易滑落\n雙面鏡設計可更換近視鏡片'
-    }
-  ]*/
+  firestore = inject(Firestore);
 
-  private equipmentmssCollection: AngularFirestoreCollection<Equipmentmss>;
-  equipmentmss: Observable<Equipmentmss[]>;
-  private equipmenthbsCollection: AngularFirestoreCollection<Equipmenthbs>;
-  equipmenthbs: Observable<Equipmenthbs[]>;
-  private equipmentlsCollection: AngularFirestoreCollection<Equipmentls>;
-  equipmentls: Observable<Equipmentls[]>;
+  // 設定三個 Collection 引用
+  private mssRef = collection(this.firestore, 'iDiving/equipment/totalequipmentms') as CollectionReference<Equipment>;
+  private hbsRef = collection(this.firestore, 'iDiving/equipment/totalequipmenthb') as CollectionReference<Equipment>;
+  private lsRef  = collection(this.firestore, 'iDiving/equipment/totalequipmentl') as CollectionReference<Equipment>;
 
-  constructor(private afs: AngularFirestore) {
-    this.equipmentmssCollection = afs.collection<Equipmentmss>('iDiving/equipment/totalequipmentms');
-    this.equipmentmss = this.equipmentmssCollection.valueChanges();
-    this.equipmenthbsCollection = afs.collection<Equipmenthbs>('iDiving/equipment/totalequipmenthb');
-    this.equipmenthbs = this.equipmenthbsCollection.valueChanges();
-    this.equipmentlsCollection = afs.collection<Equipmentls>('iDiving/equipment/totalequipmentl');
-    this.equipmentls = this.equipmentlsCollection.valueChanges();
+  // 透過 collectionData() 建立 observable
+  mss$: Observable<Equipment[]> = collectionData(this.mssRef, { idField: 'id' });
+  hbs$: Observable<Equipment[]> = collectionData(this.hbsRef, { idField: 'id' });
+  ls$:  Observable<Equipment[]> = collectionData(this.lsRef,  { idField: 'id' });
+
+  // 分別新增資料的方法
+  addMssItem(item: Equipment) {
+    return addDoc(this.mssRef, item);
   }
-  addItem(equipmentmss: Equipmentmss, equipmenthbs: Equipmenthbs, equipmentls: Equipmentls) {
-    this.equipmentmssCollection.add(equipmentmss);
-    this.equipmenthbsCollection.add(equipmenthbs);
-    this.equipmentlsCollection.add(equipmentls);
+
+  addHbsItem(item: Equipment) {
+    return addDoc(this.hbsRef, item);
+  }
+
+  addLsItem(item: Equipment) {
+    return addDoc(this.lsRef, item);
   }
 
   ngOnInit(): void {

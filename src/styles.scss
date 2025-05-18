@@ -1,16 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@use 'bootstrap/scss/bootstrap';
 
-@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@use "@angular/material/prebuilt-themes/indigo-pink.css";
 
 // AG Grid
-@import 'ag-grid-community/styles/ag-grid.css';
-@import 'ag-grid-community/styles/ag-theme-alpine.css';
+///@import 'ag-grid-community/styles/ag-grid.css';
+///@import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 /* angular-calendar */
-@import "../node_modules/angular-calendar/css/angular-calendar.css";
+///@import "../node_modules/angular-calendar/css/angular-calendar.css";
 
 
 .idiving-color {

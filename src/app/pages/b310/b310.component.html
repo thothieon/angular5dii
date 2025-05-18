@@ -56,7 +56,7 @@
                     <ng-template ngbNavContent class="custom-class">
                         <br>
                         <div class="row justify-content-around">
-                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentms of equipmentmss | async" style="width:350px">
+                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentms of mss$ | async" style="width:350px">
                                 <div class="card">
                                     <br>
                                     <img class="card-img-top" src='{{equipmentms.img}}' alt="Card image" style="width:100%;">
@@ -79,7 +79,7 @@
                     <ng-template ngbNavContent>
                         <br>
                         <div class="row justify-content-around">
-                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmenthb of equipmenthbs | async" style="width:350px">
+                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmenthb of hbs$ | async" style="width:350px">
                                 <div class="card">
                                     <br>
                                     <img class="card-img-top" src='{{equipmenthb.img}}' alt="Card image" style="width:100%;">
@@ -102,7 +102,7 @@
                     <ng-template ngbNavContent>
                         <br>
                         <div class="row justify-content-around">
-                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentl of equipmentls | async" style="width:350px">
+                            <div class="col-6 col-sm-4 mb-4" *ngFor="let equipmentl of ls$ | async" style="width:350px">
                                 <div class="card">
                                     <br>
                                     <img class="card-img-top" src='{{equipmentl.img}}' alt="Card image" style="width:100%;">

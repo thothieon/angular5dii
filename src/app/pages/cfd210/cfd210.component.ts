@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { MatTableModule } from '@angular/material/table';
+
+import { FootComponent } from '../../components/foot/foot.component';
+import { HeadComponent } from '../../components/head/head.component';
+import { PaymentmethodComponent } from '../../components/paymentmethod/paymentmethod.component';
 
 export interface PeriodicElement {
   name: string;
@@ -15,6 +22,14 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
   selector: 'app-cfd210',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatTableModule,
+    HeadComponent,
+    FootComponent,
+    PaymentmethodComponent
+  ],
   templateUrl: './cfd210.component.html',
   styleUrls: ['./cfd210.component.scss']
 })
