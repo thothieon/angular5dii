@@ -22,7 +22,7 @@ import { PaymentmethodComponent } from '../../components/paymentmethod/paymentme
 })
 export class Cfd110Component implements OnInit {
 
-  active = 3;
+  active = 1;
 
   constructor() { }
 
