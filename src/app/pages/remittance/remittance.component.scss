@@ -1,0 +1,173 @@
+// ─── 主背景 ───────────────────────────────────────────
+.lt-page {
+  min-height: 100vh;
+  background-color: #67AACA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 60px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+// ─── 頂部 icon 列 ─────────────────────────────────────
+.lt-topbar {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 0;
+}
+
+.lt-topbar-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+}
+
+// ─── 個人資料區 ───────────────────────────────────────
+.lt-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.lt-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.lt-name {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.lt-bio {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+// ─── 社群小 icon 列 ───────────────────────────────────
+.lt-social-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.lt-social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.15s;
+
+  &:hover {
+    border-color: #ffffff;
+  }
+}
+
+// ─── 連結按鈕列 ───────────────────────────────────────
+.lt-links {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lt-link-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: none;
+  border-radius: 40px;
+  padding: 14px 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+  }
+}
+
+.lt-link-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &.ig-icon    { background-color: rgba(200, 80, 10, 0.5); }
+  &.fb-icon    { background-color: rgba(50, 80, 180, 0.4); }
+  &.line-icon  { background-color: rgba(0, 180, 0, 0.4); }
+  &.web-icon    { background-color: rgba(255, 255, 255, 0.25); }
+}
+
+.lt-link-label {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.lt-link-more {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  line-height: 1;
+}
+
+// ─── Footer ───────────────────────────────────────────
+.lt-footer {
+  margin-top: 48px;
+}
+
+.lt-footer-logo {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
