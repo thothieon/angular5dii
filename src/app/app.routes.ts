@@ -55,17 +55,21 @@ import { Dz03Component } from './pages/dz03/dz03.component';
 import { Dz04Component } from './pages/dz04/dz04.component';
 import { Dz05Component } from './pages/dz05/dz05.component';
 import { Health001Component } from './pages/health001/health001.component';
+import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
 import { M100Component } from './pages/m100/m100.component';
 import { Qaa001Component } from './pages/qaa001/qaa001.component';
 import { Qac001Component } from './pages/qac001/qac001.component';
+import { RemittanceComponent } from './pages/remittance/remittance.component';
 import { J100Component } from './pages/j100/j100.component';
 
 
 export const routes: Routes = [
     { path: 'j100', component: J100Component },
+    { path: 'remittance', component: RemittanceComponent },
     { path: 'qac001', component: Qac001Component },
     { path: 'qaa001', component: Qaa001Component },
     { path: 'm100', component: M100Component },
+    { path: 'linkidiving', component: LinkidivingComponent },
     { path: 'health001', component: Health001Component },
     { path: 'dz05', component: Dz05Component },
     { path: 'dz04', component: Dz04Component },
