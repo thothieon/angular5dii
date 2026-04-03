@@ -7,6 +7,7 @@ import { environment } from '../environments/environment';
 declare const gtag: Function;
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
