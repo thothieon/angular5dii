@@ -1,128 +1,64 @@
 import { Routes } from '@angular/router';
 
-
-import { About001Component } from './pages/about001/about001.component';
-import { BeginComponent } from './pages/begin/begin.component';
-import { Bz01Component } from './pages/bz01/bz01.component';
-import { B211Component } from './pages/b211/b211.component';
-import { B212Component } from './pages/b212/b212.component';
-import { B230Component } from './pages/b230/b230.component';
-import { B240Component } from './pages/b240/b240.component';
-import { B310Component } from './pages/b310/b310.component';
-import { B320Component } from './pages/b320/b320.component';
-import { B400Component } from './pages/b400/b400.component';
-import { B411Component } from './pages/b411/b411.component';
-import { C101Component } from './pages/c101/c101.component';
-import { C120Component } from './pages/c120/c120.component';
-import { C130Component } from './pages/c130/c130.component';
-import { C210Component } from './pages/c210/c210.component';
-import { C310Component } from './pages/c310/c310.component';
-import { C312Component } from './pages/c312/c312.component';
-import { C313Component } from './pages/c313/c313.component';
-import { C314Component } from './pages/c314/c314.component';
-import { C410Component } from './pages/c410/c410.component';
-import { C420Component } from './pages/c420/c420.component';
-import { C430Component } from './pages/c430/c430.component';
-import { C510Component } from './pages/c510/c510.component';
-import { C610Component } from './pages/c610/c610.component';
-import { Cfd110Component } from './pages/cfd110/cfd110.component';
-import { Cfd120Component } from './pages/cfd120/cfd120.component';
-import { Cfd130Component } from './pages/cfd130/cfd130.component';
-import { Cfd131Component } from './pages/cfd131/cfd131.component';
-import { Cfd140Component } from './pages/cfd140/cfd140.component';
-import { Cfd210Component } from './pages/cfd210/cfd210.component';
-import { Cfd220Component } from './pages/cfd220/cfd220.component';
-import { Cfd310Component } from './pages/cfd310/cfd310.component';
-import { Cfdc210Component } from './pages/cfdc210/cfdc210.component';
-import { Ccr100Component } from './pages/ccr100/ccr100.component';
-import { Coc100Component } from './pages/coc100/coc100.component';
-import { Cp01Component } from './pages/cp01/cp01.component';
-import { Cz01Component } from './pages/cz01/cz01.component';
-import { D120Component } from './pages/d120/d120.component';
-import { D130Component } from './pages/d130/d130.component';
-import { D130aComponent } from './pages/d130a/d130a.component';
-import { D140Component } from './pages/d140/d140.component';
-import { D150Component } from './pages/d150/d150.component';
-import { D160Component } from './pages/d160/d160.component';
-import { D230Component } from './pages/d230/d230.component';
-import { D310Component } from './pages/d310/d310.component';
-import { D340Component } from './pages/d340/d340.component';
-import { D410Component } from './pages/d410/d410.component';
-import { D420Component } from './pages/d420/d420.component';
-import { Dz01Component } from './pages/dz01/dz01.component';
-import { Dz02Component } from './pages/dz02/dz02.component';
-import { Dz03Component } from './pages/dz03/dz03.component';
-import { Dz04Component } from './pages/dz04/dz04.component';
-import { Dz05Component } from './pages/dz05/dz05.component';
-import { Health001Component } from './pages/health001/health001.component';
-import { LinkidivingComponent } from './pages/linkidiving/linkidiving.component';
-import { M100Component } from './pages/m100/m100.component';
-import { Qaa001Component } from './pages/qaa001/qaa001.component';
-import { Qac001Component } from './pages/qac001/qac001.component';
-import { RemittanceComponent } from './pages/remittance/remittance.component';
-import { J100Component } from './pages/j100/j100.component';
-
-
 export const routes: Routes = [
-    { path: 'j100', component: J100Component },
-    { path: 'remittance', component: RemittanceComponent },
-    { path: 'qac001', component: Qac001Component },
-    { path: 'qaa001', component: Qaa001Component },
-    { path: 'm100', component: M100Component },
-    { path: 'linkidiving', component: LinkidivingComponent },
-    { path: 'health001', component: Health001Component },
-    { path: 'dz05', component: Dz05Component },
-    { path: 'dz04', component: Dz04Component },
-    { path: 'dz03', component: Dz03Component },
-    { path: 'dz02', component: Dz02Component },
-    { path: 'dz01', component: Dz01Component },
-    { path: 'd420', component: D420Component },
-    { path: 'd410', component: D410Component },
-    { path: 'd340', component: D340Component },
-    { path: 'd310', component: D310Component },
-    { path: 'd230', component: D230Component },
-    { path: 'd160', component: D160Component },
-    { path: 'd150', component: D150Component },
-    { path: 'd140', component: D140Component },
-    { path: 'd130a', component: D130aComponent },
-    { path: 'd130', component: D130Component },
-    { path: 'd120', component: D120Component },
-    { path: 'cz01', component: Cz01Component },
-    { path: 'cp01', component: Cp01Component },
-    { path: 'coc100', component: Coc100Component },
-    { path: 'cfdc210', component: Cfdc210Component },
-    { path: 'cfd310', component: Cfd310Component },
-    { path: 'cfd220', component: Cfd220Component },
-    { path: 'cfd210', component: Cfd210Component },
-    { path: 'cfd140', component: Cfd140Component },
-    { path: 'cfd131', component: Cfd131Component },
-    { path: 'cfd130', component: Cfd130Component },
-    { path: 'cfd120', component: Cfd120Component },
-    { path: 'cfd110', component: Cfd110Component },
-    { path: 'ccr100', component: Ccr100Component },
-    { path: 'c610', component: C610Component },
-    { path: 'c510', component: C510Component },
-    { path: 'c430', component: C430Component },
-    { path: 'c420', component: C420Component },
-    { path: 'c410', component: C410Component },
-    { path: 'c314', component: C314Component },
-    { path: 'c313', component: C313Component },
-    { path: 'c312', component: C312Component },
-    { path: 'c310', component: C310Component },
-    { path: 'c210', component: C210Component },
-    { path: 'c130', component: C130Component },
-    { path: 'c130', component: C130Component },
-    { path: 'c120', component: C120Component },
-    { path: 'c101', component: C101Component },
-    { path: 'b411', component: B411Component },
-    { path: 'b400', component: B400Component },
-    { path: 'b320', component: B320Component },
-    { path: 'b310', component: B310Component },
-    { path: 'b240', component: B240Component },
-    { path: 'b230', component: B230Component },
-    { path: 'b212', component: B212Component },
-    { path: 'b211', component: B211Component },
-    { path: 'bz01', component: Bz01Component },
-    { path: 'about001', component: About001Component },
-    { path: '', component: BeginComponent }
+    { path: 'j100', loadComponent: () => import('./pages/j100/j100.component').then(m => m.J100Component) },
+    { path: 'remittance', loadComponent: () => import('./pages/remittance/remittance.component').then(m => m.RemittanceComponent) },
+    { path: 'qac001', loadComponent: () => import('./pages/qac001/qac001.component').then(m => m.Qac001Component) },
+    { path: 'qaa001', loadComponent: () => import('./pages/qaa001/qaa001.component').then(m => m.Qaa001Component) },
+    { path: 'm100', loadComponent: () => import('./pages/m100/m100.component').then(m => m.M100Component) },
+    { path: 'linkidiving', loadComponent: () => import('./pages/linkidiving/linkidiving.component').then(m => m.LinkidivingComponent) },
+    { path: 'health001', loadComponent: () => import('./pages/health001/health001.component').then(m => m.Health001Component) },
+    { path: 'dz05', loadComponent: () => import('./pages/dz05/dz05.component').then(m => m.Dz05Component) },
+    { path: 'dz04', loadComponent: () => import('./pages/dz04/dz04.component').then(m => m.Dz04Component) },
+    { path: 'dz03', loadComponent: () => import('./pages/dz03/dz03.component').then(m => m.Dz03Component) },
+    { path: 'dz02', loadComponent: () => import('./pages/dz02/dz02.component').then(m => m.Dz02Component) },
+    { path: 'dz01', loadComponent: () => import('./pages/dz01/dz01.component').then(m => m.Dz01Component) },
+    { path: 'd420', loadComponent: () => import('./pages/d420/d420.component').then(m => m.D420Component) },
+    { path: 'd410', loadComponent: () => import('./pages/d410/d410.component').then(m => m.D410Component) },
+    { path: 'd340', loadComponent: () => import('./pages/d340/d340.component').then(m => m.D340Component) },
+    { path: 'd310', loadComponent: () => import('./pages/d310/d310.component').then(m => m.D310Component) },
+    { path: 'd230', loadComponent: () => import('./pages/d230/d230.component').then(m => m.D230Component) },
+    { path: 'd160', loadComponent: () => import('./pages/d160/d160.component').then(m => m.D160Component) },
+    { path: 'd150', loadComponent: () => import('./pages/d150/d150.component').then(m => m.D150Component) },
+    { path: 'd140', loadComponent: () => import('./pages/d140/d140.component').then(m => m.D140Component) },
+    { path: 'd130a', loadComponent: () => import('./pages/d130a/d130a.component').then(m => m.D130aComponent) },
+    { path: 'd130', loadComponent: () => import('./pages/d130/d130.component').then(m => m.D130Component) },
+    { path: 'd120', loadComponent: () => import('./pages/d120/d120.component').then(m => m.D120Component) },
+    { path: 'cz01', loadComponent: () => import('./pages/cz01/cz01.component').then(m => m.Cz01Component) },
+    { path: 'cp01', loadComponent: () => import('./pages/cp01/cp01.component').then(m => m.Cp01Component) },
+    { path: 'coc100', loadComponent: () => import('./pages/coc100/coc100.component').then(m => m.Coc100Component) },
+    { path: 'cfdc210', loadComponent: () => import('./pages/cfdc210/cfdc210.component').then(m => m.Cfdc210Component) },
+    { path: 'cfd310', loadComponent: () => import('./pages/cfd310/cfd310.component').then(m => m.Cfd310Component) },
+    { path: 'cfd220', loadComponent: () => import('./pages/cfd220/cfd220.component').then(m => m.Cfd220Component) },
+    { path: 'cfd210', loadComponent: () => import('./pages/cfd210/cfd210.component').then(m => m.Cfd210Component) },
+    { path: 'cfd140', loadComponent: () => import('./pages/cfd140/cfd140.component').then(m => m.Cfd140Component) },
+    { path: 'cfd131', loadComponent: () => import('./pages/cfd131/cfd131.component').then(m => m.Cfd131Component) },
+    { path: 'cfd130', loadComponent: () => import('./pages/cfd130/cfd130.component').then(m => m.Cfd130Component) },
+    { path: 'cfd120', loadComponent: () => import('./pages/cfd120/cfd120.component').then(m => m.Cfd120Component) },
+    { path: 'cfd110', loadComponent: () => import('./pages/cfd110/cfd110.component').then(m => m.Cfd110Component) },
+    { path: 'ccr100', loadComponent: () => import('./pages/ccr100/ccr100.component').then(m => m.Ccr100Component) },
+    { path: 'c610', loadComponent: () => import('./pages/c610/c610.component').then(m => m.C610Component) },
+    { path: 'c510', loadComponent: () => import('./pages/c510/c510.component').then(m => m.C510Component) },
+    { path: 'c430', loadComponent: () => import('./pages/c430/c430.component').then(m => m.C430Component) },
+    { path: 'c420', loadComponent: () => import('./pages/c420/c420.component').then(m => m.C420Component) },
+    { path: 'c410', loadComponent: () => import('./pages/c410/c410.component').then(m => m.C410Component) },
+    { path: 'c314', loadComponent: () => import('./pages/c314/c314.component').then(m => m.C314Component) },
+    { path: 'c313', loadComponent: () => import('./pages/c313/c313.component').then(m => m.C313Component) },
+    { path: 'c312', loadComponent: () => import('./pages/c312/c312.component').then(m => m.C312Component) },
+    { path: 'c310', loadComponent: () => import('./pages/c310/c310.component').then(m => m.C310Component) },
+    { path: 'c210', loadComponent: () => import('./pages/c210/c210.component').then(m => m.C210Component) },
+    { path: 'c130', loadComponent: () => import('./pages/c130/c130.component').then(m => m.C130Component) },
+    { path: 'c120', loadComponent: () => import('./pages/c120/c120.component').then(m => m.C120Component) },
+    { path: 'c101', loadComponent: () => import('./pages/c101/c101.component').then(m => m.C101Component) },
+    { path: 'b411', loadComponent: () => import('./pages/b411/b411.component').then(m => m.B411Component) },
+    { path: 'b400', loadComponent: () => import('./pages/b400/b400.component').then(m => m.B400Component) },
+    { path: 'b320', loadComponent: () => import('./pages/b320/b320.component').then(m => m.B320Component) },
+    { path: 'b310', loadComponent: () => import('./pages/b310/b310.component').then(m => m.B310Component) },
+    { path: 'b240', loadComponent: () => import('./pages/b240/b240.component').then(m => m.B240Component) },
+    { path: 'b230', loadComponent: () => import('./pages/b230/b230.component').then(m => m.B230Component) },
+    { path: 'b212', loadComponent: () => import('./pages/b212/b212.component').then(m => m.B212Component) },
+    { path: 'b211', loadComponent: () => import('./pages/b211/b211.component').then(m => m.B211Component) },
+    { path: 'bz01', loadComponent: () => import('./pages/bz01/bz01.component').then(m => m.Bz01Component) },
+    { path: 'about001', loadComponent: () => import('./pages/about001/about001.component').then(m => m.About001Component) },
+    { path: '', loadComponent: () => import('./pages/begin/begin.component').then(m => m.BeginComponent) }
 ];
