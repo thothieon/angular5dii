@@ -97,7 +97,6 @@ export const routes: Routes = [
     { path: 'cfd140', component: Cfd140Component },
     { path: 'cfd131', component: Cfd131Component },
     { path: 'cfd130', component: Cfd130Component },
-    { path: 'cfd130', component: Cfd130Component },
     { path: 'cfd120', component: Cfd120Component },
     { path: 'cfd110', component: Cfd110Component },
     { path: 'ccr100', component: Ccr100Component },
