@@ -9,6 +9,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedMaterialModule } from '../app/shared-material/shared-material.module';
 
 export const appConfig: ApplicationConfig = {
@@ -19,6 +20,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withHashLocation()),
     provideHttpClient(),
     importProvidersFrom(
+      FormsModule,
+      ReactiveFormsModule,
       SharedMaterialModule
     )
   ]

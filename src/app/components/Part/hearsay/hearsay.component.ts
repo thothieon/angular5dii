@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
-export interface Hearsay { 
+export interface Hearsay {
   id: string;
-  color: string; 
-  title: string; 
-  date: string; 
-  item: string; 
+  color: string;
+  title: string;
+  date: string;
+  item: string;
 }
 
 @Component({
+  standalone: true,
   selector: 'app-hearsay',
+  imports: [CommonModule],
   templateUrl: './hearsay.component.html',
   styleUrls: ['./hearsay.component.scss']
 })

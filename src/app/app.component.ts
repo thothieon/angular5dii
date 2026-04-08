@@ -26,6 +26,9 @@ export class AppComponent {
         page_path: event.urlAfterRedirects
       })
       /** END */
+
+      // 自建頁面瀏覽統計（fire-and-forget）
+      this.sendPageView(event.urlAfterRedirects);
     });
     //https://blog.poychang.net/how-to-use-html-head/
     this.meta.addTags([
@@ -36,6 +39,18 @@ export class AppComponent {
         ]);
         // this.meta.updateTag({ name: 'description', content: 'Angular 4 meta service - original method'});
         //this.meta.updateTag({ name: 'description', content: 'Angular 4 meta service - updated' });
+  }
+
+  /** 將頁面瀏覽資料送至自建後端（不影響主流程，失敗靜默忽略） */
+  private sendPageView(page: string) {
+    try {
+      fetch(`${environment.apiUrl}/api/pv`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ page, ref: document.referrer || undefined }),
+        keepalive: true,
+      }).catch(() => {});
+    } catch {}
   }
 
   /** Add Google Analytics Script Dynamically */
