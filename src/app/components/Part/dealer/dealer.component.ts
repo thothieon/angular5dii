@@ -1,9 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
 
 @Component({
+  standalone: true,
   selector: 'app-dealer',
+  imports: [CommonModule, NgbCarouselModule],
   templateUrl: './dealer.component.html',
   styleUrls: ['./dealer.component.scss']
 })

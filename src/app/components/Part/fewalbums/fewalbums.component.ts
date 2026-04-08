@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
 
-export interface Fewalbums { 
+export interface Fewalbums {
   t01: string;
-  t02: string; 
+  t02: string;
   t03: string;
 }
 
 @Component({
+  standalone: true,
   selector: 'app-fewalbums',
+  imports: [CommonModule],
   templateUrl: './fewalbums.component.html',
   styleUrls: ['./fewalbums.component.scss']
 })
