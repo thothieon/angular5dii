@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://114.32.175.189:8336',
+  apiUrl: 'https://api.idiving.com.tw',
   firebaseConfig: {
     apiKey: "AIzaSyBHB7pLLcOKgGzxSXSW8yUDoXWM356D2zc",
     authDomain: "idiving-littlehelper.firebaseapp.com",
