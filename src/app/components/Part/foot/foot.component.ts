@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AnalyticsService } from '../../../service/analytics/analytics.service';
 
 @Component({
   standalone: true,
@@ -10,9 +11,21 @@ import { CommonModule } from '@angular/common';
 })
 export class FootComponent implements OnInit {
 
-  constructor() { }
+  constructor(private analytics: AnalyticsService) { }
 
   ngOnInit() {
+  }
+
+  onLineClick() {
+    this.analytics.trackClick('outbound_line');
+  }
+
+  onFbClick() {
+    this.analytics.trackClick('outbound_fb');
+  }
+
+  onIgClick() {
+    this.analytics.trackClick('outbound_ig');
   }
 
 }
