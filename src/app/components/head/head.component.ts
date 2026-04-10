@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-
 import { CommonModule } from '@angular/common';
 import { SharedMaterialModule } from '../../shared-material/shared-material.module';
+import { AnalyticsService } from '../../service/analytics/analytics.service';
 
 @Component({
   selector: 'app-head',
@@ -15,5 +15,11 @@ import { SharedMaterialModule } from '../../shared-material/shared-material.modu
   styleUrl: './head.component.scss'
 })
 export class HeadComponent {
+
+  constructor(private analytics: AnalyticsService) {}
+
+  onNavSignupClick() {
+    this.analytics.trackClick('nav_signup');
+  }
 
 }
