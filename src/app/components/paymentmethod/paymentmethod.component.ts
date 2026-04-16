@@ -6,7 +6,6 @@ import { AnalyticsService } from '../../service/analytics/analytics.service';
 
 @Component({
   selector: 'app-paymentmethod',
-  standalone: true,
   imports: [
     CommonModule,
     SharedMaterialModule
