@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { SharedMaterialModule } from '../../shared-material/shared-material.module';
 import { AnalyticsService } from '../../service/analytics/analytics.service';
 
@@ -9,6 +10,7 @@ import { AnalyticsService } from '../../service/analytics/analytics.service';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     SharedMaterialModule
   ],
   templateUrl: './head.component.html',
