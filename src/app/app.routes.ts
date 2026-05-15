@@ -25,7 +25,7 @@ export const routes: Routes = [
     { path: 'd130', loadComponent: () => import('./pages/d130/d130.component').then(m => m.D130Component) },
     { path: 'd120', loadComponent: () => import('./pages/d120/d120.component').then(m => m.D120Component) },
     { path: 'cz01', loadComponent: () => import('./pages/cz01/cz01.component').then(m => m.Cz01Component) },
-    { path: 'cp01', loadComponent: () => import('./pages/cp01/cp01.component').then(m => m.Cp01Component) },
+    { path: 'cp001', loadComponent: () => import('./pages/cp01/cp01.component').then(m => m.Cp01Component) },
     { path: 'coc100', loadComponent: () => import('./pages/coc100/coc100.component').then(m => m.Coc100Component) },
     { path: 'cfdc210', loadComponent: () => import('./pages/cfdc210/cfdc210.component').then(m => m.Cfdc210Component) },
     { path: 'cfd310', loadComponent: () => import('./pages/cfd310/cfd310.component').then(m => m.Cfd310Component) },
