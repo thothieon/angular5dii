@@ -6,6 +6,7 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FootComponent } from '../../components/foot/foot.component';
 import { HeadComponent } from '../../components/head/head.component';
+import { PaymentmethodComponent } from '../../components/paymentmethod/paymentmethod.component';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -15,7 +16,8 @@ import { ActivatedRoute } from '@angular/router';
     CommonModule,
     NgbNavModule,
     HeadComponent,
-    FootComponent
+    FootComponent,
+    PaymentmethodComponent
   ],
   templateUrl: './c120.component.html',
   styleUrls: ['./c120.component.scss']
